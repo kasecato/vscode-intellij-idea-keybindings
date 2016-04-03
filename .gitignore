@@ -1,0 +1,6 @@
+out
+node_modules
+*.vsix
+coverage
+.vscode-test
+npm-debug.log
