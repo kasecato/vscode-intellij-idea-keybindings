@@ -1255,12 +1255,12 @@
     },
     "icon": "images/keyboard.png",
     "license": "MIT",
-    "homepage": "https://github.com/k--kato/vscode-intellij-keybindings#readme",
+    "homepage": "https://github.com/k--kato/vscode-intellij-idea-keybindings#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/k--kato/vscode-intellij-keybindings"
+        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings"
     },
     "bugs": {
-        "url": "https://github.com/k--kato/vscode-intellij-keybindings/issues"
+        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings/issues"
     }
 }
