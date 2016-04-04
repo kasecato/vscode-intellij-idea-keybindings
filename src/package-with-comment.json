@@ -1262,7 +1262,7 @@
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
-    "icon": "idea.png",
+    "icon": "images/keyboard.png",
     "license": "MIT",
     "homepage": "https://github.com/k--kato/vscode-intellij-keybindings#readme",
     "repository": {
