@@ -22,7 +22,6 @@ ctrl+o | ctrl+o | Override methods | N/A
 ctrl+i | ctrl+i | Implement methods | N/A
 ctrl+alt+t | cmd+alt+t | Surround with... (if..else, try..catch, for, synchronized, etc.) | N/A
 ctrl+/ | cmd+/ | Comment/uncomment with line comment | Yes
-ctrl+/ | cmd+/ | Comment/uncomment with line comment | Yes
 ctrl+alt+/ | cmd+alt+/ | Comment/uncomment with block comment | Yes
 ctrl+w | alt+up | Select successively increasing code blocks | Yes
 ctrl+shift+w | alt+down | Decrease current selection to previous state | Yes
@@ -94,7 +93,7 @@ ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
 ctrl+g | cmd+l | Go to line | Yes
 ctrl+e | cmd+e | Recent files popup | Yes
 ctrl+alt+left | cmd+alt+left | Navigate back | Yes
-ctrl+alt+right | cmd+alt+right | Navigate back | Yes
+ctrl+alt+right | cmd+alt+right | Navigate forward | Yes
 ctrl+shift+backspace | cmd+shift+backspace | Navigate to last edit location | N/A
 alt+f1 | alt+f1 | Select current file or symbol in any view | N/A
 ctrl+b | cmd+b | Go to declaration | Yes
@@ -105,7 +104,7 @@ ctrl+u | cmd+u | Go to super-method/super-class | N/A
 alt+up | ctrl+up | Go to previous method | N/A
 alt+down | ctrl+down | Go to next method | N/A
 ctrl+] | cmd+] | Move to code block end | N/A
-ctrl+[ | cmd+[ | Move to code block end | N/A
+ctrl+[ | cmd+[ | Move to code block start | N/A
 ctrl+f12 | cmd+f12 | File structure popup | N/A
 ctrl+h | ctrl+h | Type hierarchy | N/A
 ctrl+shift+h | cmd+shift+h | Method hierarchy | N/A
