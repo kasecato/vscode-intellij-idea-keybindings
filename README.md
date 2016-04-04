@@ -1,4 +1,4 @@
-# IntelliJ Key Bindings
+# IntelliJ IDEA Key Bindings
 
 [![License: MIT](http://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 
@@ -55,8 +55,9 @@ This extension is [licensed under the MIT License](LICENSE.txt).
 ## References
 
 1. Source code, Resharper 9 Keybindings, https://marketplace.visualstudio.com/items?itemName=ms-vscode.resharper9-keybindings
-1. Icon, JetBrains IntelliJ IDEA Community Edition, https://raw.githubusercontent.com/JetBrains/intellij-community/5bae60425eb7e83f06c20cc1ab0678f5d2274ddc/platform/icons/src/idea.ico
 1. Keymap OS X, IntelliJ IDEA Mac OS X Keymap, https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf
 1. Keymap Windows and Linux, IntelliJ IDEA Default Keymap, https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf
-1. gulp-strip-json-comments, https://www.npmjs.com/package/gulp-strip-json-comments
+1. Key Bindings for Visual Studio Code, https://code.visualstudio.com/Docs/customization/keybindings
 1. Integrate with External Tools via Tasks, https://code.visualstudio.com/docs/editor/tasks#_autodetecting-gulp-grunt-and-jake-tasks
+1. gulp-strip-json-comments, https://www.npmjs.com/package/gulp-strip-json-comments
+1. Icon, JetBrains IntelliJ IDEA Community Edition, https://raw.githubusercontent.com/JetBrains/intellij-community/5bae60425eb7e83f06c20cc1ab0678f5d2274ddc/platform/icons/src/idea.ico
