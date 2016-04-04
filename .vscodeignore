@@ -11,3 +11,5 @@ misc/**
 .travis.yml
 coverage/**
 .vscode-test/**
+.vscode/**
+.idea/**
