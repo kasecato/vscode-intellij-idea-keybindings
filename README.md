@@ -1,5 +1,6 @@
 # IntelliJ IDEA Key Bindings
 
+[![Build Status](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings.svg?branch=master)](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings)
 [![License: MIT](http://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 
 Port of IntelliJ IDEA key bindings for VS Code.
