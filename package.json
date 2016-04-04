@@ -135,13 +135,6 @@
                 "intellij": "Comment/uncomment with line comment"
             },
             {
-                "key": "ctrl+/",
-                "mac": "cmd+/",
-                "command": "editor.action.commentLine",
-                "when": "editorTextFocus",
-                "intellij": "Comment/uncomment with line comment"
-            },
-            {
                 "key": "ctrl+alt+/",
                 "mac": "cmd+alt+/",
                 "command": "editor.action.blockComment",
@@ -718,7 +711,7 @@
                 "key": "ctrl+alt+right",
                 "mac": "cmd+alt+right",
                 "command": "workbench.action.navigateForward",
-                "intellij": "Navigate back"
+                "intellij": "Navigate forward"
             },
   
              
@@ -820,7 +813,7 @@
                                
                               
                                           
-                                                     
+                                                       
                              
               
   
