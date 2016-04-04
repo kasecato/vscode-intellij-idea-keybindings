@@ -32,8 +32,8 @@
                 "mac": "ctrl+shft+space",
                 "command": "",
                 "when": "",
-                "intellij": "Smart code completion ( lters the list of methods and variables by expected type)",
-                "todo": "none"
+                "intellij": "Smart code completion (filters the list of methods and variables by expected type)",
+                "todo": "N/A"
             },
 */
             {
@@ -52,32 +52,32 @@
             },
 /*
             {
-                "key": "ctrl+j",
+                "key": "ctrl+q",
                 "mac": "ctrl+j",
                 "command": "",
                 "when": "",
                 "intellij": "Quick documentation lookup",
-                "todo": "none: ctrl+j / Mid.button click"
+                "todo": "N/A: ctrl+j / Mid.button click"
             },
 */
 /*
             {
-                "key": "shift+f1",
+                "key": "ctrl+f1",
                 "mac": "shift+f1",
                 "command": "",
                 "when": "",
                 "intellij": "External Doc",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "",
-                "mac": "",
+                "key": "ctrl+mouseover",
+                "mac": "cmd+mouseover",
                 "command": "",
                 "when": "",
                 "intellij": "Brief Info",
-                "todo": "none: cmd+mouseover"
+                "todo": "N/A"
             },
 */
             {
@@ -89,12 +89,12 @@
             },
 /*
             {
-                "key": "ctrl+n",
+                "key": "ctrl+insert",
                 "mac": "cmd+n",
                 "command": "",
                 "when": "",
                 "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)",
-                "todo": "none: cmd+n / ctrl+enter / ctrl+n"
+                "todo": "N/A: cmd+n / ctrl+enter / ctrl+n"
             },
 */
 /*
@@ -104,7 +104,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Override methods",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -114,7 +114,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Implement methods",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -124,7 +124,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Surround with... (if..else, try..catch, for, synchronized, etc.)",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -149,14 +149,14 @@
                 "intellij": "Comment/uncomment with block comment"
             },
             {
-                "key": "alt+up",
+                "key": "ctrl+w",
                 "mac": "alt+up",
                 "command": "editor.action.smartSelect.grow",
                 "when": "editorTextFocus",
                 "intellij": "Select successively increasing code blocks"
             },
             {
-                "key": "alt+down",
+                "key": "ctrl+shift+w",
                 "mac": "alt+down",
                 "command": "editor.action.smartSelect.shrink",
                 "when": "editorTextFocus",
@@ -164,12 +164,12 @@
             },
 /*
             {
-                "key": "ctrl+shift+q",
+                "key": "alt+q",
                 "mac": "ctrl+shift+q",
                 "command": "",
                 "when": "",
                 "intellij": "Context info",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -193,7 +193,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Optimize imports",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -203,7 +203,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Auto-indent line(s)",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -248,7 +248,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Paste from recent buffers...",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -272,7 +272,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Smart line join",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -291,12 +291,12 @@
             },
 /*
             {
-                "key": "cmd+shift+u",
+                "key": "ctrl+shift+u",
                 "mac": "cmd+shift+u",
                 "command": "",
                 "when": "",
                 "intellij": "Toggle case for word at caret or selected block",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -306,7 +306,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Select till code block end",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -316,18 +316,18 @@
                 "command": "",
                 "when": "",
                 "intellij": "Select till code block start",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
-                "key": "alt+delete",
+                "key": "ctrl+delete",
                 "mac": "alt+delete",
                 "command": "deleteWordLeft",
                 "when": "editorTextFocus",
                 "intellij": "Delete to word end"
             },
             {
-                "key": "alt+backspace",
+                "key": "ctrl+backspace",
                 "mac": "alt+backspace",
                 "command": "deleteWordRight",
                 "when": "editorTextFocus",
@@ -364,7 +364,7 @@
             },
 
             {
-                "key": "ctrl+w",
+                "key": "ctrl+f4",
                 "mac": "cmd+w",
                 "command": "workbench.files.action.closeFile",
                 "intellij": "Close active editor tab"
@@ -377,9 +377,9 @@
             {
                 "key": "shfit shift",
                 "mac": "shfit shift",
-                "command": "workbench.action.quickOpen",
+                "command": "",
                 "intellij": "Search everywhere",
-                "todo": "none: shift shift"
+                "todo": "N/A: shift shift"
             },
 */
             {
@@ -406,9 +406,9 @@
             {
                 "key": "ctrl+r",
                 "mac": "cmd+r",
-                "command": "editor.action.startFindReplaceAction",
+                "command": "",
                 "intellij": "Replace",
-                "todo": "error?"
+                "todo": "N/A"
             },
 */
             {
@@ -423,7 +423,7 @@
                 "mac": "cmd+shift+r",
                 "command": "",
                 "intellij": "Replace in path",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -432,7 +432,7 @@
                 "mac": "cmd+shift+s",
                 "command": "",
                 "intellij": "Search structurally (Ultimate Edition only)",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -441,7 +441,7 @@
                 "mac": "cmd+shift+m",
                 "command": "",
                 "intellij": "Replace structurally (Ultimate Edition only)",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 
@@ -462,7 +462,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Find usages in file",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -472,7 +472,7 @@
                 "command": "",
                 "when": "",
                 "intellij": "Highlight usages in file",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -482,7 +482,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Show usages",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 
@@ -501,32 +501,32 @@
                 "mac": "cmd+shift+f9",
                 "command": "",
                 "intellij": "Compile selected file, package or module",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
-                "key": "ctrl+alt+r",
+                "key": "alt+shift+f10",
                 "mac": "ctrl+alt+r",
                 "command": "workbench.action.tasks.runTask",
                 "intellij": "Select configuration and run"
             },
             {
-                "key": "ctrl+alt+d",
+                "key": "alt+shift+f9",
                 "mac": "ctrl+alt+d",
                 "command": "workbench.view.debug",
                 "intellij": "Select configuration and debug"
             },
 /*
             {
-                "key": "ctrl+r",
+                "key": "shift+f10",
                 "mac": "ctrl+r",
                 "command": "",
                 "intellij": "Run",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
-                "key": "ctrl+d",
+                "key": "shift+f9",
                 "mac": "ctrl+d",
                 "command": "workbench.action.debug.start",
                 "when": "!inDebugMode",
@@ -534,20 +534,11 @@
             },
 /*
             {
-                "key": "ctrl+shift+r",
+                "key": "ctrl+shift+f10",
                 "mac": "ctrl+shift+r",
                 "command": "",
                 "intellij": "Run context configuration from editor",
-                "todo": "none"
-            },
-*/
-/*
-            {
-                "key": "ctrl+shift+d",
-                "mac": "ctrl+shift+d",
-                "command": "",
-                "intellij": "Run context configuration from editor",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 
@@ -575,7 +566,7 @@
                 "command": "",
                 "when": "inDebugMode",
                 "intellij": "Smart step into",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -590,7 +581,7 @@
                 "mac": "alt+f9",
                 "command": "editor.debug.action.runToCursor",
                 "when": "inDebugMode",
-                "intellij": "Evaluate expression"
+                "intellij": "Run to cursor"
             },
             {
                 "key": "alt+f8",
@@ -605,10 +596,10 @@
                 "command": "editor.debug.action.selectionToRepl",
                 //"when": "inDebugMode && editorTextFocus && editorHasSelection",
                 "when": "editorTextFocus && editorHasSelection",
-                "intellij": "Evaluate expression"
+                "intellij": "Evaluate expression (selection)"
             },
             {
-                "key": "ctrl+alt+r",
+                "key": "f9",
                 "mac": "cmd+alt+r",
                 "command": "workbench.action.debug.continue",
                 "when": "inDebugMode",
@@ -633,40 +624,40 @@
              * Navigation
             \*---------------------------------------------------------------*/
             {
-                "key": "ctrl+o",
+                "key": "ctrl+n",
                 "mac": "cmd+o",
                 "command": "workbench.action.showAllSymbols",
                 "intellij": "Go to class",
                 "todo": "not only class"
             },
             {
-                "key": "ctrl+shift+o",
+                "key": "ctrl+shift+n",
                 "mac": "cmd+shift+o",
                 "command": "workbench.action.quickOpen",
                 "intellij": "Go to file"
             },
             {
-                "key": "ctrl+alt+o",
+                "key": "ctrl+alt+shift+n",
                 "mac": "cmd+alt+o",
                 "command": "workbench.action.gotoSymbol",
                 "intellij": "Go to symbol"
             },
 /*
             {
-                "key": "ctrl+left",
+                "key": "alt+left",
                 "mac": "ctrl+left",
                 "command": "",
                 "intellij": "Go to previous editor tab",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "ctrl+right",
+                "key": "alt+right",
                 "mac": "ctrl+right",
                 "command": "",
                 "intellij": "Go to next editor tab",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -675,25 +666,25 @@
                 "mac": "f12",
                 "command": "",
                 "intellij": "Go back to previous tool window",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "",
-                "mac": "",
+                "key": "esc",
+                "mac": "esc",
                 "command": "",
                 "intellij": "Go to editor (from tool window)",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "",
-                "mac": "",
+                "key": "shift+esc",
+                "mac": "shift+esc",
                 "command": "",
                 "intellij": "Hide active or last active window",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -706,7 +697,7 @@
             },
 */
             {
-                "key": "ctrl+l",
+                "key": "ctrl+g",
                 "mac": "cmd+l",
                 "command": "workbench.action.gotoLine",
                 "intellij": "Go to line"
@@ -733,9 +724,9 @@
             {
                 "key": "ctrl+shift+backspace",
                 "mac": "cmd+shift+backspace",
-                "command": "workbench.files.action.openPreviousWorkingFile",
+                "command": "",
                 "intellij": "Navigate to last edit location",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -745,7 +736,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Select current file or symbol in any view",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -762,17 +753,17 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Go to implementation(s)",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "alt+space",
+                "key": "ctrl+shift+i",
                 "mac": "alt+space",
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Open quick definition lookup",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -790,27 +781,27 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Go to super-method/super-class",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "ctrl+up",
+                "key": "alt+up",
                 "mac": "ctrl+up",
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Go to previous method",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "ctrl+down",
+                "key": "alt+down",
                 "mac": "ctrl+down",
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Go to next method",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -820,7 +811,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Move to code block end",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -830,7 +821,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Move to code block end",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -840,7 +831,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "File structure popup",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -850,7 +841,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Type hierarchy",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -860,7 +851,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Method hierarchy",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -870,7 +861,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Call hierarchy",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -879,7 +870,7 @@
                 "mac": "f2",
                 "command": "",
                 "intellij": "Next highlighted error",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -888,7 +879,7 @@
                 "mac": "shift+f2",
                 "command": "",
                 "intellij": "Previous highlighted error",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -897,16 +888,16 @@
                 "mac": "f4",
                 "command": "",
                 "intellij": "Edit source",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "ctrl+down",
+                "key": "ctrl+enter",
                 "mac": "cmd+down",
                 "command": "",
                 "intellij": "View source",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -915,26 +906,26 @@
                 "mac": "alt+home",
                 "command": "",
                 "intellij": "Show navigation bar",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "f3",
+                "key": "f11",
                 "mac": "f3",
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Toggle bookmark",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "alt+f3",
+                "key": "ctrl+f11",
                 "mac": "alt+f3",
                 "command": "",
                 "intellij": "Toggle bookmark with mnemonic",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -943,16 +934,16 @@
                 "mac": "ctrl+0",
                 "command": "",
                 "intellij": "Go to numbered bookmark",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "ctrl+f3",
+                "key": "shift+f11",
                 "mac": "cmd+f3",
                 "command": "",
                 "intellij": "Show bookmarks",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 
@@ -966,7 +957,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Copy",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -976,17 +967,17 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Move",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
-                "key": "ctrl+delete",
+                "key": "alt+delete",
                 "mac": "cmd+delete",
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Safe Delete",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -995,7 +986,7 @@
                 "command": "editor.action.rename",
                 "when": "editorTextFocus",
                 "intellij": "Rename",
-                "todo": "none"
+                "todo": "N/A"
             },
 /*
             {
@@ -1004,7 +995,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Change Signature",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1014,7 +1005,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Inline",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1024,7 +1015,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Extract Method",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1034,7 +1025,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Extract Variable",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1044,7 +1035,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Extract Field",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1054,7 +1045,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Extract Constant",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1064,7 +1055,7 @@
                 "command": "",
                 "when": "editorTextFocus",
                 "intellij": "Extract Parameter",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 
@@ -1078,7 +1069,7 @@
                 "mac": "cmd+k",
                 "command": "",
                 "intellij": "Commit project to VCS",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1087,20 +1078,20 @@
                 "mac": "cmd+t",
                 "command": "",
                 "intellij": "Update project from VCS",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
                 "key": "alt+shift+c",
                 "mac": "alt+shift+c",
-                "command": "workbench.git.action.globalOpenChange",
+                "command": "",
                 "intellij": "View recent changes",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
-                "key": "ctrl+v",
+                "key": "ctrl+`",
                 "mac": "ctrl+v",
                 "command": "workbench.view.git",
                 "intellij": "‘VCS’ quick popup",
@@ -1116,16 +1107,16 @@
                 "mac": "cmd+alt+j",
                 "command": "",
                 "intellij": "Surround with Live Template",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
             {
                 "key": "ctrl+j",
                 "mac": "cmd+j",
-                "command": "workbench.action.openSnippets",
+                "command": "",
                 "intellij": "Insert Live Template",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 
@@ -1134,11 +1125,11 @@
             \*---------------------------------------------------------------*/
 /*
             {
-                "key": "ctrl+0",
+                "key": "alt+0",
                 "mac": "cmd+0",
                 "command": "",
                 "intellij": "Open corresponding tool window",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -1154,7 +1145,7 @@
                 "intellij": "Synchronize"
             },
             {
-                "key": "ctrl+alt+f",
+                "key": "ctrl+alt+f", // N/A
                 "mac": "ctrl+cmd+f",
                 "command": "workbench.action.toggleFullScreen",
                 "intellij": "Toggle full screen mode"
@@ -1172,7 +1163,7 @@
                 "mac": "alt+shift+f",
                 "command": "",
                 "intellij": "Add to Favorites",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
 /*
@@ -1181,7 +1172,7 @@
                 "mac": "alt+shift+i",
                 "command": "",
                 "intellij": "Inspect current file with current profile",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
@@ -1191,22 +1182,22 @@
                 "intellij": "Quick switch current scheme"
             },
             {
-                "key": "ctrl+,",
+                "key": "ctrl+alt+s",
                 "mac": "cmd+,",
                 "command": "workbench.action.openGlobalSettings",
                 "intellij": "Open Settings dialog"
             },
 /*
             {
-                "key": "ctrl+;",
+                "key": "ctrl+alt+shift+s",
                 "mac": "cmd+;",
-                "command": "workbench.action.showCommands",
+                "command": "",
                 "intellij": "Open Project Structure dialog",
-                "todo": "none"
+                "todo": "N/A"
             },
 */
             {
-                "key": "shift+ctrl+a",
+                "key": "ctrl+shift+a",
                 "mac": "shift+cmd+a",
                 "command": "workbench.action.showCommands",
                 "intellij": "Find Action"
@@ -1217,7 +1208,7 @@
                 "mac": "ctrl+tab",
                 "command": "",
                 "intellij": "Switch between tabs and tool window",
-                "todo": "none"
+                "todo": "N/A"
             }
 */
 

@@ -32,8 +32,8 @@
                                          
                               
                            
-                                                                                                                
-                              
+                                                                                                                 
+                             
               
   
             {
@@ -57,27 +57,27 @@
                               
                            
                                                          
-                                                         
+                                                        
               
   
   
              
-                                  
+                                 
                                   
                               
                            
                                            
-                              
+                             
               
   
   
              
-                          
-                          
+                                        
+                                       
                               
                            
                                          
-                                             
+                             
               
   
             {
@@ -89,12 +89,12 @@
             },
   
              
-                                
+                                     
                                
                               
                            
                                                                                                            
-                                                           
+                                                          
               
   
   
@@ -104,7 +104,7 @@
                               
                            
                                                
-                              
+                             
               
   
   
@@ -114,7 +114,7 @@
                               
                            
                                                 
-                              
+                             
               
   
   
@@ -124,7 +124,7 @@
                               
                            
                                                                                                
-                              
+                             
               
   
             {
@@ -149,14 +149,14 @@
                 "intellij": "Comment/uncomment with block comment"
             },
             {
-                "key": "alt+up",
+                "key": "ctrl+w",
                 "mac": "alt+up",
                 "command": "editor.action.smartSelect.grow",
                 "when": "editorTextFocus",
                 "intellij": "Select successively increasing code blocks"
             },
             {
-                "key": "alt+down",
+                "key": "ctrl+shift+w",
                 "mac": "alt+down",
                 "command": "editor.action.smartSelect.shrink",
                 "when": "editorTextFocus",
@@ -164,12 +164,12 @@
             },
   
              
-                                      
+                               
                                       
                               
                            
                                            
-                              
+                             
               
   
             {
@@ -193,7 +193,7 @@
                               
                            
                                                
-                              
+                             
               
   
   
@@ -203,7 +203,7 @@
                               
                            
                                                   
-                              
+                             
               
   
             {
@@ -248,7 +248,7 @@
                               
                            
                                                            
-                              
+                             
               
   
             {
@@ -272,7 +272,7 @@
                               
                            
                                               
-                              
+                             
               
   
             {
@@ -291,12 +291,12 @@
             },
   
              
-                                     
+                                      
                                      
                               
                            
                                                                               
-                              
+                             
               
   
   
@@ -306,7 +306,7 @@
                               
                            
                                                          
-                              
+                             
               
   
   
@@ -316,18 +316,18 @@
                               
                            
                                                            
-                              
+                             
               
   
             {
-                "key": "alt+delete",
+                "key": "ctrl+delete",
                 "mac": "alt+delete",
                 "command": "deleteWordLeft",
                 "when": "editorTextFocus",
                 "intellij": "Delete to word end"
             },
             {
-                "key": "alt+backspace",
+                "key": "ctrl+backspace",
                 "mac": "alt+backspace",
                 "command": "deleteWordRight",
                 "when": "editorTextFocus",
@@ -364,7 +364,7 @@
             },
 
             {
-                "key": "ctrl+w",
+                "key": "ctrl+f4",
                 "mac": "cmd+w",
                 "command": "workbench.files.action.closeFile",
                 "intellij": "Close active editor tab"
@@ -377,9 +377,9 @@
              
                                      
                                      
-                                                        
+                              
                                                 
-                                           
+                                          
               
   
             {
@@ -406,9 +406,9 @@
              
                                 
                                
-                                                                  
+                              
                                       
-                                
+                             
               
   
             {
@@ -423,7 +423,7 @@
                                      
                               
                                               
-                              
+                             
               
   
   
@@ -432,7 +432,7 @@
                                      
                               
                                                                           
-                              
+                             
               
   
   
@@ -441,7 +441,7 @@
                                      
                               
                                                                            
-                              
+                             
               
   
 
@@ -462,7 +462,7 @@
                               
                                           
                                                   
-                              
+                             
               
   
   
@@ -472,7 +472,7 @@
                               
                            
                                                        
-                              
+                             
               
   
   
@@ -482,7 +482,7 @@
                               
                                           
                                           
-                              
+                             
               
   
 
@@ -501,32 +501,32 @@
                                       
                               
                                                                        
-                              
+                             
               
   
             {
-                "key": "ctrl+alt+r",
+                "key": "alt+shift+f10",
                 "mac": "ctrl+alt+r",
                 "command": "workbench.action.tasks.runTask",
                 "intellij": "Select configuration and run"
             },
             {
-                "key": "ctrl+alt+d",
+                "key": "alt+shift+f9",
                 "mac": "ctrl+alt+d",
                 "command": "workbench.view.debug",
                 "intellij": "Select configuration and debug"
             },
   
              
-                                
+                                   
                                 
                               
                                   
-                              
+                             
               
   
             {
-                "key": "ctrl+d",
+                "key": "shift+f9",
                 "mac": "ctrl+d",
                 "command": "workbench.action.debug.start",
                 "when": "!inDebugMode",
@@ -534,20 +534,11 @@
             },
   
              
-                                      
-                                      
-                              
-                                                                    
-                              
-              
-  
-  
-             
-                                      
+                                        
                                       
                               
                                                                     
-                              
+                             
               
   
 
@@ -575,7 +566,7 @@
                               
                                       
                                               
-                              
+                             
               
   
             {
@@ -590,7 +581,7 @@
                 "mac": "alt+f9",
                 "command": "editor.debug.action.runToCursor",
                 "when": "inDebugMode",
-                "intellij": "Evaluate expression"
+                "intellij": "Run to cursor"
             },
             {
                 "key": "alt+f8",
@@ -605,10 +596,10 @@
                 "command": "editor.debug.action.selectionToRepl",
                                                                                  
                 "when": "editorTextFocus && editorHasSelection",
-                "intellij": "Evaluate expression"
+                "intellij": "Evaluate expression (selection)"
             },
             {
-                "key": "ctrl+alt+r",
+                "key": "f9",
                 "mac": "cmd+alt+r",
                 "command": "workbench.action.debug.continue",
                 "when": "inDebugMode",
@@ -633,40 +624,40 @@
                          
                                                                                
             {
-                "key": "ctrl+o",
+                "key": "ctrl+n",
                 "mac": "cmd+o",
                 "command": "workbench.action.showAllSymbols",
                 "intellij": "Go to class",
                 "todo": "not only class"
             },
             {
-                "key": "ctrl+shift+o",
+                "key": "ctrl+shift+n",
                 "mac": "cmd+shift+o",
                 "command": "workbench.action.quickOpen",
                 "intellij": "Go to file"
             },
             {
-                "key": "ctrl+alt+o",
+                "key": "ctrl+alt+shift+n",
                 "mac": "cmd+alt+o",
                 "command": "workbench.action.gotoSymbol",
                 "intellij": "Go to symbol"
             },
   
              
-                                   
+                                  
                                    
                               
                                                         
-                              
+                             
               
   
   
              
-                                    
+                                   
                                     
                               
                                                     
-                              
+                             
               
   
   
@@ -675,25 +666,25 @@
                              
                               
                                                               
-                              
+                             
               
   
   
              
-                          
-                          
+                             
+                             
                               
                                                               
-                              
+                             
               
   
   
              
-                          
-                          
+                                   
+                                   
                               
                                                                 
-                              
+                             
               
   
   
@@ -706,7 +697,7 @@
               
   
             {
-                "key": "ctrl+l",
+                "key": "ctrl+g",
                 "mac": "cmd+l",
                 "command": "workbench.action.gotoLine",
                 "intellij": "Go to line"
@@ -733,9 +724,9 @@
              
                                               
                                              
-                                                                            
-                                                             
                               
+                                                             
+                             
               
   
   
@@ -745,7 +736,7 @@
                               
                                           
                                                                         
-                              
+                             
               
   
             {
@@ -762,17 +753,17 @@
                               
                                           
                                                       
-                              
+                             
               
   
   
              
-                                   
+                                      
                                    
                               
                                           
                                                            
-                              
+                             
               
   
             {
@@ -790,27 +781,27 @@
                               
                                           
                                                              
-                              
+                             
               
   
   
              
-                                 
+                                
                                  
                               
                                           
                                                     
-                              
+                             
               
   
   
              
-                                   
+                                  
                                    
                               
                                           
                                                 
-                              
+                             
               
   
   
@@ -820,7 +811,7 @@
                               
                                           
                                                      
-                              
+                             
               
   
   
@@ -830,7 +821,7 @@
                               
                                           
                                                      
-                              
+                             
               
   
   
@@ -840,7 +831,7 @@
                               
                                           
                                                    
-                              
+                             
               
   
   
@@ -850,7 +841,7 @@
                               
                                           
                                              
-                              
+                             
               
   
   
@@ -860,7 +851,7 @@
                               
                                           
                                                
-                              
+                             
               
   
   
@@ -870,7 +861,7 @@
                               
                                           
                                              
-                              
+                             
               
   
   
@@ -879,7 +870,7 @@
                             
                               
                                                      
-                              
+                             
               
   
   
@@ -888,7 +879,7 @@
                                   
                               
                                                          
-                              
+                             
               
   
   
@@ -897,16 +888,16 @@
                             
                               
                                           
-                              
+                             
               
   
   
              
-                                   
+                                    
                                   
                               
                                           
-                              
+                             
               
   
   
@@ -915,26 +906,26 @@
                                   
                               
                                                   
-                              
+                             
               
   
   
              
-                            
+                             
                             
                               
                                           
                                               
-                              
+                             
               
   
   
              
-                                
+                                  
                                 
                               
                                                             
-                              
+                             
               
   
   
@@ -943,16 +934,16 @@
                                 
                               
                                                       
-                              
+                             
               
   
   
              
-                                 
+                                   
                                 
                               
                                              
-                              
+                             
               
   
 
@@ -966,7 +957,7 @@
                               
                                           
                                    
-                              
+                             
               
   
   
@@ -976,17 +967,17 @@
                               
                                           
                                    
-                              
+                             
               
   
   
              
-                                     
+                                    
                                     
                               
                                           
                                           
-                              
+                             
               
   
             {
@@ -995,7 +986,7 @@
                 "command": "editor.action.rename",
                 "when": "editorTextFocus",
                 "intellij": "Rename",
-                "todo": "none"
+                "todo": "N/A"
             },
   
              
@@ -1004,7 +995,7 @@
                               
                                           
                                                
-                              
+                             
               
   
   
@@ -1014,7 +1005,7 @@
                               
                                           
                                      
-                              
+                             
               
   
   
@@ -1024,7 +1015,7 @@
                               
                                           
                                              
-                              
+                             
               
   
   
@@ -1034,7 +1025,7 @@
                               
                                           
                                                
-                              
+                             
               
   
   
@@ -1044,7 +1035,7 @@
                               
                                           
                                             
-                              
+                             
               
   
   
@@ -1054,7 +1045,7 @@
                               
                                           
                                                
-                              
+                             
               
   
   
@@ -1064,7 +1055,7 @@
                               
                                           
                                                 
-                              
+                             
               
   
 
@@ -1078,7 +1069,7 @@
                                
                               
                                                     
-                              
+                             
               
   
   
@@ -1087,20 +1078,20 @@
                                
                               
                                                       
-                              
+                             
               
   
   
              
                                      
                                      
-                                                                   
-                                                  
                               
+                                                  
+                             
               
   
             {
-                "key": "ctrl+v",
+                "key": "ctrl+`",
                 "mac": "ctrl+v",
                 "command": "workbench.view.git",
                 "intellij": "‘VCS’ quick popup",
@@ -1116,16 +1107,16 @@
                                    
                               
                                                           
-                              
+                             
               
   
   
              
                                 
                                
-                                                           
-                                                   
                               
+                                                   
+                             
               
   
 
@@ -1134,11 +1125,11 @@
                                                                                
   
              
-                                
+                               
                                
                               
                                                              
-                              
+                             
               
   
             {
@@ -1154,7 +1145,7 @@
                 "intellij": "Synchronize"
             },
             {
-                "key": "ctrl+alt+f",
+                "key": "ctrl+alt+f",       
                 "mac": "ctrl+cmd+f",
                 "command": "workbench.action.toggleFullScreen",
                 "intellij": "Toggle full screen mode"
@@ -1172,7 +1163,7 @@
                                      
                               
                                                
-                              
+                             
               
   
   
@@ -1181,7 +1172,7 @@
                                      
                               
                                                                         
-                              
+                             
               
   
             {
@@ -1191,22 +1182,22 @@
                 "intellij": "Quick switch current scheme"
             },
             {
-                "key": "ctrl+,",
+                "key": "ctrl+alt+s",
                 "mac": "cmd+,",
                 "command": "workbench.action.openGlobalSettings",
                 "intellij": "Open Settings dialog"
             },
   
              
-                                
+                                          
                                
-                                                           
-                                                            
                               
+                                                            
+                             
               
   
             {
-                "key": "shift+ctrl+a",
+                "key": "ctrl+shift+a",
                 "mac": "shift+cmd+a",
                 "command": "workbench.action.showCommands",
                 "intellij": "Find Action"
@@ -1217,7 +1208,7 @@
                                   
                               
                                                                   
-                              
+                             
              
   
 
