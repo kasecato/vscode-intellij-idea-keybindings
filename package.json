@@ -199,20 +199,24 @@
                              
               
   
-            {
-                "key": "tab",
-                "mac": "tab",
-                "command": "editor.emmet.action.expandAbbreviation",
-                "when": "editorTextFocus && !editorHasSelection && !editorHasMultipleSelections && !editorTabMovesFocus",
-                "intellij": "Indent selected lines"
-            },
-            {
-                "key": "shift+tab",
-                "mac": "shift+tab",
-                "command": "outdent",
-                "when": "editorTextFocus && !editorTabMovesFocus",
-                "intellij": "Unindent selected lines"
-            },
+  
+             
+                             
+                             
+                                                                        
+                                                                                                                         
+                                                   
+              
+  
+  
+             
+                                   
+                                   
+                                         
+                                                                  
+                                                     
+              
+  
             {
                 "key": "ctrl+x",
                 "mac": "cmd+x",

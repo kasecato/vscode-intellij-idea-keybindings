@@ -1,7 +1,7 @@
 # IntelliJ IDEA Key Bindings for Visual Studio Code
 
 [![Build Status](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings.svg?branch=master)](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings)
-[![License: MIT](http://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
+[![License: MIT](http://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
 
 Port of IntelliJ IDEA key bindings for VS Code.
 
@@ -30,8 +30,8 @@ alt+enter | alt+enter | Show intention actions and quick-fixes | Yes
 ctrl+alt+l | cmd+alt+l | Reformat code | Yes
 ctrl+alt+o | ctrl+alt+o | Optimize imports | N/A
 ctrl+alt+i | ctrl+alt+i | Auto-indent line(s) | N/A
-tab | tab | Indent selected lines | Yes
-shift+tab | shift+tab | Unindent selected lines | Yes
+tab | tab | Indent selected lines | N/A
+shift+tab | shift+tab | Unindent selected lines | N/A
 ctrl+x | cmd+x | Cut current line or selected block to clipboard | Yes
 ctrl+c | cmd+c | Copy current line or selected block to clipboard | Yes
 ctrl+v | cmd+v | Paste from clipboard | Yes
@@ -195,7 +195,7 @@ when changes are saved.
 
 ## License
 
-This extension is [licensed under the MIT License](LICENSE.txt).
+This extension is [licensed under the MIT License](LICENSE.md).
 
 
 ## References
