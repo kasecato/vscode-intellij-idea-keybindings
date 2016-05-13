@@ -7,6 +7,8 @@ Port of IntelliJ IDEA key bindings for VS Code.
 
 ## Usage
 
+### Editing
+
 Linux, Windows | OS X | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | Yes
@@ -51,6 +53,11 @@ ctrl+- | cmd+- | Collapse code block | Yes
 ctrl+shift+= | cmd+shift+= | Expand all | Yes
 ctrl+shift+- | cmd+shift+- | Collapse all | Yes
 ctrl+f4 | cmd+w | Close active editor tab | Yes
+
+### Search/Replace
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 shfit shift | shfit shift | Search everywhere | N/A
 ctrl+f | cmd+f | Find | Yes
 f3 | cmd+g | Find next | Yes
@@ -60,10 +67,20 @@ ctrl+shift+f | cmd+shift+f | Find in path | Yes
 ctrl+shift+r | cmd+shift+r | Replace in path | N/A
 ctrl+shift+s | cmd+shift+s | Search structurally (Ultimate Edition only) | N/A
 ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
+
+### Usage Search
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 alt+f7 | alt+f7 | Find usages | Yes
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
 ctrl+shift+f7 | cmd+shift+f7 | Highlight usages in file | N/A
 ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
+
+### Compile and Run
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | Yes
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
 alt+shift+f10 | ctrl+alt+r | Select configuration and run | Yes
@@ -71,6 +88,11 @@ alt+shift+f9 | ctrl+alt+d | Select configuration and debug | Yes
 shift+f10 | ctrl+r | Run | N/A
 shift+f9 | ctrl+d | Debug | Yes
 ctrl+shift+f10 | ctrl+shift+r | Run context configuration from editor | N/A
+
+### Debugging
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 f8 | f8 | Step over | Yes
 f7 | f7 | Step into | Yes
 shift+f7 | shift+f7 | Smart step into | N/A
@@ -81,6 +103,11 @@ alt+f8 | alt+f8 | Evaluate expression (selection) | Yes
 f9 | cmd+alt+r | Resume program | Yes
 ctrl+f8 | cmd+f8 | Toggle breakpoint | Yes
 ctrl+shift+f8 | cmd+shift+f8 | View breakpoints | Yes
+
+### Navigation
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 ctrl+n | cmd+o | Go to class | Yes
 ctrl+shift+n | cmd+shift+o | Go to file | Yes
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | Yes
@@ -118,6 +145,11 @@ f11 | f3 | Toggle bookmark | N/A
 ctrl+f11 | alt+f3 | Toggle bookmark with mnemonic | N/A
 ctrl+0 | ctrl+0 | Go to numbered bookmark | N/A
 shift+f11 | cmd+f3 | Show bookmarks | N/A
+
+### Refactoring
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 f5 | f5 | Copy | N/A
 f6 | f6 | Move | N/A
 alt+delete | cmd+delete | Safe Delete | N/A
@@ -129,24 +161,46 @@ ctrl+alt+v | cmd+alt+v | Extract Variable | N/A
 ctrl+alt+f | cmd+alt+f | Extract Field | N/A
 ctrl+alt+c | cmd+alt+c | Extract Constant | N/A
 ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
-ctrl+k | cmd+k | Commit project to VCS | N/A
-ctrl+t | cmd+t | Update project from VCS | N/A
+
+### VCS/Local History
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
+ctrl+k | cmd+k | Commit project to VCS | Yes
+ctrl+t | cmd+t | Update project from VCS | Yes
 alt+shift+c | alt+shift+c | View recent changes | N/A
 ctrl+` | ctrl+v | ‘VCS’ quick popup | Yes
+
+### Live Templates
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 ctrl+alt+j | cmd+alt+j | Surround with Live Template | N/A
 ctrl+j | cmd+j | Insert Live Template | N/A
-alt+0 | cmd+0 | Open corresponding tool window | N/A
+
+### General
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
+alt+1 | cmd+1 | Open corresponding tool window (Explorer) | Yes
+alt+5 | cmd+5 | Open corresponding tool window (Debug) | Yes
+alt+9 | cmd+9 | Open corresponding tool window (Git) | Yes
 ctrl+s | cmd+s | Save all | Yes
 ctrl+alt+y | cmd+alt+y | Synchronize | Yes
 ctrl+alt+f | ctrl+cmd+f | Toggle full screen mode | Yes
 ctrl+shift+f12 | cmd+shift+f12 | Toggle maximizing editor | Yes
 alt+shift+f | alt+shift+f | Add to Favorites | N/A
 alt+shift+i | alt+shift+i | Inspect current file with current profile | N/A
-ctrl+` | ctrl+` | Quick switch current scheme | Yes
+ctrl+\` | ctrl+\` | Quick switch current scheme | Yes
 ctrl+alt+s | cmd+, | Open Settings dialog | Yes
-ctrl+alt+shift+s | cmd+; | Open Project Structure dialog | N/A
+ctrl+alt+shift+s | cmd+; | Open Project Structure dialog | Yes
 ctrl+shift+a | shift+cmd+a | Find Action | Yes
-ctrl+tab | ctrl+tab | Switch between tabs and tool window | N/A
+ctrl+tab | ctrl+tab | Switch between tabs and tool window | Yes
+
+### Custom
+
+Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- 
 f7 | f7 | Next difference | Yes
 shift+f7 | shift+f7 | Previous difference | Yes
 

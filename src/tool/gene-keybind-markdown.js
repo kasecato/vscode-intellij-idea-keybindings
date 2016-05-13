@@ -11,13 +11,23 @@ const rd = readline.createInterface({
     terminal: false
 });
 
+var header = null;
 var key = null;
 var mac = null;
 var command = null;
 var intellij = null;
 var supported = null;
 rd.on('line', function(line) {
-    if (isWindowsOrLinux(line)) {
+
+    if (isHeader(line)) {
+        header = getHeader(line);
+        console.log();
+        console.log('### ' + header);
+        console.log();
+        console.log(TABLE_HEADER);
+    }
+    
+    else if (isWindowsOrLinux(line)) {
         key = getWindowsOrLinux(line);
     }
     else if (isMacOSX(line)) {
@@ -41,6 +51,7 @@ rd.on('line', function(line) {
     }
 });
 
+const isHeader         = (line) => line.match(/\* (.*)/)            !== null;
 const isWindowsOrLinux = (line) => line.match(/"key": "(.*)"/)      !== null;
 const isMacOSX         = (line) => line.match(/"mac": "(.*)"/)      !== null;
 const isCommand        = (line) => line.match(/"command": "(.*)"/)  !== null;
@@ -50,8 +61,14 @@ const isTodo           = (line) => line.match(/"todo": "(.*)"/)     !== null;
 
 const hasCommand       = (cmnd) => cmnd !== null && cmnd !== '';
 
+const getHeader         = (line) => /\* (.*)/.exec(line)[1];
 const getWindowsOrLinux = (line) => /"key": "(.*)"/.exec(line)[1];
 const getMacOSX         = (line) => /"mac": "(.*)"/.exec(line)[1];
 const getIntelliJ       = (line) => /"intellij": "(.*)"/.exec(line)[1];
 const getCommand        = (line) => /"command": "(.*)"/.exec(line)[1];
 const getTodo           = (line) => /"todo": "(.*)"/.exec(line)[1];
+
+
+const TABLE_HEADER = 
+`Linux, Windows | OS X | Feature | Supported
+---------------|------|---------|---------- `;
