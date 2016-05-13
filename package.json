@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "k--kato",
     "engines": {
         "vscode": "0.10.x"
@@ -982,8 +982,7 @@
                 "mac": "shift+f6",
                 "command": "editor.action.rename",
                 "when": "editorTextFocus",
-                "intellij": "Rename",
-                "todo": "N/A"
+                "intellij": "Rename"
             },
   
              
@@ -1059,25 +1058,18 @@
                                                                                
                                 
                                                                                
-            
-  
-             
-                                
-                               
-                              
-                                                    
-                             
-              
-  
-  
-             
-                                
-                               
-                              
-                                                      
-                             
-              
-  
+            {
+                "key": "ctrl+k",
+                "mac": "cmd+k",
+                "command": "workbench.action.git.input-commit",
+                "intellij": "Commit project to VCS"
+            },
+            {
+                "key": "ctrl+t",
+                "mac": "cmd+t",
+                "command": "workbench.action.git.sync",
+                "intellij": "Update project from VCS"
+            },
   
              
                                      
@@ -1120,15 +1112,24 @@
                                                                                
                       
                                                                                
-  
-             
-                               
-                               
-                              
-                                                             
-                             
-              
-  
+            {
+                "key": "alt+1",
+                "mac": "cmd+1",
+                "command": "workbench.view.explorer",
+                "intellij": "Open corresponding tool window (Explorer)"
+            },
+            {
+                "key": "alt+5",
+                "mac": "cmd+5",
+                "command": "workbench.view.debug",
+                "intellij": "Open corresponding tool window (Debug)"
+            },
+            {
+                "key": "alt+9",
+                "mac": "cmd+9",
+                "command": "workbench.view.git",
+                "intellij": "Open corresponding tool window (Git)"
+            },
             {
                 "key": "ctrl+s",
                 "mac": "cmd+s",
@@ -1184,30 +1185,25 @@
                 "command": "workbench.action.openGlobalSettings",
                 "intellij": "Open Settings dialog"
             },
-  
-             
-                                          
-                               
-                              
-                                                            
-                             
-              
-  
+            {
+                "key": "ctrl+alt+shift+s",
+                "mac": "cmd+;",
+                "command": "workbench.action.tasks.configureTaskRunner",
+                "intellij": "Open Project Structure dialog"
+            },
             {
                 "key": "ctrl+shift+a",
                 "mac": "shift+cmd+a",
                 "command": "workbench.action.showCommands",
                 "intellij": "Find Action"
             },
-  
-             
-                                  
-                                  
-                              
-                                                                  
-                             
-             
-  
+            {
+                "key": "ctrl+tab",
+                "mac": "ctrl+tab",
+                "command": "workbench.action.quickOpenNavigateNext",
+                "when": "inQuickOpen",
+                "intellij": "Switch between tabs and tool window"
+            },
 
                                                                                
                      
@@ -1238,7 +1234,7 @@
     "dependencies": {
     },
     "devDependencies": {
-        "vscode": "^0.11.10",
+        "vscode": "^0.11.12",
         "gulp": "~3.9.1",
         "gulp-cli": "~1.2.1",
         "gulp-strip-json-comments": "~2.0.0",
