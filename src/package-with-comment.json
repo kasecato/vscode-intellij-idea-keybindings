@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "0.10.x"
+        "vscode": "1.20.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -13,6 +13,36 @@
     "galleryBanner": {
         "color": "#4F87FF",
         "theme": "light"
+    },
+    "keywords": [
+        "IntelliJ",
+        "Keybinding"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+        "vscode": "^0.11.13",
+        "gulp": "~3.9.1",
+        "gulp-cli": "~1.2.1",
+        "gulp-strip-json-comments": "~2.0.0",
+        "gulp-rename": "~1.2.2",
+        "gulp-jsbeautifier": "~2.0.3"
+    },
+    "extensionDependencies": [
+    ],
+    "isAMD": false,
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "icon": "images/keyboard.png",
+    "license": "MIT",
+    "homepage": "https://github.com/k--kato/vscode-intellij-idea-keybindings#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings"
+    },
+    "bugs": {
+        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
         "keybindings": [
@@ -128,15 +158,15 @@
             },
 */
             {
-                "key": "ctrl+/",
-                "mac": "cmd+/",
+                "key": "ctrl+/|ctrl+numpad_divide",
+                "mac": "cmd+/|cmd+numpad_divide",
                 "command": "editor.action.commentLine",
                 "when": "editorTextFocus",
                 "intellij": "Comment/uncomment with line comment"
             },
             {
-                "key": "ctrl+alt+/",
-                "mac": "cmd+alt+/",
+                "key": "ctrl+alt+/|ctrl+alt+numpad_divide",
+                "mac": "cmd+alt+/|cmd+alt+numpad_divide",
                 "command": "editor.action.blockComment",
                 "when": "editorTextFocus",
                 "intellij": "Comment/uncomment with block comment"
@@ -339,8 +369,8 @@
                 "intellij": "Expand code block"
             },
             {
-                "key": "ctrl+-",
-                "mac": "cmd+-",
+                "key": "ctrl+-|ctrl+numpad_subtract",
+                "mac": "cmd+-|cmd+numpad_subtract",
                 "command": "editor.fold",
                 "when": "editorFocus",
                 "intellij": "Collapse code block"
@@ -1181,7 +1211,7 @@
             },
             {
                 "key": "ctrl+alt+s",
-                "mac": "cmd+,",
+                "mac": "cmd+,|cmd+numpad_separator",
                 "command": "workbench.action.openGlobalSettings",
                 "intellij": "Open Settings dialog"
             },
@@ -1224,36 +1254,5 @@
             }
 
         ]
-    },
-    "keywords": [
-        "IntelliJ",
-        "IntelliJ IDEA",
-        "Keybinding",
-        "Keymap"
-    ],
-    "dependencies": {
-    },
-    "devDependencies": {
-        "vscode": "^0.11.12",
-        "gulp": "~3.9.1",
-        "gulp-cli": "~1.2.1",
-        "gulp-strip-json-comments": "~2.0.0",
-        "gulp-rename": "~1.2.2"
-    },
-    "extensionDependencies": [
-    ],
-    "isAMD": false,
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install"
-    },
-    "icon": "images/keyboard.png",
-    "license": "MIT",
-    "homepage": "https://github.com/k--kato/vscode-intellij-idea-keybindings#readme",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings"
-    },
-    "bugs": {
-        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings/issues"
     }
 }

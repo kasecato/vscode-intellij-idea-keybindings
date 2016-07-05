@@ -30,8 +30,8 @@ rd.on('line', function(line) {
     else if (isWindowsOrLinux(line)) {
         key = getWindowsOrLinux(line);
     }
-    else if (isMacOSX(line)) {
-        mac = getMacOSX(line);
+    else if (isMacOS(line)) {
+        mac = getMacOS(line);
     }
     else if (isCommand(line)) {
         command = getCommand(line);
@@ -53,7 +53,7 @@ rd.on('line', function(line) {
 
 const isHeader         = (line) => line.match(/\* (.*)/)            !== null;
 const isWindowsOrLinux = (line) => line.match(/"key": "(.*)"/)      !== null;
-const isMacOSX         = (line) => line.match(/"mac": "(.*)"/)      !== null;
+const isMacOS          = (line) => line.match(/"mac": "(.*)"/)      !== null;
 const isCommand        = (line) => line.match(/"command": "(.*)"/)  !== null;
 const isWhen           = (line) => line.match(/"when": "(.*)"/)     !== null;
 const isIntelliJ       = (line) => line.match(/"intellij": "(.*)"/) !== null;
@@ -63,12 +63,12 @@ const hasCommand       = (cmnd) => cmnd !== null && cmnd !== '';
 
 const getHeader         = (line) => /\* (.*)/.exec(line)[1];
 const getWindowsOrLinux = (line) => /"key": "(.*)"/.exec(line)[1];
-const getMacOSX         = (line) => /"mac": "(.*)"/.exec(line)[1];
+const getMacOS          = (line) => /"mac": "(.*)"/.exec(line)[1];
 const getIntelliJ       = (line) => /"intellij": "(.*)"/.exec(line)[1];
 const getCommand        = (line) => /"command": "(.*)"/.exec(line)[1];
 const getTodo           = (line) => /"todo": "(.*)"/.exec(line)[1];
 
 
 const TABLE_HEADER = 
-`Linux, Windows | OS X | Feature | Supported
+`Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- `;
