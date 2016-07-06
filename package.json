@@ -3,7 +3,7 @@
     "version": "0.1.2",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.20.x"
+        "vscode": "1.2.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -30,6 +30,7 @@
     "extensionDependencies": [],
     "isAMD": false,
     "scripts": {
+        "gulp": "./node_modules/.bin/gulp",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "icon": "images/keyboard.png",
@@ -155,14 +156,26 @@
 
 
             {
-                "key": "ctrl+/|ctrl+numpad_divide",
-                "mac": "cmd+/|cmd+numpad_divide",
+                "key": "ctrl+/",
+                "mac": "cmd+/",
                 "command": "editor.action.commentLine",
                 "when": "editorTextFocus",
                 "intellij": "Comment/uncomment with line comment"
             }, {
-                "key": "ctrl+alt+/|ctrl+alt+numpad_divide",
-                "mac": "cmd+alt+/|cmd+alt+numpad_divide",
+                "key": "ctrl+numpad_divide",
+                "mac": "cmd+numpad_divide",
+                "command": "editor.action.commentLine",
+                "when": "editorTextFocus",
+                "intellij": "Comment/uncomment with line comment"
+            }, {
+                "key": "ctrl+alt+/",
+                "mac": "cmd+alt+/",
+                "command": "editor.action.blockComment",
+                "when": "editorTextFocus",
+                "intellij": "Comment/uncomment with block comment"
+            }, {
+                "key": "ctrl+alt+numpad_divide",
+                "mac": "cmd+alt+numpad_divide",
                 "command": "editor.action.blockComment",
                 "when": "editorTextFocus",
                 "intellij": "Comment/uncomment with block comment"
@@ -356,8 +369,8 @@
                 "when": "editorFocus",
                 "intellij": "Expand code block"
             }, {
-                "key": "ctrl+-|ctrl+numpad_subtract",
-                "mac": "cmd+-|cmd+numpad_subtract",
+                "key": "ctrl+-",
+                "mac": "cmd+-",
                 "command": "editor.fold",
                 "when": "editorFocus",
                 "intellij": "Collapse code block"
@@ -1173,7 +1186,11 @@
                 "intellij": "Quick switch current scheme"
             }, {
                 "key": "ctrl+alt+s",
-                "mac": "cmd+,|cmd+numpad_separator",
+                "mac": "cmd+,",
+                "command": "workbench.action.openGlobalSettings",
+                "intellij": "Open Settings dialog"
+            }, {
+                "key": "cmd+numpad_separator",
                 "command": "workbench.action.openGlobalSettings",
                 "intellij": "Open Settings dialog"
             }, {

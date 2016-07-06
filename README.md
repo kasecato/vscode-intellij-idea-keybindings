@@ -9,7 +9,7 @@ Port of IntelliJ IDEA key bindings for VS Code.
 
 ### Editing
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | Yes
 ctrl+shft+space | ctrl+shft+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
@@ -56,7 +56,7 @@ ctrl+f4 | cmd+w | Close active editor tab | Yes
 
 ### Search/Replace
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 shfit shift | shfit shift | Search everywhere | N/A
 ctrl+f | cmd+f | Find | Yes
@@ -70,7 +70,7 @@ ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
 
 ### Usage Search
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 alt+f7 | alt+f7 | Find usages | Yes
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
@@ -79,7 +79,7 @@ ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
 
 ### Compile and Run
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | Yes
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
@@ -91,7 +91,7 @@ ctrl+shift+f10 | ctrl+shift+r | Run context configuration from editor | N/A
 
 ### Debugging
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 f8 | f8 | Step over | Yes
 f7 | f7 | Step into | Yes
@@ -106,7 +106,7 @@ ctrl+shift+f8 | cmd+shift+f8 | View breakpoints | Yes
 
 ### Navigation
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+n | cmd+o | Go to class | Yes
 ctrl+shift+n | cmd+shift+o | Go to file | Yes
@@ -148,7 +148,7 @@ shift+f11 | cmd+f3 | Show bookmarks | N/A
 
 ### Refactoring
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 f5 | f5 | Copy | N/A
 f6 | f6 | Move | N/A
@@ -164,7 +164,7 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 
 ### VCS/Local History
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+k | cmd+k | Commit project to VCS | Yes
 ctrl+t | cmd+t | Update project from VCS | Yes
@@ -173,14 +173,14 @@ ctrl+` | ctrl+v | ‘VCS’ quick popup | Yes
 
 ### Live Templates
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+alt+j | cmd+alt+j | Surround with Live Template | N/A
 ctrl+j | cmd+j | Insert Live Template | N/A
 
 ### General
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | Yes
 alt+5 | cmd+5 | Open corresponding tool window (Debug) | Yes
@@ -199,7 +199,7 @@ ctrl+tab | ctrl+tab | Switch between tabs and tool window | Yes
 
 ### Custom
 
-Linux, Windows | OS X | Feature | Supported
+Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 f7 | f7 | Next difference | Yes
 shift+f7 | shift+f7 | Previous difference | Yes
@@ -209,7 +209,7 @@ shift+f7 | shift+f7 | Previous difference | Yes
 
 1. Install Visual Studio Code 0.10.11 or higher
 1. Launch Code
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OS X)
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Select `Install Extension`
 1. Choose the extension '`intellijkeybind`' *or* run `ext install intellijkeybind`
 1. Reload Visual Studio Code
@@ -235,12 +235,12 @@ npm install
 Now you can compile the code:
 
 1. Launch Code
-1. Run Build Task `Ctrl`-`Shift`-`B` (Windows, Linux) or `Cmd`-`Shift`-`B` (OS X)
+1. Run Build Task `Ctrl`-`Shift`-`B` (Windows, Linux) or `Cmd`-`Shift`-`B` (macOS)
 
 or
 
 1. Launch Code
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OS X)
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Select `Tasks: Run Build Task`
 
 After the initial compile, the source files will be watched and recompiled
