@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.2.x"
+        "vscode": "1.3.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -21,7 +21,7 @@
     "dependencies": {
     },
     "devDependencies": {
-        "vscode": "^0.11.13",
+        "vscode": "^0.11.14",
         "gulp": "~3.9.1",
         "gulp-cli": "~1.2.1",
         "gulp-strip-json-comments": "~2.0.0",
@@ -444,30 +444,24 @@
                 "when": "editorFocus",
                 "intellij": "Find previous"
             },
-/*
             {
                 "key": "ctrl+r",
                 "mac": "cmd+r",
-                "command": "",
-                "intellij": "Replace",
-                "todo": "N/A"
+                "command": "editor.action.startFindReplaceAction",
+                "intellij": "Replace"
             },
-*/
             {
                 "key": "ctrl+shift+f",
                 "mac": "cmd+shift+f",
                 "command": "workbench.view.search",
                 "intellij": "Find in path"
             },
-/*
             {
                 "key": "ctrl+shift+r",
                 "mac": "cmd+shift+r",
-                "command": "",
-                "intellij": "Replace in path",
-                "todo": "N/A"
+                "command": "workbench.action.replaceInFiles",
+                "intellij": "Replace in path"
             },
-*/
 /*
             {
                 "key": "ctrl+shift+s",
@@ -684,24 +678,18 @@
                 "command": "workbench.action.gotoSymbol",
                 "intellij": "Go to symbol"
             },
-/*
             {
                 "key": "alt+left",
                 "mac": "ctrl+left",
-                "command": "",
-                "intellij": "Go to previous editor tab",
-                "todo": "N/A"
+                "command": "workbench.action.previousEditor",
+                "intellij": "Go to previous editor tab"
             },
-*/
-/*
             {
                 "key": "alt+right",
                 "mac": "ctrl+right",
-                "command": "",
-                "intellij": "Go to next editor tab",
-                "todo": "N/A"
+                "command": "workbench.action.nextEditor",
+                "intellij": "Go to next editor tab"
             },
-*/
 /*
             {
                 "key": "f12",
@@ -1158,6 +1146,12 @@
              * General
             \*---------------------------------------------------------------*/
             {
+                "key": "alt+0",
+                "mac": "cmd+0",
+                "command": "workbench.actions.view.problems",
+                "intellij": "Activate Messages window (Problems)"
+            },
+            {
                 "key": "alt+1",
                 "mac": "cmd+1",
                 "command": "workbench.view.explorer",
@@ -1231,7 +1225,8 @@
                 "intellij": "Open Settings dialog"
             },
             {
-                "key": "cmd+numpad_separator",
+                "key": "ctrl+alt+s",
+                "mac": "cmd+numpad_separator",
                 "command": "workbench.action.openGlobalSettings",
                 "intellij": "Open Settings dialog"
             },
