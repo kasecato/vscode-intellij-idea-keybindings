@@ -184,6 +184,7 @@ ctrl+j | cmd+j | Insert Live Template | N/A
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
+alt+0 | cmd+0 | Activate Messages window (Problems) | Yes
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | Yes
 alt+5 | cmd+5 | Open corresponding tool window (Debug) | Yes
 alt+9 | cmd+9 | Open corresponding tool window (Git) | Yes
