@@ -24,7 +24,9 @@ ctrl+o | ctrl+o | Override methods | N/A
 ctrl+i | ctrl+i | Implement methods | N/A
 ctrl+alt+t | cmd+alt+t | Surround with... (if..else, try..catch, for, synchronized, etc.) | N/A
 ctrl+/ | cmd+/ | Comment/uncomment with line comment | Yes
+ctrl+numpad_divide | cmd+numpad_divide | Comment/uncomment with line comment | Yes
 ctrl+alt+/ | cmd+alt+/ | Comment/uncomment with block comment | Yes
+ctrl+alt+numpad_divide | cmd+alt+numpad_divide | Comment/uncomment with block comment | Yes
 ctrl+w | alt+up | Select successively increasing code blocks | Yes
 ctrl+shift+w | alt+down | Decrease current selection to previous state | Yes
 alt+q | ctrl+shift+q | Context info | N/A
@@ -62,9 +64,9 @@ shfit shift | shfit shift | Search everywhere | N/A
 ctrl+f | cmd+f | Find | Yes
 f3 | cmd+g | Find next | Yes
 shift+f3 | cmd+shift+g | Find previous | Yes
-ctrl+r | cmd+r | Replace | N/A
+ctrl+r | cmd+r | Replace | Yes
 ctrl+shift+f | cmd+shift+f | Find in path | Yes
-ctrl+shift+r | cmd+shift+r | Replace in path | N/A
+ctrl+shift+r | cmd+shift+r | Replace in path | Yes
 ctrl+shift+s | cmd+shift+s | Search structurally (Ultimate Edition only) | N/A
 ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
 
@@ -111,8 +113,8 @@ Linux, Windows | macOS | Feature | Supported
 ctrl+n | cmd+o | Go to class | Yes
 ctrl+shift+n | cmd+shift+o | Go to file | Yes
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | Yes
-alt+left | ctrl+left | Go to previous editor tab | N/A
-alt+right | ctrl+right | Go to next editor tab | N/A
+alt+left | ctrl+left | Go to previous editor tab | Yes
+alt+right | ctrl+right | Go to next editor tab | Yes
 f12 | f12 | Go back to previous tool window | N/A
 esc | esc | Go to editor (from tool window) | N/A
 shift+esc | shift+esc | Hide active or last active window | N/A
@@ -193,6 +195,7 @@ alt+shift+f | alt+shift+f | Add to Favorites | N/A
 alt+shift+i | alt+shift+i | Inspect current file with current profile | N/A
 ctrl+\` | ctrl+\` | Quick switch current scheme | Yes
 ctrl+alt+s | cmd+, | Open Settings dialog | Yes
+ctrl+alt+s | cmd+numpad_separator | Open Settings dialog | Yes
 ctrl+alt+shift+s | cmd+; | Open Project Structure dialog | Yes
 ctrl+shift+a | shift+cmd+a | Find Action | Yes
 ctrl+tab | ctrl+tab | Switch between tabs and tool window | Yes

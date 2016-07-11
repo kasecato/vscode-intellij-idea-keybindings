@@ -17,3 +17,7 @@ install:
 
 script:
   - npm test --silent
+
+language: node_js
+node_js:
+  - "6"
