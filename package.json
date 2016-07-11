@@ -31,7 +31,6 @@
     "isAMD": false,
     "scripts": {
         "gulp": "./node_modules/.bin/gulp",
-        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "icon": "images/keyboard.png",
