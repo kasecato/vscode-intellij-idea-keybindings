@@ -408,7 +408,7 @@
             {
                 "key": "ctrl+f4",
                 "mac": "cmd+w",
-                "command": "workbench.files.action.closeFile",
+                "command": "workbench.action.closeActiveEditor",
                 "intellij": "Close active editor tab"
             },
 
