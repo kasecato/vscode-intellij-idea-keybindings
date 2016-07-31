@@ -55,6 +55,8 @@ ctrl+- | cmd+- | Collapse code block | Yes
 ctrl+shift+= | cmd+shift+= | Expand all | Yes
 ctrl+shift+- | cmd+shift+- | Collapse all | Yes
 ctrl+f4 | cmd+w | Close active editor tab | Yes
+alt+j | ctrl+g | Add selection for Next Occurrence | Yes
+alt+shift+j | ctrl+shift+g | Unselect Occurrence | Yes
 
 ### Search/Replace
 
