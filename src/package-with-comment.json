@@ -411,6 +411,20 @@
                 "command": "workbench.action.closeActiveEditor",
                 "intellij": "Close active editor tab"
             },
+            {
+                "key": "alt+j",
+                "mac": "ctrl+g",
+                "command":"editor.action.addSelectionToNextFindMatch",
+                "when": "editorFocus",
+                "intellij": "Add selection for Next Occurrence"
+            },
+            {
+                "key": "alt+shift+j",
+                "mac": "ctrl+shift+g",
+                "command":"cursorUndo",
+                "when": "editorTextFocus",
+                "intellij": "Unselect Occurrence"
+            },
 
             /*---------------------------------------------------------------*\
              * Search/Replace
