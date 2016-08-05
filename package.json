@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.3.x"
+        "vscode": "1.4.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -761,17 +761,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
             {
+                "key": "ctrl+shift+i",
+                "mac": "alt+space",
+                "command": "editor.action.previewDeclaration",
+                "when": "editorTextFocus",
+                "intellij": "Open quick definition lookup"
+            }, {
                 "key": "ctrl+shift+b",
                 "mac": "ctrl+shift+b",
                 "command": "editor.action.goToTypeDeclaration",

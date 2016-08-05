@@ -129,7 +129,7 @@ ctrl+shift+backspace | cmd+shift+backspace | Navigate to last edit location | N/
 alt+f1 | alt+f1 | Select current file or symbol in any view | N/A
 ctrl+b | cmd+b | Go to declaration | Yes
 ctrl+alt+b | cmd+alt+b | Go to implementation(s) | N/A
-ctrl+shift+i | alt+space | Open quick definition lookup | N/A
+ctrl+shift+i | alt+space | Open quick definition lookup | Yes
 ctrl+shift+b | ctrl+shift+b | Go to type declaration | Yes
 ctrl+u | cmd+u | Go to super-method/super-class | N/A
 alt+up | ctrl+up | Go to previous method | N/A
@@ -213,7 +213,7 @@ shift+f7 | shift+f7 | Previous difference | Yes
 
 ## Installation
 
-1. Install Visual Studio Code 0.10.11 or higher
+1. Install Visual Studio Code 1.4.0 or higher
 1. Launch Code
 1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Select `Install Extension`
@@ -251,6 +251,12 @@ or
 
 After the initial compile, the source files will be watched and recompiled
 when changes are saved.
+
+
+## Contributors
+
+* [@brianegan](https://github.com/brianegan)
+* [@whinc](https://github.com/whinc)
 
 
 ## License
