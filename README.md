@@ -209,6 +209,7 @@ Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 f7 | f7 | Next difference | Yes
 shift+f7 | shift+f7 | Previous difference | Yes
+ctrl+shift+enter | cmd+shift+enter | Start new line | Yes
 
 
 ## Installation
