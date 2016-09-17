@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.4.x"
+        "vscode": "1.5.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -20,7 +20,7 @@
     ],
     "dependencies": {},
     "devDependencies": {
-        "vscode": "^0.11.14",
+        "vscode": "^0.11.18",
         "gulp": "~3.9.1",
         "gulp-cli": "~1.2.2",
         "gulp-strip-json-comments": "~2.0.0",
@@ -68,8 +68,8 @@
             {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
-                "command": "editor.action.insertLineAfter",
-                "when": "editorTextFocus",
+                "command": "acceptSelectedSuggestion",
+                "when": "editorFocus && suggestWidgetVisible",
                 "intellij": "Complete statement"
             }, {
                 "key": "ctrl+p",
@@ -1223,8 +1223,13 @@
                 "command": "workbench.action.compareEditor.previousChange",
                 "when": "textCompareEditorVisible",
                 "intellij": "Previous difference"
+            }, {
+                "key": "ctrl+shift+enter",
+                "mac": "cmd+shift+enter",
+                "command": "editor.action.insertLineAfter",
+                "when": "editorTextFocus && !suggestWidgetVisible",
+                "intellij": "Start new line"
             }
-
         ]
     }
 }
