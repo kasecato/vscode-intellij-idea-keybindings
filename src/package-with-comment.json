@@ -217,6 +217,12 @@
                 "when": "editorTextFocus",
                 "intellij": "Show intention actions and quick-fixes"
             },
+            {   "key": "ctrl+y",          
+                "mac": "cmd+backspace",
+                "command": "editor.action.deleteLines",                     
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Delete line at caret"
+            },
             {
                 "key": "ctrl+alt+l",
                 "mac": "cmd+alt+l",
