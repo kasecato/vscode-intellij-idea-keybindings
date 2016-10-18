@@ -31,6 +31,7 @@ ctrl+w | alt+up | Select successively increasing code blocks | Yes
 ctrl+shift+w | alt+down | Decrease current selection to previous state | Yes
 alt+q | ctrl+shift+q | Context info | N/A
 alt+enter | alt+enter | Show intention actions and quick-fixes | Yes
+ctrl+y | cmd+backspace | Delete line at caret | Yes
 ctrl+alt+l | cmd+alt+l | Reformat code | Yes
 ctrl+alt+o | ctrl+alt+o | Optimize imports | N/A
 ctrl+alt+i | ctrl+alt+i | Auto-indent line(s) | N/A
@@ -258,6 +259,7 @@ when changes are saved.
 
 * [@brianegan](https://github.com/brianegan)
 * [@whinc](https://github.com/whinc)
+* [@HSAR](https://github.com/HSAR)
 
 
 ## License
