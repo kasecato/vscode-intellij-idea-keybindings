@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.5.x"
+        "vscode": "1.6.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -21,7 +21,7 @@
     "dependencies": {
     },
     "devDependencies": {
-        "vscode": "^0.11.18",
+        "vscode": "^1.0.3",
         "gulp": "~3.9.1",
         "gulp-cli": "~1.2.2",
         "gulp-strip-json-comments": "~2.0.0",
