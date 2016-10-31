@@ -1235,6 +1235,12 @@
                 "command": "editor.action.insertLineBefore",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Start new line before current"
+            }, {
+                "key": "shift+ctrl+enter",
+                "mac": "shift+cmd+enter",
+                "command": "editor.action.insertLineAfter",
+                "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible",
+                "intellij": "Start new line"
             }
         ]
     }

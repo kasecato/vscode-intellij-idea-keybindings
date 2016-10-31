@@ -210,12 +210,13 @@ Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 f7 | f7 | Next difference | Yes
 shift+f7 | shift+f7 | Previous difference | Yes
-ctrl+shift+enter | cmd+shift+enter | Start new line | Yes
+alt+ctrl+enter | alt+cmd+enter | Start new line before current | Yes
+shift+ctrl+enter | shift+cmd+enter | Start new line | Yes
 
 
 ## Installation
 
-1. Install Visual Studio Code 1.4.0 or higher
+1. Install Visual Studio Code 1.6.0 or higher
 1. Launch Code
 1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Select `Install Extension`
