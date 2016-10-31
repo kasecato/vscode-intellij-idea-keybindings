@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "publisher": "k--kato",
     "engines": {
         "vscode": "1.6.x"
@@ -1230,11 +1230,11 @@
                 "when": "textCompareEditorVisible",
                 "intellij": "Previous difference"
             }, {
-                "key": "ctrl+shift+enter",
-                "mac": "cmd+shift+enter",
-                "command": "editor.action.insertLineAfter",
-                "when": "editorTextFocus && !suggestWidgetVisible",
-                "intellij": "Start new line"
+                "key": "alt+ctrl+enter",
+                "mac": "alt+cmd+enter",
+                "command": "editor.action.insertLineBefore",
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Start new line before current"
             }
         ]
     }
