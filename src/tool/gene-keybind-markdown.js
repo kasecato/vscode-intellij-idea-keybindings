@@ -44,7 +44,7 @@ rd.on('line', function(line) {
         
         var format = escape(key) + ' | ' + escape(mac) + ' | ' + intellij + ' | ';
         if (hasCommand(command)) {
-            console.log(format + 'Yes');
+            console.log(format + '✅');
         } else {
             console.log(format + 'N/A');
         }
