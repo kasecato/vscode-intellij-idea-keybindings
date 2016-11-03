@@ -1,12 +1,12 @@
 /*---------------------------------------------------------------------------*\
- * node gene-keybind-markdown.js
+ * node src/tool/gene-keybind-markdown.js
 \*---------------------------------------------------------------------------*/
 
 const fs = require('fs'),
     readline = require('readline');
 
 const rd = readline.createInterface({
-    input: fs.createReadStream('../package-with-comment.json'),
+    input: fs.createReadStream('src/package-with-comment.json'),
     output: process.stdout,
     terminal: false
 });
@@ -42,7 +42,7 @@ rd.on('line', function(line) {
     else if (isIntelliJ(line)) {
         intellij = getIntelliJ(line);
         
-        var format = key + ' | ' + mac + ' | ' + intellij + ' | ';
+        var format = escape(key) + ' | ' + escape(mac) + ' | ' + intellij + ' | ';
         if (hasCommand(command)) {
             console.log(format + 'Yes');
         } else {
@@ -67,6 +67,8 @@ const getMacOS          = (line) => /"mac": "(.*)"/.exec(line)[1];
 const getIntelliJ       = (line) => /"intellij": "(.*)"/.exec(line)[1];
 const getCommand        = (line) => /"command": "(.*)"/.exec(line)[1];
 const getTodo           = (line) => /"todo": "(.*)"/.exec(line)[1];
+
+const escape            = (line) => line.replace(/([`])/, "\\$1");
 
 
 const TABLE_HEADER = 

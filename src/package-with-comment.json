@@ -1,14 +1,14 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.6.x"
+        "vscode": "1.7.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
     "categories": [
-        "Other"
+        "Keymaps"
     ],
     "galleryBanner": {
         "color": "#4F87FF",
