@@ -4,6 +4,11 @@ os:
   - osx
   - linux
 
+cache:
+  bundler: true
+  directories:
+  - node_modules # NPM packages
+
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
       export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
