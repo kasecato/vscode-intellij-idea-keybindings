@@ -220,7 +220,7 @@ shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 1. Launch Code
 1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Select `Install Extension`
-1. Choose the extension '`intellijkeybind`' *or* run `ext install intellijkeybind`
+1. Choose the extension '`intellij-idea-keybindings`' *or* run `ext install intellijkeybind`
 1. Reload Visual Studio Code
 
 
