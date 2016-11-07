@@ -33,6 +33,7 @@ alt+q | ctrl+shift+q | Context info | N/A
 alt+enter | alt+enter | Show intention actions and quick-fixes | ✅
 ctrl+y | cmd+backspace | Delete line at caret | ✅
 ctrl+alt+l | cmd+alt+l | Reformat code | ✅
+ctrl+alt+l | cmd+alt+l | Reformat selected code | ✅
 ctrl+alt+o | ctrl+alt+o | Optimize imports | N/A
 ctrl+alt+i | ctrl+alt+i | Auto-indent line(s) | N/A
 tab | tab | Indent selected lines | N/A
@@ -143,8 +144,8 @@ ctrl+shift+h | cmd+shift+h | Method hierarchy | N/A
 ctrl+alt+h | ctrl+alt+h | Call hierarchy | N/A
 f2 | f2 | Next highlighted error | N/A
 shift+f2 | shift+f2 | Previous highlighted error | N/A
-f4 | f4 | Edit source | N/A
-ctrl+enter | cmd+down | View source | N/A
+f4 | f4 | Edit source | ✅
+ctrl+enter | cmd+down | View source | ✅
 alt+home | alt+home | Show navigation bar | N/A
 f11 | f3 | Toggle bookmark | N/A
 ctrl+f11 | alt+f3 | Toggle bookmark with mnemonic | N/A
@@ -219,8 +220,8 @@ shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 1. Install Visual Studio Code 1.6.0 or higher
 1. Launch Code
 1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
-1. Select `Install Extension`
-1. Choose the extension '`intellij-idea-keybindings`' *or* run `ext install intellijkeybind`
+1. Select `Extensions: Install Extension`
+1. Choose the extension '`intellij-idea-keybindings`'
 1. Reload Visual Studio Code
 
 

@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "publisher": "k--kato",
     "engines": {
         "vscode": "1.6.x"
@@ -54,7 +54,7 @@
                 "key": "ctrl+space",
                 "mac": "ctrl+space",
                 "command": "editor.action.triggerSuggest",
-                "when": "editorTextFocus",
+                "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Basic code completion (the name of any class, method or variable)"
             },
 /*
@@ -78,7 +78,7 @@
                 "key": "ctrl+p",
                 "mac": "cmd+p",
                 "command": "editor.action.triggerParameterHints",
-                "when": "editorTextFocus",
+                "when": "editorHasSignatureHelpProvider && editorTextFocus",
                 "intellij": "Parameter info (within method call arguments)"
             },
 /*
@@ -162,28 +162,28 @@
                 "key": "ctrl+/",
                 "mac": "cmd+/",
                 "command": "editor.action.commentLine",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Comment/uncomment with line comment"
             },
             {
                 "key": "ctrl+numpad_divide",
                 "mac": "cmd+numpad_divide",
                 "command": "editor.action.commentLine",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Comment/uncomment with line comment"
             },
             {
                 "key": "ctrl+alt+/",
                 "mac": "cmd+alt+/",
                 "command": "editor.action.blockComment",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Comment/uncomment with block comment"
             },
             {
                 "key": "ctrl+alt+numpad_divide",
                 "mac": "cmd+alt+numpad_divide",
                 "command": "editor.action.blockComment",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Comment/uncomment with block comment"
             },
             {
@@ -214,7 +214,7 @@
                 "key": "alt+enter",
                 "mac": "alt+enter",
                 "command": "editor.action.quickFix",
-                "when": "editorTextFocus",
+                "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Show intention actions and quick-fixes"
             },
             {   "key": "ctrl+y",
@@ -226,9 +226,16 @@
             {
                 "key": "ctrl+alt+l",
                 "mac": "cmd+alt+l",
-                "command": "editor.action.format",
-                "when": "editorTextFocus",
+                "command": "editor.action.formatDocument",
+                "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Reformat code"
+            },
+            {
+                "key": "ctrl+alt+l",
+                "mac": "cmd+alt+l",
+                "command": "editor.action.formatSelection",
+                "when": "editorHasDocumentFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly",
+                "intellij": "Reformat selected code"
             },
 /*
             {
@@ -272,7 +279,7 @@
                 "key": "ctrl+x",
                 "mac": "cmd+x",
                 "command": "editor.action.clipboardCutAction",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Cut current line or selected block to clipboard"
             },
             {
@@ -286,7 +293,7 @@
                 "key": "ctrl+v",
                 "mac": "cmd+v",
                 "command": "editor.action.clipboardPasteAction",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Paste from clipboard"
             },
 /*
@@ -303,14 +310,14 @@
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "editor.action.copyLinesDownAction",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Duplicate current line or selected block"
             },
             {
                 "key": "ctrl+backspace",
                 "mac": "cmd+backspace",
                 "command": "deleteAllRight",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Delete line at caret"
             },
 /*
@@ -327,14 +334,14 @@
                 "key": "ctrl+enter",
                 "mac": "cmd+enter",
                 "command": "lineBreakInsert",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Smart line split"
             },
             {
                 "key": "shift+enter",
                 "mac": "shift+enter",
                 "command": "editor.action.insertLineAfter",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Start new line"
             },
 /*
@@ -371,14 +378,14 @@
                 "key": "ctrl+delete",
                 "mac": "alt+delete",
                 "command": "deleteWordLeft",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Delete to word end"
             },
             {
                 "key": "ctrl+backspace",
                 "mac": "alt+backspace",
                 "command": "deleteWordRight",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Delete to word start"
             },
 
@@ -508,7 +515,7 @@
                 "key": "alt+f7",
                 "mac": "alt+f7",
                 "command": "editor.action.referenceSearch.trigger",
-                "when": "editorTextFocus",
+                "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Find usages"
             },
 /*
@@ -793,7 +800,7 @@
                 "key": "ctrl+b",
                 "mac": "cmd+b",
                 "command": "editor.action.goToDeclaration",
-                "when": "editorTextFocus",
+                "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "Go to declaration"
             },
 /*
@@ -810,9 +817,10 @@
                 "key": "ctrl+shift+i",
                 "mac": "alt+space",
                 "command": "editor.action.previewDeclaration",
-                "when": "editorTextFocus",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Open quick definition lookup"
             },
+/*
             {
                 "key": "ctrl+shift+b",
                 "mac": "ctrl+shift+b",
@@ -821,6 +829,7 @@
                 "intellij": "Go to type declaration",
                 "todo": "not working"
             },
+*/
 /*
             {
                 "key": "ctrl+u",
@@ -929,24 +938,20 @@
                 "todo": "N/A"
             },
 */
-/*
             {
                 "key": "f4",
                 "mac": "f4",
-                "command": "",
-                "intellij": "Edit source",
-                "todo": "N/A"
+                "command": "editor.action.goToDeclaration",
+                "when": "editorHasDefinitionProvider && editorTextFocus",
+                "intellij": "Edit source"
             },
-*/
-/*
             {
                 "key": "ctrl+enter",
                 "mac": "cmd+down",
-                "command": "",
-                "intellij": "View source",
-                "todo": "N/A"
+                "command": "editor.action.goToDeclaration",
+                "when": "editorHasDefinitionProvider && editorTextFocus",
+                "intellij": "View source"
             },
-*/
 /*
             {
                 "key": "alt+home",
@@ -1031,7 +1036,7 @@
                 "key": "shift+f6",
                 "mac": "shift+f6",
                 "command": "editor.action.rename",
-                "when": "editorTextFocus",
+                "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Rename"
             },
 /*
