@@ -151,6 +151,8 @@ f11 | f3 | Toggle bookmark | N/A
 ctrl+f11 | alt+f3 | Toggle bookmark with mnemonic | N/A
 ctrl+0 | ctrl+0 | Go to numbered bookmark | N/A
 shift+f11 | cmd+f3 | Show bookmarks | N/A
+ctrl+shift+up | cmd+shift+up | Move Statement Up | ✅
+ctrl+shift+down | cmd+shift+down | Move Statement Down | ✅
 
 ### Refactoring
 
