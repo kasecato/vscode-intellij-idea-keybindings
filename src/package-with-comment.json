@@ -438,6 +438,13 @@
                 "when": "editorTextFocus",
                 "intellij": "Unselect Occurrence"
             },
+            {
+                "key": "ctrl+backspace",
+                "mac": "cmd+backspace",
+                "command": "editor.action.deleteLines",
+                "when": "editorTextFocus && !editorReadonly" ,
+                "intellij": "Delete Line"
+            },
 
             /*---------------------------------------------------------------*\
              * Search/Replace
