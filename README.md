@@ -59,6 +59,7 @@ ctrl+shift+- | cmd+shift+- | Collapse all | ✅
 ctrl+f4 | cmd+w | Close active editor tab | ✅
 alt+j | ctrl+g | Add selection for Next Occurrence | ✅
 alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
+ctrl+backspace | cmd+backspace | Delete Line | ✅
 
 ### Search/Replace
 
