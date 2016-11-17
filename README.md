@@ -1,7 +1,6 @@
 # IntelliJ IDEA Key Bindings for Visual Studio Code
 
-[![Build Status](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings.svg?branch=master)](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings)
-[![License: MIT](http://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md)
+[![Build Status](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings.svg?branch=master)](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings) [![License: MIT](http://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md) [![Marketplace Version](http://vsmarketplacebadge.apphb.com/version/k--kato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) [![Install](http://vsmarketplacebadge.apphb.com/installs-short/k--kato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
 
 Port of IntelliJ IDEA key bindings for VS Code.
 
