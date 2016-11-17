@@ -30,7 +30,6 @@ ctrl+w | alt+up | Select successively increasing code blocks | ✅
 ctrl+shift+w | alt+down | Decrease current selection to previous state | ✅
 alt+q | ctrl+shift+q | Context info | N/A
 alt+enter | alt+enter | Show intention actions and quick-fixes | ✅
-ctrl+y | cmd+backspace | Delete line at caret | ✅
 ctrl+alt+l | cmd+alt+l | Reformat code | ✅
 ctrl+alt+l | cmd+alt+l | Reformat selected code | ✅
 ctrl+alt+o | ctrl+alt+o | Optimize imports | N/A
@@ -42,7 +41,7 @@ ctrl+c | cmd+c | Copy current line or selected block to clipboard | ✅
 ctrl+v | cmd+v | Paste from clipboard | ✅
 ctrl+shift+v | cmd+shift+v | Paste from recent buffers... | N/A
 ctrl+d | cmd+d | Duplicate current line or selected block | ✅
-ctrl+backspace | cmd+backspace | Delete line at caret | ✅
+ctrl+y | cmd+backspace | Delete line at caret | ✅
 ctrl+shift+j | ctrl+shift+j | Smart line join | N/A
 ctrl+enter | cmd+enter | Smart line split | ✅
 shift+enter | shift+enter | Start new line | ✅
