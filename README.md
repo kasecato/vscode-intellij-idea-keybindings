@@ -219,7 +219,7 @@ shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.6.0 or higher
+1. Install Visual Studio Code 1.7.0 or higher
 1. Launch Code
 1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Select `Extensions: Install Extension`
