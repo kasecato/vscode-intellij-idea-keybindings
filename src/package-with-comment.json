@@ -952,6 +952,20 @@
                 "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "View source"
             },
+            {
+                "key": "shift+ctrl+down",
+                "mac": "shift+cmd+down",
+                "command": "editor.action.moveLinesDownAction",
+                "when": "editorTextFocus",
+                "intellij": "Move Statement Down"
+            },
+            {
+                "key": "shift+ctrl+up",
+                "mac": "shift+cmd+up",
+                "command": "editor.action.moveLinesUpAction",
+                "when": "editorTextFocus",
+                "intellij": "Move Statement Up"
+            },
 /*
             {
                 "key": "alt+home",
