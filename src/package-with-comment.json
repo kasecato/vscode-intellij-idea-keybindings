@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.1.10",
+    "version": "0.2.0",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.6.x"
+        "vscode": "1.7.x"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -956,14 +956,14 @@
                 "key": "shift+ctrl+down",
                 "mac": "shift+cmd+down",
                 "command": "editor.action.moveLinesDownAction",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Move Statement Down"
             },
             {
                 "key": "shift+ctrl+up",
                 "mac": "shift+cmd+up",
                 "command": "editor.action.moveLinesUpAction",
-                "when": "editorTextFocus",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Move Statement Up"
             },
 /*

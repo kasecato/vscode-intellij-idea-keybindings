@@ -146,6 +146,8 @@ f2 | f2 | Next highlighted error | N/A
 shift+f2 | shift+f2 | Previous highlighted error | N/A
 f4 | f4 | Edit source | ✅
 ctrl+enter | cmd+down | View source | ✅
+shift+ctrl+down | shift+cmd+down | Move Statement Down | ✅
+shift+ctrl+up | shift+cmd+up | Move Statement Up | ✅
 alt+home | alt+home | Show navigation bar | N/A
 f11 | f3 | Toggle bookmark | N/A
 ctrl+f11 | alt+f3 | Toggle bookmark with mnemonic | N/A
@@ -219,7 +221,7 @@ shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.6.0 or higher
+1. Install Visual Studio Code 1.7.0 or higher
 1. Launch Code
 1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Select `Extensions: Install Extension`
@@ -264,6 +266,7 @@ when changes are saved.
 * [@brianegan](https://github.com/brianegan)
 * [@whinc](https://github.com/whinc)
 * [@HSAR](https://github.com/HSAR)
+* [@mastersimon](https://github.com/mastersimon)
 
 
 ## License
