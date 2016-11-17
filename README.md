@@ -146,13 +146,13 @@ f2 | f2 | Next highlighted error | N/A
 shift+f2 | shift+f2 | Previous highlighted error | N/A
 f4 | f4 | Edit source | ✅
 ctrl+enter | cmd+down | View source | ✅
+shift+ctrl+down | shift+cmd+down | Move Statement Down | ✅
+shift+ctrl+up | shift+cmd+up | Move Statement Up | ✅
 alt+home | alt+home | Show navigation bar | N/A
 f11 | f3 | Toggle bookmark | N/A
 ctrl+f11 | alt+f3 | Toggle bookmark with mnemonic | N/A
 ctrl+0 | ctrl+0 | Go to numbered bookmark | N/A
 shift+f11 | cmd+f3 | Show bookmarks | N/A
-ctrl+shift+up | cmd+shift+up | Move Statement Up | ✅
-ctrl+shift+down | cmd+shift+down | Move Statement Down | ✅
 
 ### Refactoring
 
@@ -264,6 +264,7 @@ when changes are saved.
 * [@brianegan](https://github.com/brianegan)
 * [@whinc](https://github.com/whinc)
 * [@HSAR](https://github.com/HSAR)
+* [@mastersimon](https://github.com/mastersimon)
 
 
 ## License

@@ -910,6 +910,18 @@
                 "command": "editor.action.goToDeclaration",
                 "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "View source"
+            }, {
+                "key": "shift+ctrl+down",
+                "mac": "shift+cmd+down",
+                "command": "editor.action.moveLinesDownAction",
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Move Statement Down"
+            }, {
+                "key": "shift+ctrl+up",
+                "mac": "shift+cmd+up",
+                "command": "editor.action.moveLinesUpAction",
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Move Statement Up"
             },
 
 
