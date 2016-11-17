@@ -1,6 +1,7 @@
 # Change Log
 
 ## 0.2.1 (November 17, 2016)
+* enhancement - Add new key commands. See [#26](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/26).
 * enhancement - add CHANGELOG.md.
 * bug fix - Issue with Updating Extension and Versions. See [#27](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/27).
 
