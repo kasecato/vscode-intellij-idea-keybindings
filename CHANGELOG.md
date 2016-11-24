@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.2 (November 24, 2016)
+
+* bug fix - My Ctrl + Delete and Ctrl + Backspace shortcuts are inverted. See [#34](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/34).
+
 ## 0.2.1 (November 17, 2016)
 * enhancement - Add 'Delete Line' command. See [#31](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/31).
 * enhancement - Add VS Code Marketplace batch.

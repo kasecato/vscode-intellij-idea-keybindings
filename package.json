@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "publisher": "k--kato",
     "engines": {
         "vscode": "1.7.x"
@@ -357,13 +357,13 @@
             {
                 "key": "ctrl+delete",
                 "mac": "alt+delete",
-                "command": "deleteWordLeft",
+                "command": "deleteWordRight",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Delete to word end"
             }, {
                 "key": "ctrl+backspace",
                 "mac": "alt+backspace",
-                "command": "deleteWordRight",
+                "command": "deleteWordLeft",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Delete to word start"
             }, {
