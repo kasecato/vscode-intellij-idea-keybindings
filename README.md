@@ -190,8 +190,13 @@ Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 alt+0 | cmd+0 | Activate Messages window (Problems) | ✅
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | ✅
+alt+1 | cmd+1 | Close corresponding tool window (Explorer) | ✅
+alt+3 | cmd+3 | Open corresponding tool window (Search) | ✅
+alt+3 | cmd+3 | Close corresponding tool window (Search) | ✅
 alt+5 | cmd+5 | Open corresponding tool window (Debug) | ✅
+alt+5 | cmd+5 | Close corresponding tool window (Debug) | ✅
 alt+9 | cmd+9 | Open corresponding tool window (Git) | ✅
+alt+9 | cmd+9 | Close corresponding tool window (Git) | ✅
 ctrl+s | cmd+s | Save all | ✅
 ctrl+alt+y | cmd+alt+y | Synchronize | ✅
 ctrl+alt+f | ctrl+cmd+f | Toggle full screen mode | ✅
@@ -219,9 +224,8 @@ shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 
 1. Install Visual Studio Code 1.7.0 or higher
 1. Launch Code
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
-1. Select `Extensions: Install Extension`
-1. Choose the extension '`intellij-idea-keybindings`'
+1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
+1. Search and Choose the extension `Intellij IDEA Keybindings`
 1. Reload Visual Studio Code
 
 
@@ -245,13 +249,10 @@ npm install
 Now you can compile the code:
 
 1. Launch Code
+1. Edit `src/package-with-comment.json`
 1. Run Build Task `Ctrl`-`Shift`-`B` (Windows, Linux) or `Cmd`-`Shift`-`B` (macOS)
-
-or
-
-1. Launch Code
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
-1. Select `Tasks: Run Build Task`
+1. Run Command Markdown Generator `node src/tool/gene-keybind-markdown.js`
+1. Paste the Command Markdown to `README.md`
 
 After the initial compile, the source files will be watched and recompiled
 when changes are saved.
