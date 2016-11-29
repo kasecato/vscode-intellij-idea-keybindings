@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.3 (November 29, 2016)
+
+* enhancement - alt+1 should toggle close corresponding tool window instead of just opening. See [#36](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/36).
+
 ## 0.2.2 (November 24, 2016)
 
 * bug fix - My Ctrl + Delete and Ctrl + Backspace shortcuts are inverted. See [#34](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/34).

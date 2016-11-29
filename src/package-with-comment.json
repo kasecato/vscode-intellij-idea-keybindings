@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "publisher": "k--kato",
     "engines": {
         "vscode": "1.7.x"
@@ -1172,19 +1172,57 @@
                 "key": "alt+1",
                 "mac": "cmd+1",
                 "command": "workbench.view.explorer",
+                "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Explorer)"
+            },
+            {
+                "key": "alt+1",
+                "mac": "cmd+1",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Close corresponding tool window (Explorer)"
+            },
+            {
+                "key": "alt+3",
+                "mac": "cmd+3",
+                "command": "workbench.view.search",
+                "when": "!searchViewletVisible",
+                "intellij": "Open corresponding tool window (Search)"
+            },
+            {
+                "key": "alt+3",
+                "mac": "cmd+3",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "searchViewletVisible",
+                "intellij": "Close corresponding tool window (Search)"
             },
             {
                 "key": "alt+5",
                 "mac": "cmd+5",
                 "command": "workbench.view.debug",
+                "when": "!editorFocus",
                 "intellij": "Open corresponding tool window (Debug)"
+            },
+            {
+                "key": "alt+5",
+                "mac": "cmd+5",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Close corresponding tool window (Debug)"
             },
             {
                 "key": "alt+9",
                 "mac": "cmd+9",
                 "command": "workbench.view.git",
+                "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Git)"
+            },
+            {
+                "key": "alt+9",
+                "mac": "cmd+9",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Close corresponding tool window (Git)"
             },
             {
                 "key": "ctrl+s",
