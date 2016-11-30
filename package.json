@@ -847,16 +847,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+            {
+                "key": "ctrl+f12",
+                "mac": "cmd+f12",
+                "command": "workbench.action.gotoSymbol",
+                "when": "editorTextFocus",
+                "intellij": "File structure popup"
+            },
 
 
 
