@@ -707,15 +707,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
+            {
+                "key": "shift+escape",
+                "mac": "shift+escape",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Hide active or last active window"
+            },
 
 
 
@@ -1351,8 +1349,7 @@
                 "key": "alt+f12",
                 "mac": "alt+f12",
                 "command": "workbench.action.terminal.toggleTerminal",
-                "when": "editorFocus",
-                "intellij": "Open corresponding tool window (Explorer)"
+                "intellij": "Open corresponding tool window (Terminal)"
             }
         ]
     }

@@ -122,8 +122,8 @@ ctrl+alt+shift+n | cmd+alt+o | Go to symbol | ✅
 alt+left | ctrl+left | Go to previous editor tab | ✅
 alt+right | ctrl+right | Go to next editor tab | ✅
 f12 | f12 | Go back to previous tool window | N/A
-esc | esc | Go to editor (from tool window) | N/A
-shift+esc | shift+esc | Hide active or last active window | N/A
+escape | escape | Go to editor (from tool window) | N/A
+shift+escape | shift+escape | Hide active or last active window | ✅
 ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
 ctrl+g | cmd+l | Go to line | ✅
 ctrl+e | cmd+e | Recent files popup | ✅
