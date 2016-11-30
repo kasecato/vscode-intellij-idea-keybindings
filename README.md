@@ -51,9 +51,13 @@ ctrl+shift+[ | cmd+shift+[ | Select till code block start | N/A
 ctrl+delete | alt+delete | Delete to word end | ✅
 ctrl+backspace | alt+backspace | Delete to word start | ✅
 ctrl+= | cmd+= | Expand code block | ✅
+ctrl+numpad_add | cmd+numpad_add | Expand code block | ✅
 ctrl+- | cmd+- | Collapse code block | ✅
+ctrl+numpad_subtract | cmd+numpad_subtract | Collapse code block | ✅
 ctrl+shift+= | cmd+shift+= | Expand all | ✅
+ctrl+shift+numpad_add | cmd+shift+numpad_add | Expand all | ✅
 ctrl+shift+- | cmd+shift+- | Collapse all | ✅
+ctrl+shift+numpad_subtract | cmd+shift+numpad_subtract | Collapse all | ✅
 ctrl+f4 | cmd+w | Close active editor tab | ✅
 alt+j | ctrl+g | Add selection for Next Occurrence | ✅
 alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
@@ -189,14 +193,23 @@ ctrl+j | cmd+j | Insert Live Template | N/A
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 alt+0 | cmd+0 | Activate Messages window (Problems) | ✅
+alt+numpad0 | cmd+numpad0 | Activate Messages window (Problems) | ✅
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | ✅
+alt+numpad1 | cmd+numpad1 | Open corresponding tool window (Explorer) | ✅
 alt+1 | cmd+1 | Close corresponding tool window (Explorer) | ✅
+alt+numpad1 | cmd+numpad1 | Close corresponding tool window (Explorer) | ✅
 alt+3 | cmd+3 | Open corresponding tool window (Search) | ✅
+alt+numpad3 | cmd+numpad3 | Open corresponding tool window (Search) | ✅
 alt+3 | cmd+3 | Close corresponding tool window (Search) | ✅
+alt+numpad3 | cmd+numpad3 | Close corresponding tool window (Search) | ✅
 alt+5 | cmd+5 | Open corresponding tool window (Debug) | ✅
+alt+numpad5 | cmd+numpad5 | Open corresponding tool window (Debug) | ✅
 alt+5 | cmd+5 | Close corresponding tool window (Debug) | ✅
+alt+numpad5 | cmd+numpad5 | Close corresponding tool window (Debug) | ✅
 alt+9 | cmd+9 | Open corresponding tool window (Git) | ✅
+alt+numpad9 | cmd+numpad9 | Open corresponding tool window (Git) | ✅
 alt+9 | cmd+9 | Close corresponding tool window (Git) | ✅
+alt+numpad9 | cmd+numpad9 | Close corresponding tool window (Git) | ✅
 ctrl+s | cmd+s | Save all | ✅
 ctrl+alt+y | cmd+alt+y | Synchronize | ✅
 ctrl+alt+f | ctrl+cmd+f | Toggle full screen mode | ✅
