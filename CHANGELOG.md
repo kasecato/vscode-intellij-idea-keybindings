@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.4 (November 30, 2016)
+
+* enhancement - Ctrl+Shift+Numpad (- and +) should perform "Fold all" & "Expand all". See [#38](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/38).
+
 ## 0.2.3 (November 29, 2016)
 
 * enhancement - alt+1 should toggle close corresponding tool window instead of just opening. See [#36](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/36).

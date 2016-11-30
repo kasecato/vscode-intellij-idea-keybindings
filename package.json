@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "publisher": "k--kato",
     "engines": {
         "vscode": "1.7.x"
@@ -373,8 +373,20 @@
                 "when": "editorFocus",
                 "intellij": "Expand code block"
             }, {
+                "key": "ctrl+numpad_add",
+                "mac": "cmd+numpad_add",
+                "command": "editor.unfold",
+                "when": "editorFocus",
+                "intellij": "Expand code block"
+            }, {
                 "key": "ctrl+-",
                 "mac": "cmd+-",
+                "command": "editor.fold",
+                "when": "editorFocus",
+                "intellij": "Collapse code block"
+            }, {
+                "key": "ctrl+numpad_subtract",
+                "mac": "cmd+numpad_subtract",
                 "command": "editor.fold",
                 "when": "editorFocus",
                 "intellij": "Collapse code block"
@@ -385,8 +397,20 @@
                 "when": "editorFocus",
                 "intellij": "Expand all"
             }, {
+                "key": "ctrl+shift+numpad_add",
+                "mac": "cmd+shift+numpad_add",
+                "command": "editor.unfoldAll",
+                "when": "editorFocus",
+                "intellij": "Expand all"
+            }, {
                 "key": "ctrl+shift+-",
                 "mac": "cmd+shift+-",
+                "command": "editor.foldAll",
+                "when": "editorFocus",
+                "intellij": "Collapse all"
+            }, {
+                "key": "ctrl+shift+numpad_subtract",
+                "mac": "cmd+shift+numpad_subtract",
                 "command": "editor.foldAll",
                 "when": "editorFocus",
                 "intellij": "Collapse all"
@@ -1124,8 +1148,19 @@
                 "command": "workbench.actions.view.problems",
                 "intellij": "Activate Messages window (Problems)"
             }, {
+                "key": "alt+numpad0",
+                "mac": "cmd+numpad0",
+                "command": "workbench.actions.view.problems",
+                "intellij": "Activate Messages window (Problems)"
+            }, {
                 "key": "alt+1",
                 "mac": "cmd+1",
+                "command": "workbench.view.explorer",
+                "when": "editorFocus",
+                "intellij": "Open corresponding tool window (Explorer)"
+            }, {
+                "key": "alt+numpad1",
+                "mac": "cmd+numpad1",
                 "command": "workbench.view.explorer",
                 "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Explorer)"
@@ -1136,8 +1171,20 @@
                 "when": "!editorFocus",
                 "intellij": "Close corresponding tool window (Explorer)"
             }, {
+                "key": "alt+numpad1",
+                "mac": "cmd+numpad1",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Close corresponding tool window (Explorer)"
+            }, {
                 "key": "alt+3",
                 "mac": "cmd+3",
+                "command": "workbench.view.search",
+                "when": "!searchViewletVisible",
+                "intellij": "Open corresponding tool window (Search)"
+            }, {
+                "key": "alt+numpad3",
+                "mac": "cmd+numpad3",
                 "command": "workbench.view.search",
                 "when": "!searchViewletVisible",
                 "intellij": "Open corresponding tool window (Search)"
@@ -1148,8 +1195,20 @@
                 "when": "searchViewletVisible",
                 "intellij": "Close corresponding tool window (Search)"
             }, {
+                "key": "alt+numpad3",
+                "mac": "cmd+numpad3",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "searchViewletVisible",
+                "intellij": "Close corresponding tool window (Search)"
+            }, {
                 "key": "alt+5",
                 "mac": "cmd+5",
+                "command": "workbench.view.debug",
+                "when": "!editorFocus",
+                "intellij": "Open corresponding tool window (Debug)"
+            }, {
+                "key": "alt+numpad5",
+                "mac": "cmd+numpad5",
                 "command": "workbench.view.debug",
                 "when": "!editorFocus",
                 "intellij": "Open corresponding tool window (Debug)"
@@ -1160,14 +1219,32 @@
                 "when": "!editorFocus",
                 "intellij": "Close corresponding tool window (Debug)"
             }, {
+                "key": "alt+numpad5",
+                "mac": "cmd+numpad5",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Close corresponding tool window (Debug)"
+            }, {
                 "key": "alt+9",
                 "mac": "cmd+9",
                 "command": "workbench.view.git",
                 "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Git)"
             }, {
+                "key": "alt+numpad9",
+                "mac": "cmd+numpad9",
+                "command": "workbench.view.git",
+                "when": "editorFocus",
+                "intellij": "Open corresponding tool window (Git)"
+            }, {
                 "key": "alt+9",
                 "mac": "cmd+9",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Close corresponding tool window (Git)"
+            }, {
+                "key": "alt+numpad9",
+                "mac": "cmd+numpad9",
                 "command": "workbench.action.toggleSidebarVisibility",
                 "when": "!editorFocus",
                 "intellij": "Close corresponding tool window (Git)"
