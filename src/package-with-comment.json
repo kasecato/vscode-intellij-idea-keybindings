@@ -891,16 +891,13 @@
                 "todo": "N/A"
             },
 */
-            /*
             {
                 "key": "ctrl+f12",
                 "mac": "cmd+f12",
-                "command": "",
+                "command": "workbench.action.gotoSymbol",
                 "when": "editorTextFocus",
-                "intellij": "File structure popup",
-                "todo": "N/A"
+                "intellij": "File structure popup"
             },
-*/
             /*
             {
                 "key": "ctrl+h",

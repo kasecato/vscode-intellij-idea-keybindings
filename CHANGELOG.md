@@ -3,6 +3,8 @@
 ## 0.2.4 (November 30, 2016)
 
 * enhancement - Ctrl+Shift+Numpad (- and +) should perform "Fold all" & "Expand all". See [#38](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/38).
+* enhancement - ctrl+f12 should do what ctrl+shift+o does by default. See [#39](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/39).
+* enhancement - shift+esc can be mapped to ctrl+j. See [#40](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/40).
 
 ## 0.2.3 (November 29, 2016)
 
