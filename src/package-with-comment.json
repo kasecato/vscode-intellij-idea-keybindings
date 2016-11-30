@@ -741,22 +741,20 @@
 */
             /*
             {
-                "key": "esc",
-                "mac": "esc",
+                "key": "escape",
+                "mac": "escape",
                 "command": "",
                 "intellij": "Go to editor (from tool window)",
                 "todo": "N/A"
             },
 */
-            /*
             {
-                "key": "shift+esc",
-                "mac": "shift+esc",
-                "command": "",
-                "intellij": "Hide active or last active window",
-                "todo": "N/A"
+                "key": "shift+escape",
+                "mac": "shift+escape",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "!editorFocus",
+                "intellij": "Hide active or last active window"
             },
-*/
             /*
             {
                 "key": "ctrl+shift+f4",
