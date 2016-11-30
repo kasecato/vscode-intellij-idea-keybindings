@@ -1347,6 +1347,12 @@
                 "command": "editor.action.insertLineAfter",
                 "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible",
                 "intellij": "Start new line"
+            }, {
+                "key": "alt+f12",
+                "mac": "alt+f12",
+                "command": "workbench.action.terminal.toggleTerminal",
+                "when": "editorFocus",
+                "intellij": "Open corresponding tool window (Explorer)"
             }
         ]
     }
