@@ -6,6 +6,7 @@ Port of IntelliJ IDEA key bindings for VS Code.
 
 ## Usage
 
+
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
@@ -123,7 +124,9 @@ alt+left | ctrl+left | Go to previous editor tab | ✅
 alt+right | ctrl+right | Go to next editor tab | ✅
 f12 | f12 | Go back to previous tool window | N/A
 escape | escape | Go to editor (from tool window) | N/A
-shift+escape | shift+escape | Hide active or last active window | ✅
+shift+escape | shift+escape | Hide active or last active window (Sidebar) | ✅
+shift+escape | shift+escape | Hide active or last active window (Terminal) | ✅
+shift+escape | shift+escape | Hide active or last active window (Panel) | N/A
 ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
 ctrl+g | cmd+l | Go to line | ✅
 ctrl+e | cmd+e | Recent files popup | ✅

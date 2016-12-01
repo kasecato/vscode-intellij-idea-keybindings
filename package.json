@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "publisher": "k--kato",
     "engines": {
         "vscode": "1.7.x"
@@ -711,9 +711,25 @@
                 "key": "shift+escape",
                 "mac": "shift+escape",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus",
-                "intellij": "Hide active or last active window"
+                "when": "!editorFocus && !terminalFocus",
+                "intellij": "Hide active or last active window (Sidebar)"
+            }, {
+                "key": "shift+escape",
+                "mac": "shift+escape",
+                "command": "workbench.action.terminal.toggleTerminal",
+                "when": "terminalFocus",
+                "intellij": "Hide active or last active window (Terminal)"
             },
+
+
+
+
+
+
+
+
+
+
 
 
 
