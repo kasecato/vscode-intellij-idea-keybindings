@@ -762,11 +762,11 @@
                 "when": "terminalFocus",
                 "intellij": "Hide active or last active window (Terminal)"
             },
-/*
+            /*
             {
                 "key": "shift+escape",
                 "mac": "shift+escape",
-                "command": "workbench.action.togglePanel",
+                "command": "",
                 "when": "panelVisible",
                 "intellij": "Hide active or last active window (Panel)",
                 "todo": "not support panelVisible VS Code #14779"
