@@ -3,6 +3,7 @@
 ## 0.2.6 (December 6, 2016)
 
 * enhancement - ctrl+q should be bound to show hover. See [#46](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/46).
+* enhancement - ctrl+q should be bound to show hover. See [#46](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/46).
 
 ## 0.2.5 (December 1, 2016)
 
