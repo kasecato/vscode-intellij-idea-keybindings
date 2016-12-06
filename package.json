@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "publisher": "k--kato",
     "engines": {
         "vscode": "1.7.x"
@@ -77,17 +77,13 @@
                 "command": "editor.action.triggerParameterHints",
                 "when": "editorHasSignatureHelpProvider && editorTextFocus",
                 "intellij": "Parameter info (within method call arguments)"
+            }, {
+                "key": "ctrl+q",
+                "mac": "ctrl+j",
+                "command": "editor.action.showHover",
+                "when": "editorTextFocus",
+                "intellij": "Quick documentation lookup"
             },
-
-
-
-
-
-
-
-
-
-
 
 
 

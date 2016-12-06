@@ -15,7 +15,7 @@ ctrl+space | ctrl+space | Basic code completion (the name of any class, method o
 ctrl+shft+space | ctrl+shft+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
-ctrl+q | ctrl+j | Quick documentation lookup | N/A
+ctrl+q | ctrl+j | Quick documentation lookup | ✅
 ctrl+f1 | shift+f1 | External Doc | N/A
 ctrl+mouseover | cmd+mouseover | Brief Info | N/A
 ctrl+f1 | cmd+f1 | Show descriptions of error or warning at caret | ✅
@@ -281,6 +281,7 @@ when changes are saved.
 * [@whinc](https://github.com/whinc)
 * [@HSAR](https://github.com/HSAR)
 * [@mastersimon](https://github.com/mastersimon)
+* [@thekalinga](https://github.com/thekalinga)
 
 
 ## License
