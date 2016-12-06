@@ -1359,6 +1359,12 @@
                 "mac": "alt+f12",
                 "command": "workbench.action.terminal.toggleTerminal",
                 "intellij": "Open corresponding tool window (Terminal)"
+            }, {
+                "key": "ctrl+shift+alt+j",
+                "mac": "ctrl+cmd+g",
+                "command": "editor.action.selectHighlights",
+                "when": "editorFocus",
+                "intellij": "Sublime text Style Multiple Selections"
             }
         ]
     }

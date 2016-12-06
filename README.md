@@ -235,6 +235,7 @@ shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
 shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 alt+f12 | alt+f12 | Open corresponding tool window (Terminal) | ✅
+ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
 
 
 ## Installation
