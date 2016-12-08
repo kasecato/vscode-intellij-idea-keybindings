@@ -3,7 +3,7 @@
     "version": "0.2.6",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "1.7.x"
+        "vscode": "^1.7.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
