@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.2.7 (December 14, 2016)
+
+* enhancement - Map to new shortcuts for new features in vscode insiders. See [#50](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/50).
+* bug fix - Update package.json with a compatible engine. See [#51](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/51).
+* bug fix - Installing from VS Code Marketplace installs version 0.1.1 instead of latest (0.2.6). See [#53](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/53).
+
 ## 0.2.6 (December 6, 2016)
 
 * enhancement - ctrl+q should be bound to show hover. See [#46](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/46).

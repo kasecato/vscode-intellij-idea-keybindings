@@ -43,7 +43,7 @@ ctrl+v | cmd+v | Paste from clipboard | ✅
 ctrl+shift+v | cmd+shift+v | Paste from recent buffers... | N/A
 ctrl+d | cmd+d | Duplicate current line or selected block | ✅
 ctrl+y | cmd+backspace | Delete line at caret | ✅
-ctrl+shift+j | ctrl+shift+j | Smart line join | N/A
+ctrl+shift+j | ctrl+shift+j | Smart line join | ✅
 ctrl+enter | cmd+enter | Smart line split | ✅
 shift+enter | shift+enter | Start new line | ✅
 ctrl+shift+u | cmd+shift+u | Toggle case for word at caret or selected block | N/A
@@ -240,7 +240,7 @@ ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.7.0 or higher
+1. Install Visual Studio Code 1.8.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
@@ -267,7 +267,7 @@ npm install
 Now you can compile the code:
 
 1. Launch Code
-1. Edit `src/package-with-comment.json`
+1. Edit **`src/package-with-comment.json`** (**NOT `package.json`**)
 1. Run Build Task `Ctrl`-`Shift`-`B` (Windows, Linux) or `Cmd`-`Shift`-`B` (macOS)
 1. Run Command Markdown Generator `node src/tool/gene-keybind-markdown.js`
 1. Paste the Command Markdown to `README.md`
@@ -283,6 +283,7 @@ when changes are saved.
 * [@HSAR](https://github.com/HSAR)
 * [@mastersimon](https://github.com/mastersimon)
 * [@thekalinga](https://github.com/thekalinga)
+* [@joaomoreno](https://github.com/joaomoreno)
 
 
 ## License

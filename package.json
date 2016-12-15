@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.6",
+    "version": "0.2.7",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.7.0"
+        "vscode": "^1.8.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings",
@@ -296,18 +296,13 @@
                 "command": "editor.action.deleteLines",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Delete line at caret"
-            },
-
-
-
-
-
-
-
-
-
-
-            {
+            }, {
+                "key": "ctrl+shift+j",
+                "mac": "ctrl+shift+j",
+                "command": "editor.action.joinLines",
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Smart line join"
+            }, {
                 "key": "ctrl+enter",
                 "mac": "cmd+enter",
                 "command": "lineBreakInsert",
@@ -1364,7 +1359,7 @@
                 "mac": "ctrl+cmd+g",
                 "command": "editor.action.selectHighlights",
                 "when": "editorFocus",
-                "intellij": "Sublime text Style Multiple Selections"
+                "intellij": "Sublime Text style multiple selections"
             }
         ]
     }
