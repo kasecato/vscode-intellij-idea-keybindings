@@ -125,6 +125,9 @@ alt+right | ctrl+right | Go to next editor tab | ✅
 f12 | f12 | Go back to previous tool window | N/A
 escape | escape | Go to editor (from tool window) | N/A
 shift+escape | shift+escape | Hide active or last active window (Sidebar) | ✅
+shift+escape | shift+escape | Hide active or last active window (Output) | ✅
+shift+escape | shift+escape | Hide active or last active window (Problems) | ✅
+shift+escape | shift+escape | Hide active or last active window (Debug Console) | ✅
 shift+escape | shift+escape | Hide active or last active window (Terminal) | ✅
 shift+escape | shift+escape | Hide active or last active window (Panel) | N/A
 ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
@@ -299,4 +302,4 @@ This extension is [licensed under the MIT License](LICENSE.md).
 1. Key Bindings for Visual Studio Code, https://code.visualstudio.com/Docs/customization/keybindings
 1. Integrate with External Tools via Tasks, https://code.visualstudio.com/docs/editor/tasks#_autodetecting-gulp-grunt-and-jake-tasks
 1. gulp-strip-json-comments, https://www.npmjs.com/package/gulp-strip-json-comments
-1. Icon, JetBrains IntelliJ IDEA Community Edition, https://raw.githubusercontent.com/JetBrains/intellij-community/5bae60425eb7e83f06c20cc1ab0678f5d2274ddc/platform/icons/src/idea.ico
+1. Icon, vscode-resharper-keybindings, https://github.com/Microsoft/vscode-resharper-keybindings/blob/master/keyboard.png

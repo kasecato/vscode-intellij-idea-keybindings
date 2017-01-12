@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.8 (Janualy 14, 2016)
+
+* bug fix - Map to new shortcuts for new features in vscode insiders. See [#50](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/50).
+* bug fix - `cmd+5` open debug window doesn't work.
+
 ## 0.2.7 (December 14, 2016)
 
 * enhancement - Map to new shortcuts for new features in vscode insiders. See [#50](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/50).

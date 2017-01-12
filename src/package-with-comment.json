@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.8.0"
@@ -746,8 +746,31 @@
                 "key": "shift+escape",
                 "mac": "shift+escape",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus && !terminalFocus",
+                "when": "!editorFocus && !terminalFocus && !problemFocus && !inDebugRepl",
                 "intellij": "Hide active or last active window (Sidebar)"
+            },
+            /*
+            {
+                "key": "shift+escape",
+                "mac": "shift+escape",
+                "command": "workbench.action.output.toggleOutput",
+                "when": "outputFocus",
+                "intellij": "Hide active or last active window (Output)"
+            },
+*/
+            {
+                "key": "shift+escape",
+                "mac": "shift+escape",
+                "command": "workbench.actions.view.problems",
+                "when": "problemFocus",
+                "intellij": "Hide active or last active window (Problems)"
+            },
+            {
+                "key": "shift+escape",
+                "mac": "shift+escape",
+                "command": "workbench.debug.action.toggleRepl",
+                "when": "inDebugRepl",
+                "intellij": "Hide active or last active window (Debug Console)"
             },
             {
                 "key": "shift+escape",
@@ -1268,14 +1291,14 @@
                 "key": "alt+5",
                 "mac": "cmd+5",
                 "command": "workbench.view.debug",
-                "when": "!editorFocus",
+                "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Debug)"
             },
             {
                 "key": "alt+numpad5",
                 "mac": "cmd+numpad5",
                 "command": "workbench.view.debug",
-                "when": "!editorFocus",
+                "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Debug)"
             },
             {
