@@ -239,6 +239,8 @@ alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
 shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 alt+f12 | alt+f12 | Open corresponding tool window (Terminal) | ✅
 ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
+alt+left | shift+cmd+[ | Select previous tab (Terminal) | ✅
+alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 
 
 ## Installation
@@ -287,6 +289,7 @@ when changes are saved.
 * [@mastersimon](https://github.com/mastersimon)
 * [@thekalinga](https://github.com/thekalinga)
 * [@joaomoreno](https://github.com/joaomoreno)
+* [@kasperpeulen](https://github.com/kasperpeulen)
 
 
 ## License
