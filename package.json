@@ -1466,6 +1466,20 @@
                 "command": "editor.action.selectHighlights",
                 "when": "editorFocus",
                 "intellij": "Sublime Text style multiple selections"
+            },
+            {
+                "key": "alt+left",
+                "mac": "shift+cmd+[",
+                "command": "workbench.action.terminal.focusPrevious",
+                "when": "terminalFocus",
+                "intellij": "Select previous tab (Terminal)"
+            },
+            {
+                "key": "alt+right",
+                "mac": "shift+cmd+]",
+                "command": "workbench.action.terminal.focusNext",
+                "when": "terminalFocus",
+                "intellij": "Select next tab (Terminal)"
             }
         ]
     }

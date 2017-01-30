@@ -1468,14 +1468,18 @@
                 "intellij": "Sublime Text style multiple selections"
             },
             {
-                "key": "shift+cmd+[",
+                "key": "alt+left",
+                "mac": "shift+cmd+[",
                 "command": "workbench.action.terminal.focusPrevious",
-                "when": "terminalFocus"
+                "when": "terminalFocus",
+                "intellij": "Select previous tab (Terminal)"
             },
             {
-                "key": "shift+cmd+]",
+                "key": "alt+right",
+                "mac": "shift+cmd+]",
                 "command": "workbench.action.terminal.focusNext",
-                "when": "terminalFocus"
+                "when": "terminalFocus",
+                "intellij": "Select next tab (Terminal)"
             }
         ]
     }
