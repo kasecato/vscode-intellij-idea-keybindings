@@ -290,6 +290,7 @@ when changes are saved.
 * [@thekalinga](https://github.com/thekalinga)
 * [@joaomoreno](https://github.com/joaomoreno)
 * [@kasperpeulen](https://github.com/kasperpeulen)
+* [@waderyan](https://github.com/waderyan)
 
 
 ## License
