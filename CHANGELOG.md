@@ -5,6 +5,7 @@
 * enhancement - Added IntelliJ products to package.json. See [#60](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/60).
 * enhancement - Added JetBrains products to README. See [#61](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/61).
 * enhancement - Update icon from png to svg.
+* enhancement - new file keybinding. See [#59](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/59).
 
 ## 0.2.8 (January 30, 2017)
 
