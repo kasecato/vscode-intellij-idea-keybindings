@@ -113,16 +113,13 @@
                 "when": "editorTextFocus",
                 "intellij": "Show descriptions of error or warning at caret"
             },
-            /*
             {
-                "key": "ctrl+insert",
+                "key": "alt+insert",
                 "mac": "cmd+n",
-                "command": "",
-                "when": "",
-                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)",
-                "todo": "N/A: cmd+n / ctrl+enter / ctrl+n"
+                "command": "workbench.action.files.newUntitledFile",
+                "when": "!editorTextFocus",
+                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)"
             },
-*/
             /*
             {
                 "key": "ctrl+o",
