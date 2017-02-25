@@ -1,9 +1,10 @@
 # Change Log
 
-## 0.2.9 (February 24, 2017)
+## 0.2.9 (February 25, 2017)
 
 * enhancement - Added IntelliJ products to package.json. See [#60](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/60).
 * enhancement - Added JetBrains products to README. See [#61](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/61).
+* enhancement - Update icon from png to svg.
 
 ## 0.2.8 (January 30, 2017)
 

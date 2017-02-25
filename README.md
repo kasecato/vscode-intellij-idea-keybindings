@@ -306,4 +306,4 @@ This extension is [licensed under the MIT License](LICENSE.md).
 1. Key Bindings for Visual Studio Code, https://code.visualstudio.com/Docs/customization/keybindings
 1. Integrate with External Tools via Tasks, https://code.visualstudio.com/docs/editor/tasks#_autodetecting-gulp-grunt-and-jake-tasks
 1. gulp-strip-json-comments, https://www.npmjs.com/package/gulp-strip-json-comments
-1. Icon, vscode-resharper-keybindings, https://github.com/Microsoft/vscode-resharper-keybindings/blob/master/keyboard.png
+1. Icon, vscode-vs-keybindings, https://github.com/rebornix/vscode-vs-keybindings/blob/master/visualstudio-keyboard.svg

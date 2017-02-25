@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.cls-1{fill:none;}.cls-2{fill:#f2f2f2;}.cls-3{fill:#68217a;}.cls-4{fill:#2b2b2b;}.cls-5{fill:#767676;}</style>
+  </defs>
+  <title>VSMK_VS_128x nobg</title>
+  <path class="cls-1" d="M128,128H0V0H128Z" transform="translate(0)"/>
+  <path class="cls-2" d="M118.9,25.6H9.1A9.37,9.37,0,0,0,0,35.2V92.8a9.37,9.37,0,0,0,9.1,9.6H118.8a9.24,9.24,0,0,0,9.1-9.6V35.2A9.23,9.23,0,0,0,118.9,25.6Z" transform="translate(0)"/>
+  <path class="cls-3" d="M118.9,34.1c.2,0,.6.4.6,1.1V92.8c0,.7-.4,1.1-.6,1.1H9.1c-.2,0-.6-.4-.6-1.1V35.2c0-.7.4-1.1.6-1.1H118.9m0-8.5H9.1A9.37,9.37,0,0,0,0,35.2V92.8a9.37,9.37,0,0,0,9.1,9.6H118.8a9.24,9.24,0,0,0,9.1-9.6V35.2A9.23,9.23,0,0,0,118.9,25.6Z" transform="translate(0)" style="fill: rgb(0, 0, 0);"/>
+  <path class="cls-4" d="M25.6,51.2H17.1V42.7h8.5Zm85.3,8.5h-17v8.5H111V59.7ZM85.3,76.8H42.7v8.5H85.4V76.8Z" transform="translate(0)"/>
+  <path class="cls-5" d="M68.3,68.3H59.8V59.8h8.5ZM34.1,59.7h-17v8.5H34.2V59.7Zm8.6-8.5H34.2V42.7h8.5ZM85.3,68.3H76.8V59.8h8.5ZM59.7,51.2H51.2V42.7h8.5Zm17.1,0H68.3V42.7h8.5Zm17.1,0H85.4V42.7h8.5Zm17,0h-8.5V42.7h8.5Z" transform="translate(0)"/>
+  <path class="cls-3" d="M110.9,85.3h-17V76.8H111v8.5Zm-76.8,0h-17V76.8H34.2v8.5Zm17.1-17H42.7V59.8h8.5Z" transform="translate(0)" style="fill: rgb(0, 0, 0);"/>
+</svg>
