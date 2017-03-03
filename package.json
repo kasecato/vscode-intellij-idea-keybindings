@@ -269,6 +269,13 @@
                 "intellij": "Cut current line or selected block to clipboard"
             },
             {
+                "key": "shift+delete",
+                "mac": "cmd+delete",
+                "command": "editor.action.clipboardCutAction",
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Cut current line or selected block to clipboard"
+            },
+            {
                 "key": "ctrl+c",
                 "mac": "cmd+c",
                 "command": "editor.action.clipboardCopyAction",
@@ -716,8 +723,20 @@
                 "intellij": "Go to previous editor tab"
             },
             {
+                "key": "",
+                "mac": "shift+cmd+[",
+                "command": "workbench.action.previousEditor",
+                "intellij": "Go to previous editor tab"
+            },
+            {
                 "key": "alt+right",
                 "mac": "ctrl+right",
+                "command": "workbench.action.nextEditor",
+                "intellij": "Go to next editor tab"
+            },
+            {
+                "key": "",
+                "mac": "shift+cmd+]",
                 "command": "workbench.action.nextEditor",
                 "intellij": "Go to next editor tab"
             },
@@ -870,6 +889,13 @@
             {
                 "key": "ctrl+shift+i",
                 "mac": "alt+space",
+                "command": "editor.action.previewDeclaration",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor",
+                "intellij": "Open quick definition lookup"
+            },
+            {
+                "key": "",
+                "mac": "cmd+y",
                 "command": "editor.action.previewDeclaration",
                 "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Open quick definition lookup"

@@ -38,6 +38,7 @@ ctrl+alt+i | ctrl+alt+i | Auto-indent line(s) | N/A
 tab | tab | Indent selected lines | N/A
 shift+tab | shift+tab | Unindent selected lines | N/A
 ctrl+x | cmd+x | Cut current line or selected block to clipboard | ✅
+shift+delete | cmd+delete | Cut current line or selected block to clipboard | ✅
 ctrl+c | cmd+c | Copy current line or selected block to clipboard | ✅
 ctrl+v | cmd+v | Paste from clipboard | ✅
 ctrl+shift+v | cmd+shift+v | Paste from recent buffers... | N/A
@@ -121,7 +122,9 @@ ctrl+n | cmd+o | Go to class | ✅
 ctrl+shift+n | cmd+shift+o | Go to file | ✅
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | ✅
 alt+left | ctrl+left | Go to previous editor tab | ✅
+ | shift+cmd+[ | Go to previous editor tab | ✅
 alt+right | ctrl+right | Go to next editor tab | ✅
+ | shift+cmd+] | Go to next editor tab | ✅
 f12 | f12 | Go back to previous tool window | N/A
 escape | escape | Go to editor (from tool window) | N/A
 shift+escape | shift+escape | Hide active or last active window (Sidebar) | ✅
@@ -142,6 +145,7 @@ alt+f1 | alt+f1 | Select current file or symbol in any view | N/A
 ctrl+b | cmd+b | Go to declaration | ✅
 ctrl+alt+b | cmd+alt+b | Go to implementation(s) | N/A
 ctrl+shift+i | alt+space | Open quick definition lookup | ✅
+ | cmd+y | Open quick definition lookup | ✅
 ctrl+shift+b | ctrl+shift+b | Go to type declaration | ✅
 ctrl+u | cmd+u | Go to super-method/super-class | N/A
 alt+up | ctrl+up | Go to previous method | N/A
