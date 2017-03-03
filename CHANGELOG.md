@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.10 (March 3, 2017)
+
+* enhancement - Navigate Backward. See [#63](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/63).
+
+
 ## 0.2.9 (February 25, 2017)
 
 * enhancement - Added IntelliJ products to package.json. See [#60](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/60).
