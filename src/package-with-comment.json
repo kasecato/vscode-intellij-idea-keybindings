@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.9",
+    "version": "0.2.10",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.8.0"
@@ -20,7 +20,7 @@
     ],
     "dependencies": {},
     "devDependencies": {
-        "vscode": "^1.0.3",
+        "vscode": "^1.0.5",
         "gulp": "~3.9.1",
         "gulp-cli": "~1.2.2",
         "gulp-strip-json-comments": "~2.0.0",
@@ -814,8 +814,20 @@
                 "intellij": "Navigate back"
             },
             {
+                "key": "",
+                "mac": "cmd+[",
+                "command": "workbench.action.navigateBack",
+                "intellij": "Navigate back"
+            },
+            {
                 "key": "ctrl+alt+right",
                 "mac": "cmd+alt+right",
+                "command": "workbench.action.navigateForward",
+                "intellij": "Navigate forward"
+            },
+            {
+                "key": "",
+                "mac": "cmd+]",
                 "command": "workbench.action.navigateForward",
                 "intellij": "Navigate forward"
             },
