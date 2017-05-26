@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.11 (May 27, 2017)
+
+* enhancement - ctrl+s bug. See [#52](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/52).
+
 ## 0.2.10 (March 3, 2017)
 
 * enhancement - Navigate Backward. See [#63](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/63).
