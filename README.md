@@ -307,8 +307,7 @@ This extension is [licensed under the MIT License](LICENSE.md).
 ## References
 
 1. Source code, Resharper 9 Keybindings, https://marketplace.visualstudio.com/items?itemName=ms-vscode.resharper9-keybindings
-1. Keymap OS X, IntelliJ IDEA Mac OS X Keymap, https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf
-1. Keymap Windows and Linux, IntelliJ IDEA Default Keymap, https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf
+1. IntelliJ IDEA DEFAULT KEYMAP, https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
 1. Key Bindings for Visual Studio Code, https://code.visualstudio.com/Docs/customization/keybindings
 1. Integrate with External Tools via Tasks, https://code.visualstudio.com/docs/editor/tasks#_autodetecting-gulp-grunt-and-jake-tasks
 1. gulp-strip-json-comments, https://www.npmjs.com/package/gulp-strip-json-comments
