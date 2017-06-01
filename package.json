@@ -1382,7 +1382,7 @@
             {
                 "key": "ctrl+s",
                 "mac": "cmd+s",
-                "command": "workbench.action.files.save",
+                "command": "workbench.action.files.saveAll",
                 "intellij": "Save all"
             },
             {

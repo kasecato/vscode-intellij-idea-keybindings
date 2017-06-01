@@ -1,8 +1,7 @@
 # Change Log
 
-## 0.2.11 (May 27, 2017)
+## 0.2.11 (Jun 1, 2017)
 
-* enhancement - ctrl+s bug. See [#52](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/52).
 * enhancement - “find in files” shortcut doesn't works. See [#54](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/54).
 
 ## 0.2.10 (March 3, 2017)
