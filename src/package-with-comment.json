@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.11",
+    "version": "0.2.12",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.12.0"
@@ -605,7 +605,7 @@
             {
                 "key": "shift+f9",
                 "mac": "ctrl+d",
-                "command": "workbench.action.debug.start",
+                "command": "workbench.action.debug.run",
                 "when": "!inDebugMode",
                 "intellij": "Debug"
             },
@@ -615,6 +615,15 @@
                 "mac": "ctrl+shift+r",
                 "command": "",
                 "intellij": "Run context configuration from editor",
+                "todo": "N/A"
+            },
+*/
+            /*
+            {
+                "key": "ctrl+shift+f10",
+                "mac": "ctrl+shift+r",
+                "command": "",
+                "intellij": "Debug context configuration from editor",
                 "todo": "N/A"
             },
 */
@@ -877,16 +886,13 @@
                 "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "Go to declaration"
             },
-            /*
             {
                 "key": "ctrl+alt+b",
                 "mac": "cmd+alt+b",
-                "command": "",
-                "when": "editorTextFocus",
-                "intellij": "Go to implementation(s)",
-                "todo": "N/A"
+                "command": "editor.action.goToImplementation",
+                "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor",
+                "intellij": "Go to implementation(s)"
             },
-*/
             {
                 "key": "ctrl+shift+i",
                 "mac": "alt+space",
@@ -901,16 +907,14 @@
                 "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Open quick definition lookup"
             },
-            /*
             {
                 "key": "ctrl+shift+b",
                 "mac": "ctrl+shift+b",
-                "command": "editor.action.goToTypeDeclaration",
+                "command": "editor.action.goToTypeDefinition",
                 "when": "editorTextFocus",
                 "intellij": "Go to type declaration",
                 "todo": "not working"
             },
-*/
             /*
             {
                 "key": "ctrl+u",
@@ -1129,6 +1133,13 @@
                 "command": "editor.action.rename",
                 "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Rename"
+            },
+            {
+                "key": "shift+f6",
+                "mac": "shift+f6",
+                "command": "renameFile",
+                "when": "explorerViewletVisible && filesExplorerFocus",
+                "intellij": "Rename (File)"
             },
             /*
             {
