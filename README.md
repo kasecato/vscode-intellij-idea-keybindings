@@ -98,6 +98,7 @@ alt+shift+f9 | ctrl+alt+d | Select configuration and debug | ✅
 shift+f10 | ctrl+r | Run | N/A
 shift+f9 | ctrl+d | Debug | ✅
 ctrl+shift+f10 | ctrl+shift+r | Run context configuration from editor | N/A
+ctrl+shift+f10 | ctrl+shift+r | Debug context configuration from editor | N/A
 
 ### Debugging
 
@@ -143,7 +144,7 @@ ctrl+alt+right | cmd+alt+right | Navigate forward | ✅
 ctrl+shift+backspace | cmd+shift+backspace | Navigate to last edit location | N/A
 alt+f1 | alt+f1 | Select current file or symbol in any view | N/A
 ctrl+b | cmd+b | Go to declaration | ✅
-ctrl+alt+b | cmd+alt+b | Go to implementation(s) | N/A
+ctrl+alt+b | cmd+alt+b | Go to implementation(s) | ✅
 ctrl+shift+i | alt+space | Open quick definition lookup | ✅
  | cmd+y | Open quick definition lookup | ✅
 ctrl+shift+b | ctrl+shift+b | Go to type declaration | ✅
@@ -176,6 +177,7 @@ f5 | f5 | Copy | N/A
 f6 | f6 | Move | N/A
 alt+delete | cmd+delete | Safe Delete | N/A
 shift+f6 | shift+f6 | Rename | ✅
+shift+f6 | shift+f6 | Rename (File) | ✅
 ctrl+f6 | cmd+f6 | Change Signature | N/A
 ctrl+alt+n | cmd+alt+n | Inline | N/A
 ctrl+alt+m | cmd+alt+m | Extract Method | N/A
@@ -251,7 +253,7 @@ alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.8.0 or higher
+1. Install Visual Studio Code 1.12.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`

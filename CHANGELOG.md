@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.12 (Jun 10, 2017)
+
+* enhancement - Add support for Goto Implementation. See [#77](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/77).
+* bug fix - Start debug doesn't work.
+
 ## 0.2.11 (Jun 1, 2017)
 
 * enhancement - “find in files” shortcut doesn't works. See [#54](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/54).
