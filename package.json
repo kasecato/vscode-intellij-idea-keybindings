@@ -33,7 +33,7 @@
         "gulp": "./node_modules/.bin/gulp",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
-    "icon": "index.svg",
+    "icon": "index.png",
     "license": "MIT",
     "homepage": "https://github.com/k--kato/vscode-intellij-idea-keybindings#readme",
     "repository": {
