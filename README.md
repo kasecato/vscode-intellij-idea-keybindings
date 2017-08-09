@@ -253,7 +253,7 @@ alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.12.0 or higher
+1. Install Visual Studio Code 1.13.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
@@ -299,6 +299,7 @@ when changes are saved.
 * [@joaomoreno](https://github.com/joaomoreno)
 * [@kasperpeulen](https://github.com/kasperpeulen)
 * [@waderyan](https://github.com/waderyan)
+* [@megha-n-bodke](https://github.com/megha-n-bodke)
 
 
 ## License
