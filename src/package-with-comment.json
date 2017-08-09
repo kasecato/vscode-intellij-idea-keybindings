@@ -1365,7 +1365,7 @@
             {
                 "key": "alt+9",
                 "mac": "cmd+9",
-                "command": "workbench.view.git",
+                "command": "workbench.view.scm",
                 "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Git)"
             },
