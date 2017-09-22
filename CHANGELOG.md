@@ -3,6 +3,11 @@
 ## 0.2.14 (Sep 22, 2017)
 
 * bug fix - send `ctrl+d` to terminal on mac. See [#88](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/88)
+* bug fix - cmd+k in integrated terminal should clear terminal. See [#85](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/85)
+
+## 0.2.13 (Aug )
+
+* enhancement - Updated mapping as per https://github.com/Microsoft/vscode/issues/28383. See [#81](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/81).
 
 ## 0.2.12 (Jun 10, 2017)
 
