@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.14 (Sep 22, 2017)
+
+* bug fix - send `ctrl+d` to terminal on mac. See [#88](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/88)
+
 ## 0.2.12 (Jun 10, 2017)
 
 * enhancement - Add support for Goto Implementation. See [#77](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/77).

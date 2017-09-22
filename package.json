@@ -606,7 +606,7 @@
                 "key": "shift+f9",
                 "mac": "ctrl+d",
                 "command": "workbench.action.debug.run",
-                "when": "!inDebugMode",
+                "when": "!inDebugMode && !terminalFocus",
                 "intellij": "Debug"
             },
 
