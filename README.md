@@ -161,8 +161,8 @@ f2 | f2 | Next highlighted error | N/A
 shift+f2 | shift+f2 | Previous highlighted error | N/A
 f4 | f4 | Edit source | ✅
 ctrl+enter | cmd+down | View source | ✅
-shift+ctrl+down | shift+cmd+down | Move Statement Down | ✅
-shift+ctrl+up | shift+cmd+up | Move Statement Up | ✅
+shift+ctrl+down | shift+alt+down | Move Statement Down | ✅
+shift+ctrl+up | shift+alt+up | Move Statement Up | ✅
 alt+home | alt+home | Show navigation bar | N/A
 f11 | f3 | Toggle bookmark | N/A
 ctrl+f11 | alt+f3 | Toggle bookmark with mnemonic | N/A
