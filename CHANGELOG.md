@@ -1,11 +1,15 @@
 # Change Log
 
+## 0.2.15 (Oct 7, 2017)
+
+* bug fix - Wrong Mac shortcuts to move lines/statements up/down. See [#90](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/90)
+
 ## 0.2.14 (Sep 22, 2017)
 
 * bug fix - send `ctrl+d` to terminal on mac. See [#88](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/88)
 * bug fix - cmd+k in integrated terminal should clear terminal. See [#85](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/85)
 
-## 0.2.13 (Aug )
+## 0.2.13 (Aug 9, 2017)
 
 * enhancement - Updated mapping as per https://github.com/Microsoft/vscode/issues/28383. See [#81](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/81).
 
