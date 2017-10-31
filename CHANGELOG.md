@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.16 (Nov 1, 2017)
+
+* bug fix - fix cmd+k commit shortcut. See [#93](https://github.com/k--kato/vscode-intellij-idea-keybindings/pull/93)
+
 ## 0.2.15 (Oct 7, 2017)
 
 * bug fix - Wrong Mac shortcuts to move lines/statements up/down. See [#90](https://github.com/k--kato/vscode-intellij-idea-keybindings/issues/90)
