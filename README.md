@@ -12,7 +12,7 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
-ctrl+shft+space | ctrl+shft+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
+ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
@@ -68,7 +68,7 @@ alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
-shfit shift | shfit shift | Search everywhere | N/A
+shift shift | shift shift | Search everywhere | N/A
 ctrl+f | cmd+f | Find | ✅
 f3 | cmd+g | Find next | ✅
 shift+f3 | cmd+shift+g | Find previous | ✅
