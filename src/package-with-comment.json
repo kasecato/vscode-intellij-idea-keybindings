@@ -1217,7 +1217,7 @@
             {
                 "key": "ctrl+k",
                 "mac": "cmd+k",
-                "command": "workbench.action.git.input-commit",
+                "command": "git.commitAll",
                 "when": "!inDebugMode && !terminalFocus",
                 "intellij": "Commit project to VCS"
             },
