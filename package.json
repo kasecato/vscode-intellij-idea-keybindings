@@ -45,6 +45,9 @@
     },
     "contributes": {
         "keybindings": [
+
+
+
             {
                 "key": "ctrl+space",
                 "mac": "ctrl+space",
@@ -52,6 +55,16 @@
                 "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Basic code completion (the name of any class, method or variable)"
             },
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
@@ -73,6 +86,26 @@
                 "when": "editorTextFocus",
                 "intellij": "Quick documentation lookup"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+f1",
                 "mac": "cmd+f1",
@@ -87,6 +120,36 @@
                 "when": "!editorTextFocus",
                 "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+/",
                 "mac": "cmd+/",
@@ -129,6 +192,16 @@
                 "when": "editorTextFocus",
                 "intellij": "Decrease current selection to previous state"
             },
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "alt+enter",
                 "mac": "alt+enter",
@@ -150,6 +223,44 @@
                 "when": "editorHasDocumentFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly",
                 "intellij": "Reformat selected code"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+x",
                 "mac": "cmd+x",
@@ -178,6 +289,16 @@
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Paste from clipboard"
             },
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+d",
                 "mac": "cmd+d",
@@ -213,6 +334,36 @@
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Start new line"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+delete",
                 "mac": "alt+delete",
@@ -303,6 +454,18 @@
                 "when": "editorTextFocus",
                 "intellij": "Unselect Occurrence"
             },
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+f",
                 "mac": "cmd+f",
@@ -342,6 +505,27 @@
                 "command": "workbench.action.replaceInFiles",
                 "intellij": "Replace in path"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "alt+f7",
                 "mac": "alt+f7",
@@ -349,12 +533,54 @@
                 "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Find usages"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+f9",
                 "mac": "cmd+f9",
                 "command": "workbench.action.tasks.build",
                 "intellij": "Make project (compile modifed and dependent)"
             },
+
+
+
+
+
+
+
+
+
             {
                 "key": "alt+shift+f10",
                 "mac": "ctrl+alt+r",
@@ -367,6 +593,15 @@
                 "command": "workbench.view.debug",
                 "intellij": "Select configuration and debug"
             },
+
+
+
+
+
+
+
+
+
             {
                 "key": "shift+f9",
                 "mac": "ctrl+d",
@@ -374,6 +609,27 @@
                 "when": "!inDebugMode && !terminalFocus",
                 "intellij": "Debug"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "f8",
                 "mac": "f8",
@@ -388,6 +644,16 @@
                 "when": "inDebugMode",
                 "intellij": "Step into"
             },
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "shift+f8",
                 "mac": "shift+f8",
@@ -406,12 +672,14 @@
                 "key": "alt+f8",
                 "mac": "alt+f8",
                 "command": "workbench.debug.action.toggleRepl",
+
                 "intellij": "Evaluate expression"
             },
             {
                 "key": "alt+f8",
                 "mac": "alt+f8",
                 "command": "editor.debug.action.selectionToRepl",
+
                 "when": "editorTextFocus && editorHasSelection",
                 "intellij": "Evaluate expression (selection)"
             },
@@ -436,6 +704,9 @@
                 "intellij": "View breakpoints",
                 "todo": "show all debug"
             },
+
+
+
             {
                 "key": "ctrl+n",
                 "mac": "cmd+o",
@@ -479,6 +750,24 @@
                 "command": "workbench.action.nextEditor",
                 "intellij": "Go to next editor tab"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "shift+escape",
                 "mac": "shift+escape",
@@ -486,6 +775,15 @@
                 "when": "!editorFocus && !terminalFocus && !problemFocus && !inDebugRepl",
                 "intellij": "Hide active or last active window (Sidebar)"
             },
+
+
+
+
+
+
+
+
+
             {
                 "key": "shift+escape",
                 "mac": "shift+escape",
@@ -507,6 +805,25 @@
                 "when": "terminalFocus",
                 "intellij": "Hide active or last active window (Terminal)"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+g",
                 "mac": "cmd+l",
@@ -516,8 +833,24 @@
             {
                 "key": "ctrl+e",
                 "mac": "cmd+e",
-                "command": "workbench.action.openRecent",
+                "command": "-actions.find"
+            },
+            {
+                "key": "ctrl+e",
+                "mac": "cmd+e",
+                "command": "-workbench.action.openRecent"
+            },
+            {
+                "key": "ctrl+e",
+                "mac": "cmd+e",
+                "command": "workbench.action.quickOpenNavigateNext",
+                "when": "inQuickOpen",
                 "intellij": "Recent files popup"
+            },
+            {
+                "key": "ctrl+e",
+                "mac": "cmd+e",
+                "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
             },
             {
                 "key": "ctrl+alt+left",
@@ -543,6 +876,25 @@
                 "command": "workbench.action.navigateForward",
                 "intellij": "Navigate forward"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+b",
                 "mac": "cmd+b",
@@ -579,6 +931,56 @@
                 "intellij": "Go to type declaration",
                 "todo": "not working"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+f12",
                 "mac": "cmd+f12",
@@ -586,6 +988,54 @@
                 "when": "editorTextFocus",
                 "intellij": "File structure popup"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "f4",
                 "mac": "f4",
@@ -614,6 +1064,85 @@
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Move Statement Up"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "shift+f6",
                 "mac": "shift+f6",
@@ -628,6 +1157,79 @@
                 "when": "explorerViewletVisible && filesExplorerFocus",
                 "intellij": "Rename (File)"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+k",
                 "mac": "cmd+k",
@@ -641,6 +1243,15 @@
                 "command": "workbench.action.git.sync",
                 "intellij": "Update project from VCS"
             },
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+`",
                 "mac": "ctrl+v",
@@ -648,6 +1259,30 @@
                 "intellij": "‘VCS’ quick popup",
                 "todo": "no popup"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "alt+0",
                 "mac": "cmd+0",
@@ -797,6 +1432,24 @@
                 "intellij": "Toggle maximizing editor",
                 "todo": "toggle not working"
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
                 "key": "ctrl+`",
                 "mac": "ctrl+`",
@@ -834,6 +1487,9 @@
                 "when": "inQuickOpen",
                 "intellij": "Switch between tabs and tool window"
             },
+
+
+
             {
                 "key": "f7",
                 "mac": "f7",
