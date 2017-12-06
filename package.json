@@ -516,7 +516,7 @@
             {
                 "key": "ctrl+e",
                 "mac": "cmd+e",
-                "command": "workbench.action.openRecent",
+                "command": "workbench.action.quickOpenNavigateNext",
                 "intellij": "Recent files popup"
             },
             {
