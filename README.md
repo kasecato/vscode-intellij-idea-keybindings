@@ -1,6 +1,6 @@
 # IntelliJ IDEA Key Bindings for Visual Studio Code
 
-[![Build Status](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings.svg?branch=master)](https://travis-ci.org/k--kato/vscode-intellij-idea-keybindings) [![License: MIT](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md) [![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/k--kato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) [![Install](https://vsmarketplacebadge.apphb.com/installs-short/k--kato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
+[![Build Status](https://travis-ci.org/kasecato/vscode-intellij-idea-keybindings.svg?branch=master)](https://travis-ci.org/kasecato/vscode-intellij-idea-keybindings) [![License: MIT](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md) [![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/kasecato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=kasecato.intellij-idea-keybindings) [![Install](https://vsmarketplacebadge.apphb.com/installs-short/kasecato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=kasecato.intellij-idea-keybindings)
 
 Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular JetBrains products like IntelliJ Ultimate, WebStorm, PyCharm, PHP Storm, etc. 
 
@@ -253,7 +253,7 @@ alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.13.0 or higher
+1. Install Visual Studio Code 1.16.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
@@ -265,7 +265,7 @@ alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 Clone a copy of the repo:
 
 ```
-git clone https://github.com/k--kato/vscode-intellij-idea-keybindings.git
+git clone https://github.com/kasecato/vscode-intellij-idea-keybindings.git
 ```
 
 
@@ -303,6 +303,7 @@ when changes are saved.
 * [@gregbacchus](https://github.com/gregbacchus)
 * [@acim](https://github.com/acim)
 * [@skysteve](https://github.com/skysteve)
+* [@spik3s](https://github.com/spik3s)
 
 
 ## License

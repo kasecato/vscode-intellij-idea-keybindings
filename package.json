@@ -1,7 +1,7 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.16",
-    "publisher": "k--kato",
+    "version": "0.2.17",
+    "publisher": "kasecato",
     "engines": {
         "vscode": "^1.16.0"
     },
@@ -20,7 +20,7 @@
     ],
     "dependencies": {},
     "devDependencies": {
-        "vscode": "^1.1.6",
+        "vscode": "^1.1.10",
         "gulp": "~3.9.1",
         "gulp-cli": "~1.4.0",
         "gulp-strip-json-comments": "~2.1.0",
@@ -35,13 +35,13 @@
     },
     "icon": "index.png",
     "license": "MIT",
-    "homepage": "https://github.com/k--kato/vscode-intellij-idea-keybindings#readme",
+    "homepage": "https://github.com/kasecato/vscode-intellij-idea-keybindings#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings"
+        "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings"
     },
     "bugs": {
-        "url": "https://github.com/k--kato/vscode-intellij-idea-keybindings/issues"
+        "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
         "keybindings": [
