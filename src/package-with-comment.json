@@ -57,8 +57,8 @@
             },
             /*
             {
-                "key": "ctrl+shft+space",
-                "mac": "ctrl+shft+space",
+                "key": "ctrl+shift+space",
+                "mac": "ctrl+shift+space",
                 "command": "",
                 "when": "",
                 "intellij": "Smart code completion (filters the list of methods and variables by expected type)",
@@ -459,8 +459,8 @@
             \*---------------------------------------------------------------*/
             /*
             {
-                "key": "shfit shift",
-                "mac": "shfit shift",
+                "key": "shift shift",
+                "mac": "shift shift",
                 "command": "",
                 "intellij": "Search everywhere",
                 "todo": "N/A: shift shift"
@@ -830,11 +830,27 @@
                 "command": "workbench.action.gotoLine",
                 "intellij": "Go to line"
             },
+            {   
+                "key": "ctrl+e",                 
+                "mac": "cmd+e",                 
+                "command": "-actions.find" 
+            },
+            { 
+                "key": "ctrl+e",                
+                "mac": "cmd+e",                
+                "command": "-workbench.action.openRecent" 
+            },
             {
                 "key": "ctrl+e",
                 "mac": "cmd+e",
-                "command": "workbench.action.openRecent",
+                "command": "workbench.action.quickOpenNavigateNext",
+                "when": "inQuickOpen",
                 "intellij": "Recent files popup"
+            },
+            { 
+                "key": "ctrl+e",              
+                "mac": "cmd+e",              
+                "command": "workbench.action.openNextRecentlyUsedEditorInGroup" 
             },
             {
                 "key": "ctrl+alt+left",

@@ -10,9 +10,9 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
-ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
+ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type)| N/A
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
@@ -67,7 +67,7 @@ alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
 ### Search/Replace
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 shift shift | shift shift | Search everywhere | N/A
 ctrl+f | cmd+f | Find | ✅
 f3 | cmd+g | Find next | ✅
@@ -81,7 +81,7 @@ ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
 ### Usage Search
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 alt+f7 | alt+f7 | Find usages | ✅
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
 ctrl+shift+f7 | cmd+shift+f7 | Highlight usages in file | N/A
@@ -90,7 +90,7 @@ ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
 ### Compile and Run
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | ✅
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
 alt+shift+f10 | ctrl+alt+r | Select configuration and run | ✅
@@ -103,7 +103,7 @@ ctrl+shift+f10 | ctrl+shift+r | Debug context configuration from editor | N/A
 ### Debugging
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f8 | f8 | Step over | ✅
 f7 | f7 | Step into | ✅
 shift+f7 | shift+f7 | Smart step into | N/A
@@ -118,7 +118,7 @@ ctrl+shift+f8 | cmd+shift+f8 | View breakpoints | ✅
 ### Navigation
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+n | cmd+o | Go to class | ✅
 ctrl+shift+n | cmd+shift+o | Go to file | ✅
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | ✅
@@ -172,7 +172,7 @@ shift+f11 | cmd+f3 | Show bookmarks | N/A
 ### Refactoring
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f5 | f5 | Copy | N/A
 f6 | f6 | Move | N/A
 alt+delete | cmd+delete | Safe Delete | N/A
@@ -189,7 +189,7 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 ### VCS/Local History
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+k | cmd+k | Commit project to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
 alt+shift+c | alt+shift+c | View recent changes | N/A
@@ -198,14 +198,14 @@ ctrl+\` | ctrl+v | ‘VCS’ quick popup | ✅
 ### Live Templates
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+alt+j | cmd+alt+j | Surround with Live Template | N/A
 ctrl+j | cmd+j | Insert Live Template | N/A
 
 ### General
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 alt+0 | cmd+0 | Activate Messages window (Problems) | ✅
 alt+numpad0 | cmd+numpad0 | Activate Messages window (Problems) | ✅
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | ✅
@@ -240,7 +240,7 @@ ctrl+tab | ctrl+tab | Switch between tabs and tool window | ✅
 ### Custom
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
