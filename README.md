@@ -12,7 +12,7 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
-ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type)| N/A
+ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
@@ -249,11 +249,13 @@ alt+f12 | alt+f12 | Open corresponding tool window (Terminal) | ✅
 ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
 alt+left | shift+cmd+[ | Select previous tab (Terminal) | ✅
 alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
+alt+tab | alt+tab | Goto next splitter | ✅
+shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
 
 
 ## Installation
 
-1. Install Visual Studio Code 1.16.0 or higher
+1. Install Visual Studio Code 1.19.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`

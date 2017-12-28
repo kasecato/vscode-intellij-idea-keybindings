@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.18 (Dec 28, 2017)
+
+* enhancement - navigate between editor group could be mapped to option/alt + tab. See [#101](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/101)
+
 ## 0.2.17 (Dec 20, 2017)
 
 * bug fix - Cmd+E opens Recent Projects popup instead of current project's Recent Files. See [#97](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/97)

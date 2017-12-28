@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.17",
-    "publisher": "kasecato",
+    "version": "0.2.18",
+    "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.16.0"
+        "vscode": "^1.19.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
@@ -22,7 +22,7 @@
     "devDependencies": {
         "vscode": "^1.1.10",
         "gulp": "~3.9.1",
-        "gulp-cli": "~1.4.0",
+        "gulp-cli": "~2.0.0",
         "gulp-strip-json-comments": "~2.1.0",
         "gulp-rename": "~1.2.2",
         "gulp-jsbeautifier": "~2.1.1"
@@ -830,15 +830,15 @@
                 "command": "workbench.action.gotoLine",
                 "intellij": "Go to line"
             },
-            {   
-                "key": "ctrl+e",                 
-                "mac": "cmd+e",                 
-                "command": "-actions.find" 
+            {
+                "key": "ctrl+e",
+                "mac": "cmd+e",
+                "command": "-actions.find"
             },
-            { 
-                "key": "ctrl+e",                
-                "mac": "cmd+e",                
-                "command": "-workbench.action.openRecent" 
+            {
+                "key": "ctrl+e",
+                "mac": "cmd+e",
+                "command": "-workbench.action.openRecent"
             },
             {
                 "key": "ctrl+e",
@@ -847,10 +847,10 @@
                 "when": "inQuickOpen",
                 "intellij": "Recent files popup"
             },
-            { 
-                "key": "ctrl+e",              
-                "mac": "cmd+e",              
-                "command": "workbench.action.openNextRecentlyUsedEditorInGroup" 
+            {
+                "key": "ctrl+e",
+                "mac": "cmd+e",
+                "command": "workbench.action.openRecent"
             },
             {
                 "key": "ctrl+alt+left",
@@ -1544,6 +1544,20 @@
                 "command": "workbench.action.terminal.focusNext",
                 "when": "terminalFocus",
                 "intellij": "Select next tab (Terminal)"
+            },
+            {
+                "key": "alt+tab",
+                "mac": "alt+tab",
+                "command": "workbench.action.focusNextGroup",
+                "when": "editorFocus",
+                "intellij": "Goto next splitter"
+            },
+            {
+                "key": "shift+alt+tab",
+                "mac": "shift+alt+tab",
+                "command": "workbench.action.focusPreviousGroup",
+                "when": "editorFocus",
+                "intellij": "Goto previous splitter"
             }
         ]
     }
