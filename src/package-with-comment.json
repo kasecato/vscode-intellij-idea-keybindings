@@ -1242,7 +1242,7 @@
                 "mac": "cmd+shift+k",
                 "command": "git.pushTo",
                 "when": "!inDebugMode && !terminalFocus",
-                "intellij": "Push branch to the remote"
+                "intellij": "Push commits"
             },
             {
                 "key": "ctrl+t",
