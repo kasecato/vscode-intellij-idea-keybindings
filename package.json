@@ -1238,6 +1238,13 @@
                 "intellij": "Commit project to VCS"
             },
             {
+                "key": "ctrl+shift+k",
+                "mac": "cmd+shift+k",
+                "command": "git.pushTo",
+                "when": "!inDebugMode && !terminalFocus",
+                "intellij": "Push branch to the remote"
+            },
+            {
                 "key": "ctrl+t",
                 "mac": "cmd+t",
                 "command": "workbench.action.git.sync",
