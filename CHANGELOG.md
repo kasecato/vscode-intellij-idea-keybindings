@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.19 (Jan 21, 2017)
+
+* enhancement - Implement ctrl+shift+k shortcut for the git.pushTo command. See [#104](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/104)
+
 ## 0.2.18 (Dec 28, 2017)
 
 * enhancement - navigate between editor group could be mapped to option/alt + tab. See [#101](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/101)
