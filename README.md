@@ -191,6 +191,7 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
 ctrl+k | cmd+k | Commit project to VCS | ✅
+ctrl+shift+k | cmd+shift+k | Push commits to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
 alt+shift+c | alt+shift+c | View recent changes | N/A
 ctrl+\` | ctrl+v | ‘VCS’ quick popup | ✅
@@ -306,6 +307,7 @@ when changes are saved.
 * [@acim](https://github.com/acim)
 * [@skysteve](https://github.com/skysteve)
 * [@spik3s](https://github.com/spik3s)
+* [@AlexAkhremenko](https://github.com/AlexAkhremenko)
 
 
 ## License
