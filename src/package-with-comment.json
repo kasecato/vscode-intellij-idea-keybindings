@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.18",
+    "version": "0.2.19",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.19.0"
@@ -22,10 +22,10 @@
     "devDependencies": {
         "vscode": "^1.1.10",
         "gulp": "~3.9.1",
-        "gulp-cli": "~2.0.0",
-        "gulp-strip-json-comments": "~2.1.0",
+        "gulp-cli": "~2.0.1",
+        "gulp-strip-json-comments": "~3.0.0",
         "gulp-rename": "~1.2.2",
-        "gulp-jsbeautifier": "~2.1.1"
+        "gulp-jsbeautifier": "~2.1.2"
     },
     "extensionDependencies": [],
     "isAMD": false,
@@ -1110,6 +1110,20 @@
                 "todo": "N/A"
             },
 */
+            {
+                "key": "ctrl+alt+shift+down",
+                "mac": "ctrl+alt+shift+down",
+                "command": "editor.action.dirtydiff.next",
+                "when": "editorTextFocus",
+                "intellij": "Next Change"
+            },
+            {
+                "key": "ctrl+alt+shift+up",
+                "mac": "ctrl+alt+shift+up",
+                "command": "editor.action.dirtydiff.previous",
+                "when": "editorTextFocus",
+                "intellij": "Previous Change"
+            },
             /*---------------------------------------------------------------*\
              * Refactoring
             \*---------------------------------------------------------------*/
