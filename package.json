@@ -1321,8 +1321,14 @@
                 "mac": "enter",
                 "command": "list.select",
                 "intellij": "Open Highlighted File (Explorer)",
-                "when": "filesExplorerFocus && !explorerResourceIsFolder"
+                "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder"
             },
+            
+            {
+                "key": "enter",
+                "command": "-renameFile",
+                "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+            }
             {
                 "key": "alt+1",
                 "mac": "cmd+1",
