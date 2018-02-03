@@ -1315,6 +1315,13 @@
                 "mac": "cmd+numpad0",
                 "command": "workbench.actions.view.problems",
                 "intellij": "Activate Messages window (Problems)"
+            },            
+            {
+                "key": "enter",
+                "mac": "enter",
+                "command": "list.select",
+                "intellij": "Open Highlighted File (Explorer)",
+                "when": "filesExplorerFocus && !explorerResourceIsFolder"
             },
             {
                 "key": "alt+1",
