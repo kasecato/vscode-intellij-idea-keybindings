@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.19",
+    "version": "0.2.20",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.19.0"
@@ -1579,6 +1579,13 @@
                 "command": "workbench.action.focusPreviousGroup",
                 "when": "editorFocus",
                 "intellij": "Goto previous splitter"
+            },
+            {
+                "key": "enter",
+                "mac": "enter",
+                "command": "list.select",
+                "intellij": "Open Highlighted File (Explorer)",
+                "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder"
             }
         ]
     }

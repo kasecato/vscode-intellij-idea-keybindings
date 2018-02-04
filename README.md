@@ -254,6 +254,7 @@ alt+left | shift+cmd+[ | Select previous tab (Terminal) | ✅
 alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 alt+tab | alt+tab | Goto next splitter | ✅
 shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
+enter | enter | Open Highlighted File (Explorer) | ✅
 
 
 ## Installation
@@ -310,6 +311,7 @@ when changes are saved.
 * [@skysteve](https://github.com/skysteve)
 * [@spik3s](https://github.com/spik3s)
 * [@AlexAkhremenko](https://github.com/AlexAkhremenko)
+* [@rtconner](https://github.com/rtconner)
 
 
 ## License
