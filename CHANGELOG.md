@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.20 (Feb 4, 2017)
+
+* enhancement - Open Highlighted File (Explorer). See [#107](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/107)
+
 ## 0.2.19 (Feb 1, 2017)
 
 * enhancement - Implement ctrl+shift+k shortcut for the git.pushTo command. See [#104](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/104)
