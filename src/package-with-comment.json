@@ -1543,7 +1543,15 @@
                 "key": "alt+f12",
                 "mac": "alt+f12",
                 "command": "workbench.action.terminal.focus",
+                "when": "!terminalFocus",
                 "intellij": "Opens and focuses corresponding tool window (Terminal)"
+            },
+            {
+                "key": "alt+f12",
+                "mac": "alt+f12",
+                "command": "workbench.action.terminal.toggleTerminal",
+                "when": "terminalFocus",
+                "intellij": "Close corresponding tool window (Terminal)"
             },
             {
                 "key": "ctrl+shift+alt+j",
