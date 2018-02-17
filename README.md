@@ -259,7 +259,7 @@ enter | enter | Open Highlighted File (Explorer) | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.19.0 or higher
+1. Install Visual Studio Code 1.20.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
@@ -312,6 +312,7 @@ when changes are saved.
 * [@spik3s](https://github.com/spik3s)
 * [@AlexAkhremenko](https://github.com/AlexAkhremenko)
 * [@rtconner](https://github.com/rtconner)
+* [@pavilion](https://github.com/pavilion)
 
 
 ## License

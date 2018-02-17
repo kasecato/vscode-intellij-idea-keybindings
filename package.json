@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.20",
+    "version": "0.2.21",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.19.0"
+        "vscode": "^1.20.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
@@ -30,7 +30,7 @@
     "extensionDependencies": [],
     "isAMD": false,
     "scripts": {
-        "gulp": "./node_modules/.bin/gulp",
+        "build": "./node_modules/.bin/gulp",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "icon": "index.png",

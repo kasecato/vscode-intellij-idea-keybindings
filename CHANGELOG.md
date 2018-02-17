@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.21 (Feb 17, 2017)
+
+* bug fix - Fix terminal focus. See [#108](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/108)
+* enhancement - Added jsbeautifier config
+
 ## 0.2.20 (Feb 4, 2017)
 
 * enhancement - Open Highlighted File (Explorer). See [#107](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/107)
