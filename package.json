@@ -603,6 +603,27 @@
                 "intellij": "File structure popup"
             },
             {
+                "key": "f2",
+                "command": "-editor.action.rename",
+                "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "f2",
+                "mac": "f2",
+                "command": "editor.action.marker.next",
+                "when": "editorFocus && !editorReadonly",
+                "intellij": "Next highlighted error",
+                "todo": "N/A"
+            },
+            {
+                "key": "shift+f2",
+                "mac": "shift+f2",
+                "command": "editor.action.marker.prev",
+                "when": "editorFocus && !editorReadonly",
+                "intellij": "Previous highlighted error",
+                "todo": "N/A"
+            },
+            {
                 "key": "f4",
                 "mac": "f4",
                 "command": "editor.action.goToDeclaration",

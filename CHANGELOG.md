@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.22 (Mar 25, 2017)
+
+* enhancement - Go to next error and previous error. See [#111](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/111)
+
 ## 0.2.21 (Feb 17, 2017)
 
 * bug fix - Fix terminal focus. See [#108](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/108)

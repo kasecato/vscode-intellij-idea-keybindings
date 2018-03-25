@@ -157,8 +157,8 @@ ctrl+f12 | cmd+f12 | File structure popup | ✅
 ctrl+h | ctrl+h | Type hierarchy | N/A
 ctrl+shift+h | cmd+shift+h | Method hierarchy | N/A
 ctrl+alt+h | ctrl+alt+h | Call hierarchy | N/A
-f2 | f2 | Next highlighted error | N/A
-shift+f2 | shift+f2 | Previous highlighted error | N/A
+f2 | f2 | Next highlighted error | ✅
+shift+f2 | shift+f2 | Previous highlighted error | ✅
 f4 | f4 | Edit source | ✅
 ctrl+enter | cmd+down | View source | ✅
 shift+ctrl+down | shift+alt+down | Move Statement Down | ✅
@@ -248,7 +248,8 @@ f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
 shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
-alt+f12 | alt+f12 | Open corresponding tool window (Terminal) | ✅
+alt+f12 | alt+f12 | Opens and focuses corresponding tool window (Terminal) | ✅
+alt+f12 | alt+f12 | Close corresponding tool window (Terminal) | ✅
 ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
 alt+left | shift+cmd+[ | Select previous tab (Terminal) | ✅
 alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
@@ -313,6 +314,7 @@ when changes are saved.
 * [@AlexAkhremenko](https://github.com/AlexAkhremenko)
 * [@rtconner](https://github.com/rtconner)
 * [@pavilion](https://github.com/pavilion)
+* [@xc1427](https://github.com/xc1427)
 
 
 ## License
