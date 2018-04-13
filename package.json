@@ -680,6 +680,28 @@
                 "intellij": "Rename (File)"
             },
             {
+                "key": "ctrl+alt+m",
+                "mac": "cmd+alt+m",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "intellij": "Extract Method",
+                "args": {
+                    "kind": "refactor.extract.function",
+                    "apply": "ifSingle"
+                }
+            },
+            {
+                "key": "ctrl+alt+v",
+                "mac": "cmd+alt+v",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "intellij": "Extract Variable",
+                "args": {
+                    "kind": "refactor.extract.constant",
+                    "apply": "ifSingle"
+                }
+            },
+            {
                 "key": "ctrl+k",
                 "mac": "cmd+k",
                 "command": "git.commitAll",
