@@ -182,8 +182,8 @@ shift+f6 | shift+f6 | Rename | ✅
 shift+f6 | shift+f6 | Rename (File) | ✅
 ctrl+f6 | cmd+f6 | Change Signature | N/A
 ctrl+alt+n | cmd+alt+n | Inline | N/A
-ctrl+alt+m | cmd+alt+m | Extract Method | N/A
-ctrl+alt+v | cmd+alt+v | Extract Variable | N/A
+ctrl+alt+m | cmd+alt+m | Extract Method | ✅
+ctrl+alt+v | cmd+alt+v | Extract Variable | ✅
 ctrl+alt+f | cmd+alt+f | Extract Field | N/A
 ctrl+alt+c | cmd+alt+c | Extract Constant | N/A
 ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A

@@ -1194,26 +1194,28 @@
                 "todo": "N/A"
             },
 */
-            /*
             {
                 "key": "ctrl+alt+m",
                 "mac": "cmd+alt+m",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
                 "intellij": "Extract Method",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.extract.function",
+                    "apply": "ifSingle"
+                }
             },
-*/
-            /*
             {
                 "key": "ctrl+alt+v",
                 "mac": "cmd+alt+v",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
                 "intellij": "Extract Variable",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.extract.constant",
+                    "apply": "ifSingle"
+                }
             },
-*/
             /*
             {
                 "key": "ctrl+alt+f",
