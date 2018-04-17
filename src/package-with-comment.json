@@ -454,6 +454,20 @@
                 "when": "editorTextFocus",
                 "intellij": "Unselect Occurrence"
             },
+            {
+                "key": "shift+alt+down",
+                "mac": "shift+alt+down",
+                "command": "editor.action.moveLinesDownAction",
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Move Line Down"
+            },
+            {
+                "key": "shift+alt+up",
+                "mac": "shift+alt+up",
+                "command": "editor.action.moveLinesUpAction",
+                "when": "editorTextFocus && !editorReadonly",
+                "intellij": "Move Line Up"
+            },
             /*---------------------------------------------------------------*\
              * Search/Replace
             \*---------------------------------------------------------------*/
