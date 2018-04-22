@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.23 (Apr 22, 2017)
+
+* enhancement - Add refactor keybindings for extract method and extract constant. See [#112](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/112)
+* enhancement - Added support for move line up & move line down. See [#113](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/113)
+
 ## 0.2.22 (Mar 25, 2017)
 
 * enhancement - Go to next error and previous error. See [#111](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/111)
