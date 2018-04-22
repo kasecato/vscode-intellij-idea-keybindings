@@ -10,7 +10,7 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
 ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
@@ -69,7 +69,7 @@ shift+alt+up | shift+alt+up | Move Line Up | ✅
 ### Search/Replace
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 shift shift | shift shift | Search everywhere | N/A
 ctrl+f | cmd+f | Find | ✅
 f3 | cmd+g | Find next | ✅
@@ -83,7 +83,7 @@ ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
 ### Usage Search
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 alt+f7 | alt+f7 | Find usages | ✅
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
 ctrl+shift+f7 | cmd+shift+f7 | Highlight usages in file | N/A
@@ -92,7 +92,7 @@ ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
 ### Compile and Run
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | ✅
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
 alt+shift+f10 | ctrl+alt+r | Select configuration and run | ✅
@@ -105,7 +105,7 @@ ctrl+shift+f10 | ctrl+shift+r | Debug context configuration from editor | N/A
 ### Debugging
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f8 | f8 | Step over | ✅
 f7 | f7 | Step into | ✅
 shift+f7 | shift+f7 | Smart step into | N/A
@@ -120,7 +120,7 @@ ctrl+shift+f8 | cmd+shift+f8 | View breakpoints | ✅
 ### Navigation
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+n | cmd+o | Go to class | ✅
 ctrl+shift+n | cmd+shift+o | Go to file | ✅
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | ✅
@@ -176,7 +176,7 @@ ctrl+alt+shift+up | ctrl+alt+shift+up | Previous Change | ✅
 ### Refactoring
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f5 | f5 | Copy | N/A
 f6 | f6 | Move | N/A
 alt+delete | cmd+delete | Safe Delete | N/A
@@ -193,7 +193,7 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 ### VCS/Local History
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+k | cmd+k | Commit project to VCS | ✅
 ctrl+shift+k | cmd+shift+k | Push commits to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
@@ -203,14 +203,14 @@ ctrl+\` | ctrl+v | ‘VCS’ quick popup | ✅
 ### Live Templates
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+alt+j | cmd+alt+j | Surround with Live Template | N/A
 ctrl+j | cmd+j | Insert Live Template | N/A
 
 ### General
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 alt+0 | cmd+0 | Activate Messages window (Problems) | ✅
 alt+numpad0 | cmd+numpad0 | Activate Messages window (Problems) | ✅
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | ✅
@@ -245,7 +245,7 @@ ctrl+tab | ctrl+tab | Switch between tabs and tool window | ✅
 ### Custom
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
@@ -261,7 +261,7 @@ enter | enter | Open Highlighted File (Explorer) | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.21.0 or higher
+1. Install Visual Studio Code 1.22.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
@@ -316,6 +316,8 @@ when changes are saved.
 * [@rtconner](https://github.com/rtconner)
 * [@pavilion](https://github.com/pavilion)
 * [@xc1427](https://github.com/xc1427)
+* [@michielboekhoff](https://github.com/michielboekhoff)
+* [@thekalinga](https://github.com/thekalinga)
 
 
 ## License

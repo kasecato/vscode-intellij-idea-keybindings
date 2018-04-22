@@ -1,19 +1,24 @@
 # Change Log
 
-## 0.2.22 (Mar 25, 2017)
+## 0.2.23 (Apr 22, 2018)
+
+* enhancement - Add refactor keybindings for extract method and extract constant. See [#112](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/112)
+* enhancement - Added support for move line up & move line down. See [#113](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/113)
+
+## 0.2.22 (Mar 25, 2018)
 
 * enhancement - Go to next error and previous error. See [#111](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/111)
 
-## 0.2.21 (Feb 17, 2017)
+## 0.2.21 (Feb 17, 2018)
 
 * bug fix - Fix terminal focus. See [#108](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/108)
 * enhancement - Added jsbeautifier config
 
-## 0.2.20 (Feb 4, 2017)
+## 0.2.20 (Feb 4, 2018)
 
 * enhancement - Open Highlighted File (Explorer). See [#107](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/107)
 
-## 0.2.19 (Feb 1, 2017)
+## 0.2.19 (Feb 1, 2018)
 
 * enhancement - Implement ctrl+shift+k shortcut for the git.pushTo command. See [#104](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/104)
 * enhancement - ctrl+opt+shift + ↑ ↓ can be mapped on VSCode #102. See [#102](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/102)
