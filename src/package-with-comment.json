@@ -180,7 +180,7 @@
             },
             {
                 "key": "ctrl+w",
-                "mac": "alt+up",
+                "mac": "cmd+w",
                 "command": "editor.action.smartSelect.grow",
                 "when": "editorTextFocus",
                 "intellij": "Select successively increasing code blocks"
@@ -436,7 +436,6 @@
             },
             {
                 "key": "ctrl+f4",
-                "mac": "cmd+w",
                 "command": "workbench.action.closeActiveEditor",
                 "intellij": "Close active editor tab"
             },
