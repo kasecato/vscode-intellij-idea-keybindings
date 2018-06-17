@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.24 (Jun 17, 2018)
+
+* bug fix - Git sync keybinding does not work. See [#115](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/115)
+
 ## 0.2.23 (Apr 22, 2018)
 
 * enhancement - Add refactor keybindings for extract method and extract constant. See [#112](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/112)
