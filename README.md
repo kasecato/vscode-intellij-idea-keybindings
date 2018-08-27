@@ -319,6 +319,7 @@ when changes are saved.
 * [@michielboekhoff](https://github.com/michielboekhoff)
 * [@thekalinga](https://github.com/thekalinga)
 * [@andrewda](https://github.com/andrewda)
+* [@deftomat](https://github.com/deftomat)
 
 
 ## License
