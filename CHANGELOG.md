@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.25 (Sep 1, 2018)
+
+* bug fix - Fixed triggerSuggest condition. See [#122](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/122)
+
 ## 0.2.24 (Jun 17, 2018)
 
 * bug fix - Git sync keybinding does not work. See [#115](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/115)
