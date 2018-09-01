@@ -46,13 +46,6 @@
     "contributes": {
         "keybindings": [
             {
-                "key": "ctrl+space",
-                "mac": "ctrl+space",
-                "command": "editor.action.triggerSuggest",
-                "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly",
-                "intellij": "Basic code completion (the name of any class, method or variable)"
-            },
-            {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
