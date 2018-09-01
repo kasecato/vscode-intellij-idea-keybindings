@@ -49,7 +49,7 @@
                 "key": "ctrl+space",
                 "mac": "ctrl+space",
                 "command": "editor.action.triggerSuggest",
-                "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly",
+                "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly",
                 "intellij": "Basic code completion (the name of any class, method or variable)"
             },
             {
