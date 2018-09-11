@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.26 (Sep 11, 2018)
+
+* bug fix - Removed triggerSuggest keybinding. See [#124](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/124)
+
 ## 0.2.25 (Sep 1, 2018)
 
 * bug fix - Fixed triggerSuggest condition. See [#122](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/122)
