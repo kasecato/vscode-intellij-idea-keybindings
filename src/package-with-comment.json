@@ -1615,6 +1615,13 @@
                 "command": "list.select",
                 "intellij": "Open Highlighted File (Explorer)",
                 "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder"
+            },
+            {
+                "key": "alt+home",
+                "mac": "alt+home",
+                "command": "breadcrumbs.focus",
+                "intellij": "Jump to Navigation Bar",
+                "when": "editorFocus"
             }
         ]
     }
