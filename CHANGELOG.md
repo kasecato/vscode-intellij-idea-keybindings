@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.27 (Oct 1, 2018)
+
+* enhancement - Alt Home hotkey for focusing the breadcrumbs. See [#128](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/128)
+
 ## 0.2.26 (Sep 11, 2018)
 
 * bug fix - Removed triggerSuggest keybinding. See [#124](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/124)
