@@ -892,15 +892,13 @@
                 "command": "workbench.action.navigateForward",
                 "intellij": "Navigate forward"
             },
-            /*
             {
                 "key": "ctrl+shift+backspace",
                 "mac": "cmd+shift+backspace",
-                "command": "",
+                "command": "workbench.action.navigateToLastEditLocation",
                 "intellij": "Navigate to last edit location",
                 "todo": "N/A"
             },
-*/
             /*
             {
                 "key": "alt+f1",
