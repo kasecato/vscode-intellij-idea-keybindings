@@ -115,12 +115,20 @@
                 "when": "editorTextFocus",
                 "intellij": "Show descriptions of error or warning at caret"
             },
+            /*
             {
                 "key": "alt+insert",
                 "mac": "cmd+n",
                 "command": "workbench.action.files.newUntitledFile",
                 "when": "!editorTextFocus",
-                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)"
+                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)",
+                "todo": "N/A"
+            },
+            */
+            {
+                "key": "alt+insert",
+                "mac": "cmd+n",
+                "command": "-workbench.action.files.newUntitledFile"
             },
             /*
             {
@@ -892,12 +900,15 @@
                 "command": "workbench.action.navigateForward",
                 "intellij": "Navigate forward"
             },
+            /*
             {
                 "key": "ctrl+shift+backspace",
                 "mac": "cmd+shift+backspace",
-                "command": "workbench.action.navigateToLastEditLocation",
-                "intellij": "Navigate to last edit location"
+                "command": "",
+                "intellij": "Navigate to last edit location",
+                "todo": "N/A"
             },
+*/
             /*
             {
                 "key": "alt+f1",

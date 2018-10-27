@@ -75,9 +75,7 @@
             {
                 "key": "alt+insert",
                 "mac": "cmd+n",
-                "command": "workbench.action.files.newUntitledFile",
-                "when": "!editorTextFocus",
-                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)"
+                "command": "-workbench.action.files.newUntitledFile"
             },
             {
                 "key": "ctrl+/",
@@ -564,12 +562,6 @@
                 "mac": "cmd+]",
                 "command": "workbench.action.navigateForward",
                 "intellij": "Navigate forward"
-            },
-            {
-                "key": "ctrl+shift+backspace",
-                "mac": "cmd+shift+backspace",
-                "command": "workbench.action.navigateToLastEditLocation",
-                "intellij": "Navigate to last edit location"
             },
             {
                 "key": "ctrl+b",
