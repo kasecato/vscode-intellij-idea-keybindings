@@ -3,6 +3,7 @@
 ## 0.2.29 (Nov 17, 2018)
 
 * bug fix - Fix cmd+n not opening new untitled file. See [#134](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/134)
+* bug fix - navigateToLastEditLocation not released. See [#135](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/135)
 
 ## 0.2.28 (Oct 27, 2018)
 

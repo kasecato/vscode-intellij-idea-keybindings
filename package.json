@@ -564,6 +564,12 @@
                 "intellij": "Navigate forward"
             },
             {
+                "key": "ctrl+shift+backspace",
+                "mac": "cmd+shift+backspace",
+                "command": "workbench.action.navigateToLastEditLocation",
+                "intellij": "Navigate to last edit location"
+            },
+            {
                 "key": "ctrl+b",
                 "mac": "cmd+b",
                 "command": "editor.action.goToDeclaration",

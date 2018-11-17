@@ -143,7 +143,7 @@ ctrl+alt+left | cmd+alt+left | Navigate back | ✅
  | cmd+[ | Navigate back | ✅
 ctrl+alt+right | cmd+alt+right | Navigate forward | ✅
  | cmd+] | Navigate forward | ✅
-ctrl+shift+backspace | cmd+shift+backspace | Navigate to last edit location | N/A
+ctrl+shift+backspace | cmd+shift+backspace | Navigate to last edit location | ✅
 alt+f1 | alt+f1 | Select current file or symbol in any view | N/A
 ctrl+b | cmd+b | Go to declaration | ✅
 ctrl+alt+b | cmd+alt+b | Go to implementation(s) | ✅
