@@ -8,7 +8,7 @@
 ## 0.2.28 (Oct 27, 2018)
 
 * enhancement - Enables 'navigate to last edit' shortcut. See [#131](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/131)
-* buf fix - Generating getters/setters/constructors on mac. See [#130](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/130)
+* bug fix - Generating getters/setters/constructors on mac. See [#130](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/130)
 
 ## 0.2.27 (Oct 1, 2018)
 
