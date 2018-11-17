@@ -128,7 +128,7 @@
             {
                 "key": "alt+insert",
                 "mac": "cmd+n",
-                "command": "-workbench.action.files.newUntitledFile"
+                "command": "workbench.action.files.newUntitledFile"
             },
             /*
             {
