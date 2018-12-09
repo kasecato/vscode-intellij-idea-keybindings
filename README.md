@@ -278,6 +278,7 @@ alt+tab | alt+tab | Goto next splitter | ✅
 shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
 enter | enter | Open Highlighted File (Explorer) | ✅
 alt+home | alt+home | Jump to Navigation Bar | ✅
+shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 
 ## Installation
 

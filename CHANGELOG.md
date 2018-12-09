@@ -3,6 +3,7 @@
 ## 0.2.30 (Dec 10, 2018)
 
 * enhancement - better mapping for `Find All References` and `List All References` commands. See [#136](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/136)
+* enhancement - `Copy File Path` should be added. See [#137](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/137)
 
 ## 0.2.29 (Nov 17, 2018)
 

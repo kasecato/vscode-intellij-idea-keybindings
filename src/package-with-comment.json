@@ -1634,6 +1634,13 @@
                 "command": "breadcrumbs.focus",
                 "intellij": "Jump to Navigation Bar",
                 "when": "editorFocus"
+            },
+            {
+                "key": "shift+ctrl+c",
+                "mac": "shift+cmd+c",
+                "command": "copyFilePath",
+                "intellij": "Copy paths",
+                "when": "!editorFocus"
             }
         ]
     }
