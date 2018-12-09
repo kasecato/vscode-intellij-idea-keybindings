@@ -553,9 +553,16 @@
             {
                 "key": "alt+f7",
                 "mac": "alt+f7",
+                "command": "references-view.find",
+                "when": "editorHasReferenceProvider",
+                "intellij": "Find usages"
+            },
+            {
+                "key": "alt+ctrl+f7",
+                "mac": "alt+cmd+f7",
                 "command": "editor.action.referenceSearch.trigger",
                 "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor",
-                "intellij": "Find usages"
+                "intellij": "Show usages"
             },
             /*
             {

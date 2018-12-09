@@ -85,6 +85,7 @@ ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
 alt+f7 | alt+f7 | Find usages | ✅
+alt+ctrl+f7 | alt+cmd+f7 | Show usages | ✅
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
 ctrl+shift+f7 | cmd+shift+f7 | Highlight usages in file | N/A
 ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
@@ -241,6 +242,24 @@ ctrl+alt+s | cmd+numpad_separator | Open Settings dialog | ✅
 ctrl+alt+shift+s | cmd+; | Open Project Structure dialog | ✅
 ctrl+shift+a | shift+cmd+a | Find Action | ✅
 ctrl+tab | ctrl+tab | Switch between tabs and tool window | ✅
+
+### Custom
+
+Linux, Windows | macOS | Feature | Supported
+---------------|------|---------|----------
+f7 | f7 | Next difference | ✅
+shift+f7 | shift+f7 | Previous difference | ✅
+alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
+shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
+alt+f12 | alt+f12 | Opens and focuses corresponding tool window (Terminal) | ✅
+alt+f12 | alt+f12 | Close corresponding tool window (Terminal) | ✅
+ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
+alt+left | shift+cmd+[ | Select previous tab (Terminal) | ✅
+alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
+alt+tab | alt+tab | Goto next splitter | ✅
+shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
+enter | enter | Open Highlighted File (Explorer) | ✅
+alt+home | alt+home | Jump to Navigation Bar | ✅
 
 ### Custom
 

@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.30 (Dec 10, 2018)
+
+* enhancement - better mapping for `Find All References` and `List All References` commands. See [#136](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/136)
+
 ## 0.2.29 (Nov 17, 2018)
 
 * bug fix - Fix cmd+n not opening new untitled file. See [#134](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/134)
