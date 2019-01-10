@@ -1309,7 +1309,7 @@
             {
                 "key": "ctrl+`",
                 "mac": "ctrl+v",
-                "command": "workbench.view.git",
+                "command": "workbench.view.scm",
                 "intellij": "‘VCS’ quick popup",
                 "todo": "no popup"
             },
