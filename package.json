@@ -44,8 +44,7 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [
-            {
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -742,7 +741,7 @@
             {
                 "key": "ctrl+`",
                 "mac": "ctrl+v",
-                "command": "workbench.view.git",
+                "command": "workbench.view.scm",
                 "intellij": "‘VCS’ quick popup",
                 "todo": "no popup"
             },
