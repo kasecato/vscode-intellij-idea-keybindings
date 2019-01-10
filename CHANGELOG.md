@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.31 (Jan 15, 2019)
+
+* enhancement - Updated "VCS quick popup". See [#141](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/141)
+
 ## 0.2.30 (Dec 10, 2018)
 
 * enhancement - better mapping for `Find All References` and `List All References` commands. See [#136](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/136)

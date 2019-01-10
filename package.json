@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.30",
+    "version": "0.2.31",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.29.1"
+        "vscode": "^1.30.2"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
