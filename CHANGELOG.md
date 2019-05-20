@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.32 (May 20, 2019)
+
+* enhancement - Revert uncommitted changes shortcut. See [#144](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/144)
+* Update dependencies
+
 ## 0.2.31 (Jan 15, 2019)
 
 * enhancement - Updated "VCS quick popup". See [#141](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/141)

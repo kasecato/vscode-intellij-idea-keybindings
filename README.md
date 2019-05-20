@@ -10,7 +10,7 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
 ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
@@ -69,7 +69,7 @@ shift+alt+up | shift+alt+up | Move Line Up | ✅
 ### Search/Replace
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 shift shift | shift shift | Search everywhere | N/A
 ctrl+f | cmd+f | Find | ✅
 f3 | cmd+g | Find next | ✅
@@ -83,7 +83,7 @@ ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
 ### Usage Search
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 alt+f7 | alt+f7 | Find usages | ✅
 alt+ctrl+f7 | alt+cmd+f7 | Show usages | ✅
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
@@ -93,7 +93,7 @@ ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
 ### Compile and Run
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | ✅
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
 alt+shift+f10 | ctrl+alt+r | Select configuration and run | ✅
@@ -106,7 +106,7 @@ ctrl+shift+f10 | ctrl+shift+r | Debug context configuration from editor | N/A
 ### Debugging
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 f8 | f8 | Step over | ✅
 f7 | f7 | Step into | ✅
 shift+f7 | shift+f7 | Smart step into | N/A
@@ -121,7 +121,7 @@ ctrl+shift+f8 | cmd+shift+f8 | View breakpoints | ✅
 ### Navigation
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 ctrl+n | cmd+o | Go to class | ✅
 ctrl+shift+n | cmd+shift+o | Go to file | ✅
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | ✅
@@ -177,7 +177,7 @@ ctrl+alt+shift+up | ctrl+alt+shift+up | Previous Change | ✅
 ### Refactoring
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 f5 | f5 | Copy | N/A
 f6 | f6 | Move | N/A
 alt+delete | cmd+delete | Safe Delete | N/A
@@ -194,24 +194,25 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 ### VCS/Local History
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 ctrl+k | cmd+k | Commit project to VCS | ✅
 ctrl+shift+k | cmd+shift+k | Push commits to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
+ctrl+alt+z | cmd+alt+z | Rollback Lines | ✅
 alt+shift+c | alt+shift+c | View recent changes | N/A
 ctrl+\` | ctrl+v | ‘VCS’ quick popup | ✅
 
 ### Live Templates
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 ctrl+alt+j | cmd+alt+j | Surround with Live Template | N/A
 ctrl+j | cmd+j | Insert Live Template | N/A
 
 ### General
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 alt+0 | cmd+0 | Activate Messages window (Problems) | ✅
 alt+numpad0 | cmd+numpad0 | Activate Messages window (Problems) | ✅
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | ✅
@@ -246,25 +247,7 @@ ctrl+tab | ctrl+tab | Switch between tabs and tool window | ✅
 ### Custom
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
-f7 | f7 | Next difference | ✅
-shift+f7 | shift+f7 | Previous difference | ✅
-alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
-shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
-alt+f12 | alt+f12 | Opens and focuses corresponding tool window (Terminal) | ✅
-alt+f12 | alt+f12 | Close corresponding tool window (Terminal) | ✅
-ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
-alt+left | shift+cmd+[ | Select previous tab (Terminal) | ✅
-alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
-alt+tab | alt+tab | Goto next splitter | ✅
-shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
-enter | enter | Open Highlighted File (Explorer) | ✅
-alt+home | alt+home | Jump to Navigation Bar | ✅
-
-### Custom
-
-Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
+---------------|------|---------|---------- 
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
@@ -345,6 +328,7 @@ when changes are saved.
 * [@covertbert](https://github.com/covertbert)
 * [@flashsphere](https://github.com/flashsphere)
 * [@kroleg](https://github.com/kroleg)
+* [@faucct](https://github.com/faucct)
 
 
 ## License
