@@ -1297,6 +1297,12 @@
                 "command": "git.sync",
                 "intellij": "Update project from VCS"
             },
+            {
+                "key": "ctrl+alt+z",
+                "mac": "cmd+alt+z",
+                "command": "git.revertSelectedRanges",
+                "intellij": "Rollback Lines"
+            },
             /*
             {
                 "key": "alt+shift+c",
