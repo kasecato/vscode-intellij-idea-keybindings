@@ -1284,7 +1284,7 @@
              * VCS/Local History
             \*---------------------------------------------------------------*/
             {
-                "key": "ctrl+k",
+                "key": "ctrl+alt+k",
                 "mac": "cmd+k",
                 "command": "git.commitAll",
                 "when": "!inDebugMode && !terminalFocus",

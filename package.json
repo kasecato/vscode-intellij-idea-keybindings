@@ -613,6 +613,12 @@
                 "todo": "not working"
             },
             {
+                "key": "alt+7",
+                "mac": "cmd+7",
+                "command": "outline.focus",
+                "intellij": "Structure"
+            },
+            {
                 "key": "ctrl+f12",
                 "mac": "cmd+f12",
                 "command": "workbench.action.gotoSymbol",
@@ -681,12 +687,6 @@
                 "command": "editor.action.dirtydiff.previous",
                 "when": "editorTextFocus",
                 "intellij": "Previous Change"
-            },
-            {
-                "key": "alt+7",
-                "mac": "cmd+7",
-                "command": "outline.focus",
-                "intellij": "Structure"
             },
             {
                 "key": "shift+f6",

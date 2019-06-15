@@ -196,7 +196,7 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
-ctrl+k | cmd+k | Commit project to VCS | ✅
+ctrl+alt+k | cmd+k | Commit project to VCS | ✅
 ctrl+shift+k | cmd+shift+k | Push commits to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
 ctrl+alt+z | cmd+alt+z | Rollback Lines | ✅
