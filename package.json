@@ -1,9 +1,9 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.32",
+    "version": "0.2.33",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.33.0"
+        "vscode": "^1.35.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
@@ -44,7 +44,8 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [{
+        "keybindings": [
+            {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -725,7 +726,7 @@
                 }
             },
             {
-                "key": "ctrl+k",
+                "key": "ctrl+alt+k",
                 "mac": "cmd+k",
                 "command": "git.commitAll",
                 "when": "!inDebugMode && !terminalFocus",
