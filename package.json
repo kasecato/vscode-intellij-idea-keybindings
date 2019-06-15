@@ -742,14 +742,8 @@
                 "key": "ctrl+alt+z",
                 "mac": "cmd+alt+z",
                 "command": "git.revertSelectedRanges",
+                "when": "editorHasSelection && editorTextFocus && !editorReadonly",
                 "intellij": "Rollback Lines"
-            },
-            {
-                "key": "ctrl+`",
-                "mac": "ctrl+v",
-                "command": "workbench.view.scm",
-                "intellij": "‘VCS’ quick popup",
-                "todo": "no popup"
             },
             {
                 "key": "alt+0",

@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.33 (June 15, 2019)
+
+* enhancement - New Binding Request: (VS Code)`Revert Selected Range` can be mapped to `Revert...`(Intellij). See [#145](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/145)
+
 ## 0.2.32 (May 20, 2019)
 
 * enhancement - Revert uncommitted changes shortcut. See [#144](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/144)
