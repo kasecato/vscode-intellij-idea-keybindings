@@ -3,6 +3,7 @@
 ## 0.2.33 (June 15, 2019)
 
 * enhancement - New Binding Request: (VS Code)`Revert Selected Range` can be mapped to `Revert...`(Intellij). See [#145](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/145)
+* enhancement - New Binding Request: `Structure`(⌘7) can be ported by making use of `Focus on outline view`. See [#146](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/146)
 
 ## 0.2.32 (May 20, 2019)
 

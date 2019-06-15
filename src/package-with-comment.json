@@ -1010,6 +1010,12 @@
             },
 */
             {
+                "key": "alt+7",
+                "mac": "cmd+7",
+                "command": "outline.focus",
+                "intellij": "Structure"
+            },
+            {
                 "key": "ctrl+f12",
                 "mac": "cmd+f12",
                 "command": "workbench.action.gotoSymbol",

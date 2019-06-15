@@ -683,6 +683,12 @@
                 "intellij": "Previous Change"
             },
             {
+                "key": "alt+7",
+                "mac": "cmd+7",
+                "command": "outline.focus",
+                "intellij": "Structure"
+            },
+            {
                 "key": "shift+f6",
                 "mac": "shift+f6",
                 "command": "editor.action.rename",
