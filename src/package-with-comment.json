@@ -417,6 +417,34 @@
                 "intellij": "Collapse code block"
             },
             {
+                "key": "ctrl+alt+=",
+                "mac": "cmd+alt+=",
+                "command": "editor.unfoldRecursively",
+                "when": "editorFocus",
+                "intellij": "Expand code block recursively"
+            },
+            {
+                "key": "ctrl+alt+numpad_add",
+                "mac": "cmd+alt+numpad_add",
+                "command": "editor.unfoldRecursively",
+                "when": "editorFocus",
+                "intellij": "Expand code block recursively"
+            },
+            {
+                "key": "ctrl+alt+-",
+                "mac": "cmd+alt+-",
+                "command": "editor.foldRecursively",
+                "when": "editorFocus",
+                "intellij": "Collapse code block recursively"
+            },
+            {
+                "key": "ctrl+alt+numpad_subtract",
+                "mac": "cmd+alt+numpad_subtract",
+                "command": "editor.foldRecursively",
+                "when": "editorFocus",
+                "intellij": "Collapse code block recursively"
+            },
+            {
                 "key": "ctrl+shift+=",
                 "mac": "cmd+shift+=",
                 "command": "editor.unfoldAll",

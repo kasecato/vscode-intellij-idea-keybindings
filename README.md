@@ -56,6 +56,10 @@ ctrl+= | cmd+= | Expand code block | ✅
 ctrl+numpad_add | cmd+numpad_add | Expand code block | ✅
 ctrl+- | cmd+- | Collapse code block | ✅
 ctrl+numpad_subtract | cmd+numpad_subtract | Collapse code block | ✅
+ctrl+alt+= | cmd+alt+= | Expand code block recursively | ✅
+ctrl+alt+numpad_add | cmd+alt+numpad_add | Expand code block recursively | ✅
+ctrl+alt+- | cmd+alt+- | Collapse code block recursively | ✅
+ctrl+alt+numpad_subtract | cmd+alt+numpad_subtract | Collapse code block recursively | ✅
 ctrl+shift+= | cmd+shift+= | Expand all | ✅
 ctrl+shift+numpad_add | cmd+shift+numpad_add | Expand all | ✅
 ctrl+shift+- | cmd+shift+- | Collapse all | ✅

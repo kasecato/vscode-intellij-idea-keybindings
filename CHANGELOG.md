@@ -3,6 +3,7 @@
 ## 0.2.34 (July 9, 2019)
 
 * bug fix - ctrl+f has no "when" so always searches in editor, so finding in terminal / webview is clobbered. See [#153](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/153)
+* enhancement - Missing command - Expand recursively. See [#152](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/152)
 
 ## 0.2.33 (June 15, 2019)
 
