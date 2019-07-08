@@ -308,12 +308,6 @@
                 "intellij": "Move Line Up"
             },
             {
-                "key": "ctrl+f",
-                "mac": "cmd+f",
-                "command": "actions.find",
-                "intellij": "Find"
-            },
-            {
                 "key": "f3",
                 "mac": "cmd+g",
                 "command": "editor.action.nextMatchFindAction",

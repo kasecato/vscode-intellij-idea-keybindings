@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.34 (July 9, 2019)
+
+* bug fix - ctrl+f has no "when" so always searches in editor, so finding in terminal / webview is clobbered. See [#153](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/153)
+
 ## 0.2.33 (June 15, 2019)
 
 * enhancement - New Binding Request: (VS Code)`Revert Selected Range` can be mapped to `Revert...`(Intellij). See [#145](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/145)
