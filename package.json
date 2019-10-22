@@ -44,8 +44,7 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [
-            {
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -746,6 +745,20 @@
                     "kind": "refactor.extract.constant",
                     "apply": "ifSingle"
                 }
+            },
+            {
+                "key": "ctrl+home",
+                "mac": "cmd+home",
+                "command": "cursorTop",
+                "when": "textInputFocus",
+                "intellij": "Move Caret to Text Start"
+            },
+            {
+                "key": "ctrl+end",
+                "mac": "cmd+end",
+                "command": "cursorBottom",
+                "when": "textInputFocus",
+                "intellij": "Move Caret to Text End"
             },
             {
                 "key": "ctrl+alt+k",
