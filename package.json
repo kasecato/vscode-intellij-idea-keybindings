@@ -3,7 +3,7 @@
     "version": "0.2.34",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.36.0"
+        "vscode": "^1.39.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
@@ -20,12 +20,12 @@
     ],
     "dependencies": {},
     "devDependencies": {
-        "vscode": "^1.1.35",
+        "vscode": "^1.1.36",
         "gulp": "~4.0.2",
         "gulp-cli": "~2.2.0",
-        "gulp-strip-json-comments": "~3.0.0",
+        "gulp-strip-json-comments": "~4.0.1",
         "gulp-rename": "~1.4.0",
-        "gulp-jsbeautifier": "~3.0.0"
+        "gulp-jsbeautifier": "~3.0.1"
     },
     "extensionDependencies": [],
     "isAMD": false,
