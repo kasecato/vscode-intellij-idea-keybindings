@@ -313,16 +313,19 @@
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "editor.action.copyLinesDownAction",
-                "when": "editorTextFocus && !editorReadonly && !editorHasSelection",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Duplicate Line"
             },
+/*
             {
                 "key": "ctrl+d",
                 "mac": "cmd+d",
-                "command": "editor.action.duplicateSelection",
+                "command": "",
                 "when": "editorTextFocus && !editorReadonly && editorHasSelection",
-                "intellij": "Duplicate Selection"
+                "intellij": "Duplicate Selection",
+                "todo": "N/A"
             },
+*/
             {
                 "key": "ctrl+y",
                 "mac": "cmd+backspace",

@@ -43,7 +43,7 @@ ctrl+c | cmd+c | Copy current line or selected block to clipboard | ✅
 ctrl+v | cmd+v | Paste from clipboard | ✅
 ctrl+shift+v | cmd+shift+v | Paste from recent buffers... | N/A
 ctrl+d | cmd+d | Duplicate Line | ✅
-ctrl+d | cmd+d | Duplicate Selection | ✅
+ctrl+d | cmd+d | Duplicate Selection | N/A
 ctrl+y | cmd+backspace | Delete line at caret | ✅
 ctrl+shift+j | ctrl+shift+j | Smart line join | ✅
 ctrl+enter | cmd+enter | Smart line split | ✅
