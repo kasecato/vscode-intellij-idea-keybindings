@@ -4,6 +4,7 @@
 
 * enhancement - ctrl + home mapping for macOS. See [#149](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/149)
 * enhancement - [navigation] cursorTop + cursorBottom. See [#154](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/154)
+* enhancement - Change Cmd+D from "editor.action.copyLinesDownAction" to new "editor.action.duplicateSelection". See [#157](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/157)
 
 ## 0.2.34 (July 9, 2019)
 

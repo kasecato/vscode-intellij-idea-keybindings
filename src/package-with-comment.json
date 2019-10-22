@@ -313,8 +313,15 @@
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "editor.action.copyLinesDownAction",
-                "when": "editorTextFocus && !editorReadonly",
-                "intellij": "Duplicate current line or selected block"
+                "when": "editorTextFocus && !editorReadonly && !editorHasSelection",
+                "intellij": "Duplicate Line"
+            },
+            {
+                "key": "ctrl+d",
+                "mac": "cmd+d",
+                "command": "editor.action.duplicateSelection",
+                "when": "editorTextFocus && !editorReadonly && editorHasSelection",
+                "intellij": "Duplicate Selection"
             },
             {
                 "key": "ctrl+y",
