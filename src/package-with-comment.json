@@ -1191,6 +1191,20 @@
                 "when": "editorTextFocus",
                 "intellij": "Previous Change"
             },
+            {
+                "key": "ctrl+home",
+                "mac": "cmd+home",
+                "command": "cursorTop",
+                "when": "textInputFocus",
+                "intellij": "Move Caret to Text Start"
+            },
+            {
+                "key": "ctrl+end",
+                "mac": "cmd+end",
+                "command": "cursorBottom",
+                "when": "textInputFocus",
+                "intellij": "Move Caret to Text End"
+            },
             /*---------------------------------------------------------------*\
              * Refactoring
             \*---------------------------------------------------------------*/

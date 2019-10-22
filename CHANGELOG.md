@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.35 (Oct 22, 2019)
+
+* enhancement - ctrl + home mapping for macOS. See [#149](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/149)
+* enhancement - [navigation] cursorTop + cursorBottom. See [#154](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/154)
+
 ## 0.2.34 (July 9, 2019)
 
 * bug fix - ctrl+f has no "when" so always searches in editor, so finding in terminal / webview is clobbered. See [#153](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/153)

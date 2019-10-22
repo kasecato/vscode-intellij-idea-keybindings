@@ -178,6 +178,8 @@ ctrl+0 | ctrl+0 | Go to numbered bookmark | N/A
 shift+f11 | cmd+f3 | Show bookmarks | N/A
 ctrl+alt+shift+down | ctrl+alt+shift+down | Next Change | ✅
 ctrl+alt+shift+up | ctrl+alt+shift+up | Previous Change | ✅
+ctrl+home | cmd+home | Move Caret to Text Start | ✅
+ctrl+end | cmd+end | Move Caret to Text End | ✅
 
 ### Refactoring
 
