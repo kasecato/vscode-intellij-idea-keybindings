@@ -172,8 +172,15 @@
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "editor.action.copyLinesDownAction",
-                "when": "editorTextFocus && !editorReadonly",
-                "intellij": "Duplicate current line or selected block"
+                "when": "editorTextFocus && !editorReadonly && !editorHasSelection",
+                "intellij": "Duplicate Line"
+            },
+            {
+                "key": "ctrl+d",
+                "mac": "cmd+d",
+                "command": "editor.action.duplicateSelection",
+                "when": "editorTextFocus && !editorReadonly && editorHasSelection",
+                "intellij": "Duplicate Selection"
             },
             {
                 "key": "ctrl+y",
@@ -711,6 +718,20 @@
                 "intellij": "Previous Change"
             },
             {
+                "key": "ctrl+home",
+                "mac": "cmd+home",
+                "command": "cursorTop",
+                "when": "textInputFocus",
+                "intellij": "Move Caret to Text Start"
+            },
+            {
+                "key": "ctrl+end",
+                "mac": "cmd+end",
+                "command": "cursorBottom",
+                "when": "textInputFocus",
+                "intellij": "Move Caret to Text End"
+            },
+            {
                 "key": "shift+f6",
                 "mac": "shift+f6",
                 "command": "editor.action.rename",
@@ -745,20 +766,6 @@
                     "kind": "refactor.extract.constant",
                     "apply": "ifSingle"
                 }
-            },
-            {
-                "key": "ctrl+home",
-                "mac": "cmd+home",
-                "command": "cursorTop",
-                "when": "textInputFocus",
-                "intellij": "Move Caret to Text Start"
-            },
-            {
-                "key": "ctrl+end",
-                "mac": "cmd+end",
-                "command": "cursorBottom",
-                "when": "textInputFocus",
-                "intellij": "Move Caret to Text End"
             },
             {
                 "key": "ctrl+alt+k",
