@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.36 (Oct 22, 2019)
+
+* bug fix - Ctrl+D doesn't work for duplicate selection. See [#161](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/161)
+
 ## 0.2.35 (Oct 22, 2019)
 
 * enhancement - ctrl + home mapping for macOS. See [#149](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/149)
