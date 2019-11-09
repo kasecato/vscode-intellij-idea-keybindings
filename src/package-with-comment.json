@@ -3,7 +3,7 @@
     "version": "0.2.36",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.39.0"
+        "vscode": "^1.40.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
@@ -313,19 +313,16 @@
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "editor.action.copyLinesDownAction",
-                "when": "editorTextFocus && !editorReadonly",
+                "when": "editorTextFocus && !editorReadonly && !editorHasSelection",
                 "intellij": "Duplicate Line"
             },
-/*
             {
                 "key": "ctrl+d",
                 "mac": "cmd+d",
-                "command": "",
+                "command": "editor.action.duplicateSelection",
                 "when": "editorTextFocus && !editorReadonly && editorHasSelection",
-                "intellij": "Duplicate Selection",
-                "todo": "N/A"
+                "intellij": "Duplicate Selection"
             },
-*/
             {
                 "key": "ctrl+y",
                 "mac": "cmd+backspace",
