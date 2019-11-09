@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.37 (Nov 9, 2019)
+
+* enhancement - Change Cmd+D from "editor.action.copyLinesDownAction" to new "editor.action.duplicateSelection". See [#157](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/157)
+
 ## 0.2.36 (Oct 22, 2019)
 
 * bug fix - Ctrl+D doesn't work for duplicate selection. See [#161](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/161)
