@@ -285,6 +285,7 @@
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Cut current line or selected block to clipboard"
             },
+            /*
             {
                 "key": "ctrl+c",
                 "mac": "cmd+c",
@@ -292,6 +293,8 @@
                 "when": "editorTextFocus",
                 "intellij": "Copy current line or selected block to clipboard"
             },
+*/
+            /*
             {
                 "key": "ctrl+v",
                 "mac": "cmd+v",
@@ -299,6 +302,7 @@
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Paste from clipboard"
             },
+*/
             /*
             {
                 "key": "ctrl+shift+v",
