@@ -43,7 +43,7 @@ ctrl+c | cmd+c | Copy current line or selected block to clipboard | ✅
 ctrl+v | cmd+v | Paste from clipboard | ✅
 ctrl+shift+v | cmd+shift+v | Paste from recent buffers... | N/A
 ctrl+d | cmd+d | Duplicate Line | ✅
-ctrl+d | cmd+d | Duplicate Selection | N/A
+ctrl+d | cmd+d | Duplicate Selection | ✅
 ctrl+y | cmd+backspace | Delete line at caret | ✅
 ctrl+shift+j | ctrl+shift+j | Smart line join | ✅
 ctrl+enter | cmd+enter | Smart line split | ✅
@@ -272,7 +272,7 @@ shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.30.2 or higher
+1. Install Visual Studio Code 1.40.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
