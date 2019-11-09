@@ -155,20 +155,6 @@
                 "intellij": "Cut current line or selected block to clipboard"
             },
             {
-                "key": "ctrl+c",
-                "mac": "cmd+c",
-                "command": "editor.action.clipboardCopyAction",
-                "when": "editorTextFocus",
-                "intellij": "Copy current line or selected block to clipboard"
-            },
-            {
-                "key": "ctrl+v",
-                "mac": "cmd+v",
-                "command": "editor.action.clipboardPasteAction",
-                "when": "editorTextFocus && !editorReadonly",
-                "intellij": "Paste from clipboard"
-            },
-            {
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "editor.action.copyLinesDownAction",
