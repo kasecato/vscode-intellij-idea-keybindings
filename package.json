@@ -31,7 +31,8 @@
     "isAMD": false,
     "scripts": {
         "build": "./node_modules/.bin/gulp",
-        "postinstall": "node ./node_modules/vscode/bin/install"
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "usage": "node ./src/tool/gene-keybind-markdown.js"
     },
     "icon": "index.png",
     "license": "MIT",
@@ -44,8 +45,7 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [
-            {
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -393,6 +393,12 @@
                 "mac": "ctrl+alt+d",
                 "command": "workbench.view.debug",
                 "intellij": "Select configuration and debug"
+            },
+            {
+                "key": "shift+f10",
+                "mac": "ctrl+r",
+                "command": "workbench.action.tasks.reRunTask",
+                "intellij": "Run"
             },
             {
                 "key": "shift+f9",
@@ -1064,6 +1070,13 @@
                 "command": "copyFilePath",
                 "intellij": "Copy paths",
                 "when": "!editorFocus"
+            },
+            {
+                "key": "shift+f10",
+                "mac": "ctrl+r",
+                "command": "go.test.previous",
+                "when": "editorLangId == go",
+                "intellij": "Go: Test Previous"
             }
         ]
     }
