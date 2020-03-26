@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.38 (Mar 26, 2020)
+
+* enhancement - run previous Go test. See [#171](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/171)
+
 ## 0.2.37 (Nov 9, 2019)
 
 * enhancement - Change Cmd+D from "editor.action.copyLinesDownAction" to new "editor.action.duplicateSelection". See [#157](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/157)

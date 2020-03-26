@@ -103,7 +103,7 @@ ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | ✅
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
 alt+shift+f10 | ctrl+alt+r | Select configuration and run | ✅
 alt+shift+f9 | ctrl+alt+d | Select configuration and debug | ✅
-shift+f10 | ctrl+r | Run | N/A
+shift+f10 | ctrl+r | Run | ✅
 shift+f9 | ctrl+d | Debug | ✅
 ctrl+shift+f10 | ctrl+shift+r | Run context configuration from editor | N/A
 ctrl+shift+f10 | ctrl+shift+r | Debug context configuration from editor | N/A
@@ -270,6 +270,12 @@ enter | enter | Open Highlighted File (Explorer) | ✅
 alt+home | alt+home | Jump to Navigation Bar | ✅
 shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 
+### Go Lang
+
+Linux, Windows | macOS | Feature | Supported
+---------------|------|---------|---------- 
+shift+f10 | ctrl+r | Go: Test Previous | ✅
+
 ## Installation
 
 1. Install Visual Studio Code 1.40.0 or higher
@@ -301,7 +307,7 @@ Now you can compile the code:
 1. Launch Code
 1. Edit **`src/package-with-comment.json`** (**NOT `package.json`**)
 1. Run Build Task `Ctrl`-`Shift`-`B` (Windows, Linux) or `Cmd`-`Shift`-`B` (macOS)
-1. Run Command Markdown Generator `node src/tool/gene-keybind-markdown.js`
+1. Run Command Markdown Generator `npm run usage`
 1. Paste the Command Markdown to `README.md`
 
 After the initial compile, the source files will be watched and recompiled
@@ -310,6 +316,7 @@ when changes are saved.
 
 ## Contributors
 
+* [@kasecato](https://github.com/kasecato)
 * [@brianegan](https://github.com/brianegan)
 * [@whinc](https://github.com/whinc)
 * [@HSAR](https://github.com/HSAR)
@@ -336,6 +343,7 @@ when changes are saved.
 * [@flashsphere](https://github.com/flashsphere)
 * [@kroleg](https://github.com/kroleg)
 * [@faucct](https://github.com/faucct)
+* [@glyn](https://github.com/glyn)
 
 
 ## License
@@ -347,7 +355,7 @@ This extension is [licensed under the MIT License](LICENSE.md).
 
 1. Source code, Resharper 9 Keybindings, https://marketplace.visualstudio.com/items?itemName=ms-vscode.resharper9-keybindings
 1. IntelliJ IDEA DEFAULT KEYMAP, https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
-1. Key Bindings for Visual Studio Code, https://code.visualstudio.com/Docs/customization/keybindings
+1. Key Bindings for Visual Studio Code, https://code.visualstudio.com/docs/getstarted/keybindings
 1. Integrate with External Tools via Tasks, https://code.visualstudio.com/docs/editor/tasks#_autodetecting-gulp-grunt-and-jake-tasks
 1. gulp-strip-json-comments, https://www.npmjs.com/package/gulp-strip-json-comments
-1. Icon, vscode-vs-keybindings, https://github.com/rebornix/vscode-vs-keybindings/blob/master/visualstudio-keyboard.svg
+1. Icon, vscode-vs-keybindings, https://github.com/rebornix/vscode-vs-keybindings/raw/master/visualstudio-keyboard.png
