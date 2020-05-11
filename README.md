@@ -345,6 +345,7 @@ when changes are saved.
 * [@kroleg](https://github.com/kroleg)
 * [@faucct](https://github.com/faucct)
 * [@glyn](https://github.com/glyn)
+* [@ronaldstevanus](https://github.com/ronaldstevanus)
 
 
 ## License

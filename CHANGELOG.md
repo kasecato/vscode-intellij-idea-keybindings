@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.39 (May 11, 2020)
+
+* enhancement - Add column selection shortcut. See [#178](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/178)
+
 ## 0.2.38 (Mar 26, 2020)
 
 * enhancement - run previous Go test. See [#171](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/171)
