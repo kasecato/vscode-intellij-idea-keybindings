@@ -42,7 +42,7 @@ rd.on('line', function(line) {
     else if (isIntelliJ(line)) {
         intellij = getIntelliJ(line);
         
-        var format = escape(key) + ' | ' + escape(mac) + ' | ' + intellij + ' | ';
+        var format = available(escape(key)) + ' | ' + available(escape(mac)) + ' | ' + intellij + ' | ';
         if (hasCommand(command)) {
             console.log(format + '✅');
         } else {
@@ -69,6 +69,7 @@ const getCommand        = (line) => /"command": "(.*)"/.exec(line)[1];
 const getTodo           = (line) => /"todo": "(.*)"/.exec(line)[1];
 
 const escape            = (line) => line.replace(/([`])/, "\\$1");
+const available         = (line) => line ? line : 'N/A';
 
 
 const TABLE_HEADER = 

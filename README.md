@@ -132,9 +132,9 @@ ctrl+n | cmd+o | Go to class | ✅
 ctrl+shift+n | cmd+shift+o | Go to file | ✅
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | ✅
 alt+left | ctrl+left | Go to previous editor tab | ✅
- | shift+cmd+[ | Go to previous editor tab | ✅
+N/A | shift+cmd+[ | Go to previous editor tab | ✅
 alt+right | ctrl+right | Go to next editor tab | ✅
- | shift+cmd+] | Go to next editor tab | ✅
+N/A | shift+cmd+] | Go to next editor tab | ✅
 f12 | f12 | Go back to previous tool window | N/A
 escape | escape | Go to editor (from tool window) | N/A
 shift+escape | shift+escape | Hide active or last active window (Sidebar) | ✅
@@ -147,15 +147,15 @@ ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
 ctrl+g | cmd+l | Go to line | ✅
 ctrl+e | cmd+e | Recent files popup | ✅
 ctrl+alt+left | cmd+alt+left | Navigate back | ✅
- | cmd+[ | Navigate back | ✅
+N/A | cmd+[ | Navigate back | ✅
 ctrl+alt+right | cmd+alt+right | Navigate forward | ✅
- | cmd+] | Navigate forward | ✅
+N/A | cmd+] | Navigate forward | ✅
 ctrl+shift+backspace | cmd+shift+backspace | Navigate to last edit location | ✅
 alt+f1 | alt+f1 | Select current file or symbol in any view | N/A
 ctrl+b | cmd+b | Go to declaration | ✅
 ctrl+alt+b | cmd+alt+b | Go to implementation(s) | ✅
 ctrl+shift+i | alt+space | Open quick definition lookup | ✅
- | cmd+y | Open quick definition lookup | ✅
+N/A | cmd+y | Open quick definition lookup | ✅
 ctrl+shift+b | ctrl+shift+b | Go to type declaration | ✅
 ctrl+u | cmd+u | Go to super-method/super-class | N/A
 alt+up | ctrl+up | Go to previous method | N/A
