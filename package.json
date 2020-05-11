@@ -330,6 +330,12 @@
                 "intellij": "Move Line Up"
             },
             {
+                "key": "shift+ctrl+8",
+                "mac": "shift+cmd+8",
+                "command": "editor.action.toggleColumnSelection",
+                "intellij": "Column Selection Mode"
+            },
+            {
                 "key": "f3",
                 "mac": "cmd+g",
                 "command": "editor.action.nextMatchFindAction",

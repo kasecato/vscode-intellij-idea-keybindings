@@ -518,6 +518,12 @@
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Move Line Up"
             },
+            {
+                "key": "shift+ctrl+8",
+                "mac": "shift+cmd+8",
+                "command": "editor.action.toggleColumnSelection",
+                "intellij": "Column Selection Mode"
+            },
             /*---------------------------------------------------------------*\
              * Search/Replace
             \*---------------------------------------------------------------*/
