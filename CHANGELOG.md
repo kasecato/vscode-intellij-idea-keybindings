@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.40 (May 19, 2020)
+
+* enhancement - Binding "Change All Occurences" to Shift+F6. See [#180](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/180)
+
 ## 0.2.39 (May 11, 2020)
 
 * enhancement - Add column selection shortcut. See [#178](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/178)
