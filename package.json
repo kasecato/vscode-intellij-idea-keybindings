@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.39",
+    "version": "0.2.40",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.40.0"
@@ -45,7 +45,8 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [{
+        "keybindings": [
+            {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
