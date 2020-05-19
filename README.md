@@ -191,6 +191,7 @@ f5 | f5 | Copy | N/A
 f6 | f6 | Move | N/A
 alt+delete | cmd+delete | Safe Delete | N/A
 shift+f6 | shift+f6 | Rename | ✅
+shift+f6 | shift+f6 | Select All Occurrences | ✅
 shift+f6 | shift+f6 | Rename (File) | ✅
 ctrl+f6 | cmd+f6 | Change Signature | N/A
 ctrl+alt+n | cmd+alt+n | Inline | N/A
@@ -346,6 +347,7 @@ when changes are saved.
 * [@faucct](https://github.com/faucct)
 * [@glyn](https://github.com/glyn)
 * [@ronaldstevanus](https://github.com/ronaldstevanus)
+* [@goncalossilva](https://github.com/goncalossilva)
 
 
 ## License

@@ -45,8 +45,7 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [
-            {
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -737,6 +736,13 @@
                 "command": "editor.action.rename",
                 "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Rename"
+            },
+            {
+                "key": "shift+f6",
+                "mac": "shift+f6",
+                "command": "editor.action.changeAll",
+                "when": "!editorHasRenameProvider && editorTextFocus && !editorReadonly",
+                "intellij": "Select All Occurrences"
             },
             {
                 "key": "shift+f6",
