@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "0.2.40",
+    "version": "0.2.41",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.40.0"
@@ -22,7 +22,7 @@
     "devDependencies": {
         "vscode": "^1.1.37",
         "gulp": "~4.0.2",
-        "gulp-cli": "~2.2.0",
+        "gulp-cli": "~2.2.1",
         "gulp-strip-json-comments": "~4.0.1",
         "gulp-rename": "~2.0.0",
         "gulp-jsbeautifier": "~3.0.1"
@@ -45,7 +45,8 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [{
+        "keybindings": [
+            {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
