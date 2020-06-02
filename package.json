@@ -45,8 +45,7 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "contributes": {
-        "keybindings": [
-            {
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -94,14 +93,14 @@
                 "intellij": "Comment/uncomment with line comment"
             },
             {
-                "key": "ctrl+alt+/",
+                "key": "ctrl+shift+/",
                 "mac": "cmd+alt+/",
                 "command": "editor.action.blockComment",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Comment/uncomment with block comment"
             },
             {
-                "key": "ctrl+alt+numpad_divide",
+                "key": "ctrl+shift+numpad_divide",
                 "mac": "cmd+alt+numpad_divide",
                 "command": "editor.action.blockComment",
                 "when": "editorTextFocus && !editorReadonly",

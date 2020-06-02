@@ -25,8 +25,8 @@ ctrl+i | ctrl+i | Implement methods | N/A
 ctrl+alt+t | cmd+alt+t | Surround with... (if..else, try..catch, for, synchronized, etc.) | N/A
 ctrl+/ | cmd+/ | Comment/uncomment with line comment | ✅
 ctrl+numpad_divide | cmd+numpad_divide | Comment/uncomment with line comment | ✅
-ctrl+alt+/ | cmd+alt+/ | Comment/uncomment with block comment | ✅
-ctrl+alt+numpad_divide | cmd+alt+numpad_divide | Comment/uncomment with block comment | ✅
+ctrl+shift+/ | cmd+alt+/ | Comment/uncomment with block comment | ✅
+ctrl+shift+numpad_divide | cmd+alt+numpad_divide | Comment/uncomment with block comment | ✅
 ctrl+w | alt+up | Select successively increasing code blocks | ✅
 ctrl+shift+w | alt+down | Decrease current selection to previous state | ✅
 alt+q | ctrl+shift+q | Context info | N/A

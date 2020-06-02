@@ -1,5 +1,13 @@
 # Change Log
 
+## 0.2.41 (Jun 3, 2020)
+
+* bug fix - keybinding for comment/uncomment with block comment is incorrect. See [#183](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/183)
+
+## 0.2.40 (May 19, 2020)
+
+* enhancement - Binding "Change All Occurences" to Shift+F6. See [#180](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/180)
+
 ## 0.2.40 (May 19, 2020)
 
 * enhancement - Binding "Change All Occurences" to Shift+F6. See [#180](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/180)
