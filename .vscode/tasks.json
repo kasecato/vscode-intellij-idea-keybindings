@@ -1,18 +1,14 @@
 {
     "version": "2.0.0",
     "command": "npm",
-    "args": ["run"],
     "tasks": [
         {
-            "label": "Run gulp build",
-            "type": "shell",
-            "args": ["gulp", "build"],
-            "isBackground": true,
-            "problemMatcher": "$eslint-stylish",
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
+            "type": "npm",
+            "script": "watch",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "isBackground": true
         }
     ]
 }
