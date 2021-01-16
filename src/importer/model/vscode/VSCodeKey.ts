@@ -1,9 +1,5 @@
-export class VSCodeKey {
+export interface VSCodeKey {
 
     key: string;
-
-    public constructor(key: string) {
-        this.key = key;
-    }
 
 }

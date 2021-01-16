@@ -1,8 +1,5 @@
-export class IntelliJKeystroke {
-    keystroke: string | null;
+export interface IntelliJKeystroke {
 
-    public constructor(keystroke: string | null = null) {
-        this.keystroke = keystroke;
-    }
+    keystroke: string;
 
 }

@@ -1,9 +1,6 @@
-export class VSCodeCommand {
+export interface VSCodeCommand {
 
-    id: string;
-
-    public constructor(id: string) {
-        this.id = id;
-    }
+    command: string;
+    when: string;
 
 }
