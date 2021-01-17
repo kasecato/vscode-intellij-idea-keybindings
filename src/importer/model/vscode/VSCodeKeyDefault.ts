@@ -1,12 +1,11 @@
 import { OS } from "../OS";
-import { VSCodeKey } from "./VSCodeKey";
 
-export class VSCodeKeyDefault implements VSCodeKey {
+export class VSCodeKeyDefault {
     os: OS;
-    keys: string[] = [];
+    key: string;
 
-    constructor(os: OS, keys: string[]) {
+    constructor(os: OS, key: string) {
         this.os = os;
-        this.keys = keys;
+        this.key = key;
     }
 }

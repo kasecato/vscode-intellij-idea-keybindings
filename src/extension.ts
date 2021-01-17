@@ -1,7 +1,7 @@
 import * as parser from "fast-xml-parser";
 import * as vscode from "vscode";
 import { IntelliJSyntaxAnalyzer } from "./importer/IntelliJSyntaxAnalyzer";
-import { IntelliJKeymap } from "./importer/model/intellij/IntelliJKeymap";
+import { IntelliJKeymapXML } from "./importer/model/intellij/IntelliJKeymapXML";
 import { OS, OSArray } from "./importer/model/OS";
 import { VSCodeKeybinding } from "./importer/model/vscode/VSCodeKeybinding";
 
@@ -69,32 +69,39 @@ export function activate(context: vscode.ExtensionContext) {
         for (const actionIndex in actionElements) {
             const actionIdAttr = actionElements[actionIndex]["@_id"];
             const keystorkeElements = actionElements[actionIndex]["keyboard-shortcut"];
-            const removeDefaultKeymap = !keystorkeElements;
-            if (removeDefaultKeymap) {
-                const intellijKeymap = new IntelliJKeymap(os, actionIdAttr);
-                const vscodes = IntelliJSyntaxAnalyzer.convertToVSCodeDefault(intellijKeymap);
+
+            for (const keystrokeIndex in keystorkeElements) {
+                const keyboardShortcutElement = keystorkeElements[keystrokeIndex];
+                const firstKeystrokeAttr = keyboardShortcutElement["@_first-keystroke"];
+                const secondKeystrokeAttr = keyboardShortcutElement["@_second-keystroke"];
+                const intellijKeymapCustom = new IntelliJKeymapXML(
+                    actionIdAttr,
+                    os,
+                    firstKeystrokeAttr,
+                    secondKeystrokeAttr
+                );
+
+                const vscodes = IntelliJSyntaxAnalyzer.convertToVSCode(os, intellijKeymapCustom);
                 if (vscodes === IntelliJSyntaxAnalyzer.NO_MAPPING) {
                     continue;
                 }
                 vscodes.forEach(vscode => vscodeKeybindings.push(vscode));
-            } else {
-                for (const keystrokeIndex in keystorkeElements) {
-                    const keyboardShortcutElement = keystorkeElements[keystrokeIndex];
-                    const firstKeystrokeAttr = keyboardShortcutElement["@_first-keystroke"];
-                    const secondKeystrokeAttr = keyboardShortcutElement["@_second-keystroke"];
-                    const intellijKeymap = new IntelliJKeymap(
-                        os,
-                        actionIdAttr,
-                        firstKeystrokeAttr,
-                        secondKeystrokeAttr
-                    );
+            }
 
-                    const vscode = IntelliJSyntaxAnalyzer.convertToVSCode(intellijKeymap);
-                    if (vscode === IntelliJSyntaxAnalyzer.NO_MAPPING) {
-                        continue;
-                    }
-                    vscodeKeybindings.push(vscode);
+            {
+                const intellijKeymapCustom = new IntelliJKeymapXML(actionIdAttr, os);
+                const removeVcodes = IntelliJSyntaxAnalyzer.removeDefault(os, intellijKeymapCustom);
+                if (removeVcodes === IntelliJSyntaxAnalyzer.NO_MAPPING) {
+                    continue;
                 }
+                removeVcodes.forEach(remove => {
+                    const duplicated = vscodeKeybindings.some( // FIXME: high costs
+                        add => add.command === remove.command && remove.key.endsWith(add.key)
+                    );
+                    if (!duplicated) {
+                        vscodeKeybindings.push(remove);
+                    }
+                });
             }
         }
 

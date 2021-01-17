@@ -2,5 +2,6 @@ import { OS } from "../OS";
 
 export interface VSCodeKey {
     os: OS;
-    keys: string[];
+    key: string;
+    convert(intellijKeystroke: string): string;
 }

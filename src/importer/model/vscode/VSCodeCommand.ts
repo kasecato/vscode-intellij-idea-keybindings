@@ -1,7 +1,7 @@
-import { VSCodeKey } from "./VSCodeKey";
+import { VSCodeKeyDefault } from "./VSCodeKeyDefault";
 
 export interface VSCodeCommand {
     command: string;
     when: string;
-    keysDefault: VSCodeKey[];
+    keysDefault: VSCodeKeyDefault[];
 }
