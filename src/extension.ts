@@ -1,19 +1,19 @@
-import * as parser from "fast-xml-parser";
-import * as vscode from "vscode";
-import { IntelliJSyntaxAnalyzer } from "./importer/IntelliJSyntaxAnalyzer";
-import { IntelliJKeymapXML } from "./importer/model/intellij/IntelliJKeymapXML";
-import { OS, OSArray } from "./importer/model/OS";
-import { VSCodeKeybinding } from "./importer/model/vscode/VSCodeKeybinding";
+import * as parser from 'fast-xml-parser';
+import * as vscode from 'vscode';
+import { IntelliJSyntaxAnalyzer } from './importer/IntelliJSyntaxAnalyzer';
+import { IntelliJKeymapXML } from './importer/model/intellij/IntelliJKeymapXML';
+import { OS, OSArray } from './importer/model/OS';
+import { VSCodeKeybinding } from './importer/model/vscode/VSCodeKeybinding';
 
 export function activate(context: vscode.ExtensionContext) {
-    vscode.commands.registerCommand("IntelliJ/importFile", async function () {
+    vscode.commands.registerCommand('IntelliJ/importFile', async function () {
         /*---------------------------------------------------------------------
          * Reader
          *-------------------------------------------------------------------*/
         const readerOptions: vscode.OpenDialogOptions = {
             canSelectFiles: true,
             filters: {
-                XML: ["xml"],
+                XML: ['xml'],
             },
         };
         const readerUri = await vscode.window.showOpenDialog(readerOptions);
@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
         const readData = await vscode.workspace.fs.readFile(readerUri[0]);
-        const readStr = Buffer.from(readData).toString("utf8");
+        const readStr = Buffer.from(readData).toString('utf8');
 
         /*---------------------------------------------------------------------
          * Parser
@@ -36,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
         } catch (error) {
             console.error(error);
             vscode.window.showErrorMessage(
-                "Cannot load this IntelliJ IDEA Keymap file. Plesase check the file format."
+                'Cannot load this IntelliJ IDEA Keymap file. Plesase check the file format.'
             );
             return;
         }
@@ -46,14 +46,14 @@ export function activate(context: vscode.ExtensionContext) {
          *-------------------------------------------------------------------*/
         if (!parsedIntellijKeymapsJson?.keymap) {
             vscode.window.showErrorMessage(
-                "Cannot find any IntelliJ IDEA Keymap settings in this file. Make sure that the file is an XML file exported from IntelliJ Idea."
+                'Cannot find any IntelliJ IDEA Keymap settings in this file. Make sure that the file is an XML file exported from IntelliJ Idea.'
             );
             await vscode.window.showTextDocument(readerUri[0]);
             return;
         }
 
         const osOptions: vscode.QuickPickOptions = {
-            placeHolder: "Which OS do you want to convert for?",
+            placeHolder: 'Which OS do you want to convert for?',
             ignoreFocusOut: true,
         };
         const os = (await vscode.window.showQuickPick(
@@ -67,13 +67,13 @@ export function activate(context: vscode.ExtensionContext) {
         const vscodeKeybindings = new Array<VSCodeKeybinding>();
         const actionElements = parsedIntellijKeymapsJson.keymap[0].action;
         for (const actionIndex in actionElements) {
-            const actionIdAttr = actionElements[actionIndex]["@_id"];
-            const keystorkeElements = actionElements[actionIndex]["keyboard-shortcut"];
+            const actionIdAttr = actionElements[actionIndex]['@_id'];
+            const keystorkeElements = actionElements[actionIndex]['keyboard-shortcut'];
 
             for (const keystrokeIndex in keystorkeElements) {
                 const keyboardShortcutElement = keystorkeElements[keystrokeIndex];
-                const firstKeystrokeAttr = keyboardShortcutElement["@_first-keystroke"];
-                const secondKeystrokeAttr = keyboardShortcutElement["@_second-keystroke"];
+                const firstKeystrokeAttr = keyboardShortcutElement['@_first-keystroke'];
+                const secondKeystrokeAttr = keyboardShortcutElement['@_second-keystroke'];
                 const intellijKeymapCustom = new IntelliJKeymapXML(
                     actionIdAttr,
                     os,
@@ -95,7 +95,8 @@ export function activate(context: vscode.ExtensionContext) {
                     continue;
                 }
                 removeVcodes.forEach(remove => {
-                    const duplicated = vscodeKeybindings.some( // FIXME: high costs
+                    const duplicated = vscodeKeybindings.some(
+                        // FIXME: high costs
                         add => add.command === remove.command && remove.key.endsWith(add.key)
                     );
                     if (!duplicated) {
@@ -117,14 +118,14 @@ export function activate(context: vscode.ExtensionContext) {
         const writerOptions: vscode.SaveDialogOptions = {
             defaultUri: defaultWriteUri,
             filters: {
-                JSON: ["json"],
+                JSON: ['json'],
             },
         };
         const writerUri = await vscode.window.showSaveDialog(writerOptions);
         if (!writerUri) {
             return;
         }
-        const writeData = Buffer.from(generatedVSCodeKeybindingsJson, "utf8");
+        const writeData = Buffer.from(generatedVSCodeKeybindingsJson, 'utf8');
         await vscode.workspace.fs.writeFile(writerUri, writeData);
 
         await vscode.window.showTextDocument(writerUri);

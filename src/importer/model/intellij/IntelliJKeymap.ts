@@ -1,4 +1,4 @@
-import { IntelliJKeystroke } from "./IntelliJKeystroke";
+import { IntelliJKeystroke } from './IntelliJKeystroke';
 
 export interface IntelliJKeymap {
     actionId: string;

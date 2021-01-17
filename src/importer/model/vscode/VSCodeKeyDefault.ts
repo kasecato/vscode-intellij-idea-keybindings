@@ -1,4 +1,4 @@
-import { OS } from "../OS";
+import { OS } from '../OS';
 
 export class VSCodeKeyDefault {
     os: OS;

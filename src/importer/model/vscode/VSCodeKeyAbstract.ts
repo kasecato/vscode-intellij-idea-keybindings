@@ -1,14 +1,14 @@
-import { IntelliJSyntaxAnalyzer } from "../../IntelliJSyntaxAnalyzer";
-import { IntelliJKeymapXML } from "../intellij/IntelliJKeymapXML";
-import { IntelliJKeystroke } from "../intellij/IntelliJKeystroke";
-import { OS } from "../OS";
-import { VSCodeKey } from "./VSCodeKey";
-import { VSCodeKeyDefault } from "./VSCodeKeyDefault";
+import { IntelliJSyntaxAnalyzer } from '../../IntelliJSyntaxAnalyzer';
+import { IntelliJKeymapXML } from '../intellij/IntelliJKeymapXML';
+import { IntelliJKeystroke } from '../intellij/IntelliJKeystroke';
+import { OS } from '../OS';
+import { VSCodeKey } from './VSCodeKey';
+import { VSCodeKeyDefault } from './VSCodeKeyDefault';
 
 export abstract class VSCodeKeyAbstract implements VSCodeKey {
-    static readonly VSCODE_REMOVING_DELIMITER = "-";
-    static readonly VSCODE_SECOND_DELIMITER = " ";
-    static readonly VSCODE_DELIMITTER = "+";
+    static readonly VSCODE_REMOVING_DELIMITER = '-';
+    static readonly VSCODE_SECOND_DELIMITER = ' ';
+    static readonly VSCODE_DELIMITTER = '+';
 
     os: OS;
     key: string;
@@ -42,7 +42,7 @@ export abstract class VSCodeKeyAbstract implements VSCodeKey {
             return;
         }
 
-        throw Error("No IntelliJ keystrokes found");
+        throw Error('No IntelliJ keystrokes found');
     }
 
     convert(intellijKeystroke: string): string {

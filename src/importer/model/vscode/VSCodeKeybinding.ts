@@ -1,5 +1,5 @@
-import { VSCodeCommand } from "./VSCodeCommand";
-import { VSCodeKey } from "./VSCodeKey";
+import { VSCodeCommand } from './VSCodeCommand';
+import { VSCodeKey } from './VSCodeKey';
 
 export class VSCodeKeybinding {
     key: string;

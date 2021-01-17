@@ -1,4 +1,3 @@
-import { VSCodeKeyAbstract } from "./VSCodeKeyAbstract";
+import { VSCodeKeyAbstract } from './VSCodeKeyAbstract';
 
-export class VSCodeKeyLinux extends VSCodeKeyAbstract {
-}
+export class VSCodeKeyLinux extends VSCodeKeyAbstract {}

@@ -1,4 +1,4 @@
-import { VSCodeKeyDefault } from "./VSCodeKeyDefault";
+import { VSCodeKeyDefault } from './VSCodeKeyDefault';
 
 export interface VSCodeCommand {
     command: string;

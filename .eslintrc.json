@@ -21,7 +21,7 @@
 	},
 	"rules": {
 		"semi": "error",
-		"quotes": ["error", "double"],
+		"quotes": ["error", "single"],
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"@typescript-eslint/array-type": [
 			"error",

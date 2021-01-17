@@ -1,8 +1,8 @@
-import { IntelliJKeystrokeDefault } from "../intellij/IntelliJKeystrokeDefault";
-import { VSCodeKeyAbstract } from "./VSCodeKeyAbstract";
+import { IntelliJKeystrokeDefault } from '../intellij/IntelliJKeystrokeDefault';
+import { VSCodeKeyAbstract } from './VSCodeKeyAbstract';
 
 export class VSCodeKeyMac extends VSCodeKeyAbstract {
-    private static readonly VSCODE_META = "cmd";
+    private static readonly VSCODE_META = 'cmd';
 
     convert(intellijKeystroke: string): string {
         return super

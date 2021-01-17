@@ -1,5 +1,5 @@
-import { OS } from "../OS";
-import { IntelliJKeystroke } from "./IntelliJKeystroke";
+import { OS } from '../OS';
+import { IntelliJKeystroke } from './IntelliJKeystroke';
 
 export class IntelliJKeystrokeDefault implements IntelliJKeystroke {
     static readonly INTELLIJ_DELIMITTER = / /g;
