@@ -59,15 +59,12 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "IntelliJ/importFile",
-                "title": "Import IntelliJ Keybindngs (XML)",
-                "category": "IntelliJ Keybindings"
-            }
-        ],
-        "keybindings": [
-            {
+        "commands": [{
+            "command": "IntelliJ/importFile",
+            "title": "Import IntelliJ Keybindngs (XML)",
+            "category": "IntelliJ Keybindings"
+        }],
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",

@@ -1,21 +1,19 @@
 import * as parser from "fast-xml-parser";
 import * as vscode from "vscode";
 import { IntelliJSyntaxAnalyzer } from "./importer/IntelliJSyntaxAnalyzer";
-import { IntelliJKeystrokeImpl } from "./importer/model/intellij/IntelliJKeystrokeImpl";
+import { IntelliJKeymap } from "./importer/model/intellij/IntelliJKeymap";
 import { OS, OSArray } from "./importer/model/OS";
 import { VSCodeKeybinding } from "./importer/model/vscode/VSCodeKeybinding";
 
 export function activate(context: vscode.ExtensionContext) {
-
     vscode.commands.registerCommand("IntelliJ/importFile", async function () {
-
         /*---------------------------------------------------------------------
          * Reader
          *-------------------------------------------------------------------*/
         const readerOptions: vscode.OpenDialogOptions = {
             canSelectFiles: true,
             filters: {
-                "XML": ["xml"]
+                XML: ["xml"],
             },
         };
         const readerUri = await vscode.window.showOpenDialog(readerOptions);
@@ -37,7 +35,9 @@ export function activate(context: vscode.ExtensionContext) {
             parsedIntellijKeymapsJson = parser.parse(readStr, parserOptions);
         } catch (error) {
             console.error(error);
-            vscode.window.showErrorMessage("Cannot load this IntelliJ IDEA Keymap file. Plesase check the file format.");
+            vscode.window.showErrorMessage(
+                "Cannot load this IntelliJ IDEA Keymap file. Plesase check the file format."
+            );
             return;
         }
 
@@ -45,7 +45,9 @@ export function activate(context: vscode.ExtensionContext) {
          * Semantic Analyzer
          *-------------------------------------------------------------------*/
         if (!parsedIntellijKeymapsJson?.keymap) {
-            vscode.window.showErrorMessage("Cannot find any IntelliJ IDEA Keymap settings in this file. Make sure that the file is an XML file exported from IntelliJ Idea.");
+            vscode.window.showErrorMessage(
+                "Cannot find any IntelliJ IDEA Keymap settings in this file. Make sure that the file is an XML file exported from IntelliJ Idea."
+            );
             await vscode.window.showTextDocument(readerUri[0]);
             return;
         }
@@ -54,7 +56,10 @@ export function activate(context: vscode.ExtensionContext) {
             placeHolder: "Which OS do you want to convert for?",
             ignoreFocusOut: true,
         };
-        const os = await vscode.window.showQuickPick(OSArray.map(x => x.toString()), osOptions) as OS;
+        const os = (await vscode.window.showQuickPick(
+            OSArray.map(x => x.toString()),
+            osOptions
+        )) as OS;
         if (!os) {
             return;
         }
@@ -64,22 +69,32 @@ export function activate(context: vscode.ExtensionContext) {
         for (const actionIndex in actionElements) {
             const actionIdAttr = actionElements[actionIndex]["@_id"];
             const keystorkeElements = actionElements[actionIndex]["keyboard-shortcut"];
-
-            for (const keystrokeIndex in keystorkeElements) {
-                const keyboardShortcutElement = keystorkeElements[keystrokeIndex];
-                const firstKeystrokeAttr = keyboardShortcutElement["@_first-keystroke"];
-                const secondKeystrokeAttr = keyboardShortcutElement["@_second-keystroke"];
-
-                const first = new IntelliJKeystrokeImpl(firstKeystrokeAttr);
-                const second = secondKeystrokeAttr
-                    ? new IntelliJKeystrokeImpl(secondKeystrokeAttr)
-                    : secondKeystrokeAttr;
-
-                const vscode = IntelliJSyntaxAnalyzer.convert(os, actionIdAttr, first, second);
-                if (!vscode) {
+            const removeDefaultKeymap = !keystorkeElements;
+            if (removeDefaultKeymap) {
+                const intellijKeymap = new IntelliJKeymap(os, actionIdAttr);
+                const vscodes = IntelliJSyntaxAnalyzer.convertToVSCodeDefault(intellijKeymap);
+                if (vscodes === IntelliJSyntaxAnalyzer.NO_MAPPING) {
                     continue;
                 }
-                vscodeKeybindings.push(vscode);
+                vscodes.forEach(vscode => vscodeKeybindings.push(vscode));
+            } else {
+                for (const keystrokeIndex in keystorkeElements) {
+                    const keyboardShortcutElement = keystorkeElements[keystrokeIndex];
+                    const firstKeystrokeAttr = keyboardShortcutElement["@_first-keystroke"];
+                    const secondKeystrokeAttr = keyboardShortcutElement["@_second-keystroke"];
+                    const intellijKeymap = new IntelliJKeymap(
+                        os,
+                        actionIdAttr,
+                        firstKeystrokeAttr,
+                        secondKeystrokeAttr
+                    );
+
+                    const vscode = IntelliJSyntaxAnalyzer.convertToVSCode(intellijKeymap);
+                    if (vscode === IntelliJSyntaxAnalyzer.NO_MAPPING) {
+                        continue;
+                    }
+                    vscodeKeybindings.push(vscode);
+                }
             }
         }
 
@@ -95,7 +110,7 @@ export function activate(context: vscode.ExtensionContext) {
         const writerOptions: vscode.SaveDialogOptions = {
             defaultUri: defaultWriteUri,
             filters: {
-                "JSON": ["json"]
+                JSON: ["json"],
             },
         };
         const writerUri = await vscode.window.showSaveDialog(writerOptions);
@@ -107,5 +122,4 @@ export function activate(context: vscode.ExtensionContext) {
 
         await vscode.window.showTextDocument(writerUri);
     });
-
 }

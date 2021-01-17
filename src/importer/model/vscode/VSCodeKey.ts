@@ -1,5 +1,6 @@
+import { OS } from "../OS";
+
 export interface VSCodeKey {
-
-    key: string;
-
+    os: OS;
+    keys: string[];
 }
