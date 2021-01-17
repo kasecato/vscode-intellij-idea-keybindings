@@ -1,6 +1,6 @@
+import { IntelliJSyntaxAnalyzer } from "../../IntelliJSyntaxAnalyzer";
 import { IntelliJKeymapXML } from "../intellij/IntelliJKeymapXML";
 import { IntelliJKeystroke } from "../intellij/IntelliJKeystroke";
-import { IntelliJKeystrokeDefault } from "../intellij/IntelliJKeystrokeDefault";
 import { OS } from "../OS";
 import { VSCodeKey } from "./VSCodeKey";
 import { VSCodeKeyDefault } from "./VSCodeKeyDefault";
@@ -46,9 +46,9 @@ export abstract class VSCodeKeyAbstract implements VSCodeKey {
     }
 
     convert(intellijKeystroke: string): string {
-        return intellijKeystroke.replace(
-            IntelliJKeystrokeDefault.INTELLIJ_DELIMITTER,
-            VSCodeKeyAbstract.VSCODE_DELIMITTER
-        );
+        IntelliJSyntaxAnalyzer.INTELLIJ_TO_VSCODE_KEY.forEach((vscodeMeta, intellijMeta) => {
+            intellijKeystroke = intellijKeystroke.replace(intellijMeta, vscodeMeta);
+        });
+        return intellijKeystroke;
     }
 }
