@@ -390,7 +390,7 @@
             {
                 "key": "alt+f7",
                 "mac": "alt+f7",
-                "command": "references-view.find",
+                "command": "references-view.findReferences",
                 "when": "editorHasReferenceProvider",
                 "intellij": "Find usages"
             },
@@ -925,7 +925,7 @@
             {
                 "key": "alt+numpad9",
                 "mac": "cmd+numpad9",
-                "command": "workbench.view.git",
+                "command": "workbench.view.scm",
                 "when": "editorFocus",
                 "intellij": "Open corresponding tool window (Git)"
             },
@@ -948,12 +948,6 @@
                 "mac": "cmd+s",
                 "command": "workbench.action.files.saveAll",
                 "intellij": "Save all"
-            },
-            {
-                "key": "ctrl+alt+y",
-                "mac": "cmd+alt+y",
-                "command": "workbench.action.sync",
-                "intellij": "Synchronize"
             },
             {
                 "key": "ctrl+alt+f",
