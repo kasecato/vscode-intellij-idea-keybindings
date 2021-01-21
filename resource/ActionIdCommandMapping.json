@@ -1,0 +1,10 @@
+[
+    {
+        "intellij": "RenameElement",
+        "vscode": "editor.action.rename"
+    },
+    {
+        "intellij": "GotoLine",
+        "vscode": "workbench.action.gotoLine"
+    }
+]
