@@ -13,7 +13,7 @@ export const MAC_TO_MAC: QuickPickItem = {
 }
 
 export const MAC_TO_WINDOWS: QuickPickItem = {
-    label: 'Mac to Mac',
+    label: 'Mac to Windows',
     detail: 'Import from IntelliJ for macOS (XML), Export to VSCode for Windows (JSON)'
 }
 
