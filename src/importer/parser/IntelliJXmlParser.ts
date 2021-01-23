@@ -2,7 +2,7 @@ import * as parser from 'fast-xml-parser';
 import { IntelliJKeymapXML } from '../model/intellij/implement/IntelliJKeymapXML';
 
 export class IntelliJXMLParser {
-    static async parseToJSON(xml: string): Promise<any> {
+    static async parseToJson(xml: string): Promise<any> {
         const parserXmlOptions: parser.X2jOptionsOptional = {
             ignoreAttributes: false,
             parseAttributeValue: true,

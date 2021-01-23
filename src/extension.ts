@@ -12,7 +12,7 @@ import { FileOpenDialog } from './importer/reader/FileOpenDialog';
 import { FileReaderDefault } from './importer/reader/FileReaderDefault';
 import { Picker } from './importer/reader/Picker';
 import { IntelliJSyntaxAnalyzer } from './importer/syntax-analyzer/IntelliJSyntaxAnalyzer';
-import { FileSaveDialog } from './importer/writer/FileSaveDialog';
+import { FileOpen } from './importer/writer/FileOpen';
 
 export function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand('IntelliJ/importFile', async function () {
@@ -33,8 +33,8 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Parser
          *-------------------------------------------------------------------*/
-        const intellijJsonCustom: any = await IntelliJXMLParser.parseToJSON(intellijXmlCustom);
-        const intellijJsonDefault: any = await IntelliJXMLParser.parseToJSON(intellijXmlDefault);
+        const intellijJsonCustom: any = await IntelliJXMLParser.parseToJson(intellijXmlCustom);
+        const intellijJsonDefault: any = await IntelliJXMLParser.parseToJson(intellijXmlDefault);
         const intellijCustoms: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonCustom);
         const intellijDefaults: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonDefault);
         const vscodeDefaults: VSCodeKeybinding[] = await VSCodeJsonParser.desirialize(vscodeJsonDefault);
@@ -66,8 +66,7 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Writer
          *-------------------------------------------------------------------*/
-        await FileSaveDialog.saveJson(keybindingsJson);
-
-        // await vscode.window.showTextDocument(keybindingsJson);
+        const untitledKeybindingsJson = await FileOpen.openText(keybindingsJson);
+        await FileOpen.showKeybindingsJson(untitledKeybindingsJson);
     });
 }
