@@ -59,15 +59,12 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "IntelliJ/importFile",
-                "title": "Import IntelliJ Keybindngs (XML)",
-                "category": "IntelliJ Keybindings"
-            }
-        ],
-        "keybindings": [
-            {
+        "commands": [{
+            "command": "IntelliJ/importFile",
+            "title": "Import IntelliJ Keybindngs (XML)",
+            "category": "IntelliJ Keybindings"
+        }],
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -494,8 +491,7 @@
                 "key": "ctrl+shift+f8",
                 "mac": "cmd+shift+f8",
                 "command": "workbench.view.debug",
-                "intellij": "View breakpoints",
-                "todo": "show all debug"
+                "intellij": "View breakpoints"
             },
             {
                 "key": "ctrl+n",
@@ -685,16 +681,14 @@
                 "mac": "f2",
                 "command": "editor.action.marker.next",
                 "when": "editorFocus && !editorReadonly",
-                "intellij": "Next highlighted error",
-                "todo": "N/A"
+                "intellij": "Next highlighted error"
             },
             {
                 "key": "shift+f2",
                 "mac": "shift+f2",
                 "command": "editor.action.marker.prev",
                 "when": "editorFocus && !editorReadonly",
-                "intellij": "Previous highlighted error",
-                "todo": "N/A"
+                "intellij": "Previous highlighted error"
             },
             {
                 "key": "f4",
@@ -804,7 +798,7 @@
             },
             {
                 "key": "ctrl+shift+k",
-                "mac": "cmd+shift+k",
+                "mac": "cmd+alt+k",
                 "command": "git.pushTo",
                 "when": "!inDebugMode && !terminalFocus",
                 "intellij": "Push commits to VCS"

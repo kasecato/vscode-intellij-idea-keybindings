@@ -1,10 +1,398 @@
 [
     {
-        "intellij": "RenameElement",
-        "vscode": "editor.action.rename"
+        "intellij": "$Cut",
+        "vscode": "editor.action.clipboardCutAction"
+    },
+    {
+        "intellij": "ActivateDebugToolWindow",
+        "vscode": "workbench.view.debug"
+    },
+    {
+        "intellij": "ActivateFindToolWindow",
+        "vscode": "workbench.view.search"
+    },
+    {
+        "intellij": "Back",
+        "vscode": "workbench.action.navigateBack"
+    },
+    {
+        "intellij": "CheckinProject",
+        "vscode": "git.commitAll"
+    },
+    {
+        "intellij": "ChooseDebugConfiguration",
+        "vscode": "workbench.view.debug"
+    },
+    {
+        "intellij": "ChooseRunConfiguration",
+        "vscode": "workbench.action.tasks.runTask"
+    },
+    {
+        "intellij": "CloseContent",
+        "vscode": "workbench.action.closeActiveEditor"
+    },
+    {
+        "intellij": "CodeCompletion",
+        "vscode": "editor.action.triggerSuggest"
+    },
+    {
+        "intellij": "CollapseAllRegions",
+        "vscode": "editor.foldAll"
+    },
+    {
+        "intellij": "CollapseRegion",
+        "vscode": "editor.fold"
+    },
+    {
+        "intellij": "CollapseRegionRecursively",
+        "vscode": "editor.foldRecursively"
+    },
+    {
+        "intellij": "CommentByBlockComment",
+        "vscode": "editor.action.blockComment"
+    },
+    {
+        "intellij": "CommentByLineComment",
+        "vscode": "editor.action.commentLine"
+    },
+    {
+        "intellij": "CompileDirty",
+        "vscode": "workbench.action.tasks.build"
+    },
+    {
+        "intellij": "CopyPaths",
+        "vscode": "copyFilePath"
+    },
+    {
+        "intellij": "Debug",
+        "vscode": "workbench.action.debug.run"
+    },
+    {
+        "intellij": "Diff.FocusOppositePane",
+        "vscode": "workbench.action.quickOpenNavigateNext"
+    },
+    {
+        "intellij": "EditSource",
+        "vscode": "editor.action.goToDeclaration"
+    },
+    {
+        "intellij": "EditorCompleteStatement",
+        "vscode": "acceptSelectedSuggestion"
+    },
+    {
+        "intellij": "EditorDeleteLine",
+        "vscode": "editor.action.deleteLines"
+    },
+    {
+        "intellij": "EditorDeleteToWordEnd",
+        "vscode": "deleteWordRight"
+    },
+    {
+        "intellij": "EditorDeleteToWordStart",
+        "vscode": "deleteWordLeft"
+    },
+    {
+        "intellij": "EditorDuplicate",
+        "vscode": "editor.action.copyLinesDownAction"
+    },
+    {
+        "intellij": "EditorJoinLines",
+        "vscode": "editor.action.joinLines"
+    },
+    {
+        "intellij": "EditorSelectWord",
+        "vscode": "editor.action.smartSelect.grow"
+    },
+    {
+        "intellij": "EditorSplitLine",
+        "vscode": "lineBreakInsert"
+    },
+    {
+        "intellij": "EditorStartNewLine",
+        "vscode": "editor.action.insertLineAfter"
+    },
+    {
+        "intellij": "EditorStartNewLineBefore",
+        "vscode": "editor.action.insertLineBefore"
+    },
+    {
+        "intellij": "EditorTextEnd",
+        "vscode": "cursorBottom"
+    },
+    {
+        "intellij": "EditorTextStart",
+        "vscode": "cursorTop"
+    },
+    {
+        "intellij": "EditorToggleColumnMode",
+        "vscode": "editor.action.toggleColumnSelection"
+    },
+    {
+        "intellij": "EditorUnSelectWord",
+        "vscode": "editor.action.smartSelect.shrink"
+    },
+    {
+        "intellij": "EvaluateExpression",
+        "vscode": "editor.debug.action.selectionToRepl"
+    },
+    {
+        "intellij": "ExpandAllRegions",
+        "vscode": "editor.unfoldAll"
+    },
+    {
+        "intellij": "ExpandRegion",
+        "vscode": "editor.unfold"
+    },
+    {
+        "intellij": "ExpandRegionRecursively",
+        "vscode": "editor.unfoldRecursively"
+    },
+    {
+        "intellij": "ExtractMethod",
+        "vscode": "editor.action.codeAction"
+    },
+    {
+        "intellij": "FileStructurePopup",
+        "vscode": "workbench.action.gotoSymbol"
+    },
+    {
+        "intellij": "FindInPath",
+        "vscode": "workbench.action.findInFiles"
+    },
+    {
+        "intellij": "FindNext",
+        "vscode": "editor.action.nextMatchFindAction"
+    },
+    {
+        "intellij": "FindPrevious",
+        "vscode": "editor.action.previousMatchFindAction"
+    },
+    {
+        "intellij": "FindUsages",
+        "vscode": "references-view.findReferences"
+    },
+    {
+        "intellij": "Forward",
+        "vscode": "workbench.action.navigateForward"
+    },
+    {
+        "intellij": "Generate",
+        "vscode": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "intellij": "Git.Commit.And.Push.Executor",
+        "vscode": "git.pushTo"
+    },
+    {
+        "intellij": "GotoAction",
+        "vscode": "workbench.action.showCommands"
+    },
+    {
+        "intellij": "GotoClass",
+        "vscode": "workbench.action.showAllSymbols"
+    },
+    {
+        "intellij": "GotoFile",
+        "vscode": "workbench.action.quickOpen"
+    },
+    {
+        "intellij": "GotoImplementation",
+        "vscode": "editor.action.goToImplementation"
     },
     {
         "intellij": "GotoLine",
         "vscode": "workbench.action.gotoLine"
+    },
+    {
+        "intellij": "GotoNextError",
+        "vscode": "editor.action.marker.next"
+    },
+    {
+        "intellij": "GotoPreviousError",
+        "vscode": "editor.action.marker.prev"
+    },
+    {
+        "intellij": "GotoSymbol",
+        "vscode": "workbench.action.gotoSymbol"
+    },
+    {
+        "intellij": "GotoTypeDeclaration",
+        "vscode": "editor.action.goToTypeDefinition"
+    },
+    {
+        "intellij": "HideActiveWindow",
+        "vscode": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "intellij": "HideAllWindows",
+        "vscode": "workbench.action.maximizeEditor"
+    },
+    {
+        "intellij": "IntroduceVariable",
+        "vscode": "editor.action.codeAction"
+    },
+    {
+        "intellij": "JumpToLastChange",
+        "vscode": "workbench.action.navigateToLastEditLocation"
+    },
+    {
+        "intellij": "MoveLineDown",
+        "vscode": "editor.action.moveLinesDownAction"
+    },
+    {
+        "intellij": "MoveLineUp",
+        "vscode": "editor.action.moveLinesUpAction"
+    },
+    {
+        "intellij": "NextDiff",
+        "vscode": "workbench.action.compareEditor.nextChange"
+    },
+    {
+        "intellij": "NextSplitter",
+        "vscode": "workbench.action.focusNextGroup"
+    },
+    {
+        "intellij": "NextTab",
+        "vscode": "workbench.action.nextEditor"
+    },
+    {
+        "intellij": "ParameterInfo",
+        "vscode": "editor.action.triggerParameterHints"
+    },
+    {
+        "intellij": "PrevSplitter",
+        "vscode": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "intellij": "PreviousDiff",
+        "vscode": "workbench.action.compareEditor.previousChange"
+    },
+    {
+        "intellij": "PreviousTab",
+        "vscode": "workbench.action.previousEditor"
+    },
+    {
+        "intellij": "QuickChangeScheme",
+        "vscode": "workbench.action.selectTheme"
+    },
+    {
+        "intellij": "QuickImplementations",
+        "vscode": "editor.action.previewDeclaration"
+    },
+    {
+        "intellij": "QuickJavaDoc",
+        "vscode": "editor.action.showHover"
+    },
+    {
+        "intellij": "RecentFiles",
+        "vscode": "workbench.action.openRecent"
+    },
+    {
+        "intellij": "ReformatCode",
+        "vscode": "editor.action.formatDocument"
+    },
+    {
+        "intellij": "RenameElement",
+        "vscode": "editor.action.rename"
+    },
+    {
+        "intellij": "Replace",
+        "vscode": "editor.action.startFindReplaceAction"
+    },
+    {
+        "intellij": "ReplaceInPath",
+        "vscode": "workbench.action.replaceInFiles"
+    },
+    {
+        "intellij": "Resume",
+        "vscode": "workbench.action.debug.continue"
+    },
+    {
+        "intellij": "Run",
+        "vscode": "workbench.action.tasks.reRunTask"
+    },
+    {
+        "intellij": "RunToCursor",
+        "vscode": "editor.debug.action.runToCursor"
+    },
+    {
+        "intellij": "SaveAll",
+        "vscode": "workbench.action.files.saveAll"
+    },
+    {
+        "intellij": "SelectAllOccurrences",
+        "vscode": "editor.action.selectHighlights"
+    },
+    {
+        "intellij": "SelectNextOccurrence",
+        "vscode": "editor.action.addSelectionToNextFindMatch"
+    },
+    {
+        "intellij": "ShowErrorDescription",
+        "vscode": "workbench.action.showErrorsWarnings"
+    },
+    {
+        "intellij": "ShowIntentionActions",
+        "vscode": "editor.action.quickFix"
+    },
+    {
+        "intellij": "ShowNavBar",
+        "vscode": "breadcrumbs.focus"
+    },
+    {
+        "intellij": "ShowProjectStructureSettings",
+        "vscode": "workbench.action.tasks.configureTaskRunner"
+    },
+    {
+        "intellij": "ShowSettings",
+        "vscode": "workbench.action.openGlobalSettings"
+    },
+    {
+        "intellij": "ShowUsages",
+        "vscode": "editor.action.referenceSearch.trigger"
+    },
+    {
+        "intellij": "StepInto",
+        "vscode": "workbench.action.debug.stepInto"
+    },
+    {
+        "intellij": "StepOut",
+        "vscode": "workbench.action.debug.stepOut"
+    },
+    {
+        "intellij": "StepOver",
+        "vscode": "workbench.action.debug.stepOver"
+    },
+    {
+        "intellij": "ToggleFullScreen",
+        "vscode": "workbench.action.toggleFullScreen"
+    },
+    {
+        "intellij": "ToggleLineBreakpoint",
+        "vscode": "editor.debug.action.toggleBreakpoint"
+    },
+    {
+        "intellij": "UnselectPreviousOccurrence",
+        "vscode": "cursorUndo"
+    },
+    {
+        "intellij": "Vcs.RollbackChangedLines",
+        "vscode": "git.revertSelectedRanges"
+    },
+    {
+        "intellij": "Vcs.UpdateProject",
+        "vscode": "git.sync"
+    },
+    {
+        "intellij": "VcsShowNextChangeMarker",
+        "vscode": "editor.action.dirtydiff.next"
+    },
+    {
+        "intellij": "VcsShowPrevChangeMarker",
+        "vscode": "editor.action.dirtydiff.previous"
+    },
+    {
+        "intellij": "ViewBreakpoints",
+        "vscode": "workbench.view.debug"
     }
 ]

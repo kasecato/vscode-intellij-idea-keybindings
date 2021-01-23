@@ -48,7 +48,6 @@
     <keyboard-shortcut first-keystroke="shift ctrl divide" />
     <keyboard-shortcut first-keystroke="shift meta slash" />
     <keyboard-shortcut first-keystroke="shift meta divide" />
-    <keyboard-shortcut first-keystroke="shift meta divide" />
   </action>
   <action id="CommentByLineComment">
     <keyboard-shortcut first-keystroke="meta slash" />
@@ -65,12 +64,6 @@
   </action>
   <action id="Diff.FocusOppositePane">
     <keyboard-shortcut first-keystroke="ctrl tab" />
-  </action>
-  <action id="Diff.NextChange">
-    <keyboard-shortcut first-keystroke="shift meta close_bracket" />
-  </action>
-  <action id="Diff.PrevChange">
-    <keyboard-shortcut first-keystroke="shift meta open_bracket" />
   </action>
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="meta down" />
@@ -102,6 +95,9 @@
   </action>
   <action id="EditorStartNewLine">
     <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
+  <action id="EditorStartNewLineBefore">
+    <keyboard-shortcut first-keystroke="meta alt enter" />
   </action>
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="meta end" />
@@ -214,6 +210,10 @@
   <action id="NextSplitter">
     <keyboard-shortcut first-keystroke="alt tab" />
   </action>
+  <action id="NextTab">
+    <keyboard-shortcut first-keystroke="shift meta close_bracket" />
+    <keyboard-shortcut first-keystroke="ctrl right" />
+  </action>
   <action id="ParameterInfo">
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
@@ -222,6 +222,10 @@
   </action>
   <action id="PreviousDiff">
     <keyboard-shortcut first-keystroke="shift f7" />
+  </action>
+  <action id="PreviousTab">
+    <keyboard-shortcut first-keystroke="shift meta open_bracket" />
+    <keyboard-shortcut first-keystroke="ctrl left" />
   </action>
   <action id="QuickChangeScheme">
     <keyboard-shortcut first-keystroke="ctrl back_quote" />
@@ -298,14 +302,14 @@
   <action id="StepOver">
     <keyboard-shortcut first-keystroke="f8" />
   </action>
-  <action id="Synchronize">
-    <keyboard-shortcut first-keystroke="meta alt y" />
-  </action>
   <action id="ToggleFullScreen">
     <keyboard-shortcut first-keystroke="ctrl meta f" />
   </action>
   <action id="ToggleLineBreakpoint">
     <keyboard-shortcut first-keystroke="meta f8" />
+  </action>
+  <action id="UnselectPreviousOccurrence">
+    <keyboard-shortcut first-keystroke="shift ctrl g" />
   </action>
   <action id="Vcs.RollbackChangedLines">
     <keyboard-shortcut first-keystroke="meta alt z" />
