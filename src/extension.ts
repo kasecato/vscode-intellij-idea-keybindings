@@ -20,14 +20,14 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Reader
          *-------------------------------------------------------------------*/
-        const osDestination: OS = await Picker.pickOSDestionation();
-        if (!osDestination) {
+        const os: { src: OS; dst: OS } | undefined = await Picker.pickOSDestionation();
+        if (!os) {
             return;
         }
 
         const intellijXmlCustom: string = await FileOpenDialog.showXml();
-        const intellijXmlDefault: string = await FileReaderDefault.readIntelliJ(osDestination, context);
-        const vscodeJsonDefault: string = await FileReaderDefault.readVSCode(osDestination, context);
+        const intellijXmlDefault: string = await FileReaderDefault.readIntelliJ(os.src, context);
+        const vscodeJsonDefault: string = await FileReaderDefault.readVSCode(os.src, context);
         const actionIdCommandMappingJson: string = await FileReaderDefault.readActionIdCommandMapping(context);
         const keystrokeKeyMappingJson: string = await FileReaderDefault.readKeystrokeKeyMapping(context);
 
@@ -50,7 +50,7 @@ export function activate(context: vscode.ExtensionContext) {
          * Semantic Analyzer
          *-------------------------------------------------------------------*/
         const syntaxAnalyzer = new IntelliJSyntaxAnalyzer(
-            osDestination,
+            os.dst,
             intellijDefaults,
             intellijCustoms,
             vscodeDefaults,

@@ -4,7 +4,9 @@ import { OS } from '../model/OS';
 import { ActionIdCommandMapping } from '../model/resource/ActionIdCommandMapping';
 import { KeystrokeKeyMapping } from '../model/resource/KeystrokeKeyMapping';
 import { VSCodeKeybindingDefault } from '../model/vscode/implement/VSCodeKeybindingDefault';
+import { VSCodeKeyLinux } from '../model/vscode/implement/VSCodeKeyLinux';
 import { VSCodeKeyMac } from '../model/vscode/implement/VSCodeKeyMac';
+import { VSCodeKeyWindows } from '../model/vscode/implement/VSCodeKeyWindows';
 import { VSCodeKey } from '../model/vscode/VSCodeKey';
 import { VSCodeKeybinding } from '../model/vscode/VSCodeKeybinding';
 
@@ -165,11 +167,11 @@ export class IntelliJSyntaxAnalyzer {
     private convertToKey(intellijKeymap: IntelliJKeymap): VSCodeKey {
         switch (this.osDestination) {
             case 'Linux':
-                return new VSCodeKeyMac(intellijKeymap, this.keystrokeKeyMappings);
+                return new VSCodeKeyLinux(intellijKeymap, this.keystrokeKeyMappings);
             case 'Mac':
                 return new VSCodeKeyMac(intellijKeymap, this.keystrokeKeyMappings);
             case 'Windows':
-                return new VSCodeKeyMac(intellijKeymap, this.keystrokeKeyMappings);
+                return new VSCodeKeyWindows(intellijKeymap, this.keystrokeKeyMappings);
         }
     }
 
