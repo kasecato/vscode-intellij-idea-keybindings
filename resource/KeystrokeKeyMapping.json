@@ -1,0 +1,234 @@
+[
+    {
+        "intellij": " ",
+        "vscode": "+"
+    },
+    {
+        "intellij": "back_quote",
+        "vscode": "[Backquote]"
+    },
+    {
+        "intellij": "minus",
+        "vscode": "[Minus]"
+    },
+    {
+        "intellij": "equals",
+        "vscode": "[Equal]"
+    },
+    {
+        "intellij": "open_bracket",
+        "vscode": "BracketLeft"
+    },
+    {
+        "intellij": "close_bracket",
+        "vscode": "[BracketRight]"
+    },
+    {
+        "intellij": "back_slash",
+        "vscode": "[Backslash]"
+    },
+    {
+        "intellij": "semicolon",
+        "vscode": "[Semicolon]"
+    },
+    {
+        "intellij": "quotedbl",
+        "vscode": "\""
+    },
+    {
+        "intellij": "quote",
+        "vscode": "[Quote]"
+    },
+    {
+        "intellij": "comma",
+        "vscode": "[Comma]"
+    },
+    {
+        "intellij": "period",
+        "vscode": "[Period]"
+    },
+    {
+        "intellij": "slash",
+        "vscode": "[Slash]"
+    },
+    {
+        "intellij": "left_parenthesis",
+        "vscode": "("
+    },
+    {
+        "intellij": "right_parenthesis",
+        "vscode": ")"
+    },
+    {
+        "intellij": "page_up",
+        "vscode": "[PageUp]"
+    },
+    {
+        "intellij": "page_down",
+        "vscode": "[PageDown]"
+    },
+    {
+        "intellij": "left",
+        "vscode": "[ArrowLeft]"
+    },
+    {
+        "intellij": "up",
+        "vscode": "[ArrowUp]"
+    },
+    {
+        "intellij": "right",
+        "vscode": "[ArrowRight]"
+    },
+    {
+        "intellij": "down",
+        "vscode": "[ArrowDown]"
+    },
+    {
+        "intellij": "end",
+        "vscode": "[End]"
+    },
+    {
+        "intellij": "home",
+        "vscode": "[Home]"
+    },
+    {
+        "intellij": "tab",
+        "vscode": "[Tab]"
+    },
+    {
+        "intellij": "enter",
+        "vscode": "[Enter]"
+    },
+    {
+        "intellij": "escape",
+        "vscode": "[Escape]"
+    },
+    {
+        "intellij": "back_space",
+        "vscode": "[Backspace]"
+    },
+    {
+        "intellij": "space",
+        "vscode": "[Space]"
+    },
+    {
+        "intellij": "delete",
+        "vscode": "[Delete]"
+    },
+    {
+        "intellij": "pause",
+        "vscode": "[Pause]"
+    },
+    {
+        "intellij": "caps_lock",
+        "vscode": "[CapsLock]"
+    },
+    {
+        "intellij": "insert",
+        "vscode": "[Insert]"
+    },
+    {
+        "intellij": "exclamation_mark",
+        "vscode": "!"
+    },
+    {
+        "intellij": "number_sign",
+        "vscode": "#"
+    },
+    {
+        "intellij": "dollar",
+        "vscode": "$"
+    },
+    {
+        "intellij": "circumflex",
+        "vscode": "^"
+    },
+    {
+        "intellij": "ampersand",
+        "vscode": "&"
+    },
+    {
+        "intellij": "asterisk",
+        "vscode": "*"
+    },
+    {
+        "intellij": "underscore",
+        "vscode": "_"
+    },
+    {
+        "intellij": "plus",
+        "vscode": "\\+"
+    },
+    {
+        "intellij": "colon",
+        "vscode": "."
+    },
+    {
+        "intellij": "less",
+        "vscode": "<"
+    },
+    {
+        "intellij": "greater",
+        "vscode": ">"
+    },
+    {
+        "intellij": "numpad0",
+        "vscode": "[Numpad0]"
+    },
+    {
+        "intellij": "numpad1",
+        "vscode": "[Numpad1]"
+    },
+    {
+        "intellij": "numpad2",
+        "vscode": "[Numpad2]"
+    },
+    {
+        "intellij": "numpad3",
+        "vscode": "[Numpad3]"
+    },
+    {
+        "intellij": "numpad4",
+        "vscode": "[Numpad4]"
+    },
+    {
+        "intellij": "numpad5",
+        "vscode": "[Numpad5]"
+    },
+    {
+        "intellij": "numpad6",
+        "vscode": "[Numpad6]"
+    },
+    {
+        "intellij": "numpad7",
+        "vscode": "[Numpad7]"
+    },
+    {
+        "intellij": "numpad8",
+        "vscode": "[Numpad8]"
+    },
+    {
+        "intellij": "numpad9",
+        "vscode": "[Numpad9]"
+    },
+    {
+        "intellij": "multiply",
+        "vscode": "NumpadMultiply"
+    },
+    {
+        "intellij": "add",
+        "vscode": "[NumpadAdd]"
+    },
+    {
+        "intellij": "subtract",
+        "vscode": "[NumpadSubtract]"
+    },
+    {
+        "intellij": "decimal",
+        "vscode": "[NumpadDecimal]"
+    },
+    {
+        "intellij": "divide",
+        "vscode": "[NumpadDivide]"
+    }
+]
