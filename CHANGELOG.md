@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.0 (Jan 23, 2021)
+
+* enhancement - is it possible to import myown custom keymap from Intellij Idea to vscode?. See [#120](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/120)
+
 ## 0.2.41 (Jun 3, 2020)
 
 * bug fix - keybinding for comment/uncomment with block comment is incorrect. See [#183](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/183)

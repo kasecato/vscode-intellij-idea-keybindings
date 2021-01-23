@@ -6,7 +6,6 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 
 ## Usage
 
-
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
@@ -280,12 +279,29 @@ shift+f10 | ctrl+r | Go: Test Previous | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.40.0 or higher
+1. Install Visual Studio Code 1.52.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
 1. Reload Visual Studio Code
 
+## IntelliJ Importer (Experimental 🧪) (macOS only)
+
+1. Launch Code
+1. Open command pallet `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
+1. Choose `Import IntelliJ Keybindngs (XML)`
+1. Copy & Paste it into `keybindings.json`
+
+### Known Issues (IntelliJ Importer)
+
+- Importer does not support Linux
+    - Sponsors welcome
+- Importer does not support Windows
+    - Sponsors welcome
+- Refactoring commands are not supported
+- Sidebar controls are not supported
+- Sidebar controls are not supported
+- Namepad control is not supported at the same time as numbers
 
 ## Contributing to the Code
 
@@ -314,8 +330,6 @@ Now you can compile the code:
 
 After the initial compile, the source files will be watched and recompiled
 when changes are saved.
-
-
 ## Contributors
 
 * [@kasecato](https://github.com/kasecato)

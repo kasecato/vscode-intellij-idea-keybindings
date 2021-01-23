@@ -25,7 +25,11 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
-        const intellijXmlCustom: string = await FileOpenDialog.showXml();
+        const intellijXmlCustom: string | undefined = await FileOpenDialog.showXml();
+        if (!intellijXmlCustom) {
+            return;
+        }
+
         const intellijXmlDefault: string = await FileReaderDefault.readIntelliJ(os.src, context);
         const vscodeJsonDefault: string = await FileReaderDefault.readVSCode(os.src, context);
         const actionIdCommandMappingJson: string = await FileReaderDefault.readActionIdCommandMapping(context);
