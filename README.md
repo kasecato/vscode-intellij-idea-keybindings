@@ -287,6 +287,15 @@ shift+f10 | ctrl+r | Go: Test Previous | ✅
 
 ## IntelliJ Importer (Experimental 🧪) (macOS only)
 
+![IntelliJ Importer](images/usage_intellij_importer.gif)
+
+### Export keymaps XML from IntelliJ IDEA
+1. Launch IntelliJ IDEA
+1. Select `File` > `Manage IDE Settings` > `Export Settings`
+1. Select `Key maps (schemas)`
+1. Click `OK`
+
+### Import keymasp XML
 1. Launch Code
 1. Open command pallet `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
 1. Choose `Import IntelliJ Keybindngs (XML)`
