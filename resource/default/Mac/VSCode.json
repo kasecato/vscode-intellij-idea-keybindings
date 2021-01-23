@@ -223,7 +223,7 @@
     {
         "key": "",
         "command": "editor.action.referenceSearch.trigger",
-        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor"
     },
     {
         "key": "shift+cmd+b",
