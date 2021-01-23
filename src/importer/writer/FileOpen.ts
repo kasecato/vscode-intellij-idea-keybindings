@@ -18,6 +18,6 @@ export class FileOpen {
         await vscode.window.showTextDocument(untitledDoc, { selection: fullRange });
         await vscode.commands.executeCommand('workbench.action.newGroupRight');
         await vscode.commands.executeCommand('workbench.action.openGlobalKeybindingsFile');
-        await vscode.window.showInformationMessage('Please copy & paste to keybindings.json');
+        await vscode.window.showInformationMessage('Please copy & paste it into keybindings.json');
     }
 }

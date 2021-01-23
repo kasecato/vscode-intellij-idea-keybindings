@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { FileReader } from './FileReader';
 
 export class FileOpenDialog {
-    static async showXml(): Promise<string> {
+    static async showXml(): Promise<string | undefined> {
         const readerXmlOptions: vscode.OpenDialogOptions = {
             canSelectFiles: true,
             filters: {
@@ -12,7 +12,7 @@ export class FileOpenDialog {
 
         const xmlUri = await vscode.window.showOpenDialog(readerXmlOptions);
         if (!xmlUri || !xmlUri[0]) {
-            throw Error('Canceled');
+            return undefined;
         }
 
         return FileReader.read(xmlUri[0]);
