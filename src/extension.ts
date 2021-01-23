@@ -11,6 +11,7 @@ import { VSCodeJsonParser } from './importer/parser/VSCodeJsonParser';
 import { FileOpenDialog } from './importer/reader/FileOpenDialog';
 import { FileReaderDefault } from './importer/reader/FileReaderDefault';
 import { Picker } from './importer/reader/Picker';
+import { IntelliJSyntaxAnalyzer } from './importer/syntax-analyzer/IntelliJSyntaxAnalyzer';
 import { FileSaveDialog } from './importer/writer/FileSaveDialog';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -47,8 +48,15 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Semantic Analyzer
          *-------------------------------------------------------------------*/
-        const keybindings: VSCodeKeybinding[] = [];
-        // TODO
+        const syntaxAnalyzer = new IntelliJSyntaxAnalyzer(
+            osDestination,
+            intellijDefaults,
+            intellijCustoms,
+            vscodeDefaults,
+            actionIdCommandMappings,
+            keystrokeKeyMappings
+        );
+        const keybindings: VSCodeKeybinding[] = await syntaxAnalyzer.convert();
 
         /*---------------------------------------------------------------------
          * Code Generator

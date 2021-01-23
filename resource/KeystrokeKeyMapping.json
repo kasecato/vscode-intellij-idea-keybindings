@@ -216,12 +216,8 @@
         "vscode": "NumpadMultiply"
     },
     {
-        "intellij": "",
+        "intellij": "add",
         "vscode": "[NumpadAdd]"
-    },
-    {
-        "intellij": "",
-        "vscode": "[NumpadComma]"
     },
     {
         "intellij": "subtract",
