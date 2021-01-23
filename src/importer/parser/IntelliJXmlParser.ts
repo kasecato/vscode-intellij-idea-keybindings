@@ -16,7 +16,7 @@ export class IntelliJXMLParser {
 
     static async desirialize(json: any): Promise<IntelliJKeymapXML[]> {
         if (!json.keymap) {
-            return []
+            return [];
         }
 
         const intellijKeymaps = new Array<IntelliJKeymapXML>();

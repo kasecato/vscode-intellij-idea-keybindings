@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { KeybindingsJsonGenerator } from './importer/generator/KeybindingsJsonGenerator';
 import { IntelliJKeymapXML } from './importer/model/intellij/implement/IntelliJKeymapXML';
 import { OS } from './importer/model/OS';
 import { ActionIdCommandMapping } from './importer/model/resource/ActionIdCommandMapping';
@@ -61,7 +62,7 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Code Generator
          *-------------------------------------------------------------------*/
-        const keybindingsJson = JSON.stringify(keybindings, undefined, 4);
+        const keybindingsJson = await KeybindingsJsonGenerator.gene(keybindings);
 
         /*---------------------------------------------------------------------
          * Writer

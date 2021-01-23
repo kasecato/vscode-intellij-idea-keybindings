@@ -98,7 +98,7 @@ export class IntelliJSyntaxAnalyzer {
         keybindings: VSCodeKeybinding[] = [],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
-        intellijCustom: IntelliJKeymapXML,
+        intellijCustom: IntelliJKeymapXML
     ): void => {
         const key = this.convertToKey(intellijCustom).key;
         const when = vscodeDefault.when;
@@ -126,7 +126,7 @@ export class IntelliJSyntaxAnalyzer {
         keybindings: VSCodeKeybinding[] = [],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
-        intellijCustom: IntelliJKeymapXML | undefined = undefined,
+        intellijCustom: IntelliJKeymapXML | undefined = undefined
     ): void => {
         const key = vscodeDefault.key;
         const command = vscodeDefault.command;
@@ -146,7 +146,7 @@ export class IntelliJSyntaxAnalyzer {
         keybindings: VSCodeKeybinding[] = [],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
-        intellijCustom: IntelliJKeymapXML | undefined = undefined,
+        intellijCustom: IntelliJKeymapXML | undefined = undefined
     ): void => {
         const key = this.convertToKey(intellijDefault).key;
         const command = vscodeDefault.command;

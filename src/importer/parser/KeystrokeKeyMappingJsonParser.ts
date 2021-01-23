@@ -1,4 +1,3 @@
-import { ActionIdCommandMapping } from '../model/resource/ActionIdCommandMapping';
 import { KeystrokeKeyMapping } from '../model/resource/KeystrokeKeyMapping';
 
 export class KeystrokeKeyMappingJsonParser {
