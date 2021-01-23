@@ -21,7 +21,8 @@
     },
     {
         "key": "",
-        "command": "workbench.action.showErrorsWarnings"
+        "command": "workbench.action.showErrorsWarnings",
+        "when": "editorTextFocus"
     },
     {
         "key": "cmd+n",
@@ -39,7 +40,8 @@
     },
     {
         "key": "",
-        "command": "editor.action.smartSelect.grow"
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+shift+left",
@@ -68,7 +70,8 @@
     },
     {
         "key": "cmd+x",
-        "command": "editor.action.clipboardCutAction"
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "shift+alt+down",
@@ -77,7 +80,8 @@
     },
     {
         "key": "",
-        "command": "editor.action.duplicateSelection"
+        "command": "editor.action.duplicateSelection",
+        "when": "editorTextFocus && !editorReadonly && editorHasSelection"
     },
     {
         "key": "shift+cmd+k",
@@ -218,7 +222,8 @@
     },
     {
         "key": "",
-        "command": "editor.action.referenceSearch.trigger"
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor",
     },
     {
         "key": "shift+cmd+b",
@@ -258,7 +263,8 @@
     },
     {
         "key": "",
-        "command": "editor.debug.action.runToCursor"
+        "command": "editor.debug.action.runToCursor",
+        "when": "debugState == 'stopped'"
     },
     {
         "key": "shift+cmd+y",
@@ -267,7 +273,8 @@
     },
     {
         "key": "",
-        "command": "editor.debug.action.selectionToRepl"
+        "command": "editor.debug.action.selectionToRepl",
+        "when": "debuggersAvailable && editorHasSelection"
     },
     {
         "key": "f5",
@@ -334,7 +341,8 @@
     },
     {
         "key": "",
-        "command": "workbench.action.quickOpenNavigateNext"
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
     },
     {
         "key": "ctrl+r",
@@ -354,7 +362,8 @@
     },
     {
         "key": "",
-        "command": "editor.action.goToDeclaration"
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
         "key": "cmd+f12",
@@ -363,11 +372,13 @@
     },
     {
         "key": "",
-        "command": "editor.action.previewDeclaration"
+        "command": "editor.action.previewDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor"
     },
     {
         "key": "",
-        "command": "editor.action.goToTypeDefinition"
+        "command": "editor.action.goToTypeDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
         "key": "",
@@ -375,7 +386,8 @@
     },
     {
         "key": "shift+cmd+o",
-        "command": "workbench.action.gotoSymbol"
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
         "key": "alt+f8",
@@ -389,7 +401,8 @@
     },
     {
         "key": "",
-        "command": "editor.action.goToDeclaration"
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
         "key": "alt+down",
@@ -438,11 +451,13 @@
     },
     {
         "key": "",
-        "command": "git.commitAll"
+        "command": "git.commitAll",
+        "when": "!inDebugMode && !terminalFocus"
     },
     {
         "key": "",
-        "command": "git.pushTo"
+        "command": "git.pushTo",
+        "when": "!inDebugMode && !terminalFocus"
     },
     {
         "key": "",
@@ -561,19 +576,23 @@
     },
     {
         "key": "",
-        "command": "workbench.action.terminal.focusPrevious"
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
     },
     {
         "key": "",
-        "command": "workbench.action.terminal.focusNext"
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
     },
     {
         "key": "",
-        "command": "workbench.action.focusNextGroup"
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorFocus"
     },
     {
         "key": "",
-        "command": "workbench.action.focusPreviousGroup"
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "editorFocus"
     },
     {
         "key": "cmd+down",
