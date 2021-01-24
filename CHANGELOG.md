@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.1 (Jan 24, 2021)
+
+* bug fix - Add basic keymaps to Importer. See [#195](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/195)
+* bug fix - Repeated custom keymaps has been generated. See [#197](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/197)
+* bug fix - Windows not works. See [#197](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/197)
+
 ## 1.0.0 (Jan 23, 2021)
 
 * enhancement - is it possible to import myown custom keymap from Intellij Idea to vscode?. See [#120](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/120)
