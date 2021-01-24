@@ -289,15 +289,16 @@ shift+f10 | ctrl+r | Go: Test Previous | ✅
 
 ![IntelliJ Importer](images/usage_intellij_importer.gif)
 
-### Export keymaps XML from IntelliJ IDEA
+### Export keymaps XML from IntelliJ IDEA (macOS)
 1. Launch IntelliJ IDEA
 1. Select `File` > `Manage IDE Settings` > `Export Settings`
 1. Select `Key maps (schemas)`
 1. Click `OK`
+1. Extract `settings.zip`
 
-### Import keymasp XML
+### Import keymasp XML (macOS)
 1. Launch Code
-1. Open command pallet `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`P` (macOS)
+1. Open command pallet `Cmd`-`Shift`-`P` (macOS)
 1. Choose `Import IntelliJ Keybindngs (XML)`
 1. Copy & Paste it into `keybindings.json`
 
@@ -309,8 +310,10 @@ shift+f10 | ctrl+r | Go: Test Previous | ✅
     - Sponsors welcome
 - Refactoring commands are not supported
 - Sidebar controls are not supported
-- Sidebar controls are not supported
 - Namepad control is not supported at the same time as numbers
+- Intellij's keymap export only outputs the differences as XML files. If you use a plugin like Emacs or Vim, only your changes will be reflected in the XML
+- Warning output for keymaps that could not be imported is not yet implemented
+- Cannot load `settings.zip` file directly
 
 ## Contributing to the Code
 
