@@ -632,5 +632,124 @@
     {
         "key": "shift+cmd+f",
         "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "cmd+c",
+        "command": "editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "cmd+v",
+        "command": "editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "shift+cmd+z",
+        "command": "redo"
+    },
+    {
+        "key": "cmd+z",
+        "command": "undo"
+    },
+    {
+        "key": "",
+        "command": "compareFiles"
+    },
+    {
+        "key": "",
+        "command": "merge-conflict.accept.current"
+    },
+    {
+        "key": "",
+        "command": "merge-conflict.accept.incoming"
+    },
+    {
+        "key": "",
+        "command": "git.openChange"
+    },
+    {
+        "key": "cmd+k o",
+        "command": "workbench.action.files.showOpenedFileInNewWindow",
+        "when": "emptyWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorLineEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "cursorLineEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorLineStart",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "cursorLineStartSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "cursorBottomSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "cursorTopSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "",
+        "command": "cursorWordRight"
+    },
+    {
+        "key": "",
+        "command": "cursorWordRightSelect"
+    },
+    {
+        "key": "pagedown",
+        "command": "cursorPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+pagedown",
+        "command": "cursorPageDownSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "pageup",
+        "command": "cursorPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+pageup",
+        "command": "cursorPageUpSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.files.newUntitledFile"
     }
 ]
