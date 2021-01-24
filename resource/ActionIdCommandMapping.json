@@ -1,7 +1,23 @@
 [
     {
+        "intellij": "$Copy",
+        "vscode": "editor.action.clipboardCopyAction"
+    },
+    {
         "intellij": "$Cut",
         "vscode": "editor.action.clipboardCutAction"
+    },
+    {
+        "intellij": "$Paste",
+        "vscode": "editor.action.clipboardPasteAction"
+    },
+    {
+        "intellij": "$Redo",
+        "vscode": "redo"
+    },
+    {
+        "intellij": "$Undo",
+        "vscode": "undo"
     },
     {
         "intellij": "ActivateDebugToolWindow",
@@ -56,6 +72,10 @@
         "vscode": "editor.action.commentLine"
     },
     {
+        "intellij": "CompareTwoFiles",
+        "vscode": "compareFiles"
+    },
+    {
         "intellij": "CompileDirty",
         "vscode": "workbench.action.tasks.build"
     },
@@ -68,12 +88,28 @@
         "vscode": "workbench.action.debug.run"
     },
     {
+        "intellij": "Diff.ApplyLeftSide",
+        "vscode": "merge-conflict.accept.current"
+    },
+    {
+        "intellij": "Diff.ApplyRightSide",
+        "vscode": "merge-conflict.accept.incoming"
+    },
+    {
         "intellij": "Diff.FocusOppositePane",
         "vscode": "workbench.action.quickOpenNavigateNext"
     },
     {
+        "intellij": "Diff.ShowDiff",
+        "vscode": "git.openChange"
+    },
+    {
         "intellij": "EditSource",
         "vscode": "editor.action.goToDeclaration"
+    },
+    {
+        "intellij": "EditSourceInNewWindow",
+        "vscode": "workbench.action.files.showOpenedFileInNewWindow"
     },
     {
         "intellij": "EditorCompleteStatement",
@@ -98,6 +134,70 @@
     {
         "intellij": "EditorJoinLines",
         "vscode": "editor.action.joinLines"
+    },
+    {
+        "intellij": "EditorLineEnd",
+        "vscode": "cursorLineEnd"
+    },
+    {
+        "intellij": "EditorLineEndWithSelection",
+        "vscode": "cursorLineEndSelect"
+    },
+    {
+        "intellij": "EditorLineStart",
+        "vscode": "cursorLineStart"
+    },
+    {
+        "intellij": "EditorLineStartWithSelection",
+        "vscode": "cursorLineStartSelect"
+    },
+    {
+        "intellij": "EditorMoveToPageBottom",
+        "vscode": "cursorBottom"
+    },
+    {
+        "intellij": "EditorMoveToPageBottomWithSelection",
+        "vscode": "cursorBottomSelect"
+    },
+    {
+        "intellij": "EditorMoveToPageTop",
+        "vscode": "cursorTop"
+    },
+    {
+        "intellij": "EditorMoveToPageTopWithSelection",
+        "vscode": "cursorTopSelect"
+    },
+    {
+        "intellij": "EditorNextWord",
+        "vscode": "cursorWordRight"
+    },
+    {
+        "intellij": "EditorNextWordWithSelection",
+        "vscode": "cursorWordRightSelect"
+    },
+    {
+        "intellij": "EditorPageDown",
+        "vscode": "cursorPageDown"
+    },
+    {
+        "intellij": "EditorPageDownWithSelection",
+        "vscode": "cursorPageDownSelect"
+    },
+    {
+        "intellij": "EditorPageUp",
+        "vscode": "cursorPageUp"
+    },
+    {
+        "intellij": "EditorPageUpWithSelection",
+        "vscode": "cursorPageUpSelect"
+    },
+    {
+        "intellij": "EditorPreviousWord",
+        "vscode": "cursorWordLeft"
+    },
+    {
+        "intellij": "EditorPreviousWordWithSelection",
+        "vscode": "cursorWordLeftSelect"
     },
     {
         "intellij": "EditorSelectWord",
@@ -244,8 +344,16 @@
         "vscode": "editor.action.moveLinesUpAction"
     },
     {
+        "intellij": "NewScratchFile",
+        "vscode": "workbench.action.files.newUntitledFile"
+    },
+    {
         "intellij": "NextDiff",
         "vscode": "workbench.action.compareEditor.nextChange"
+    },
+    {
+        "intellij": "NextEditorTab",
+        "vscode": "workbench.action.nextEditor"
     },
     {
         "intellij": "NextSplitter",
@@ -266,6 +374,10 @@
     {
         "intellij": "PreviousDiff",
         "vscode": "workbench.action.compareEditor.previousChange"
+    },
+    {
+        "intellij": "PreviousEditorTab",
+        "vscode": "workbench.action.previousEditor"
     },
     {
         "intellij": "PreviousTab",
