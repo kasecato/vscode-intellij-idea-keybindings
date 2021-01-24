@@ -73,6 +73,7 @@ export class IntelliJSyntaxAnalyzer {
               ) => void)
             | undefined = undefined
     ): void {
+        // FIXEME: This loop is not correct because it duplicates when there are two defaults. Rewrite when I have time
         this.intellijDefaults.forEach(intellijDefault => {
             if (this.actionIdCommandMappings[intellijDefault.actionId]) {
                 this.actionIdCommandMappings[intellijDefault.actionId].forEach(actionIdCommandMapping => {
@@ -105,6 +106,12 @@ export class IntelliJSyntaxAnalyzer {
         const key = this.convertToKey(intellijCustom).key;
         const when = vscodeDefault.when;
         const command = vscodeDefault.command;
+
+        const alreadyBinded = keybindings.some(keybinding => keybinding.key === key && keybinding.command === command);
+        if (alreadyBinded) {
+            return;
+        }
+
         keybindings.push(new VSCodeKeybindingDefault(command, key, when));
     };
 
