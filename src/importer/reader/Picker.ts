@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { MAC_TO_LINUX, MAC_TO_MAC, OS, OSPickerList } from '../model/OS';
+import { MAC_TO_LINUX, MAC_TO_MAC, MAC_TO_WINDOWS, OS, OSPickerList } from '../model/OS';
 
 export class Picker {
     static async pickOSDestionation(): Promise<{ src: OS; dst: OS } | undefined> {
@@ -13,7 +13,7 @@ export class Picker {
                 return { src: 'Mac', dst: 'Linux' };
             case MAC_TO_MAC:
                 return { src: 'Mac', dst: 'Mac' };
-            case MAC_TO_LINUX:
+            case MAC_TO_WINDOWS:
                 return { src: 'Mac', dst: 'Windows' };
             case undefined:
                 return undefined;
