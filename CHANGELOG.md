@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.0.2 (Jan 26, 2021)
+## 1.1.0 (Jan 26, 2021)
 
 * enhancement - Add option to use windows keymap on MacOS. See [#67](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/67)
 
