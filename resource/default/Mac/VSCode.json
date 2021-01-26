@@ -238,10 +238,6 @@
         "command": "workbench.view.debug"
     },
     {
-        "key": "",
-        "command": "workbench.action.tasks.reRunTask"
-    },
-    {
         "key": "ctrl+f5",
         "command": "workbench.action.debug.run",
         "when": "debuggersAvailable"
@@ -327,11 +323,6 @@
         "command": "workbench.actions.view.problems"
     },
     {
-        "key": "shift+cmd+y",
-        "command": "workbench.debug.action.toggleRepl",
-        "when": "debuggersAvailable"
-    },
-    {
         "key": "ctrl+`",
         "command": "workbench.action.terminal.toggleTerminal"
     },
@@ -398,21 +389,6 @@
         "key": "shift+alt+f8",
         "command": "editor.action.marker.prev",
         "when": "editorFocus"
-    },
-    {
-        "key": "",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
-    },
-    {
-        "key": "alt+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "alt+f3",
@@ -490,20 +466,8 @@
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "shift+cmd+d",
-        "command": "workbench.view.debug"
-    },
-    {
-        "key": "cmd+b",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
         "key": "ctrl+shift+g",
         "command": "workbench.view.scm"
-    },
-    {
-        "key": "cmd+b",
-        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
         "key": "alt+cmd+s",
@@ -655,11 +619,13 @@
     },
     {
         "key": "",
-        "command": "merge-conflict.accept.current"
+        "command": "merge-conflict.accept.current",
+        "when": "isInDiffEditor"
     },
     {
         "key": "",
-        "command": "merge-conflict.accept.incoming"
+        "command": "merge-conflict.accept.incoming",
+        "when": "isInDiffEditor"
     },
     {
         "key": "",
@@ -712,11 +678,13 @@
     },
     {
         "key": "",
-        "command": "cursorWordRight"
+        "command": "cursorWordRight",
+        "when": "textInputFocus"
     },
     {
         "key": "",
-        "command": "cursorWordRightSelect"
+        "command": "cursorWordRightSelect",
+        "when": "textInputFocus"
     },
     {
         "key": "pagedown",
