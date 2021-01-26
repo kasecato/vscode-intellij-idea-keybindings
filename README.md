@@ -285,28 +285,26 @@ shift+f10 | ctrl+r | Go: Test Previous | ✅
 1. Search and Choose the extension `Intellij IDEA Keybindings`
 1. Reload Visual Studio Code
 
-## IntelliJ Importer (Experimental 🧪) (macOS only)
+## IntelliJ Importer (Experimental 🧪) (macOS, Windows only)
 
 ![IntelliJ Importer](images/usage_intellij_importer.gif)
 
-### Export keymaps XML from IntelliJ IDEA (macOS)
+### Export keymaps XML from IntelliJ IDEA
 1. Launch IntelliJ IDEA
 1. Select `File` > `Manage IDE Settings` > `Export Settings`
 1. Select `Key maps (schemas)`
 1. Click `OK`
-1. Extract `settings.zip`
+1. Unzip `settings.zip`
 
-### Import keymasp XML (macOS)
+### Import keymasp XML
 1. Launch Code
-1. Open command pallet `Cmd`-`Shift`-`P` (macOS)
+1. Open command pallet `Ctrl`-`Shift`-`P` (Windows) or `Cmd`-`Shift`-`P` (macOS)
 1. Choose `Import IntelliJ Keybindngs (XML)`
 1. Copy & Paste it into `keybindings.json`
 
 ### Known Issues (IntelliJ Importer)
 
 - Importer does not support Linux
-    - Sponsors welcome
-- Importer does not support Windows
     - Sponsors welcome
 - Refactoring commands are not supported
 - Sidebar controls are not supported

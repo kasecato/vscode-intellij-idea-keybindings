@@ -9,7 +9,7 @@ import { ActionIdCommandMappingJsonParser } from './importer/parser/ActionIdComm
 import { IntelliJXMLParser } from './importer/parser/IntelliJXmlParser';
 import { KeystrokeKeyMappingJsonParser } from './importer/parser/KeystrokeKeyMappingJsonParser';
 import { VSCodeJsonParser } from './importer/parser/VSCodeJsonParser';
-import { FileOpenDialog } from './importer/reader/FileOpenDialog';
+import { FileOpenDialog, USE_DEFAULT } from './importer/reader/FileOpenDialog';
 import { FileReaderDefault } from './importer/reader/FileReaderDefault';
 import { Picker } from './importer/reader/Picker';
 import { IntelliJSyntaxAnalyzer } from './importer/syntax-analyzer/IntelliJSyntaxAnalyzer';
@@ -25,10 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
-        const intellijXmlCustom: string | undefined = await FileOpenDialog.showXml();
-        if (!intellijXmlCustom) {
-            return;
-        }
+        const intellijXmlCustom: string | USE_DEFAULT = await FileOpenDialog.showXml();
 
         const intellijXmlDefault: string = await FileReaderDefault.readIntelliJ(os.src, context);
         const vscodeJsonDefault: string = await FileReaderDefault.readVSCode(os.src, context);
@@ -38,9 +35,13 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Parser
          *-------------------------------------------------------------------*/
-        const intellijJsonCustom: any = await IntelliJXMLParser.parseToJson(intellijXmlCustom);
+        const intellijJsonCustom: any = (intellijXmlCustom)
+            ? await IntelliJXMLParser.parseToJson(intellijXmlCustom)
+            : undefined;
         const intellijJsonDefault: any = await IntelliJXMLParser.parseToJson(intellijXmlDefault);
-        const intellijCustoms: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonCustom);
+        const intellijCustoms: IntelliJKeymapXML[] = (intellijXmlCustom)
+            ? await IntelliJXMLParser.desirialize(intellijJsonCustom)
+            : [];
         const intellijDefaults: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonDefault);
         const vscodeDefaults: VSCodeKeybinding[] = await VSCodeJsonParser.desirialize(vscodeJsonDefault);
         const actionIdCommandMappings: ActionIdCommandMapping[] = await ActionIdCommandMappingJsonParser.desirialize(
