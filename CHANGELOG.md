@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.2.0 (Jan 28, 2021)
+
+* enhancement - IntelliJ Importer for Linux. See [#200](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/200)
+* enhancement - Improve pickers.
+
 ## 1.1.0 (Jan 26, 2021)
 
 * enhancement - Add option to use windows keymap on MacOS. See [#67](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/67)

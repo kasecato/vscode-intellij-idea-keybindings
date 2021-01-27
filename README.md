@@ -6,6 +6,23 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 
 ## Usage
 
+### IntelliJ Importer
+
+![IntelliJ Importer](images/usage_intellij_importer.gif)
+
+#### Export keymaps XML from IntelliJ IDEA
+1. Launch IntelliJ IDEA
+1. Select `File` > `Manage IDE Settings` > `Export Settings`
+1. Select `Key maps (schemas)`
+1. Click `OK`
+1. Unzip `settings.zip`
+
+#### Import keymaps XML
+1. Launch Code
+1. Open command pallet `Ctrl`-`Shift`-`P` (Windows) or `Cmd`-`Shift`-`P` (macOS)
+1. Choose `Import IntelliJ Keybindngs (XML)`
+1. Copy & Paste it into `keybindings.json`
+
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
@@ -285,31 +302,12 @@ shift+f10 | ctrl+r | Go: Test Previous | ✅
 1. Search and Choose the extension `Intellij IDEA Keybindings`
 1. Reload Visual Studio Code
 
-## IntelliJ Importer (Experimental 🧪) (macOS, Windows only)
+## Known Issues (IntelliJ Importer)
 
-![IntelliJ Importer](images/usage_intellij_importer.gif)
-
-### Export keymaps XML from IntelliJ IDEA
-1. Launch IntelliJ IDEA
-1. Select `File` > `Manage IDE Settings` > `Export Settings`
-1. Select `Key maps (schemas)`
-1. Click `OK`
-1. Unzip `settings.zip`
-
-### Import keymasp XML
-1. Launch Code
-1. Open command pallet `Ctrl`-`Shift`-`P` (Windows) or `Cmd`-`Shift`-`P` (macOS)
-1. Choose `Import IntelliJ Keybindngs (XML)`
-1. Copy & Paste it into `keybindings.json`
-
-### Known Issues (IntelliJ Importer)
-
-- Importer does not support Linux
-    - Sponsors welcome
 - Refactoring commands are not supported
 - Sidebar controls are not supported
 - Namepad control is not supported at the same time as numbers
-- Intellij's keymap export only outputs the differences as XML files. If you use a plugin like Emacs or Vim, only your changes will be reflected in the XML
+- Intellij's custom keymap is not a full copy of its parent keymap. It inherits unmodified shortcuts from the parent keymap and defines only those that were changed. If you use a plugin like Emacs or Vim, only your changes will be exported in the XML
 - Warning output for keymaps that could not be imported is not yet implemented
 - Cannot load `settings.zip` file directly
 
