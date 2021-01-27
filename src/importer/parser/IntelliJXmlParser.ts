@@ -1,8 +1,13 @@
 import * as parser from 'fast-xml-parser';
 import { IntelliJKeymapXML } from '../model/intellij/implement/IntelliJKeymapXML';
+import { USE_DEFAULT_FILE } from '../reader/FileOpenDialog';
 
 export class IntelliJXMLParser {
-    static async parseToJson(xml: string): Promise<any> {
+    static async parseToJson(xml: string | USE_DEFAULT_FILE): Promise<any | USE_DEFAULT_FILE> {
+        if (!xml) {
+            return undefined;
+        }
+
         const parserXmlOptions: parser.X2jOptionsOptional = {
             ignoreAttributes: false,
             parseAttributeValue: true,
@@ -14,8 +19,8 @@ export class IntelliJXMLParser {
         return parser.parse(xml, parserXmlOptions);
     }
 
-    static async desirialize(json: any): Promise<IntelliJKeymapXML[]> {
-        if (!json.keymap) {
+    static async desirialize(json: any | USE_DEFAULT_FILE): Promise<IntelliJKeymapXML[]> {
+        if (!json || !json.keymap) {
             return [];
         }
 

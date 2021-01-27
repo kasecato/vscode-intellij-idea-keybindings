@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { KeybindingsJsonGenerator } from './importer/generator/KeybindingsJsonGenerator';
+import { ImporterType } from './importer/model/ImporterType';
 import { IntelliJKeymapXML } from './importer/model/intellij/implement/IntelliJKeymapXML';
 import { OS } from './importer/model/OS';
 import { ActionIdCommandMapping } from './importer/model/resource/ActionIdCommandMapping';
@@ -9,9 +10,9 @@ import { ActionIdCommandMappingJsonParser } from './importer/parser/ActionIdComm
 import { IntelliJXMLParser } from './importer/parser/IntelliJXmlParser';
 import { KeystrokeKeyMappingJsonParser } from './importer/parser/KeystrokeKeyMappingJsonParser';
 import { VSCodeJsonParser } from './importer/parser/VSCodeJsonParser';
-import { FileOpenDialog, USE_DEFAULT } from './importer/reader/FileOpenDialog';
+import { FileOpenDialog, USE_DEFAULT_FILE } from './importer/reader/FileOpenDialog';
 import { FileReaderDefault } from './importer/reader/FileReaderDefault';
-import { Picker } from './importer/reader/Picker';
+import { Picker, UNSELECT } from './importer/reader/Picker';
 import { IntelliJSyntaxAnalyzer } from './importer/syntax-analyzer/IntelliJSyntaxAnalyzer';
 import { FileOpen } from './importer/writer/FileOpen';
 
@@ -20,12 +21,23 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Reader
          *-------------------------------------------------------------------*/
-        const os: { src: OS; dst: OS } | undefined = await Picker.pickOSDestionation();
+        const importerType: ImporterType | UNSELECT = await Picker.pickImporterType();
+        if (!importerType) {
+            return;
+        }
+
+        const os: { src: OS; dst: OS } | UNSELECT = await Picker.pickOSDestionation();
         if (!os) {
             return;
         }
 
-        const intellijXmlCustom: string | USE_DEFAULT = await FileOpenDialog.showXml();
+        let intellijXmlCustom: string | USE_DEFAULT_FILE;
+        if (importerType === 'XmlFile') {
+            intellijXmlCustom = await FileOpenDialog.showXml();
+            if (!intellijXmlCustom) {
+                return;
+            }
+        }
 
         const intellijXmlDefault: string = await FileReaderDefault.readIntelliJ(os.src, context);
         const vscodeJsonDefault: string = await FileReaderDefault.readVSCode(os.src, context);
@@ -35,13 +47,9 @@ export function activate(context: vscode.ExtensionContext) {
         /*---------------------------------------------------------------------
          * Parser
          *-------------------------------------------------------------------*/
-        const intellijJsonCustom: any = (intellijXmlCustom)
-            ? await IntelliJXMLParser.parseToJson(intellijXmlCustom)
-            : undefined;
-        const intellijJsonDefault: any = await IntelliJXMLParser.parseToJson(intellijXmlDefault);
-        const intellijCustoms: IntelliJKeymapXML[] = (intellijXmlCustom)
-            ? await IntelliJXMLParser.desirialize(intellijJsonCustom)
-            : [];
+        const intellijJsonCustom: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlCustom);
+        const intellijJsonDefault: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlDefault);
+        const intellijCustoms: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonCustom);
         const intellijDefaults: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonDefault);
         const vscodeDefaults: VSCodeKeybinding[] = await VSCodeJsonParser.desirialize(vscodeJsonDefault);
         const actionIdCommandMappings: ActionIdCommandMapping[] = await ActionIdCommandMappingJsonParser.desirialize(
