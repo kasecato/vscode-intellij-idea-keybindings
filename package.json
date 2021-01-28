@@ -55,12 +55,12 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "activationEvents": [
-        "onCommand:IntelliJ/importFile"
+        "onCommand:intellij.importKeyMapsSchema"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [{
-            "command": "IntelliJ/importFile",
+            "command": "intellij.importKeyMapsSchema",
             "title": "Import IntelliJ Keybindngs (XML)",
             "category": "IntelliJ Keybindings"
         }],

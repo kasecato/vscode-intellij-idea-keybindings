@@ -17,7 +17,7 @@ import { IntelliJSyntaxAnalyzer } from './importer/syntax-analyzer/IntelliJSynta
 import { FileOpen } from './importer/writer/FileOpen';
 
 export function activate(context: vscode.ExtensionContext) {
-    vscode.commands.registerCommand('IntelliJ/importFile', async function () {
+    vscode.commands.registerCommand('intellij.importKeyMapsSchema', async function () {
         /*---------------------------------------------------------------------
          * Reader
          *-------------------------------------------------------------------*/
