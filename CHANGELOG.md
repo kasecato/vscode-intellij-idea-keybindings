@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.1 (Jan 28, 2021)
+
+* bug fix - Fresh install could not find an import command. See [#201](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/201)
+
 ## 1.2.0 (Jan 28, 2021)
 
 * enhancement - IntelliJ Importer for Linux. See [#200](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/200)
