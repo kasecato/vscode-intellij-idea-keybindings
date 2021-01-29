@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.2 (Jan 30, 2021)
+
+* bug fix - Unable to import keybindings. See [#203](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/203)
+
 ## 1.2.1 (Jan 28, 2021)
 
 * bug fix - Fresh install could not find an import command. See [#201](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/201)

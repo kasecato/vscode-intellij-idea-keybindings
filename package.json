@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.52.0"
@@ -59,12 +59,15 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [{
-            "command": "intellij.importKeyMapsSchema",
-            "title": "Import IntelliJ Keybindngs (XML)",
-            "category": "IntelliJ Keybindings"
-        }],
-        "keybindings": [{
+        "commands": [
+            {
+                "command": "intellij.importKeyMapsSchema",
+                "title": "Import IntelliJ Keybindngs (XML)",
+                "category": "IntelliJ Keybindings"
+            }
+        ],
+        "keybindings": [
+            {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
