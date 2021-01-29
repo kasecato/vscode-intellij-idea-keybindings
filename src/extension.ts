@@ -17,70 +17,74 @@ import { IntelliJSyntaxAnalyzer } from './importer/syntax-analyzer/IntelliJSynta
 import { FileOpen } from './importer/writer/FileOpen';
 
 export function activate(context: vscode.ExtensionContext) {
-    vscode.commands.registerCommand('intellij.importKeyMapsSchema', async function () {
-        /*---------------------------------------------------------------------
-         * Reader
-         *-------------------------------------------------------------------*/
-        const importerType: ImporterType | UNSELECT = await Picker.pickImporterType();
-        if (!importerType) {
-            return;
-        }
-
-        const os: { src: OS; dst: OS } | UNSELECT = await Picker.pickOSDestionation();
-        if (!os) {
-            return;
-        }
-
-        let intellijXmlCustom: string | USE_DEFAULT_FILE;
-        if (importerType === 'XmlFile') {
-            intellijXmlCustom = await FileOpenDialog.showXml();
-            if (!intellijXmlCustom) {
-                return;
-            }
-        }
-
-        const intellijXmlDefault: string = await FileReaderDefault.readIntelliJ(os.src, context);
-        const vscodeJsonDefault: string = await FileReaderDefault.readVSCode(os.src, context);
-        const actionIdCommandMappingJson: string = await FileReaderDefault.readActionIdCommandMapping(context);
-        const keystrokeKeyMappingJson: string = await FileReaderDefault.readKeystrokeKeyMapping(context);
-
-        /*---------------------------------------------------------------------
-         * Parser
-         *-------------------------------------------------------------------*/
-        const intellijJsonCustom: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlCustom);
-        const intellijJsonDefault: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlDefault);
-        const intellijCustoms: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonCustom);
-        const intellijDefaults: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonDefault);
-        const vscodeDefaults: VSCodeKeybinding[] = await VSCodeJsonParser.desirialize(vscodeJsonDefault);
-        const actionIdCommandMappings: ActionIdCommandMapping[] = await ActionIdCommandMappingJsonParser.desirialize(
-            actionIdCommandMappingJson
-        );
-        const keystrokeKeyMappings: KeystrokeKeyMapping[] = await KeystrokeKeyMappingJsonParser.desirialize(
-            keystrokeKeyMappingJson
-        );
-
-        /*---------------------------------------------------------------------
-         * Semantic Analyzer
-         *-------------------------------------------------------------------*/
-        const syntaxAnalyzer = new IntelliJSyntaxAnalyzer(
-            os.dst,
-            intellijDefaults,
-            intellijCustoms,
-            vscodeDefaults,
-            actionIdCommandMappings,
-            keystrokeKeyMappings
-        );
-        const keybindings: VSCodeKeybinding[] = await syntaxAnalyzer.convert();
-
-        /*---------------------------------------------------------------------
-         * Code Generator
-         *-------------------------------------------------------------------*/
-        const keybindingsJson = await KeybindingsJsonGenerator.gene(keybindings);
-
-        /*---------------------------------------------------------------------
-         * Writer
-         *-------------------------------------------------------------------*/
-        const untitledKeybindingsJson = await FileOpen.openText(keybindingsJson);
-        await FileOpen.showKeybindingsJson(untitledKeybindingsJson);
-    });
+    context.subscriptions.push(
+        vscode.commands.registerCommand('intellij.importKeyMapsSchema', async () => await importKeyMapsSchema(context))
+    );
 }
+
+export async function importKeyMapsSchema(context: vscode.ExtensionContext) {
+    /*---------------------------------------------------------------------
+     * Reader
+     *-------------------------------------------------------------------*/
+    const importerType: ImporterType | UNSELECT = await Picker.pickImporterType();
+    if (!importerType) {
+        return;
+    }
+
+    const os: { src: OS; dst: OS } | UNSELECT = await Picker.pickOSDestionation();
+    if (!os) {
+        return;
+    }
+
+    let intellijXmlCustom: string | USE_DEFAULT_FILE;
+    if (importerType === 'XmlFile') {
+        intellijXmlCustom = await FileOpenDialog.showXml();
+        if (!intellijXmlCustom) {
+            return;
+        }
+    }
+
+    const intellijXmlDefault: string = await FileReaderDefault.readIntelliJ(os.src, context);
+    const vscodeJsonDefault: string = await FileReaderDefault.readVSCode(os.src, context);
+    const actionIdCommandMappingJson: string = await FileReaderDefault.readActionIdCommandMapping(context);
+    const keystrokeKeyMappingJson: string = await FileReaderDefault.readKeystrokeKeyMapping(context);
+
+    /*---------------------------------------------------------------------
+     * Parser
+     *-------------------------------------------------------------------*/
+    const intellijJsonCustom: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlCustom);
+    const intellijJsonDefault: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlDefault);
+    const intellijCustoms: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonCustom);
+    const intellijDefaults: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonDefault);
+    const vscodeDefaults: VSCodeKeybinding[] = await VSCodeJsonParser.desirialize(vscodeJsonDefault);
+    const actionIdCommandMappings: ActionIdCommandMapping[] = await ActionIdCommandMappingJsonParser.desirialize(
+        actionIdCommandMappingJson
+    );
+    const keystrokeKeyMappings: KeystrokeKeyMapping[] = await KeystrokeKeyMappingJsonParser.desirialize(
+        keystrokeKeyMappingJson
+    );
+
+    /*---------------------------------------------------------------------
+     * Semantic Analyzer
+     *-------------------------------------------------------------------*/
+    const syntaxAnalyzer = new IntelliJSyntaxAnalyzer(
+        os.dst,
+        intellijDefaults,
+        intellijCustoms,
+        vscodeDefaults,
+        actionIdCommandMappings,
+        keystrokeKeyMappings
+    );
+    const keybindings: VSCodeKeybinding[] = await syntaxAnalyzer.convert();
+
+    /*---------------------------------------------------------------------
+     * Code Generator
+     *-------------------------------------------------------------------*/
+    const keybindingsJson = await KeybindingsJsonGenerator.gene(keybindings);
+
+    /*---------------------------------------------------------------------
+     * Writer
+     *-------------------------------------------------------------------*/
+    const untitledKeybindingsJson = await FileOpen.openText(keybindingsJson);
+    await FileOpen.showKeybindingsJson(untitledKeybindingsJson);
+};
