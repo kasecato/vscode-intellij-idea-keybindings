@@ -90,10 +90,22 @@
             },
 */
             {
+                "key": "enter",
+                "command": "acceptSelectedSuggestion",
+                "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus",
+                "intellij": "Choose Lookup Item"
+            },
+            {
+                "key": "tab",
+                "command": "acceptAlternativeSelectedSuggestion",
+                "when": "suggestWidgetVisible && textInputFocus",
+                "intellij": "Choose Lookup Item Replace"
+            },
+            {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
-                "when": "editorFocus && suggestWidgetVisible",
+                "when": "suggestWidgetVisible && textInputFocus",
                 "intellij": "Complete statement"
             },
             {

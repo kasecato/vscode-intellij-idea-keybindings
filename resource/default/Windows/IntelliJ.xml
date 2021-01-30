@@ -91,16 +91,6 @@
   <action id="EditSourceInNewWindow">
     <keyboard-shortcut first-keystroke="shift f4" />
   </action>
-  <action id="Editor Copy">
-  </action>
-  <action id="Editor Cut">
-  </action>
-  <action id="Editor Paste">
-  </action>
-  <action id="Editor Redo">
-  </action>
-  <action id="Editor Undo">
-  </action>
   <action id="EditorCompleteStatement">
     <keyboard-shortcut first-keystroke="shift ctrl enter" />
   </action>

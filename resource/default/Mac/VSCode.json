@@ -1,5 +1,15 @@
 [
     {
+        "key": "shift+tab",
+        "command": "acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
+    },
+    {
         "key": "tab",
         "command": "acceptSelectedSuggestion",
         "when": "suggestWidgetVisible && textInputFocus"
