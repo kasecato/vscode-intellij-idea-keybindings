@@ -112,6 +112,14 @@
         "vscode": "workbench.action.files.showOpenedFileInNewWindow"
     },
     {
+        "intellij": "EditorChooseLookupItem",
+        "vscode": "acceptSelectedSuggestion"
+    },
+    {
+        "intellij": "EditorChooseLookupItemReplace",
+        "vscode": "acceptAlternativeSelectedSuggestion"
+    },
+    {
         "intellij": "EditorCompleteStatement",
         "vscode": "acceptSelectedSuggestion"
     },
