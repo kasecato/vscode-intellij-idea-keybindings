@@ -430,7 +430,7 @@
       {
         "key": "ctrl+k ctrl+r",
         "command": "git.revertSelectedRanges",
-        "when": "isInDiffEditor"
+        "when": "editorTextFocus && !editorReadonly"
       },
       {
         "key": "ctrl+shift+m",

@@ -59,15 +59,12 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "intellij.importKeyMapsSchema",
-                "title": "Import IntelliJ Keybindngs (XML)",
-                "category": "IntelliJ Keybindings"
-            }
-        ],
-        "keybindings": [
-            {
+        "commands": [{
+            "command": "intellij.importKeyMapsSchema",
+            "title": "Import IntelliJ Keybindngs (XML)",
+            "category": "IntelliJ Keybindings"
+        }],
+        "keybindings": [{
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
@@ -815,7 +812,7 @@
                 "key": "ctrl+alt+z",
                 "mac": "cmd+alt+z",
                 "command": "git.revertSelectedRanges",
-                "when": "isInDiffEditor",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Rollback Lines"
             },
             {

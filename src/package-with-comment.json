@@ -1388,7 +1388,7 @@
                 "key": "ctrl+alt+z",
                 "mac": "cmd+alt+z",
                 "command": "git.revertSelectedRanges",
-                "when": "isInDiffEditor",
+                "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Rollback Lines"
             },
             /*
