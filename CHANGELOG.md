@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.3.0 (Jan 30, 2021)
+
+* bug fix - [bug report] revertselectedRanges should work outside of diffEditor. See [#205](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/205)
+* enhancement - Keymap for completion. See [#183](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/189)
+
 ## 1.2.2 (Jan 30, 2021)
 
 * bug fix - Unable to import keybindings. See [#203](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/203)

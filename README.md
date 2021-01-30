@@ -29,6 +29,8 @@ Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
 ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
+enter | enter | Choose Lookup Item | ✅
+tab | tab | Choose Lookup Item Replace | ✅
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
@@ -222,7 +224,7 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+alt+k | cmd+k | Commit project to VCS | ✅
-ctrl+shift+k | cmd+shift+k | Push commits to VCS | ✅
+ctrl+shift+k | cmd+alt+k | Push commits to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
 ctrl+alt+z | cmd+alt+z | Rollback Lines | ✅
 alt+shift+c | alt+shift+c | View recent changes | N/A
@@ -257,7 +259,7 @@ alt+numpad9 | cmd+numpad9 | Open corresponding tool window (Git) | ✅
 alt+9 | cmd+9 | Close corresponding tool window (Git) | ✅
 alt+numpad9 | cmd+numpad9 | Close corresponding tool window (Git) | ✅
 ctrl+s | cmd+s | Save all | ✅
-ctrl+alt+y | cmd+alt+y | Synchronize | ✅
+ctrl+alt+y | cmd+alt+y | Synchronize | N/A
 ctrl+alt+f | ctrl+cmd+f | Toggle full screen mode | ✅
 ctrl+shift+f12 | cmd+shift+f12 | Toggle maximizing editor | ✅
 alt+shift+f | alt+shift+f | Add to Favorites | N/A

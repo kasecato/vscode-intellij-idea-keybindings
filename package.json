@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "1.2.2",
+    "version": "1.3.0",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.52.0"
@@ -66,12 +66,14 @@
         }],
         "keybindings": [{
                 "key": "enter",
+                "mac": "enter",
                 "command": "acceptSelectedSuggestion",
                 "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus",
                 "intellij": "Choose Lookup Item"
             },
             {
                 "key": "tab",
+                "mac": "tab",
                 "command": "acceptAlternativeSelectedSuggestion",
                 "when": "suggestWidgetVisible && textInputFocus",
                 "intellij": "Choose Lookup Item Replace"
