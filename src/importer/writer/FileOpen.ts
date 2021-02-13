@@ -12,7 +12,6 @@ export class FileOpen {
 
     static async showKeybindingsJson(untitledDoc: vscode.TextDocument): Promise<void> {
         await vscode.commands.executeCommand('workbench.action.openGlobalKeybindingsFile');
-        await vscode.commands.executeCommand('workbench.action.newGroupRight');
         const fullRange = new vscode.Range(
             untitledDoc.lineAt(0).range.start,
             untitledDoc.lineAt(untitledDoc.lineCount - 1).range.end
