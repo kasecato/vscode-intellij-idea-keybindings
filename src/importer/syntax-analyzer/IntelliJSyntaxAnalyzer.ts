@@ -13,92 +13,97 @@ import { VSCodeKeybinding } from '../model/vscode/VSCodeKeybinding';
 export class IntelliJSyntaxAnalyzer {
     private static readonly REMOVE_KEYBINDING: string = '-';
     private readonly osDestination: OS;
-    private readonly intellijDefaults: IntelliJKeymapXML[];
-    private readonly intellijCustoms: { [actionId: string]: IntelliJKeymapXML[] };
-    private readonly vscodeDefaults: { [commnad: string]: VSCodeKeybinding[] };
-    private readonly actionIdCommandMappings: { [actionId: string]: ActionIdCommandMapping[] };
-    private readonly keystrokeKeyMappings: KeystrokeKeyMapping[];
+    private readonly actionIdCommandMappings: { [actionId: string]: readonly ActionIdCommandMapping[] };
+    private readonly keystrokeKeyMappings: readonly KeystrokeKeyMapping[];
+    private readonly vscodeDefaults: { [commnad: string]: readonly VSCodeKeybinding[] };
+    private readonly intellijDefaults: readonly IntelliJKeymapXML[];
+    private readonly intellijCustoms: { [actionId: string]: readonly IntelliJKeymapXML[] };
 
     constructor(
         osDestination: OS,
-        intellijDefaults: IntelliJKeymapXML[],
-        intellijCustoms: IntelliJKeymapXML[],
-        vscodeDefaults: VSCodeKeybinding[],
-        actionIdCommandMappings: ActionIdCommandMapping[],
-        keystrokeKeyMappings: KeystrokeKeyMapping[]
+        actionIdCommandMappings: readonly ActionIdCommandMapping[],
+        keystrokeKeyMappings: readonly KeystrokeKeyMapping[],
+        vscodeDefaults: readonly VSCodeKeybinding[],
+        intellijDefaults: readonly IntelliJKeymapXML[],
+        intellijCustoms: readonly IntelliJKeymapXML[],
     ) {
         this.osDestination = osDestination;
-        this.intellijDefaults = intellijDefaults;
-        this.intellijCustoms = IntelliJSyntaxAnalyzer.groupBy(intellijCustoms, x => x.actionId);
-        this.vscodeDefaults = IntelliJSyntaxAnalyzer.groupBy(vscodeDefaults, x => x.command);
         this.actionIdCommandMappings = IntelliJSyntaxAnalyzer.groupBy(actionIdCommandMappings, x => x.intellij);
         this.keystrokeKeyMappings = keystrokeKeyMappings;
+        this.vscodeDefaults = IntelliJSyntaxAnalyzer.groupBy(vscodeDefaults, x => x.command);
+        this.intellijDefaults = intellijDefaults;
+        this.intellijCustoms = IntelliJSyntaxAnalyzer.groupBy(intellijCustoms, x => x.actionId);
     }
 
     // FIXME: high-cost
     async convert(): Promise<VSCodeKeybinding[]> {
-        const keybindings: VSCodeKeybinding[] = [];
+        const vscodeMutable: VSCodeKeybinding[] = [];
 
         // set custom
-        this.action(keybindings, this.addCustomIntelliJ);
+        this.action(vscodeMutable, this.addCustomIntelliJ);
 
         // set default
-        this.action(keybindings, undefined, this.addDefaultIntelliJ);
+        this.action(vscodeMutable, undefined, this.addDefaultIntelliJ);
 
         // remove default
-        this.action(keybindings, this.removeDefaultVSCode, this.removeDefaultVSCode);
+        this.action(vscodeMutable, this.removeDefaultVSCode, this.removeDefaultVSCode);
 
         // remove default
-        this.action(keybindings, this.removeDefaultIntelliJ, this.removeDefaultIntelliJ);
+        this.action(vscodeMutable, this.removeDefaultIntelliJ, this.removeDefaultIntelliJ);
 
-        return keybindings;
+        return vscodeMutable;
     }
 
     private action(
-        keybindings: VSCodeKeybinding[] = [],
+        vscodeMutable: VSCodeKeybinding[] = [],
         onCustom:
             | ((
-                  keybindings: VSCodeKeybinding[],
-                  vscodeDefault: VSCodeKeybinding,
-                  intellijDefult: IntelliJKeymapXML,
-                  intellijCustom: IntelliJKeymapXML
-              ) => void)
+                vscodeMutable: VSCodeKeybinding[],
+                vscodeDefault: VSCodeKeybinding,
+                intellijDefult: IntelliJKeymapXML,
+                intellijCustom: IntelliJKeymapXML
+            ) => void)
             | undefined,
         onDefault:
             | ((
-                  keybindings: VSCodeKeybinding[],
-                  vscodeDefault: VSCodeKeybinding,
-                  intellijDefault: IntelliJKeymapXML,
-                  intellijCustom: IntelliJKeymapXML | undefined
-              ) => void)
+                vscodeMutable: VSCodeKeybinding[],
+                vscodeDefault: VSCodeKeybinding,
+                intellijDefault: IntelliJKeymapXML,
+                intellijCustom: IntelliJKeymapXML | undefined
+            ) => void)
             | undefined = undefined
     ): void {
         // FIXEME: This loop is not correct because it duplicates when there are two defaults. Rewrite when I have time
-        this.intellijDefaults.forEach(intellijDefault => {
-            if (this.actionIdCommandMappings[intellijDefault.actionId]) {
-                this.actionIdCommandMappings[intellijDefault.actionId].forEach(actionIdCommandMapping => {
-                    if (this.vscodeDefaults[actionIdCommandMapping.vscode]) {
-                        this.vscodeDefaults[actionIdCommandMapping.vscode].forEach(vscodeDefault => {
-                            if (this.intellijCustoms[actionIdCommandMapping.intellij]) {
-                                if (onCustom) {
-                                    this.intellijCustoms[actionIdCommandMapping.intellij].forEach(intellijCustom => {
-                                        onCustom(keybindings, vscodeDefault, intellijDefault, intellijCustom);
-                                    });
-                                }
-                            } else {
-                                if (onDefault) {
-                                    onDefault(keybindings, vscodeDefault, intellijDefault, undefined);
-                                }
-                            }
-                        });
-                    }
-                });
+        for (let intellijDefault of this.intellijDefaults) {
+            if (!this.actionIdCommandMappings[intellijDefault.actionId]) {
+                continue;
             }
-        });
+            for (let actionIdCommandMapping of this.actionIdCommandMappings[intellijDefault.actionId]) {
+                const actionId = actionIdCommandMapping.intellij;
+                const command = actionIdCommandMapping.vscode;
+                if (!this.vscodeDefaults[command]) {
+                    continue;
+                }
+                for (let vscodeDefault of this.vscodeDefaults[command]) {
+                    if (this.intellijCustoms[actionId]) {
+                        if (onCustom) {
+                            for (let intellijCustom of this.intellijCustoms[actionId]) {
+                                onCustom(vscodeMutable, vscodeDefault, intellijDefault, intellijCustom);
+                            }
+                        }
+                    }
+                    else {
+                        if (onDefault) {
+                            onDefault(vscodeMutable, vscodeDefault, intellijDefault, undefined);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     private addCustomIntelliJ = (
-        keybindings: VSCodeKeybinding[] = [],
+        vscodeMutable: VSCodeKeybinding[] = [],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
         intellijCustom: IntelliJKeymapXML
@@ -107,16 +112,16 @@ export class IntelliJSyntaxAnalyzer {
         const when = vscodeDefault.when;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = keybindings.some(keybinding => keybinding.key === key && keybinding.command === command);
+        const alreadyBinded = vscodeMutable.some(keybinding => keybinding.key === key && keybinding.command === command);
         if (alreadyBinded) {
             return;
         }
 
-        keybindings.push(new VSCodeKeybindingDefault(command, key, when));
+        vscodeMutable.push(new VSCodeKeybindingDefault(command, key, when));
     };
 
     private addDefaultIntelliJ = (
-        keybindings: VSCodeKeybinding[] = [],
+        vscodeMutable: VSCodeKeybinding[],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML
     ): void => {
@@ -124,15 +129,15 @@ export class IntelliJSyntaxAnalyzer {
         const when = vscodeDefault.when;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = keybindings.some(keybinding => keybinding.key === key && keybinding.command === command);
+        const alreadyBinded = vscodeMutable.some(keybinding => keybinding.key === key && keybinding.command === command);
         if (alreadyBinded) {
             return;
         }
-        keybindings.push(new VSCodeKeybindingDefault(command, key, when));
+        vscodeMutable.push(new VSCodeKeybindingDefault(command, key, when));
     };
 
     private removeDefaultVSCode = (
-        keybindings: VSCodeKeybinding[] = [],
+        vscodeMutable: VSCodeKeybinding[],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
         intellijCustom: IntelliJKeymapXML | undefined = undefined
@@ -140,7 +145,7 @@ export class IntelliJSyntaxAnalyzer {
         const key = vscodeDefault.key;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = keybindings.some(
+        const alreadyBinded = vscodeMutable.some(
             keybinding => keybinding.key === key && keybinding.command.endsWith(command)
         );
         if (alreadyBinded) {
@@ -148,11 +153,11 @@ export class IntelliJSyntaxAnalyzer {
         }
 
         const removedCommand = `${IntelliJSyntaxAnalyzer.REMOVE_KEYBINDING}${command}`;
-        keybindings.push(new VSCodeKeybindingDefault(removedCommand, key));
+        vscodeMutable.push(new VSCodeKeybindingDefault(removedCommand, key));
     };
 
     private removeDefaultIntelliJ = (
-        keybindings: VSCodeKeybinding[] = [],
+        vscodeMutable: VSCodeKeybinding[],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
         intellijCustom: IntelliJKeymapXML | undefined = undefined
@@ -160,7 +165,7 @@ export class IntelliJSyntaxAnalyzer {
         const key = this.convertToKey(intellijDefault).key;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = keybindings.some(
+        const alreadyBinded = vscodeMutable.some(
             keybinding => keybinding.key === key && keybinding.command.endsWith(command)
         );
         if (alreadyBinded) {
@@ -168,7 +173,7 @@ export class IntelliJSyntaxAnalyzer {
         }
 
         const removedCommand = `${IntelliJSyntaxAnalyzer.REMOVE_KEYBINDING}${command}`;
-        keybindings.push(new VSCodeKeybindingDefault(removedCommand, key));
+        vscodeMutable.push(new VSCodeKeybindingDefault(removedCommand, key));
     };
 
     private convertToKey(intellijKeymap: IntelliJKeymap): VSCodeKey {
@@ -182,7 +187,7 @@ export class IntelliJSyntaxAnalyzer {
         }
     }
 
-    static groupBy<V>(array: readonly V[], prop: (v: V) => string): { [key: string]: V[] } {
+    private static groupBy<V>(array: readonly V[], prop: (v: V) => string): { [key: string]: V[] } {
         return array.reduce((groups: { [key: string]: V[] }, item) => {
             const val = prop(item);
             groups[val] = groups[val] ?? [];
