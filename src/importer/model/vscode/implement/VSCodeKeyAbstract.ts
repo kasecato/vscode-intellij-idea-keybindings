@@ -4,11 +4,11 @@ import { VSCodeKey } from '../VSCodeKey';
 
 export abstract class VSCodeKeyAbstract implements VSCodeKey {
     private static readonly VSCODE_SECOND_DELIMITER = ' ';
-    private readonly keystrokeKeyMappings: KeystrokeKeyMapping[];
+    private readonly keystrokeKeyMappings: readonly KeystrokeKeyMapping[];
 
     key: string;
 
-    constructor(intellijKeymap: IntelliJKeymap, keystrokeKeyMappings: KeystrokeKeyMapping[]) {
+    constructor(intellijKeymap: IntelliJKeymap, keystrokeKeyMappings: readonly KeystrokeKeyMapping[]) {
         this.keystrokeKeyMappings = keystrokeKeyMappings;
         this.key = this.convert(intellijKeymap.first);
         if (intellijKeymap.second) {
@@ -17,9 +17,9 @@ export abstract class VSCodeKeyAbstract implements VSCodeKey {
     }
 
     convert(intellijKeystroke: string): string {
-        this.keystrokeKeyMappings.forEach(mapping => {
+        for (let mapping of this.keystrokeKeyMappings) {
             intellijKeystroke = intellijKeystroke.replace(mapping.intellij, mapping.vscode);
-        });
+        };
         return intellijKeystroke;
     }
 }

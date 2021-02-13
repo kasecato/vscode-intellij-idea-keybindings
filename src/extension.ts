@@ -69,11 +69,11 @@ export async function importKeyMapsSchema(context: vscode.ExtensionContext) {
      *-------------------------------------------------------------------*/
     const syntaxAnalyzer = new IntelliJSyntaxAnalyzer(
         os.dst,
+        actionIdCommandMappings,
+        keystrokeKeyMappings,
+        vscodeDefaults,
         intellijDefaults,
         intellijCustoms,
-        vscodeDefaults,
-        actionIdCommandMappings,
-        keystrokeKeyMappings
     );
     const keybindings: VSCodeKeybinding[] = await syntaxAnalyzer.convert();
 
