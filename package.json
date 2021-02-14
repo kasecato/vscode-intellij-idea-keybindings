@@ -369,6 +369,12 @@
                 "intellij": "Column Selection Mode"
             },
             {
+                "key": "shift shift",
+                "mac": "shift shift",
+                "command": "workbench.action.showCommands",
+                "intellij": "Search everywhere"
+            },
+            {
                 "key": "f3",
                 "mac": "cmd+g",
                 "command": "editor.action.nextMatchFindAction",

@@ -562,15 +562,12 @@
             /*---------------------------------------------------------------*\
              * Search/Replace
             \*---------------------------------------------------------------*/
-            /*
             {
                 "key": "shift shift",
                 "mac": "shift shift",
-                "command": "",
-                "intellij": "Search everywhere",
-                "todo": "N/A: shift shift"
+                "command": "workbench.action.showCommands",
+                "intellij": "Search everywhere"
             },
-*/
             /*
             {
                 "key": "ctrl+f",

@@ -440,6 +440,10 @@
         "vscode": "workbench.action.files.saveAll"
     },
     {
+        "intellij": "SearchEverywhere",
+        "vscode": "workbench.action.showCommands"
+    },
+    {
         "intellij": "SelectAllOccurrences",
         "vscode": "editor.action.selectHighlights"
     },
