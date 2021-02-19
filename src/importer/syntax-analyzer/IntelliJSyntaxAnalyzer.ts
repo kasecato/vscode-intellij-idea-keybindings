@@ -37,42 +37,47 @@ export class IntelliJSyntaxAnalyzer {
 
     // FIXME: high-cost
     async convert(): Promise<VSCodeKeybinding[]> {
-        const vscodeMutable: VSCodeKeybinding[] = [];
+        let vscodeMutable: VSCodeKeybinding[] = [];
 
         // set custom
-        this.action(vscodeMutable, this.addCustomIntelliJ);
+        const customs = this.action(vscodeMutable, this.addCustomIntelliJ);
+        vscodeMutable = vscodeMutable.concat(customs);
 
         // set default
-        this.action(vscodeMutable, undefined, this.addDefaultIntelliJ);
+        const defaults = this.action(vscodeMutable, undefined, this.addDefaultIntelliJ);
+        vscodeMutable = vscodeMutable.concat(defaults);
 
         // remove default
-        this.action(vscodeMutable, this.removeDefaultVSCode, this.removeDefaultVSCode);
+        const removedDefaultsVSCode = this.action(vscodeMutable, this.removeDefaultVSCode, this.removeDefaultVSCode);
+        vscodeMutable = vscodeMutable.concat(removedDefaultsVSCode);
 
         // remove default
-        this.action(vscodeMutable, this.removeDefaultIntelliJ, this.removeDefaultIntelliJ);
+        const removedDefaultsIntelliJ = this.action(vscodeMutable, this.removeDefaultIntelliJ, this.removeDefaultIntelliJ);
+        vscodeMutable = vscodeMutable.concat(removedDefaultsIntelliJ);
 
         return vscodeMutable;
     }
 
     private action(
-        vscodeMutable: VSCodeKeybinding[] = [],
+        vscodeImmutable: readonly VSCodeKeybinding[],
         onCustom:
             | ((
-                vscodeMutable: VSCodeKeybinding[],
+                vscodeImmutable: readonly VSCodeKeybinding[],
                 vscodeDefault: VSCodeKeybinding,
                 intellijDefult: IntelliJKeymapXML,
                 intellijCustom: IntelliJKeymapXML
-            ) => void)
+            ) => VSCodeKeybinding | undefined)
             | undefined,
         onDefault:
             | ((
-                vscodeMutable: VSCodeKeybinding[],
+                vscodeImmutable: readonly VSCodeKeybinding[],
                 vscodeDefault: VSCodeKeybinding,
                 intellijDefault: IntelliJKeymapXML,
                 intellijCustom: IntelliJKeymapXML | undefined
-            ) => void)
+            ) => VSCodeKeybinding | undefined)
             | undefined = undefined
-    ): void {
+    ): VSCodeKeybinding[] {
+        const vscodeMutable: VSCodeKeybinding[] = [];
         // FIXEME: This loop is not correct because it duplicates when there are two defaults. Rewrite when I have time
         for (let intellijDefault of this.intellijDefaults) {
             if (!this.actionIdCommandMappings[intellijDefault.actionId]) {
@@ -88,92 +93,96 @@ export class IntelliJSyntaxAnalyzer {
                     if (this.intellijCustoms[actionId]) {
                         if (onCustom) {
                             for (let intellijCustom of this.intellijCustoms[actionId]) {
-                                onCustom(vscodeMutable, vscodeDefault, intellijDefault, intellijCustom);
+                                const keybinding = onCustom(vscodeMutable.concat(vscodeImmutable), vscodeDefault, intellijDefault, intellijCustom);
+                                if (keybinding) {
+                                    vscodeMutable.push(keybinding);
+                                }
                             }
                         }
                     }
                     else {
                         if (onDefault) {
-                            onDefault(vscodeMutable, vscodeDefault, intellijDefault, undefined);
+                            const keybinding = onDefault(vscodeMutable.concat(vscodeImmutable), vscodeDefault, intellijDefault, undefined);
+                            if (keybinding) {
+                                vscodeMutable.push(keybinding);
+                            }
                         }
                     }
                 }
             }
         }
+        return vscodeMutable;
     }
 
     private addCustomIntelliJ = (
-        vscodeMutable: VSCodeKeybinding[] = [],
+        vscodeImmutable: readonly VSCodeKeybinding[],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
         intellijCustom: IntelliJKeymapXML
-    ): void => {
+    ): VSCodeKeybinding | undefined => {
         const key = this.convertToKey(intellijCustom).key;
         const when = vscodeDefault.when;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = vscodeMutable.some(keybinding => keybinding.key === key && keybinding.command === command);
-        if (alreadyBinded) {
-            return;
-        }
-
-        vscodeMutable.push(new VSCodeKeybindingDefault(command, key, when));
+        const alreadyBinded = vscodeImmutable.some(keybinding => keybinding.key === key && keybinding.command === command);
+        return alreadyBinded
+            ? undefined
+            : new VSCodeKeybindingDefault(command, key, when);
     };
 
     private addDefaultIntelliJ = (
-        vscodeMutable: VSCodeKeybinding[],
+        vscodeImmutable: readonly VSCodeKeybinding[],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML
-    ): void => {
+    ): VSCodeKeybinding | undefined => {
         const key = this.convertToKey(intellijDefault).key;
         const when = vscodeDefault.when;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = vscodeMutable.some(keybinding => keybinding.key === key && keybinding.command === command);
-        if (alreadyBinded) {
-            return;
-        }
-        vscodeMutable.push(new VSCodeKeybindingDefault(command, key, when));
+        const alreadyBinded = vscodeImmutable.some(keybinding => keybinding.key === key && keybinding.command === command);
+        return alreadyBinded
+            ? undefined
+            : new VSCodeKeybindingDefault(command, key, when);
     };
 
     private removeDefaultVSCode = (
-        vscodeMutable: VSCodeKeybinding[],
+        vscodeImmutable: readonly VSCodeKeybinding[],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
         intellijCustom: IntelliJKeymapXML | undefined = undefined
-    ): void => {
+    ): VSCodeKeybinding | undefined => {
         const key = vscodeDefault.key;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = vscodeMutable.some(
+        const alreadyBinded = vscodeImmutable.some(
             keybinding => keybinding.key === key && keybinding.command.endsWith(command)
         );
         if (alreadyBinded) {
-            return;
+            return undefined;
         }
 
         const removedCommand = `${IntelliJSyntaxAnalyzer.REMOVE_KEYBINDING}${command}`;
-        vscodeMutable.push(new VSCodeKeybindingDefault(removedCommand, key));
+        return new VSCodeKeybindingDefault(removedCommand, key);
     };
 
     private removeDefaultIntelliJ = (
-        vscodeMutable: VSCodeKeybinding[],
+        vscodeImmutable: readonly VSCodeKeybinding[],
         vscodeDefault: VSCodeKeybinding,
         intellijDefault: IntelliJKeymapXML,
         intellijCustom: IntelliJKeymapXML | undefined = undefined
-    ): void => {
+    ): VSCodeKeybinding | undefined => {
         const key = this.convertToKey(intellijDefault).key;
         const command = vscodeDefault.command;
 
-        const alreadyBinded = vscodeMutable.some(
+        const alreadyBinded = vscodeImmutable.some(
             keybinding => keybinding.key === key && keybinding.command.endsWith(command)
         );
         if (alreadyBinded) {
-            return;
+            return undefined;
         }
 
         const removedCommand = `${IntelliJSyntaxAnalyzer.REMOVE_KEYBINDING}${command}`;
-        vscodeMutable.push(new VSCodeKeybindingDefault(removedCommand, key));
+        return new VSCodeKeybindingDefault(removedCommand, key);
     };
 
     private convertToKey(intellijKeymap: IntelliJKeymap): VSCodeKey {
