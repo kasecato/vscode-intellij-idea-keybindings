@@ -73,7 +73,7 @@ export async function importKeyMapsSchema(context: vscode.ExtensionContext) {
         keystrokeKeyMappings,
         vscodeDefaults,
         intellijDefaults,
-        intellijCustoms,
+        intellijCustoms
     );
     const keybindings: VSCodeKeybinding[] = await syntaxAnalyzer.convert();
 
@@ -87,4 +87,4 @@ export async function importKeyMapsSchema(context: vscode.ExtensionContext) {
      *-------------------------------------------------------------------*/
     const untitledKeybindingsJson = await FileOpen.openText(keybindingsJson);
     await FileOpen.showKeybindingsJson(untitledKeybindingsJson);
-};
+}
