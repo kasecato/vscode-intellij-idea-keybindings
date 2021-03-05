@@ -343,8 +343,7 @@
     },
     {
         "key": "",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
+        "command": "editor.action.goToDeclaration"
     },
     {
         "key": "ctrl+f12",
@@ -353,13 +352,11 @@
     },
     {
         "key": "",
-        "command": "editor.action.previewDeclaration",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor"
+        "command": "editor.action.previewDeclaration"
     },
     {
         "key": "",
-        "command": "editor.action.goToTypeDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
+        "command": "editor.action.goToTypeDefinition"
     },
     {
         "key": "",
@@ -367,8 +364,7 @@
     },
     {
         "key": "ctrl+shift+o",
-        "command": "workbench.action.gotoSymbol",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
+        "command": "workbench.action.gotoSymbol"
     },
     {
         "key": "alt+f8",

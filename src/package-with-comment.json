@@ -1000,7 +1000,6 @@
                 "key": "ctrl+b",
                 "mac": "cmd+b",
                 "command": "editor.action.goToDeclaration",
-                "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "Go to declaration"
             },
             {
@@ -1014,21 +1013,18 @@
                 "key": "ctrl+shift+i",
                 "mac": "alt+space",
                 "command": "editor.action.previewDeclaration",
-                "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Open quick definition lookup"
             },
             {
                 "key": "",
                 "mac": "cmd+y",
                 "command": "editor.action.previewDeclaration",
-                "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Open quick definition lookup"
             },
             {
                 "key": "ctrl+shift+b",
                 "mac": "ctrl+shift+b",
                 "command": "editor.action.goToTypeDefinition",
-                "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "Go to type declaration",
                 "todo": "not working"
             },
@@ -1092,7 +1088,6 @@
                 "key": "ctrl+f12",
                 "mac": "cmd+f12",
                 "command": "workbench.action.gotoSymbol",
-                "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "File structure popup"
             },
             /*
@@ -1148,14 +1143,12 @@
                 "key": "f4",
                 "mac": "f4",
                 "command": "editor.action.goToDeclaration",
-                "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "Edit source"
             },
             {
                 "key": "ctrl+enter",
                 "mac": "cmd+down",
                 "command": "editor.action.goToDeclaration",
-                "when": "editorHasDefinitionProvider && editorTextFocus",
                 "intellij": "View source"
             },
             {
