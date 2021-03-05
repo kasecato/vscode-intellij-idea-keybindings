@@ -10,13 +10,6 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 
 ![IntelliJ Importer](images/usage_intellij_importer.gif)
 
-#### Export keymaps XML from IntelliJ IDEA
-1. Launch IntelliJ IDEA
-1. Select `File` > `Manage IDE Settings` > `Export Settings`
-1. Select `Key maps (schemas)`
-1. Click `OK`
-1. Unzip `settings.zip`
-
 #### Import keymaps XML
 1. Launch Code
 1. Open command pallet `Ctrl`-`Shift`-`P` (Windows) or `Cmd`-`Shift`-`P` (macOS)
