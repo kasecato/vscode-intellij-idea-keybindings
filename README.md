@@ -94,7 +94,7 @@ shift+ctrl+8 | shift+cmd+8 | Column Selection Mode | ✅
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
-shift shift | shift shift | Search everywhere | N/A
+shift shift | shift shift | Search everywhere | ✅
 ctrl+f | cmd+f | Find | ✅
 f3 | cmd+g | Find next | ✅
 shift+f3 | cmd+shift+g | Find previous | ✅
