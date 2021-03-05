@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.4.0 (Feb 5, 2021)
+
+* enhancement - shortcut for search everywhere is not working. See [#170](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/170)
+* enhancement - Export tutorial outdated. See [#208](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/208)
+* bug fix - Go to Symbol in Editor... - Ctrl+F12 keybinding is not working anymore in markdown files. See [#211](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/211)
+
 ## 1.3.0 (Jan 30, 2021)
 
 * bug fix - [bug report] revertselectedRanges should work outside of diffEditor. See [#205](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/205)
