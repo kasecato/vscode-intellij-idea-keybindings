@@ -13,3 +13,6 @@ coverage/**
 .vscode-test/**
 .vscode/**
 .idea/**
+.jsbeautifyrc
+.prettierrc.yml
+gulpfile.js
