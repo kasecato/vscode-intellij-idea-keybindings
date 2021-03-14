@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.2 (Mar 14, 2021)
+
+* bug fix - Ctrl + Enter started to conflict with git commit after v1.4.0. See [#212](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/212)
+
 ## 1.4.1 (Mar 14, 2021)
 
 * bug fix - ctrl+e or cmd+e : Recent files popup. See [#213](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/213)
