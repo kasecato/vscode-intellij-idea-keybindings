@@ -22,11 +22,11 @@
         "fast-xml-parser": "^3.18.0"
     },
     "devDependencies": {
-        "@types/node": "^14.14.31",
+        "@types/node": "^14.14.34",
         "@types/vscode": "^1.54.0",
-        "@typescript-eslint/eslint-plugin": "^4.16.1",
-        "@typescript-eslint/parser": "^4.16.1",
-        "eslint": "^7.21.0",
+        "@typescript-eslint/eslint-plugin": "^4.17.0",
+        "@typescript-eslint/parser": "^4.17.0",
+        "eslint": "^7.22.0",
         "gulp": "~4.0.2",
         "gulp-cli": "~2.3.0",
         "gulp-jsbeautifier": "~3.0.1",
@@ -59,12 +59,15 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [{
-            "command": "intellij.importKeyMapsSchema",
-            "title": "Import IntelliJ Keybindngs (XML)",
-            "category": "IntelliJ Keybindings"
-        }],
-        "keybindings": [{
+        "commands": [
+            {
+                "command": "intellij.importKeyMapsSchema",
+                "title": "Import IntelliJ Keybindngs (XML)",
+                "category": "IntelliJ Keybindings"
+            }
+        ],
+        "keybindings": [
+            {
                 "key": "enter",
                 "mac": "enter",
                 "command": "acceptSelectedSuggestion",
