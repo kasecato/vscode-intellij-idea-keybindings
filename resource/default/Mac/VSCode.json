@@ -306,7 +306,8 @@
     },
     {
         "key": "shift+cmd+o",
-        "command": "workbench.action.gotoSymbol"
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus"
     },
     {
         "key": "shift+cmd+[",
@@ -363,7 +364,8 @@
     },
     {
         "key": "",
-        "command": "editor.action.goToDeclaration"
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
     },
     {
         "key": "cmd+f12",
@@ -376,7 +378,8 @@
     },
     {
         "key": "",
-        "command": "editor.action.goToTypeDefinition"
+        "command": "editor.action.goToTypeDefinition",
+        "when": "editorTextFocus"
     },
     {
         "key": "",
@@ -384,7 +387,8 @@
     },
     {
         "key": "shift+cmd+o",
-        "command": "workbench.action.gotoSymbol"
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus"
     },
     {
         "key": "alt+f8",
