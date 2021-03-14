@@ -1,6 +1,10 @@
 # Change Log
 
-## 1.4.0 (Feb 5, 2021)
+## 1.4.1 (Mar 14, 2021)
+
+* bug fix - ctrl+e or cmd+e : Recent files popup. See [#213](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/213)
+
+## 1.4.0 (Mar 5, 2021)
 
 * enhancement - shortcut for search everywhere is not working. See [#170](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/170)
 * enhancement - Export tutorial outdated. See [#208](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/208)
