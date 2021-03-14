@@ -346,8 +346,8 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+r",
-        "command": "workbench.action.openRecent"
+        "key": "cmd+e",
+        "command": "workbench.action.quickOpen"
     },
     {
         "key": "ctrl+-",
