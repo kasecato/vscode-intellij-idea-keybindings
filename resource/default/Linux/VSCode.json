@@ -327,7 +327,7 @@
     },
     {
         "key": "ctrl+r",
-        "command": "workbench.action.openRecent"
+        "command": "workbench.action.quickOpen"
     },
     {
         "key": "ctrl+alt+-",

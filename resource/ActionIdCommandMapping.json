@@ -405,7 +405,7 @@
     },
     {
         "intellij": "RecentFiles",
-        "vscode": "workbench.action.openRecent"
+        "vscode": "workbench.action.quickOpen"
     },
     {
         "intellij": "ReformatCode",
