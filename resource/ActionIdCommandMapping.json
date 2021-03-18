@@ -405,7 +405,11 @@
     },
     {
         "intellij": "RecentFiles",
-        "vscode": "workbench.action.quickOpen"
+        "vscode": "workbench.action.openRecent"
+    },
+    {
+        "intellij": "RecentFiles",
+        "vscode": "workbench.action.openPreviousEditorFromHistory"
     },
     {
         "intellij": "ReformatCode",
