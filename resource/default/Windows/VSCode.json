@@ -294,7 +294,13 @@
       },
       {
         "key": "ctrl+e",
-        "command": "workbench.action.quickOpen"
+        "command": "workbench.action.openPreviousEditorFromHistory",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "ctrl+e",
+        "command": "workbench.action.openRecent",
+        "when": "!inQuickOpen"
       },
       {
         "key": "ctrl+p",

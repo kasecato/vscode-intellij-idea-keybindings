@@ -948,14 +948,14 @@
             {
                 "key": "ctrl+e",
                 "mac": "cmd+e",
-                "command": "workbench.action.quickOpenNavigateNext",
+                "command": "workbench.action.openPreviousEditorFromHistory",
                 "when": "inQuickOpen"
             },
             {
                 "key": "ctrl+e",
                 "mac": "cmd+e",
                 "when": "!inQuickOpen",
-                "command": "workbench.action.quickOpen",
+                "command": "workbench.action.openRecent",
                 "intellij": "Recent files popup"
             },
             {

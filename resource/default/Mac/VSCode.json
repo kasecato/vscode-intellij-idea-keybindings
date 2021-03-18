@@ -343,12 +343,13 @@
     },
     {
         "key": "",
-        "command": "workbench.action.quickOpenNavigateNext",
+        "command": "workbench.action.openPreviousEditorFromHistory",
         "when": "inQuickOpen"
     },
     {
         "key": "cmd+e",
-        "command": "workbench.action.quickOpen"
+        "command": "workbench.action.openRecent",
+        "when": "!inQuickOpen"
     },
     {
         "key": "ctrl+-",
