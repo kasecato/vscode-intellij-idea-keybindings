@@ -218,8 +218,7 @@
     },
     {
         "key": "shift+cmd+f",
-        "command": "workbench.view.search",
-        "when": "!searchViewletVisible"
+        "command": "workbench.action.findInFiles"
     },
     {
         "key": "shift+cmd+h",
@@ -466,11 +465,6 @@
     {
         "key": "cmd+b",
         "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "shift+cmd+f",
-        "command": "workbench.view.search",
-        "when": "!searchViewletVisible"
     },
     {
         "key": "cmd+b",

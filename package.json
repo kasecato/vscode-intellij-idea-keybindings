@@ -401,8 +401,7 @@
             {
                 "key": "ctrl+shift+f",
                 "mac": "cmd+shift+f",
-                "command": "workbench.view.search",
-                "when": "!searchViewletVisible",
+                "command": "workbench.action.findInFiles",
                 "intellij": "Find in path"
             },
             {
