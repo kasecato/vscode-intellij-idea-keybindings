@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.4 (Apr 3, 2021)
+
+* enhancement - fixes Ctrl/Cmd+Shift+F due to change in VSCode. See [#216](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/216)
+
 ## 1.4.3 (Mar 18, 2021)
 
 * bug fix - ctrl+e or cmd+e : Recent files popup. See [#213](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/213#issuecomment-801546096)
