@@ -374,7 +374,7 @@
             {
                 "key": "shift shift",
                 "mac": "shift shift",
-                "command": "workbench.action.showCommands",
+                "command": "workbench.action.quickOpen",
                 "intellij": "Search everywhere"
             },
             {
