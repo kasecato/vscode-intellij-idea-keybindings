@@ -13,7 +13,7 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 #### Import keymaps XML
 1. Launch Code
 1. Open command pallet `Ctrl`-`Shift`-`P` (Windows) or `Cmd`-`Shift`-`P` (macOS)
-1. Choose `Import IntelliJ Keybindngs (XML)`
+1. Choose `Import IntelliJ Keybindings (XML)`
 1. Copy & Paste it into `keybindings.json`
 
 ### Editing
