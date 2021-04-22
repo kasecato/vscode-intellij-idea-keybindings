@@ -16,7 +16,8 @@
     },
     "keywords": [
         "IntelliJ",
-        "Keybinding"
+        "Keybinding",
+        "keymap"
     ],
     "dependencies": {
         "fast-xml-parser": "^3.19.0"
