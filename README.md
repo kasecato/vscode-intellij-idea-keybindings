@@ -177,7 +177,7 @@ alt+7 | cmd+7 | Structure | ✅
 ctrl+f12 | cmd+f12 | File structure popup | ✅
 ctrl+h | ctrl+h | Type hierarchy | N/A
 ctrl+shift+h | cmd+shift+h | Method hierarchy | N/A
-ctrl+alt+h | ctrl+alt+h | Call hierarchy | N/A
+ctrl+alt+h | ctrl+alt+h | Call hierarchy | ✅
 f2 | f2 | Next highlighted error | ✅
 shift+f2 | shift+f2 | Previous highlighted error | ✅
 f4 | f4 | Edit source | ✅
