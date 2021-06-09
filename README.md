@@ -31,8 +31,8 @@ ctrl+f1 | shift+f1 | External Doc | N/A
 ctrl+mouseover | cmd+mouseover | Brief Info | N/A
 ctrl+f1 | cmd+f1 | Show descriptions of error or warning at caret | ✅
 alt+insert | cmd+n | Generate code... (Getters, Setters, Constructors, hashCode/equals, toString) | ✅
-ctrl+o | ctrl+o | Override methods | N/A
-ctrl+i | ctrl+i | Implement methods | N/A
+ctrl+o | ctrl+o | Override methods | ✅
+ctrl+i | ctrl+i | Implement methods | ✅
 ctrl+alt+t | cmd+alt+t | Surround with... (if..else, try..catch, for, synchronized, etc.) | N/A
 ctrl+/ | cmd+/ | Comment/uncomment with line comment | ✅
 ctrl+numpad_divide | cmd+numpad_divide | Comment/uncomment with line comment | ✅

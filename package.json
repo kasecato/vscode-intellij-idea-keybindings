@@ -115,6 +115,26 @@
                 "command": "workbench.action.files.newUntitledFile"
             },
             {
+                "key": "ctrl+o",
+                "mac": "ctrl+o",
+                "command": "editor.action.codeAction",
+                "args": {
+                    "kind": "source.overrideMethods"
+                },
+                "when": "editorTextFocus",
+                "intellij": "Override methods"
+            },
+            {
+                "key": "ctrl+i",
+                "mac": "ctrl+i",
+                "command": "editor.action.codeAction",
+                "args": {
+                    "kind": "source.overrideMethods"
+                },
+                "when": "editorTextFocus",
+                "intellij": "Implement methods"
+            },
+            {
                 "key": "ctrl+/",
                 "mac": "cmd+/",
                 "command": "editor.action.commentLine",

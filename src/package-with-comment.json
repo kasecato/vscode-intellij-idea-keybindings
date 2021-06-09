@@ -166,26 +166,26 @@
                 "mac": "cmd+n",
                 "command": "workbench.action.files.newUntitledFile"
             },
-            /*
             {
                 "key": "ctrl+o",
                 "mac": "ctrl+o",
-                "command": "",
-                "when": "",
-                "intellij": "Override methods",
-                "todo": "N/A"
+                "command": "editor.action.codeAction",
+                "args": {
+                    "kind": "source.overrideMethods"
+                },
+                "when": "editorTextFocus",
+                "intellij": "Override methods"
             },
-*/
-            /*
             {
                 "key": "ctrl+i",
                 "mac": "ctrl+i",
-                "command": "",
-                "when": "",
-                "intellij": "Implement methods",
-                "todo": "N/A"
+                "command": "editor.action.codeAction",
+                "args": {
+                    "kind": "source.overrideMethods"
+                },
+                "when": "editorTextFocus",
+                "intellij": "Implement methods"
             },
-*/
             /*
             {
                 "key": "ctrl+alt+t",
