@@ -725,6 +725,13 @@
                 "intellij": "Call hierarchy"
             },
             {
+                "key": "ctrl+h",
+                "mac": "ctrl+h",
+                "command": "java.action.showTypeHierarchy",
+                "when": "editorTextFocus",
+                "intellij": "Type hierarchy"
+            },
+            {
                 "key": "f2",
                 "command": "-editor.action.rename",
                 "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
