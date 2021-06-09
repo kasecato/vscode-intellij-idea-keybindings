@@ -768,6 +768,16 @@
                 "intellij": "Move Caret to Text End"
             },
             {
+                "key": "f6",
+                "mac": "f6",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "args": {
+                    "kind": "refactor.move"
+                },
+                "intellij": "Move"
+            },
+            {
                 "key": "shift+f6",
                 "mac": "shift+f6",
                 "command": "editor.action.rename",
