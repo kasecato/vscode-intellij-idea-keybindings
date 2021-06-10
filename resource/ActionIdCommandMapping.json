@@ -380,6 +380,10 @@
         "vscode": "editor.action.triggerParameterHints"
     },
     {
+        "intellij": "OptimizeImports",
+        "vscode": "editor.action.organizeImports"
+    },
+    {
         "intellij": "PrevSplitter",
         "vscode": "workbench.action.focusPreviousGroup"
     },

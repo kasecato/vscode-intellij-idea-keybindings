@@ -291,6 +291,9 @@
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="alt right" />
   </action>
+  <action id="OptimizeImports">
+    <keyboard-shortcut first-keystroke="ctrl alt o" />
+  </action>
   <action id="ParameterInfo">
     <keyboard-shortcut first-keystroke="ctrl p" />
   </action>

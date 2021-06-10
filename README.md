@@ -44,7 +44,7 @@ alt+q | ctrl+shift+q | Context info | N/A
 alt+enter | alt+enter | Show intention actions and quick-fixes | ✅
 ctrl+alt+l | cmd+alt+l | Reformat code | ✅
 ctrl+alt+l | cmd+alt+l | Reformat selected code | ✅
-ctrl+alt+o | ctrl+alt+o | Optimize imports | N/A
+ctrl+alt+o | ctrl+alt+o | Optimize imports | ✅
 ctrl+alt+i | ctrl+alt+i | Auto-indent line(s) | N/A
 tab | tab | Indent selected lines | N/A
 shift+tab | shift+tab | Unindent selected lines | N/A

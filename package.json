@@ -196,6 +196,13 @@
                 "intellij": "Reformat selected code"
             },
             {
+                "key": "ctrl+alt+o",
+                "mac": "ctrl+alt+o",
+                "command": "editor.action.organizeImports",
+                "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/",
+                "intellij": "Optimize imports"
+            },
+            {
                 "key": "ctrl+x",
                 "mac": "cmd+x",
                 "command": "editor.action.clipboardCutAction",
