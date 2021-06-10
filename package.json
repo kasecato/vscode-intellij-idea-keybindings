@@ -728,7 +728,7 @@
                 "key": "ctrl+h",
                 "mac": "ctrl+h",
                 "command": "java.action.showTypeHierarchy",
-                "when": "editorTextFocus",
+                "when": "editorLangId == java && editorTextFocus",
                 "intellij": "Type hierarchy"
             },
             {
