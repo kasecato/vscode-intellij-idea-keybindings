@@ -60,15 +60,12 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "intellij.importKeyMapsSchema",
-                "title": "Import IntelliJ Keybindngs (XML)",
-                "category": "IntelliJ Keybindings"
-            }
-        ],
-        "keybindings": [
-            {
+        "commands": [{
+            "command": "intellij.importKeyMapsSchema",
+            "title": "Import IntelliJ Keybindngs (XML)",
+            "category": "IntelliJ Keybindings"
+        }],
+        "keybindings": [{
                 "key": "enter",
                 "mac": "enter",
                 "command": "acceptSelectedSuggestion",
@@ -721,18 +718,18 @@
                 "intellij": "File structure popup"
             },
             {
-                "key": "ctrl+alt+h",
-                "mac": "ctrl+alt+h",
-                "command": "references-view.showCallHierarchy",
-                "when": "editorHasCallHierarchyProvider",
-                "intellij": "Call hierarchy"
-            },
-            {
                 "key": "ctrl+h",
                 "mac": "ctrl+h",
                 "command": "java.action.showTypeHierarchy",
                 "when": "editorLangId == java && editorTextFocus",
                 "intellij": "Type hierarchy"
+            },
+            {
+                "key": "ctrl+alt+h",
+                "mac": "ctrl+alt+h",
+                "command": "references-view.showCallHierarchy",
+                "when": "editorHasCallHierarchyProvider",
+                "intellij": "Call hierarchy"
             },
             {
                 "key": "f2",
