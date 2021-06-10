@@ -703,5 +703,10 @@
     {
         "key": "ctrl+n",
         "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "references-view.showCallHierarchy",
+        "when": "editorHasCallHierarchyProvider"
     }
 ]

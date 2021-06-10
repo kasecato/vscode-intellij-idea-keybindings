@@ -1114,16 +1114,13 @@
                 "todo": "N/A"
             },
 */
-            /*
             {
                 "key": "ctrl+alt+h",
                 "mac": "ctrl+alt+h",
-                "command": "",
-                "when": "editorTextFocus",
-                "intellij": "Call hierarchy",
-                "todo": "N/A"
+                "command": "references-view.showCallHierarchy",
+                "when": "editorHasCallHierarchyProvider",
+                "intellij": "Call hierarchy"
             },
-*/
             {
                 "key": "f2",
                 "command": "-editor.action.rename",

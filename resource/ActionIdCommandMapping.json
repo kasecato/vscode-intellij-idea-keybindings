@@ -32,6 +32,10 @@
         "vscode": "workbench.action.navigateBack"
     },
     {
+        "intellij": "CallHierarchy",
+        "vscode": "references-view.showCallHierarchy"
+    },
+    {
         "intellij": "CheckinProject",
         "vscode": "git.commitAll"
     },
