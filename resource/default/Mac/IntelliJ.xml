@@ -27,6 +27,9 @@
     <keyboard-shortcut first-keystroke="meta alt left" />
     <mouse-shortcut keystroke="button4" />
   </action>
+  <action id="CallHierarchy">
+    <keyboard-shortcut first-keystroke="ctrl alt h" />
+  </action>
   <action id="CheckinProject">
     <keyboard-shortcut first-keystroke="meta k" />
   </action>
