@@ -367,6 +367,9 @@ when changes are saved.
 * [@goncalossilva](https://github.com/goncalossilva)
 * [@ZobairQ](https://github.com/ZobairQ)
 * [@fabb](https://github.com/fabb)
+* [@a-stewart](https://github.com/a-stewart)
+* [@CsCherrYY](https://github.com/CsCherrYY)
+* [@Eskibear](https://github.com/Eskibear)
 
 
 ## License

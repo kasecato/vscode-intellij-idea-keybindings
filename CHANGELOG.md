@@ -1,5 +1,15 @@
 # Change Log
 
+## 1.4.5 (Jun 10, 2021)
+
+* enhancement - add keymap for Move. See [#228](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/228)
+* enhancement - add keymap for type hierarchy. See [#227](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/227)
+* enhancement - add shortcut to optimize imports. See [#226](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/226)
+* enhancement - add shortcut to override/implement methods. See [#225](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/225)
+* enhancement - Add keymap for call hierarchy. See [#222](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/222)
+* enhancement - Adding the keymap keyword to package.json. See [#220](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/220)
+* enhancement - Update the shift shift 'Search Anywhere' command to call quickOpen. See [#218](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/218)
+
 ## 1.4.4 (Apr 3, 2021)
 
 * enhancement - fixes Ctrl/Cmd+Shift+F due to change in VSCode. See [#216](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/216)
