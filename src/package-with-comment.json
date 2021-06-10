@@ -1249,16 +1249,16 @@
                 "todo": "N/A"
             },
 */
-            /*
             {
                 "key": "f6",
                 "mac": "f6",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Move",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.move"
+                },
+                "intellij": "Move"
             },
-*/
             /*
             {
                 "key": "alt+delete",

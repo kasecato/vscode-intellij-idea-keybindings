@@ -199,7 +199,7 @@ ctrl+end | cmd+end | Move Caret to Text End | ✅
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 f5 | f5 | Copy | N/A
-f6 | f6 | Move | N/A
+f6 | f6 | Move | ✅
 alt+delete | cmd+delete | Safe Delete | N/A
 shift+f6 | shift+f6 | Rename | ✅
 shift+f6 | shift+f6 | Select All Occurrences | ✅
