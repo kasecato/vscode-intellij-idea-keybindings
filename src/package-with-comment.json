@@ -1091,16 +1091,13 @@
                 "when": "editorTextFocus",
                 "intellij": "File structure popup"
             },
-            /*
             {
                 "key": "ctrl+h",
                 "mac": "ctrl+h",
-                "command": "",
-                "when": "editorTextFocus",
-                "intellij": "Type hierarchy",
-                "todo": "N/A"
+                "command": "java.action.showTypeHierarchy",
+                "when": "editorLangId == java && editorTextFocus",
+                "intellij": "Type hierarchy"
             },
-*/
             /*
             {
                 "key": "ctrl+shift+h",

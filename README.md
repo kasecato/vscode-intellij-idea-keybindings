@@ -175,7 +175,7 @@ ctrl+] | cmd+] | Move to code block end | N/A
 ctrl+[ | cmd+[ | Move to code block start | N/A
 alt+7 | cmd+7 | Structure | ✅
 ctrl+f12 | cmd+f12 | File structure popup | ✅
-ctrl+h | ctrl+h | Type hierarchy | N/A
+ctrl+h | ctrl+h | Type hierarchy | ✅
 ctrl+shift+h | cmd+shift+h | Method hierarchy | N/A
 ctrl+alt+h | ctrl+alt+h | Call hierarchy | ✅
 f2 | f2 | Next highlighted error | ✅
