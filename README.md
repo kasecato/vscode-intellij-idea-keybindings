@@ -291,7 +291,7 @@ shift+f10 | ctrl+r | Go: Test Previous | ✅
 
 ## Installation
 
-1. Install Visual Studio Code 1.54.0 or higher
+1. Install Visual Studio Code 1.61.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
