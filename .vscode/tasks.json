@@ -5,10 +5,11 @@
         {
             "type": "npm",
             "script": "watch",
+            "group": "build",
+            "isBackground": true,
             "problemMatcher": [
-                "$tsc-watch"
-            ],
-            "isBackground": true
+              "$ts-webpack-watch"
+            ]
         }
     ]
 }
