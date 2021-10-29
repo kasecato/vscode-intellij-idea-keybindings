@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.5.0 (Oct 30, 2021)
+
+* enhancement - Add support for Visual Studio Web. See [#238](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/238)
+* enhancement - Add merge-conflict. See [#235](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/235)
+
 ## 1.4.5 (Jun 10, 2021)
 
 * enhancement - add keymap for Move. See [#228](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/228)
