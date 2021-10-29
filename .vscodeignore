@@ -15,6 +15,5 @@ coverage/**
 .idea/**
 .jsbeautifyrc
 .prettierrc.yml
-gulpfile.js
 dist/**/*.map
 webpack.config.js

@@ -327,7 +327,7 @@ Now you can compile the code:
 
 1. Launch Code
 1. Edit **`src/package-with-comment.json`** (**NOT `package.json`**)
-1. Run Build Task `Ctrl`-`Shift`-`B` (Windows, Linux) or `Cmd`-`Shift`-`B` (macOS)
+1. Run `npm: compile` Task `Ctrl`-`Shift`-`B` (Windows, Linux) or `Cmd`-`Shift`-`B` (macOS)
 1. Run Command Markdown Generator `npm run usage`
 1. Paste the Command Markdown to `README.md`
 
@@ -382,6 +382,4 @@ This extension is [licensed under the MIT License](LICENSE.md).
 1. Source code, Resharper 9 Keybindings, https://marketplace.visualstudio.com/items?itemName=ms-vscode.resharper9-keybindings
 1. IntelliJ IDEA DEFAULT KEYMAP, https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
 1. Key Bindings for Visual Studio Code, https://code.visualstudio.com/docs/getstarted/keybindings
-1. Integrate with External Tools via Tasks, https://code.visualstudio.com/docs/editor/tasks#_autodetecting-gulp-grunt-and-jake-tasks
-1. gulp-strip-json-comments, https://www.npmjs.com/package/gulp-strip-json-comments
 1. Icon, vscode-vs-keybindings, https://github.com/rebornix/vscode-vs-keybindings/raw/master/visualstudio-keyboard.png
