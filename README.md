@@ -21,7 +21,7 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|---------- 
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
-ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
+ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A   
 enter | enter | Choose Lookup Item | ✅
 tab | tab | Choose Lookup Item Replace | ✅
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
@@ -86,7 +86,7 @@ shift+ctrl+8 | shift+cmd+8 | Column Selection Mode | ✅
 ### Search/Replace
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 shift shift | shift shift | Search everywhere | ✅
 ctrl+f | cmd+f | Find | ✅
 f3 | cmd+g | Find next | ✅
@@ -100,7 +100,7 @@ ctrl+shift+m | cmd+shift+m | Replace structurally (Ultimate Edition only) | N/A
 ### Usage Search
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 alt+f7 | alt+f7 | Find usages | ✅
 alt+ctrl+f7 | alt+cmd+f7 | Show usages | ✅
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
@@ -110,7 +110,7 @@ ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
 ### Compile and Run
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | ✅
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
 alt+shift+f10 | ctrl+alt+r | Select configuration and run | ✅
@@ -123,7 +123,7 @@ ctrl+shift+f10 | ctrl+shift+r | Debug context configuration from editor | N/A
 ### Debugging
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f8 | f8 | Step over | ✅
 f7 | f7 | Step into | ✅
 shift+f7 | shift+f7 | Smart step into | N/A
@@ -138,7 +138,7 @@ ctrl+shift+f8 | cmd+shift+f8 | View breakpoints | ✅
 ### Navigation
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+n | cmd+o | Go to class | ✅
 ctrl+shift+n | cmd+shift+o | Go to file | ✅
 ctrl+alt+shift+n | cmd+alt+o | Go to symbol | ✅
@@ -197,7 +197,7 @@ ctrl+end | cmd+end | Move Caret to Text End | ✅
 ### Refactoring
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 f5 | f5 | Copy | N/A
 f6 | f6 | Move | ✅
 alt+delete | cmd+delete | Safe Delete | N/A
@@ -215,7 +215,7 @@ ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 ### VCS/Local History
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+alt+k | cmd+k | Commit project to VCS | ✅
 ctrl+shift+k | cmd+alt+k | Push commits to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
@@ -225,14 +225,14 @@ alt+shift+c | alt+shift+c | View recent changes | N/A
 ### Live Templates
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+alt+j | cmd+alt+j | Surround with Live Template | N/A
 ctrl+j | cmd+j | Insert Live Template | N/A
 
 ### General
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 alt+0 | cmd+0 | Activate Messages window (Problems) | ✅
 alt+numpad0 | cmd+numpad0 | Activate Messages window (Problems) | ✅
 alt+1 | cmd+1 | Open corresponding tool window (Explorer) | ✅
@@ -267,7 +267,9 @@ ctrl+tab | ctrl+tab | Switch between tabs and tool window | ✅
 ### Custom
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
+f7 | f7 | Next difference | ✅
+shift+f7 | shift+f7 | Previous difference | ✅
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
@@ -286,7 +288,7 @@ shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 ### Go Lang
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 shift+f10 | ctrl+r | Go: Test Previous | ✅
 
 ## Installation
@@ -370,6 +372,7 @@ when changes are saved.
 * [@a-stewart](https://github.com/a-stewart)
 * [@CsCherrYY](https://github.com/CsCherrYY)
 * [@Eskibear](https://github.com/Eskibear)
+* [@daxmc99](https://github.com/daxmc99)
 
 
 ## License

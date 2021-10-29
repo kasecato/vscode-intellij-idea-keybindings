@@ -1155,6 +1155,20 @@
                 "intellij": "Previous difference"
             },
             {
+                "key": "f7",
+                "mac": "f7",
+                "command": "merge-conflict.next",
+                "when": "merge-conflict",
+                "intellij": "Next difference"
+            },
+            {
+                "key": "shift+f7",
+                "mac": "shift+f7",
+                "command": "merge-conflict.previous",
+                "when": "merge-conflict",
+                "intellij": "Previous difference"
+            },
+            {
                 "key": "alt+ctrl+enter",
                 "mac": "alt+cmd+enter",
                 "command": "editor.action.insertLineBefore",
