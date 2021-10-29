@@ -10,6 +10,13 @@
             "problemMatcher": [
               "$ts-webpack-watch"
             ]
+        },
+        {
+            "type": "npm",
+            "script": "watch",
+            "group": "build",
+            "isBackground": true,
+            "problemMatcher": ["$ts-webpack-watch"]
         }
     ]
 }
