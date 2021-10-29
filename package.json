@@ -20,7 +20,8 @@
         "keymap"
     ],
     "dependencies": {
-        "fast-xml-parser": "^3.21.0"
+        "fast-xml-parser": "^3.21.0",
+        "path-browserify": "^1.0.1"
     },
     "devDependencies": {
         "@types/node": "^16.11.6",
@@ -40,7 +41,7 @@
     "extensionDependencies": [],
     "isAMD": false,
     "scripts": {
-        "vscode:prepublish": "npm run compile",
+        "vscode:prepublish": "npm run package",
         "compile": "webpack",
         "watch": "webpack --watch",
         "package": "webpack --mode production --devtool hidden-source-map",
@@ -61,6 +62,7 @@
         "onCommand:intellij.importKeyMapsSchema"
     ],
     "main": "./dist/extension-node",
+    "browser": "./dist/web/extension.js",
     "contributes": {
         "commands": [
             {
