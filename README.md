@@ -124,6 +124,7 @@ ctrl+shift+f10 | ctrl+shift+r | Debug context configuration from editor | N/A
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
+ctrl+f2 | cmd+f2 | Stop | ✅
 f8 | f8 | Step over | ✅
 f7 | f7 | Step into | ✅
 shift+f7 | shift+f7 | Smart step into | N/A
