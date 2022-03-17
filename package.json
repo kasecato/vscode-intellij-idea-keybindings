@@ -1141,6 +1141,12 @@
             },
             
             {
+                "key": "ctrl+d",
+                "mac": "cmd+d",
+                "command": "workbench.files.action.compareFileWith",
+                "intellij": "Compare Files"
+            },
+            {
                 "key": "f7",
                 "mac": "f7",
                 "command": "workbench.action.compareEditor.nextChange",
