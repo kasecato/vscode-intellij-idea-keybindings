@@ -577,7 +577,7 @@
             {
                 "key": "ctrl+shift+f8",
                 "mac": "cmd+shift+f8",
-                "command": "workbench.view.debug",
+                "command": "workbench.debug.action.focusBreakpointsView",
                 "intellij": "View breakpoints"
             },
             
