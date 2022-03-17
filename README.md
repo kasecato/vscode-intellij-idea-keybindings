@@ -209,7 +209,7 @@ ctrl+alt+n | cmd+alt+n | Inline | N/A
 ctrl+alt+m | cmd+alt+m | Extract Method | ✅
 ctrl+alt+v | cmd+alt+v | Extract Variable | ✅
 ctrl+alt+f | cmd+alt+f | Extract Field | N/A
-ctrl+alt+c | cmd+alt+c | Extract Constant | N/A
+ctrl+alt+c | cmd+alt+c | Extract Constant | ✅
 ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 
 ### VCS/Local History

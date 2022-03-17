@@ -916,12 +916,22 @@
                 "when": "editorTextFocus",
                 "intellij": "Extract Variable",
                 "args": {
-                    "kind": "refactor.extract.constant",
+                    "kind": "refactor.extract.variable",
                     "apply": "ifSingle"
                 }
             },
             
-            
+            {
+                "key": "ctrl+alt+c",
+                "mac": "cmd+alt+c",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "intellij": "Extract Constant",
+                "args": {
+                    "kind": "refactor.extract.constant",
+                    "apply": "ifSingle"
+                }
+            },
             
             
             {
