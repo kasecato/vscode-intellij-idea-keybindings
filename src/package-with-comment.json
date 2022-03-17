@@ -1644,6 +1644,7 @@
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "workbench.files.action.compareFileWith",
+                "when": "!editorTextFocus",
                 "intellij": "Compare Files"
             },
             {
