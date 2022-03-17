@@ -208,7 +208,7 @@ ctrl+f6 | cmd+f6 | Change Signature | N/A
 ctrl+alt+n | cmd+alt+n | Inline | N/A
 ctrl+alt+m | cmd+alt+m | Extract Method | ✅
 ctrl+alt+v | cmd+alt+v | Extract Variable | ✅
-ctrl+alt+f | cmd+alt+f | Extract Field | N/A
+ctrl+alt+f | cmd+alt+f | Extract Field | ✅
 ctrl+alt+c | cmd+alt+c | Extract Constant | N/A
 ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 
