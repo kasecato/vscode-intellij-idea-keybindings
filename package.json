@@ -1139,6 +1139,12 @@
                 "when": "inQuickOpen",
                 "intellij": "Switch between tabs and tool window"
             },
+            {
+                "key": "shift+f12",
+                "mac": "shift+f12",
+                "command": "workbench.action.resetViewLocations",
+                "intellij": "Restore Default layout"
+            },
             
             {
                 "key": "f7",
