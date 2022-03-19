@@ -195,6 +195,7 @@ ctrl+alt+shift+down | ctrl+alt+shift+down | Next Change | ✅
 ctrl+alt+shift+up | ctrl+alt+shift+up | Previous Change | ✅
 ctrl+home | cmd+home | Move Caret to Text Start | ✅
 ctrl+end | cmd+end | Move Caret to Text End | ✅
+ctrl+shift+t | cmd+shift+t | Go to Test | ✅
 
 ### Refactoring
 

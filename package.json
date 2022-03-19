@@ -877,6 +877,13 @@
                 "when": "textInputFocus",
                 "intellij": "Move Caret to Text End"
             },
+            {
+                "key": "ctrl+shift+t",
+                "mac": "cmd+shift+t",
+                "command": "java.test.goToTest",
+                "when": "editorTextFocus && java:testRunnerActivated",
+                "intellij": "Go to Test"
+            },
             
             
             {
