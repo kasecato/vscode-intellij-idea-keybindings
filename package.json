@@ -119,11 +119,19 @@
                 "when": "editorTextFocus",
                 "intellij": "Show descriptions of error or warning at caret"
             },
-            
             {
                 "key": "alt+insert",
                 "mac": "cmd+n",
-                "command": "workbench.action.files.newUntitledFile"
+                "command": "editor.action.sourceAction",
+                "when": "editorTextFocus",
+                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)"
+            },
+            {
+                "key": "alt+insert",
+                "mac": "cmd+n",
+                "command": "workbench.action.files.newUntitledFile",
+                "when": "!editorTextFocus",
+                "intellij": "New..."
             },
             {
                 "key": "ctrl+o",
@@ -1138,6 +1146,12 @@
                 "command": "workbench.action.quickOpenNavigateNext",
                 "when": "inQuickOpen",
                 "intellij": "Switch between tabs and tool window"
+            },
+            {
+                "key": "shift+f12",
+                "mac": "shift+f12",
+                "command": "workbench.action.resetViewLocations",
+                "intellij": "Restore Default layout"
             },
             
             {

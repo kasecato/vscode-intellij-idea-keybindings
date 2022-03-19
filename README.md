@@ -82,6 +82,7 @@ alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
 shift+alt+down | shift+alt+down | Move Line Down | ✅
 shift+alt+up | shift+alt+up | Move Line Up | ✅
 shift+alt+insert | shift+cmd+8 | Column Selection Mode | ✅
+alt+insert | cmd+n | New... | ✅
 
 ### Search/Replace
 
@@ -263,6 +264,7 @@ ctrl+alt+s | cmd+numpad_separator | Open Settings dialog | ✅
 ctrl+alt+shift+s | cmd+; | Open Project Structure dialog | ✅
 ctrl+shift+a | shift+cmd+a | Find Action | ✅
 ctrl+tab | ctrl+tab | Switch between tabs and tool window | ✅
+shift+f12 | shift+f12 | Restore Default layout | ✅
 
 ### Custom
 
