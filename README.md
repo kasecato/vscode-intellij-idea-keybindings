@@ -19,9 +19,9 @@ Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular Jet
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- 
+---------------|------|---------|----------
 ctrl+space | ctrl+space | Basic code completion (the name of any class, method or variable) | ✅
-ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A   
+ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 enter | enter | Choose Lookup Item | ✅
 tab | tab | Choose Lookup Item Replace | ✅
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
@@ -31,6 +31,7 @@ ctrl+f1 | shift+f1 | External Doc | N/A
 ctrl+mouseover | cmd+mouseover | Brief Info | N/A
 ctrl+f1 | cmd+f1 | Show descriptions of error or warning at caret | ✅
 alt+insert | cmd+n | Generate code... (Getters, Setters, Constructors, hashCode/equals, toString) | ✅
+alt+insert | cmd+n | New... | ✅
 ctrl+o | ctrl+o | Override methods | ✅
 ctrl+i | ctrl+i | Implement methods | ✅
 ctrl+alt+t | cmd+alt+t | Surround with... (if..else, try..catch, for, synchronized, etc.) | N/A
@@ -82,7 +83,6 @@ alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
 shift+alt+down | shift+alt+down | Move Line Down | ✅
 shift+alt+up | shift+alt+up | Move Line Up | ✅
 shift+alt+insert | shift+cmd+8 | Column Selection Mode | ✅
-alt+insert | cmd+n | New... | ✅
 
 ### Search/Replace
 
@@ -339,8 +339,8 @@ Now you can compile the code:
 1. Run Command Markdown Generator `npm run usage`
 1. Paste the Command Markdown to `README.md`
 
-After the initial compile, the source files will be watched and recompiled
-when changes are saved.
+After the initial compile, the source files will be watched and recompiled when changes are saved.
+
 ## Contributors
 
 * [@kasecato](https://github.com/kasecato)
@@ -379,6 +379,7 @@ when changes are saved.
 * [@CsCherrYY](https://github.com/CsCherrYY)
 * [@Eskibear](https://github.com/Eskibear)
 * [@daxmc99](https://github.com/daxmc99)
+* [@CsCherrYY](https://github.com/CsCherrYY)
 
 
 ## License

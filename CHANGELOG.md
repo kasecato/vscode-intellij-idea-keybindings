@@ -1,5 +1,18 @@
 # Change Log
 
+## 1.5.1 (May 19, 2022)
+
+* enhancement - alt+insert should have proper commands for different components. See [#252](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/252)
+* enhancement - Support restore default layout. See [#255](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/255)
+* bug fix - fix column selection mode. See [#256](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/256)
+* enhancement - Support compare files. [#257](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/257)
+* enhancement - Support Refactor This.... [#259](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/259)
+* enhancement - Support Extract Field. [#260](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/260)
+* enhancement - Support extract constant. [#261](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/261)
+* enhancement - Support stop when debugging. [#262](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/262)
+* enhancement - Fix view breakpoints. [#263](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/263)
+* enhancement - Support Go to Test. [#264](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/264)
+
 ## 1.5.0 (Oct 30, 2021)
 
 * enhancement - Add support for Visual Studio Web. See [#238](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/238)
