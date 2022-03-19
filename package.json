@@ -1155,6 +1155,13 @@
             },
             
             {
+                "key": "ctrl+d",
+                "mac": "cmd+d",
+                "command": "workbench.files.action.compareFileWith",
+                "when": "!editorTextFocus",
+                "intellij": "Compare Files"
+            },
+            {
                 "key": "f7",
                 "mac": "f7",
                 "command": "workbench.action.compareEditor.nextChange",

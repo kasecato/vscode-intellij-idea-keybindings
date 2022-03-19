@@ -270,6 +270,7 @@ shift+f12 | shift+f12 | Restore Default layout | ✅
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
+ctrl+d | cmd+d | Compare Files | ✅
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 f7 | f7 | Next difference | ✅
