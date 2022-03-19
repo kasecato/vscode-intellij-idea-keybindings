@@ -935,7 +935,17 @@
                     "apply": "ifSingle"
                 }
             },
-            
+            {
+                "key": "ctrl+alt+f",
+                "mac": "cmd+alt+f",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "intellij": "Extract Field",
+                "args": {
+                    "kind": "refactor.extract.field",
+                    "apply": "ifSingle"
+                }
+            },
             
             
             

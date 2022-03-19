@@ -1343,16 +1343,17 @@
                     "apply": "ifSingle"
                 }
             },
-            /*
             {
                 "key": "ctrl+alt+f",
                 "mac": "cmd+alt+f",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
                 "intellij": "Extract Field",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.extract.field",
+                    "apply": "ifSingle"
+                }
             },
-*/
             /*
             {
                 "key": "ctrl+alt+c",
