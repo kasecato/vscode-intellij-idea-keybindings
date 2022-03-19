@@ -740,6 +740,13 @@
              * Debugging
             \*---------------------------------------------------------------*/
             {
+                "key": "ctrl+f2",
+                "mac": "cmd+f2",
+                "command": "workbench.action.debug.stop",
+                "when": "inDebugMode && !focusedSessionIsAttach",
+                "intellij": "Stop"
+            },
+            {
                 "key": "f8",
                 "mac": "f8",
                 "command": "workbench.action.debug.stepOver",
