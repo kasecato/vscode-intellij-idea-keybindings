@@ -918,7 +918,7 @@
                 "mac": "cmd+alt+m",
                 "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Extract Method",
+                "intellij": "Extract Method",https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/261/conflict?name=package.json&ancestor_oid=76f413cab692b3c9e11b026dbb70019fbaf38418&base_oid=86a4e07a8466fe485e9361b6b82eb43acd08ebc7&head_oid=b06da606d128f116b4a6bea658022ea84cfb92df
                 "args": {
                     "kind": "refactor.extract.function",
                     "apply": "ifSingle"
@@ -930,6 +930,17 @@
                 "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
                 "intellij": "Extract Variable",
+                "args": {
+                    "kind": "refactor.extract.variable",
+                    "apply": "ifSingle"
+                }
+            },            
+            {
+                "key": "ctrl+alt+c",
+                "mac": "cmd+alt+c",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "intellij": "Extract Constant",
                 "args": {
                     "kind": "refactor.extract.constant",
                     "apply": "ifSingle"
@@ -946,7 +957,6 @@
                     "apply": "ifSingle"
                 }
             },
-            
             
             
             {

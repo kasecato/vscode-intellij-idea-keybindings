@@ -1339,7 +1339,7 @@
                 "when": "editorTextFocus",
                 "intellij": "Extract Variable",
                 "args": {
-                    "kind": "refactor.extract.constant",
+                    "kind": "refactor.extract.variable",
                     "apply": "ifSingle"
                 }
             },
@@ -1354,16 +1354,17 @@
                     "apply": "ifSingle"
                 }
             },
-            /*
             {
                 "key": "ctrl+alt+c",
                 "mac": "cmd+alt+c",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
                 "intellij": "Extract Constant",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.extract.constant",
+                    "apply": "ifSingle"
+                }
             },
-*/
             /*
             {
                 "key": "ctrl+alt+p",
