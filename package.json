@@ -423,7 +423,7 @@
                 "intellij": "Move Line Up"
             },
             {
-                "key": "shift+ctrl+8",
+                "key": "shift+alt+insert",
                 "mac": "shift+cmd+8",
                 "command": "editor.action.toggleColumnSelection",
                 "intellij": "Column Selection Mode"
