@@ -873,6 +873,13 @@
             
             
             {
+                "key": "ctrl+alt+shift+t",
+                "mac": "ctrl+t",
+                "command": "editor.action.refactor",
+                "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
+                "intellij": "Refactor This..."
+            },
+            {
                 "key": "f6",
                 "mac": "f6",
                 "command": "editor.action.codeAction",
