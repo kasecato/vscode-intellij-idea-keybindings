@@ -170,7 +170,7 @@ ctrl+alt+b | cmd+alt+b | Go to implementation(s) | ✅
 ctrl+shift+i | alt+space | Open quick definition lookup | ✅
 N/A | cmd+y | Open quick definition lookup | ✅
 ctrl+shift+b | ctrl+shift+b | Go to type declaration | ✅
-ctrl+u | cmd+u | Go to super-method/super-class | N/A
+ctrl+u | cmd+u | Go to super-method/super-class | ✅
 alt+up | ctrl+up | Go to previous method | N/A
 alt+down | ctrl+down | Go to next method | N/A
 ctrl+] | cmd+] | Move to code block end | N/A

@@ -764,7 +764,13 @@
                 "intellij": "Go to type declaration",
                 "todo": "not working"
             },
-            
+            {
+                "key": "ctrl+u",
+                "mac": "cmd+u",
+                "command": "java.action.navigateToSuperImplementation",
+                "when": "editorTextFocus && java:serverMode == Standard",
+                "intellij": "Go to super-method/super-class"
+            },
             
             
             
