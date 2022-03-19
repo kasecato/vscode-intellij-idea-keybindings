@@ -81,7 +81,8 @@ alt+j | ctrl+g | Add selection for Next Occurrence | ✅
 alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
 shift+alt+down | shift+alt+down | Move Line Down | ✅
 shift+alt+up | shift+alt+up | Move Line Up | ✅
-shift+ctrl+8 | shift+cmd+8 | Column Selection Mode | ✅
+shift+alt+insert | shift+cmd+8 | Column Selection Mode | ✅
+alt+insert | cmd+n | New... | ✅
 
 ### Search/Replace
 
@@ -199,6 +200,7 @@ ctrl+end | cmd+end | Move Caret to Text End | ✅
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
 f5 | f5 | Copy | N/A
+ctrl+alt+shift+t | ctrl+t | Refactor This... | ✅
 f6 | f6 | Move | ✅
 alt+delete | cmd+delete | Safe Delete | N/A
 shift+f6 | shift+f6 | Rename | ✅
@@ -208,7 +210,7 @@ ctrl+f6 | cmd+f6 | Change Signature | N/A
 ctrl+alt+n | cmd+alt+n | Inline | N/A
 ctrl+alt+m | cmd+alt+m | Extract Method | ✅
 ctrl+alt+v | cmd+alt+v | Extract Variable | ✅
-ctrl+alt+f | cmd+alt+f | Extract Field | N/A
+ctrl+alt+f | cmd+alt+f | Extract Field | ✅
 ctrl+alt+c | cmd+alt+c | Extract Constant | ✅
 ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
 
@@ -263,11 +265,13 @@ ctrl+alt+s | cmd+numpad_separator | Open Settings dialog | ✅
 ctrl+alt+shift+s | cmd+; | Open Project Structure dialog | ✅
 ctrl+shift+a | shift+cmd+a | Find Action | ✅
 ctrl+tab | ctrl+tab | Switch between tabs and tool window | ✅
+shift+f12 | shift+f12 | Restore Default layout | ✅
 
 ### Custom
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
+ctrl+d | cmd+d | Compare Files | ✅
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 f7 | f7 | Next difference | ✅

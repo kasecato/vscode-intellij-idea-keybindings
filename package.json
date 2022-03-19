@@ -119,11 +119,19 @@
                 "when": "editorTextFocus",
                 "intellij": "Show descriptions of error or warning at caret"
             },
-            
             {
                 "key": "alt+insert",
                 "mac": "cmd+n",
-                "command": "workbench.action.files.newUntitledFile"
+                "command": "editor.action.sourceAction",
+                "when": "editorTextFocus",
+                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)"
+            },
+            {
+                "key": "alt+insert",
+                "mac": "cmd+n",
+                "command": "workbench.action.files.newUntitledFile",
+                "when": "!editorTextFocus",
+                "intellij": "New..."
             },
             {
                 "key": "ctrl+o",
@@ -415,7 +423,7 @@
                 "intellij": "Move Line Up"
             },
             {
-                "key": "shift+ctrl+8",
+                "key": "shift+alt+insert",
                 "mac": "shift+cmd+8",
                 "command": "editor.action.toggleColumnSelection",
                 "intellij": "Column Selection Mode"
@@ -865,6 +873,13 @@
             
             
             {
+                "key": "ctrl+alt+shift+t",
+                "mac": "ctrl+t",
+                "command": "editor.action.refactor",
+                "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
+                "intellij": "Refactor This..."
+            },
+            {
                 "key": "f6",
                 "mac": "f6",
                 "command": "editor.action.codeAction",
@@ -903,7 +918,7 @@
                 "mac": "cmd+alt+m",
                 "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Extract Method",
+                "intellij": "Extract Method",https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/261/conflict?name=package.json&ancestor_oid=76f413cab692b3c9e11b026dbb70019fbaf38418&base_oid=86a4e07a8466fe485e9361b6b82eb43acd08ebc7&head_oid=b06da606d128f116b4a6bea658022ea84cfb92df
                 "args": {
                     "kind": "refactor.extract.function",
                     "apply": "ifSingle"
@@ -919,8 +934,7 @@
                     "kind": "refactor.extract.variable",
                     "apply": "ifSingle"
                 }
-            },
-            
+            },            
             {
                 "key": "ctrl+alt+c",
                 "mac": "cmd+alt+c",
@@ -929,6 +943,17 @@
                 "intellij": "Extract Constant",
                 "args": {
                     "kind": "refactor.extract.constant",
+                    "apply": "ifSingle"
+                }
+            },
+            {
+                "key": "ctrl+alt+f",
+                "mac": "cmd+alt+f",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "intellij": "Extract Field",
+                "args": {
+                    "kind": "refactor.extract.field",
                     "apply": "ifSingle"
                 }
             },
@@ -1149,7 +1174,20 @@
                 "when": "inQuickOpen",
                 "intellij": "Switch between tabs and tool window"
             },
+            {
+                "key": "shift+f12",
+                "mac": "shift+f12",
+                "command": "workbench.action.resetViewLocations",
+                "intellij": "Restore Default layout"
+            },
             
+            {
+                "key": "ctrl+d",
+                "mac": "cmd+d",
+                "command": "workbench.files.action.compareFileWith",
+                "when": "!editorTextFocus",
+                "intellij": "Compare Files"
+            },
             {
                 "key": "f7",
                 "mac": "f7",

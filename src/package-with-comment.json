@@ -156,20 +156,19 @@
                 "when": "editorTextFocus",
                 "intellij": "Show descriptions of error or warning at caret"
             },
-            /*
+            {
+                "key": "alt+insert",
+                "mac": "cmd+n",
+                "command": "editor.action.sourceAction",
+                "when": "editorTextFocus",
+                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)"
+            },
             {
                 "key": "alt+insert",
                 "mac": "cmd+n",
                 "command": "workbench.action.files.newUntitledFile",
                 "when": "!editorTextFocus",
-                "intellij": "Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)",
-                "todo": "N/A"
-            },
-            */
-            {
-                "key": "alt+insert",
-                "mac": "cmd+n",
-                "command": "workbench.action.files.newUntitledFile"
+                "intellij": "New..."
             },
             {
                 "key": "ctrl+o",
@@ -556,7 +555,7 @@
                 "intellij": "Move Line Up"
             },
             {
-                "key": "shift+ctrl+8",
+                "key": "shift+alt+insert",
                 "mac": "shift+cmd+8",
                 "command": "editor.action.toggleColumnSelection",
                 "intellij": "Column Selection Mode"
@@ -1255,6 +1254,13 @@
             },
 */
             {
+                "key": "ctrl+alt+shift+t",
+                "mac": "ctrl+t",
+                "command": "editor.action.refactor",
+                "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
+                "intellij": "Refactor This..."
+            },
+            {
                 "key": "f6",
                 "mac": "f6",
                 "command": "editor.action.codeAction",
@@ -1337,16 +1343,17 @@
                     "apply": "ifSingle"
                 }
             },
-            /*
             {
                 "key": "ctrl+alt+f",
                 "mac": "cmd+alt+f",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
                 "intellij": "Extract Field",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.extract.field",
+                    "apply": "ifSingle"
+                }
             },
-*/
             {
                 "key": "ctrl+alt+c",
                 "mac": "cmd+alt+c",
@@ -1638,9 +1645,22 @@
                 "when": "inQuickOpen",
                 "intellij": "Switch between tabs and tool window"
             },
+            {
+                "key": "shift+f12",
+                "mac": "shift+f12",
+                "command": "workbench.action.resetViewLocations",
+                "intellij": "Restore Default layout"
+            },
             /*---------------------------------------------------------------*\
              * Custom
             \*---------------------------------------------------------------*/
+            {
+                "key": "ctrl+d",
+                "mac": "cmd+d",
+                "command": "workbench.files.action.compareFileWith",
+                "when": "!editorTextFocus",
+                "intellij": "Compare Files"
+            },
             {
                 "key": "f7",
                 "mac": "f7",
