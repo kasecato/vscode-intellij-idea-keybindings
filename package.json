@@ -20,23 +20,23 @@
         "keymap"
     ],
     "dependencies": {
-        "fast-xml-parser": "^3.21.0",
+        "fast-xml-parser": "^4.0.7",
         "path-browserify": "^1.0.1"
     },
     "devDependencies": {
         "@types/node": "^16.11.6",
         "@types/vscode": "^1.61.0",
-        "@types/webpack-env": "^1.16.0",
-        "@typescript-eslint/eslint-plugin": "^5.2.0",
-        "@typescript-eslint/parser": "^5.2.0",
-        "copy-webpack-plugin": "^9.0.1",
-        "eslint": "^8.1.0",
+        "@types/webpack-env": "^1.16.3",
+        "@typescript-eslint/eslint-plugin": "^5.15.0",
+        "@typescript-eslint/parser": "^5.15.0",
+        "copy-webpack-plugin": "^10.2.4",
+        "eslint": "^8.11.0",
         "process": "^0.11.10",
         "strip-json-comments-loader": "^0.0.2",
-        "ts-loader": "^9.2.2",
-        "typescript": "^4.4.4",
-        "webpack": "^5.61.0",
-        "webpack-cli": "^4.7.0"
+        "ts-loader": "^9.2.8",
+        "typescript": "^4.6.2",
+        "webpack": "^5.70.0",
+        "webpack-cli": "^4.9.2"
     },
     "extensionDependencies": [],
     "isAMD": false,
@@ -932,7 +932,7 @@
                 "mac": "cmd+alt+m",
                 "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Extract Method",https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/261/conflict?name=package.json&ancestor_oid=76f413cab692b3c9e11b026dbb70019fbaf38418&base_oid=86a4e07a8466fe485e9361b6b82eb43acd08ebc7&head_oid=b06da606d128f116b4a6bea658022ea84cfb92df
+                "intellij": "Extract Method",
                 "args": {
                     "kind": "refactor.extract.function",
                     "apply": "ifSingle"
@@ -948,17 +948,6 @@
                     "kind": "refactor.extract.variable",
                     "apply": "ifSingle"
                 }
-            },            
-            {
-                "key": "ctrl+alt+c",
-                "mac": "cmd+alt+c",
-                "command": "editor.action.codeAction",
-                "when": "editorTextFocus",
-                "intellij": "Extract Constant",
-                "args": {
-                    "kind": "refactor.extract.constant",
-                    "apply": "ifSingle"
-                }
             },
             {
                 "key": "ctrl+alt+f",
@@ -968,6 +957,17 @@
                 "intellij": "Extract Field",
                 "args": {
                     "kind": "refactor.extract.field",
+                    "apply": "ifSingle"
+                }
+            },
+            {
+                "key": "ctrl+alt+c",
+                "mac": "cmd+alt+c",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "intellij": "Extract Constant",
+                "args": {
+                    "kind": "refactor.extract.constant",
                     "apply": "ifSingle"
                 }
             },
