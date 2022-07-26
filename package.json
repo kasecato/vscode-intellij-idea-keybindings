@@ -771,6 +771,13 @@
                 "when": "editorTextFocus && java:serverMode == Standard",
                 "intellij": "Go to super-method/super-class"
             },
+            {
+                "key": "ctrl+u",
+                "mac": "cmd+u",
+                "command": "dart.goToSuper",
+                "when": "editorTextFocus && editorLangId == 'dart'",
+                "intellij": "Go to super-method/super-class"
+            },
             
             
             
