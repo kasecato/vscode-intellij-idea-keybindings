@@ -276,8 +276,6 @@ Linux, Windows | macOS | Feature | Supported
 ctrl+d | cmd+d | Compare Files | ✅
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
-f7 | f7 | Next difference | ✅
-shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
 shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 alt+f12 | alt+f12 | Opens and focuses corresponding tool window (Terminal) | ✅

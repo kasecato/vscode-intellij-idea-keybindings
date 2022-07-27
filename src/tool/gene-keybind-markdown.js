@@ -17,14 +17,33 @@ var mac = null;
 var command = null;
 var intellij = null;
 var supported = null;
-rd.on('line', function(line) {
+var commandsForHeader = new Map();
 
-    if (isHeader(line)) {
-        header = getHeader(line);
+function maybeProcessCurrentSection() {
+    if (header != null) {
         console.log();
         console.log('### ' + header);
         console.log();
         console.log(TABLE_HEADER);
+    }
+    commandsForHeader.forEach(function (hasCommand, format) {
+        if (hasCommand) {
+            console.log(format + '✅');
+        } else {
+            console.log(format + 'N/A');
+        }
+    });
+
+    header = null;
+    commandsForHeader = new Map();
+}
+
+rd.on('line', function(line) {
+
+    if (isHeader(line)) {
+        maybeProcessCurrentSection();
+        header = getHeader(line);
+        commandsForHeader = new Map();
     }
     
     else if (isWindowsOrLinux(line)) {
@@ -43,13 +62,11 @@ rd.on('line', function(line) {
         intellij = getIntelliJ(line);
         
         var format = available(escape(key)) + ' | ' + available(escape(mac)) + ' | ' + intellij + ' | ';
-        if (hasCommand(command)) {
-            console.log(format + '✅');
-        } else {
-            console.log(format + 'N/A');
-        }
+        commandsForHeader.set(format, hasCommand(command) || commandsForHeader.get(format));
     }
 });
+
+maybeProcessCurrentSection(); 
 
 const isHeader         = (line) => line.match(/\* (.*)/)            !== null;
 const isWindowsOrLinux = (line) => line.match(/"key": "(.*)"/)      !== null;
@@ -74,4 +91,4 @@ const available         = (line) => line ? line : 'N/A';
 
 const TABLE_HEADER = 
 `Linux, Windows | macOS | Feature | Supported
----------------|------|---------|---------- `;
+---------------|------|---------|----------`;
