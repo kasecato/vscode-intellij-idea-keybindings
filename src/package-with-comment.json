@@ -602,6 +602,14 @@
                 "key": "ctrl+shift+f",
                 "mac": "cmd+shift+f",
                 "command": "workbench.action.findInFiles",
+                "when": "!explorerResourceIsFolder || !filesExplorerFocus",
+                "intellij": "Find in path"
+            },
+            {
+                "key": "ctrl+shift+f",
+                "mac": "cmd+shift+f",
+                "command": "filesExplorer.findInFolder",
+                "when": "explorerResourceIsFolder && filesExplorerFocus",
                 "intellij": "Find in path"
             },
             {
