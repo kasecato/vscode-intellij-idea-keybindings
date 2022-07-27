@@ -289,15 +289,9 @@ enter | enter | Open Highlighted File (Explorer) | ✅
 alt+home | alt+home | Jump to Navigation Bar | ✅
 shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 
-### Go Lang
-
-Linux, Windows | macOS | Feature | Supported
----------------|------|---------|----------
-shift+f10 | ctrl+r | Go: Test Previous | ✅
-
 ## Installation
 
-1. Install Visual Studio Code 1.61.0 or higher
+1. Install Visual Studio Code 1.69.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
@@ -377,7 +371,7 @@ After the initial compile, the source files will be watched and recompiled when 
 * [@CsCherrYY](https://github.com/CsCherrYY)
 * [@Eskibear](https://github.com/Eskibear)
 * [@daxmc99](https://github.com/daxmc99)
-* [@CsCherrYY](https://github.com/CsCherrYY)
+* [@jacob314](https://github.com/jacob314)
 
 
 ## License

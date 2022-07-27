@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.5.2 (Jul 28, 2022)
+
+* enhancement - Add support for the find in folder alternative command. See [#267](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/267)
+* enhancement - Add Dart version of Go to super-method/super-class (ctrl+u). See [#269](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/269)
+
 ## 1.5.1 (May 19, 2022)
 
 * enhancement - alt+insert should have proper commands for different components. See [#252](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/252)
