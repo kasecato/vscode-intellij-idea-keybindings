@@ -179,7 +179,7 @@
                 "args": {
                     "kind": "source.overrideMethods"
                 },
-                "when": "editorTextFocus",
+                "when": "editorLangId == java && javaLSReady && editorTextFocus",
                 "intellij": "Override methods"
             },
             {
@@ -189,7 +189,7 @@
                 "args": {
                     "kind": "source.overrideMethods"
                 },
-                "when": "editorTextFocus",
+                "when": "editorLangId == java && javaLSReady && editorTextFocus",
                 "intellij": "Implement methods"
             },
             /*
@@ -1120,7 +1120,7 @@
                 "key": "ctrl+h",
                 "mac": "ctrl+h",
                 "command": "java.action.showTypeHierarchy",
-                "when": "editorLangId == java && editorTextFocus",
+                "when": "editorLangId == java && javaLSReady && editorTextFocus",
                 "intellij": "Type hierarchy"
             },
             /*
