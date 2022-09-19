@@ -210,14 +210,14 @@
                 "key": "ctrl+alt+l",
                 "mac": "cmd+alt+l",
                 "command": "editor.action.formatDocument",
-                "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly",
+                "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor",
                 "intellij": "Reformat code"
             },
             {
                 "key": "ctrl+alt+l",
                 "mac": "cmd+alt+l",
                 "command": "editor.action.formatSelection",
-                "when": "editorHasDocumentFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly",
+                "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Reformat selected code"
             },
             {
