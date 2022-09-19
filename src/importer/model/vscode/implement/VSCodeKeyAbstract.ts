@@ -17,7 +17,7 @@ export abstract class VSCodeKeyAbstract implements VSCodeKey {
     }
 
     convert(intellijKeystroke: string): string {
-        for (let mapping of this.keystrokeKeyMappings) {
+        for (const mapping of this.keystrokeKeyMappings) {
             intellijKeystroke = intellijKeystroke.replace(mapping.intellij, mapping.vscode);
         };
         return intellijKeystroke;

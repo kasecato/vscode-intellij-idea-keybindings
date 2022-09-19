@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { XMLParser, X2jOptionsOptional } from 'fast-xml-parser';
 import { IntelliJKeymapXML } from '../model/intellij/implement/IntelliJKeymapXML';
 import { USE_DEFAULT_FILE } from '../reader/FileOpenDialog';
@@ -8,7 +11,7 @@ export class IntelliJXMLParser {
         "keymap.action.keyboard-shortcut"
     ];
 
-    static async parseToJson(xml: string | USE_DEFAULT_FILE): Promise<any | USE_DEFAULT_FILE> {
+    static parseToJson(xml: string | USE_DEFAULT_FILE): any | USE_DEFAULT_FILE {
         if (!xml) {
             return undefined;
         }
@@ -29,7 +32,7 @@ export class IntelliJXMLParser {
         }
     }
 
-    static async desirialize(json: any | USE_DEFAULT_FILE): Promise<IntelliJKeymapXML[]> {
+    static desirialize(json: any | USE_DEFAULT_FILE): IntelliJKeymapXML[] {
         if (!json || !json.keymap) {
             return [];
         }

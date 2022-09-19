@@ -13,11 +13,11 @@ import { VSCodeKeybinding } from '../model/vscode/VSCodeKeybinding';
 export class IntelliJSyntaxAnalyzer {
     private static readonly REMOVE_KEYBINDING: string = '-';
     private readonly osDestination: OS;
-    private readonly actionIdCommandMappings: { [actionId: string]: readonly ActionIdCommandMapping[] };
+    private readonly actionIdCommandMappings: Record<string, readonly ActionIdCommandMapping[]>;
     private readonly keystrokeKeyMappings: readonly KeystrokeKeyMapping[];
-    private readonly vscodeDefaults: { [commnad: string]: readonly VSCodeKeybinding[] };
+    private readonly vscodeDefaults: Record<string, readonly VSCodeKeybinding[]>;
     private readonly intellijDefaults: readonly IntelliJKeymapXML[];
-    private readonly intellijCustoms: { [actionId: string]: readonly IntelliJKeymapXML[] };
+    private readonly intellijCustoms: Record<string, readonly IntelliJKeymapXML[]>;
 
     constructor(
         osDestination: OS,
@@ -36,7 +36,7 @@ export class IntelliJSyntaxAnalyzer {
     }
 
     // FIXME: high-cost
-    async convert(): Promise<VSCodeKeybinding[]> {
+    convert(): VSCodeKeybinding[] {
         let vscodeMutable: VSCodeKeybinding[] = [];
 
         // set custom
@@ -83,20 +83,20 @@ export class IntelliJSyntaxAnalyzer {
     ): VSCodeKeybinding[] {
         const vscodeMutable: VSCodeKeybinding[] = [];
         // FIXEME: This loop is not correct because it duplicates when there are two defaults. Rewrite when I have time
-        for (let intellijDefault of this.intellijDefaults) {
+        for (const intellijDefault of this.intellijDefaults) {
             if (!this.actionIdCommandMappings[intellijDefault.actionId]) {
                 continue;
             }
-            for (let actionIdCommandMapping of this.actionIdCommandMappings[intellijDefault.actionId]) {
+            for (const actionIdCommandMapping of this.actionIdCommandMappings[intellijDefault.actionId]) {
                 const actionId = actionIdCommandMapping.intellij;
                 const command = actionIdCommandMapping.vscode;
                 if (!this.vscodeDefaults[command]) {
                     continue;
                 }
-                for (let vscodeDefault of this.vscodeDefaults[command]) {
+                for (const vscodeDefault of this.vscodeDefaults[command]) {
                     if (this.intellijCustoms[actionId]) {
                         if (onCustom) {
-                            for (let intellijCustom of this.intellijCustoms[actionId]) {
+                            for (const intellijCustom of this.intellijCustoms[actionId]) {
                                 const keybinding = onCustom(
                                     vscodeMutable.concat(vscodeImmutable),
                                     vscodeDefault,
@@ -209,8 +209,8 @@ export class IntelliJSyntaxAnalyzer {
         }
     }
 
-    private static groupBy<V>(array: readonly V[], prop: (v: V) => string): { [key: string]: V[] } {
-        return array.reduce((groups: { [key: string]: V[] }, item) => {
+    private static groupBy<V>(array: readonly V[], prop: (v: V) => string): Record<string, V[]> {
+        return array.reduce((groups: Record<string, V[]>, item) => {
             const val = prop(item);
             groups[val] = groups[val] ?? [];
             groups[val].push(item);

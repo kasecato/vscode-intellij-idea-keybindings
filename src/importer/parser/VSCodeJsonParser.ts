@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { VSCodeKeybindingDefault } from '../model/vscode/implement/VSCodeKeybindingDefault';
 import { VSCodeKeybinding } from '../model/vscode/VSCodeKeybinding';
 
 export class VSCodeJsonParser {
-    static async desirialize(json: any): Promise<VSCodeKeybinding[]> {
+    static desirialize(json: string): VSCodeKeybinding[] {
         if (!json) {
             return [];
         }

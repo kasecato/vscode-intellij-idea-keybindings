@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { ActionIdCommandMapping } from '../model/resource/ActionIdCommandMapping';
 
 export class ActionIdCommandMappingJsonParser {
-    static async desirialize(json: any): Promise<ActionIdCommandMapping[]> {
+    static desirialize(json: string): ActionIdCommandMapping[] {
         if (!json) {
             return [];
         }

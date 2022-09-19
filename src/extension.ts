@@ -52,15 +52,17 @@ export async function importKeyMapsSchema(context: vscode.ExtensionContext) {
     /*---------------------------------------------------------------------
      * Parser
      *-------------------------------------------------------------------*/
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const intellijJsonCustom: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlCustom);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const intellijJsonDefault: any | USE_DEFAULT_FILE = await IntelliJXMLParser.parseToJson(intellijXmlDefault);
-    const intellijCustoms: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonCustom);
-    const intellijDefaults: IntelliJKeymapXML[] = await IntelliJXMLParser.desirialize(intellijJsonDefault);
-    const vscodeDefaults: VSCodeKeybinding[] = await VSCodeJsonParser.desirialize(vscodeJsonDefault);
-    const actionIdCommandMappings: ActionIdCommandMapping[] = await ActionIdCommandMappingJsonParser.desirialize(
+    const intellijCustoms: IntelliJKeymapXML[] = IntelliJXMLParser.desirialize(intellijJsonCustom);
+    const intellijDefaults: IntelliJKeymapXML[] = IntelliJXMLParser.desirialize(intellijJsonDefault);
+    const vscodeDefaults: VSCodeKeybinding[] = VSCodeJsonParser.desirialize(vscodeJsonDefault);
+    const actionIdCommandMappings: ActionIdCommandMapping[] = ActionIdCommandMappingJsonParser.desirialize(
         actionIdCommandMappingJson
     );
-    const keystrokeKeyMappings: KeystrokeKeyMapping[] = await KeystrokeKeyMappingJsonParser.desirialize(
+    const keystrokeKeyMappings: KeystrokeKeyMapping[] = KeystrokeKeyMappingJsonParser.desirialize(
         keystrokeKeyMappingJson
     );
 
@@ -75,12 +77,12 @@ export async function importKeyMapsSchema(context: vscode.ExtensionContext) {
         intellijDefaults,
         intellijCustoms
     );
-    const keybindings: VSCodeKeybinding[] = await syntaxAnalyzer.convert();
+    const keybindings: VSCodeKeybinding[] = syntaxAnalyzer.convert();
 
     /*---------------------------------------------------------------------
      * Code Generator
      *-------------------------------------------------------------------*/
-    const keybindingsJson = await KeybindingsJsonGenerator.gene(keybindings);
+    const keybindingsJson = KeybindingsJsonGenerator.gene(keybindings);
 
     /*---------------------------------------------------------------------
      * Writer

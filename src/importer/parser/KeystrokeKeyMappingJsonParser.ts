@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { KeystrokeKeyMapping } from '../model/resource/KeystrokeKeyMapping';
 
 export class KeystrokeKeyMappingJsonParser {
-    static async desirialize(json: any): Promise<KeystrokeKeyMapping[]> {
+    static desirialize(json: string): KeystrokeKeyMapping[] {
         if (!json) {
             return [];
         }
