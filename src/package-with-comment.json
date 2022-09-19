@@ -707,6 +707,7 @@
                 "key": "alt+shift+f10",
                 "mac": "ctrl+alt+r",
                 "command": "workbench.action.tasks.runTask",
+                "when": "taskCommandsRegistered && !terminalFocus",
                 "intellij": "Select configuration and run"
             },
             {
@@ -719,6 +720,7 @@
                 "key": "shift+f10",
                 "mac": "ctrl+r",
                 "command": "workbench.action.tasks.reRunTask",
+                "when": "taskCommandsRegistered && !terminalFocus",
                 "intellij": "Run"
             },
             {
