@@ -1,22 +1,32 @@
-import * as parser from 'fast-xml-parser';
+import { XMLParser, X2jOptionsOptional } from 'fast-xml-parser';
 import { IntelliJKeymapXML } from '../model/intellij/implement/IntelliJKeymapXML';
 import { USE_DEFAULT_FILE } from '../reader/FileOpenDialog';
 
 export class IntelliJXMLParser {
+    private static readonly ALWAYS_ARRAY: string[] = [
+        "keymap.action",
+        "keymap.action.keyboard-shortcut"
+    ];
+
     static async parseToJson(xml: string | USE_DEFAULT_FILE): Promise<any | USE_DEFAULT_FILE> {
         if (!xml) {
             return undefined;
         }
 
-        const parserXmlOptions: parser.X2jOptionsOptional = {
+        const parserXmlOptions: X2jOptionsOptional = {
+            ignoreDeclaration: true,
             ignoreAttributes: false,
             parseAttributeValue: true,
-            arrayMode: true,
+            isArray: (tagName: string, jpath: string, isLeafNode: boolean, isAttribute: boolean) => {
+                return IntelliJXMLParser.ALWAYS_ARRAY.includes(jpath);
+            }
         };
-        if (!parser.validate(xml)) {
+        const parser = new XMLParser(parserXmlOptions);
+        try {
+            return parser.parse(xml, parserXmlOptions);
+        } catch (e) {
             throw Error('Cannot load this IntelliJ IDEA Keymap file. Plesase check the file format.');
         }
-        return parser.parse(xml, parserXmlOptions);
     }
 
     static async desirialize(json: any | USE_DEFAULT_FILE): Promise<IntelliJKeymapXML[]> {
@@ -25,7 +35,7 @@ export class IntelliJXMLParser {
         }
 
         const intellijKeymaps = new Array<IntelliJKeymapXML>();
-        const actionElements = json.keymap[0].action;
+        const actionElements = json.keymap.action;
         for (const actionIndex in actionElements) {
             const actionIdAttr = actionElements[actionIndex]['@_id'];
             const keystorkeElements = actionElements[actionIndex]['keyboard-shortcut'];
