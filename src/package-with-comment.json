@@ -1030,6 +1030,13 @@
                 "intellij": "Go to implementation(s)"
             },
             {
+                "key": "ctrl+u",
+                "mac": "cmd+u",
+                "command": "java.action.navigateToSuperImplementation",
+                "when": "editorLangId == java && javaLSReady && editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor",
+                "intellij": "Go to super implementation(s)"
+            },
+            {
                 "key": "ctrl+shift+i",
                 "mac": "alt+space",
                 "command": "editor.action.previewDeclaration",
