@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.5.3 (Sep 19, 2022)
+
+* bug fix - No code actions for 'source.overrideMethods' available. See [#266](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/266)
+* enhancement - Go to super-method / super-class Ctrl + U. See [#251](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/251)
+* bug fix - Ctrl keys in terminal should pass to shell. See [#250](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/250)
+* bug fix - Reformat selected code is not work. See [#248](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/248)
+
 ## 1.5.2 (Jul 28, 2022)
 
 * enhancement - Add support for the find in folder alternative command. See [#267](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/267)
