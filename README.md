@@ -373,6 +373,7 @@ After the initial compile, the source files will be watched and recompiled when 
 * [@Eskibear](https://github.com/Eskibear)
 * [@daxmc99](https://github.com/daxmc99)
 * [@jacob314](https://github.com/jacob314)
+* [@long76](https://github.com/long76)
 
 
 ## License

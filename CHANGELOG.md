@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.5.4 (Oct 15, 2022)
+
+* bug fix - Reformat document "ctrl + alt + l" is not working. See [#276](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/276), [#278](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/278)
+
 ## 1.5.3 (Sep 19, 2022)
 
 * bug fix - No code actions for 'source.overrideMethods' available. See [#266](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/266)
