@@ -71,7 +71,7 @@
     {
         "key": "ctrl+k ctrl+f",
         "command": "editor.action.formatSelection",
-        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+        "when": "editorHasDocumentSelectionFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+x",
