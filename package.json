@@ -69,7 +69,7 @@
         "commands": [
             {
                 "command": "intellij.importKeyMapsSchema",
-                "title": "Import IntelliJ Keybindngs (XML)",
+                "title": "Import IntelliJ Keybindings (XML)",
                 "category": "IntelliJ Keybindings"
             }
         ],
