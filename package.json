@@ -63,6 +63,9 @@
     "activationEvents": [
         "onCommand:intellij.importKeyMapsSchema"
     ],
+    "extensionKind": [
+        "ui"
+    ],
     "main": "./dist/extension-node",
     "browser": "./dist/web/extension.js",
     "contributes": {
@@ -1355,8 +1358,5 @@
                 "intellij": "Go: Test Previous"
             }
         ]
-    },
-    "extensionKind": [
-      "ui"
-    ]
+    }
 }
