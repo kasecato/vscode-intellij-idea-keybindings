@@ -1355,5 +1355,8 @@
                 "intellij": "Go: Test Previous"
             }
         ]
-    }
+    },
+    "extensionKind": [
+      "ui"
+    ]
 }
