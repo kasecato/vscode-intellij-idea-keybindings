@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.5.5 (Jan 4, 2023)
+
+* enhancement - feat: declare the plugin as a UI extension. See [#280](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/280)
+* enhancement - Fix typo "keybindngs" to "keybindings". See [#282](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/282)
+
 ## 1.5.4 (Oct 15, 2022)
 
 * bug fix - Reformat document "ctrl + alt + l" is not working. See [#276](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/276), [#278](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/278)
