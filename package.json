@@ -68,6 +68,9 @@
     ],
     "main": "./dist/extension-node",
     "browser": "./dist/web/extension.js",
+    "sponsor": {
+        "url": "https://github.com/sponsors/kasecato"
+    },
     "contributes": {
         "commands": [
             {
