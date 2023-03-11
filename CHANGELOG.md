@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.5.6 (Mar 11, 2023)
+
+* bug fix - Go Back collides with Outdent Line. See [#285](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/285)
+
 ## 1.5.5 (Jan 4, 2023)
 
 * enhancement - feat: declare the plugin as a UI extension. See [#280](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/280)
