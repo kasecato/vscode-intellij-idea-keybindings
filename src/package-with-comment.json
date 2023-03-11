@@ -990,6 +990,11 @@
                 "intellij": "Navigate back"
             },
             {
+                "mac": "-cmd+[",
+                "command": "editor.action.outdentLines",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
                 "key": "",
                 "mac": "cmd+[",
                 "command": "workbench.action.navigateBack",
