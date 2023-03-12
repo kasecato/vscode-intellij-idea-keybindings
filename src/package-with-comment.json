@@ -990,8 +990,8 @@
                 "intellij": "Navigate back"
             },
             {
-                "mac": "-cmd+[",
-                "command": "editor.action.outdentLines",
+                "mac": "cmd+[",
+                "command": "-editor.action.outdentLines",
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
