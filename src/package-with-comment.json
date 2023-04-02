@@ -244,11 +244,23 @@
                 "intellij": "Select successively increasing code blocks"
             },
             {
+                "mac": "alt+up",
+                "command": "notebook.cell.moveUp",
+                "when": "notebookEditorFocused && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
+            },
+            {
                 "key": "ctrl+shift+w",
                 "mac": "alt+down",
                 "command": "editor.action.smartSelect.shrink",
                 "when": "editorTextFocus",
                 "intellij": "Decrease current selection to previous state"
+            },
+            {
+                "mac": "alt+down",
+                "command": "notebook.cell.moveDown",
+                "when": "notebookEditorFocused && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
             },
             /*
             {
@@ -266,6 +278,13 @@
                 "command": "editor.action.quickFix",
                 "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
                 "intellij": "Show intention actions and quick-fixes"
+            },
+            {
+                "key": "alt+enter",
+                "mac": "alt+enter",
+                "command": "notebook.cell.executeAndInsertBelow",
+                "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0",
+                "notebook": "To keep Notebook key bindings"
             },
             {
                 "key": "ctrl+alt+l",
@@ -415,11 +434,25 @@
                 "intellij": "Smart line split"
             },
             {
+                "key": "ctrl+enter",
+                "mac": "cmd+enter",
+                "command": "notebook.cell.insertCodeCellBelow",
+                "when": "notebookCellListFocused && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
+            },
+            {
                 "key": "shift+enter",
                 "mac": "shift+enter",
                 "command": "editor.action.insertLineAfter",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Start new line"
+            },
+            {
+                "key": "shift+enter",
+                "mac": "shift+enter",
+                "command": "notebook.cell.executeAndSelectBelow",
+                "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0",
+                "notebook": "To keep Notebook key bindings"
             },
             /*
             {
@@ -575,6 +608,13 @@
                 "command": "editor.action.moveLinesDownAction",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Move Line Down"
+            },
+            {
+                "key": "shift+alt+down",
+                "mac": "shift+alt+down",
+                "command": "notebook.cell.copyDown",
+                "when": "notebookEditorFocused && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
             },
             {
                 "key": "shift+alt+up",
@@ -1296,11 +1336,25 @@
                 "intellij": "Move Caret to Text Start"
             },
             {
+                "key": "ctrl+home",
+                "mac": "cmd+up",
+                "command": "notebook.focusTop",
+                "when": "notebookEditorFocused && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
+            },
+            {
                 "key": "ctrl+end",
                 "mac": "cmd+end",
                 "command": "cursorBottom",
                 "when": "textInputFocus",
                 "intellij": "Move Caret to Text End"
+            },
+            {
+                "key": "ctrl+end",
+                "mac": "cmd+down",
+                "command": "notebook.focusBottom",
+                "when": "notebookEditorFocused && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
             },
             {
                 "key": "ctrl+shift+t",
@@ -1773,6 +1827,13 @@
                 "intellij": "Start new line"
             },
             {
+                "key": "shift+ctrl+enter",
+                "mac": "shift+cmd+enter",
+                "command": "notebook.cell.insertCodeCellAbove",
+                "when": "notebookCellListFocused && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
+            },
+            {
                 "key": "alt+f12",
                 "mac": "alt+f12",
                 "command": "workbench.action.terminal.focus",
@@ -1827,6 +1888,13 @@
                 "command": "list.select",
                 "intellij": "Open Highlighted File (Explorer)",
                 "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder"
+            },
+            {
+                "key": "enter",
+                "mac": "enter",
+                "command": "notebook.cell.edit",
+                "when": "notebookCellListFocused && notebookEditable && !inputFocus",
+                "notebook": "To keep Notebook key bindings"
             },
             {
                 "key": "alt+home",
