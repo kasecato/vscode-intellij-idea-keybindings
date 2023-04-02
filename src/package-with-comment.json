@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "1.5.7",
+    "version": "1.5.8",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.76.0"

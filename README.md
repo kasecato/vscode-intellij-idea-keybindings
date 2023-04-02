@@ -1,6 +1,6 @@
 # IntelliJ IDEA Key Bindings for Visual Studio Code
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md) [![Marketplace Version](https://vsmarketplacebadges.dev/version/k--kato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) [![Install](https://vsmarketplacebadges.dev/installs-short/k--kato.intellij-idea-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
+[![License: MIT](https://img.shields.io/badge/license-MIT-orange.png)](LICENSE.md) [![Marketplace Version](https://vsmarketplacebadges.dev/version/k--kato.intellij-idea-keybindings.png)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) [![Install](https://vsmarketplacebadges.dev/installs-short/k--kato.intellij-idea-keybindings.png)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
 
 Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular JetBrains products like IntelliJ Ultimate, WebStorm, PyCharm, PHP Storm, etc.
 
@@ -375,6 +375,7 @@ After the initial compile, the source files will be watched and recompiled when 
 * [@long76](https://github.com/long76)
 * [@rxliuli](https://github.com/rxliuli)
 * [@bananer](https://github.com/bananer)
+* [@a-stewart](https://github.com/a-stewart)
 
 
 ## License

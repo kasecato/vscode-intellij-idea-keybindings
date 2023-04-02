@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.5.8 (Apr 2, 2023)
+
+* enhancement - Include the full set of VS Code "format document" commands. See [#288](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/288)
+* enhancement - keybindings of jupyter notebook. See [#281](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/281)
+
 ## 1.5.7 (Mar 12, 2023)
 
 * bug fix - Go Back collides with Outdent Line. See [#285](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/285)
