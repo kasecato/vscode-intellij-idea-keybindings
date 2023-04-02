@@ -215,8 +215,22 @@
             {
                 "key": "ctrl+alt+l",
                 "mac": "cmd+alt+l",
+                "command": "notebook.formatCell",
+                "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'",
+                "intellij": "Reformat code"
+            },
+            {
+                "key": "ctrl+alt+l",
+                "mac": "cmd+alt+l",
                 "command": "editor.action.formatDocument",
                 "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor",
+                "intellij": "Reformat code"
+            },
+            {
+                "key": "ctrl+alt+l",
+                "mac": "cmd+alt+l",
+                "command": "editor.action.formatDocument.none",
+                "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly",
                 "intellij": "Reformat code"
             },
             {
@@ -225,6 +239,13 @@
                 "command": "editor.action.formatSelection",
                 "when": "editorHasDocumentSelectionFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly",
                 "intellij": "Reformat selected code"
+            },
+            {
+                "key": "ctrl+alt+l",
+                "mac": "cmd+alt+l",
+                "command": "notebook.format",
+                "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'",
+                "intellij": "Reformat code"
             },
             {
                 "key": "ctrl+alt+o",
