@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "1.5.8",
+    "version": "1.5.9",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.76.0"
@@ -236,7 +236,7 @@
                 "mac": "cmd+alt+l",
                 "command": "notebook.formatCell",
                 "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'",
-                "intellij": "Reformat code"
+                "notebook": "To keep Notebook key bindings"
             },
             {
                 "key": "ctrl+alt+l",
@@ -264,7 +264,7 @@
                 "mac": "cmd+alt+l",
                 "command": "notebook.format",
                 "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'",
-                "intellij": "Reformat code"
+                "notebook": "To keep Notebook key bindings"
             },
             {
                 "key": "ctrl+alt+o",

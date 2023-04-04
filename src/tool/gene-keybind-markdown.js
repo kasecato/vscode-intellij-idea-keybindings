@@ -74,7 +74,8 @@ const isMacOS          = (line) => line.match(/"mac": "(.*)"/)      !== null;
 const isCommand        = (line) => line.match(/"command": "(.*)"/)  !== null;
 const isWhen           = (line) => line.match(/"when": "(.*)"/)     !== null;
 const isIntelliJ       = (line) => line.match(/"intellij": "(.*)"/) !== null;
-const isTodo           = (line) => line.match(/"todo": "(.*)"/)     !== null;
+const isTodo           = (line) => line.match(/"todo": "(.*)"/) !== null;
+const isNotebook       = (line) => line.match(/"notebook": "(.*)"/) !== null;
 
 const hasCommand       = (cmnd) => cmnd !== null && cmnd !== '';
 
