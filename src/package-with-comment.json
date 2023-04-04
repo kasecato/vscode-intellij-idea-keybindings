@@ -1820,6 +1820,20 @@
                 "intellij": "Start new line before current"
             },
             {
+                "key": "alt+ctrl+enter",
+                "mac": "ctrl+enter",
+                "command": "notebook.cell.execute",
+                "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0",
+                "notebook": "To keep Notebook key bindings"
+            },
+            {
+                "key": "alt+ctrl+enter",
+                "mac": "ctrl+enter",
+                "command": "notebook.cell.quitEdit",
+                "when": "inputFocus && notebookEditorFocused && notebookCellType == 'markup'",
+                "notebook": "To keep Notebook key bindings"
+            },
+            {
                 "key": "shift+ctrl+enter",
                 "mac": "shift+cmd+enter",
                 "command": "editor.action.insertLineAfter",
