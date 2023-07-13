@@ -513,14 +513,14 @@
                 "key": "ctrl+left",
                 "mac": "alt+left",
                 "command": "cursorWordLeft",
-                "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Cursor to word start"
             },
             {
                 "key": "ctrl+left",
                 "mac": "alt+left",
                 "command": "cursorWordPartStartLeft",
-                "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Cursor to hump start"
             },
             {
@@ -541,14 +541,14 @@
                 "key": "ctrl+shift+left",
                 "mac": "alt+shift+left",
                 "command": "cursorWordLeftSelect",
-                "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Select to word start"
             },
             {
                 "key": "ctrl+shift+left",
                 "mac": "alt+shift+left",
                 "command": "cursorWordPartStartLeftSelect",
-                "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Select to hump start"
             },
             {
@@ -569,14 +569,14 @@
                 "key": "ctrl+backspace",
                 "mac": "alt+backspace",
                 "command": "deleteWordLeft",
-                "when": "editorTextFocus && !editorReadonly && config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && !editorReadonly && !config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Delete to word start"
             },
             {
                 "key": "ctrl+backspace",
                 "mac": "alt+backspace",
                 "command": "deleteWordPartLeft",
-                "when": "editorTextFocus && !editorReadonly && !config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && !editorReadonly && config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Delete to hump start"
             },
             {
