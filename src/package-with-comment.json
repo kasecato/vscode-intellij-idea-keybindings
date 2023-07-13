@@ -78,7 +78,7 @@
             "properties": {
                 "intellij-idea-keybindings.useCamelHumpsWords": {
                     "type": "boolean",
-                    "default": "false",
+                    "default": false,
                     "description": "Use \"CamelHumps\" words"
                 }
             }
