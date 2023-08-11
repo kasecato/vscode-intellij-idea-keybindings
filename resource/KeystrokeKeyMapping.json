@@ -1,7 +1,7 @@
 [
     {
         "intellij": " ",
-        "vscode": "+[Quote]
+        "vscode": "+"
     },
     {
         "intellij": "back_quote",
@@ -157,7 +157,7 @@
     },
     {
         "intellij": "plus",
-        "vscode": "\\+[Quote]
+        "vscode": "\\+"
     },
     {
         "intellij": "colon",
