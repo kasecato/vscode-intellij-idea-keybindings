@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.5.10 (Aug 11, 2023)
+
+* bug fix - Fix a bug which will cause failed. See [#293](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/293)
+* enhancement - Add support for Use "CamelHumps" words. See [#300](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/300)
+* enhancement - Keyboard layout-independent bindings. See [#305](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/305)
+
 ## 1.5.9 (Apr 4, 2023)
 
 * enhancement - keybindings of jupyter notebook. See [#281](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/281)
