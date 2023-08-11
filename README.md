@@ -279,6 +279,11 @@ shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
 enter | enter | Open Highlighted File (Explorer) | ✅
 alt+home | alt+home | Jump to Navigation Bar | ✅
 
+### CamelHumps
+
+If you enable the setting `Use "CamelHumps" words` in IntelliJ, commands like ctrl+left will go to the previous hump in camel case words, rather than the start of the word.
+For similar functionality in VS Code, enalbe the config `config.intellij-idea-keybindings.useCamelHumpsWords` under Settings.
+
 ### IntelliJ Importer
 
 ![IntelliJ Importer](images/usage_intellij_importer.gif)
