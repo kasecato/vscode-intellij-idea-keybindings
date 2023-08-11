@@ -3,7 +3,7 @@
     "version": "1.5.9",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.76.0"
+        "vscode": "^1.81.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
@@ -20,25 +20,25 @@
         "keymap"
     ],
     "dependencies": {
-        "fast-xml-parser": "^4.1.3",
+        "fast-xml-parser": "^4.2.7",
         "path-browserify": "^1.0.1"
     },
     "devDependencies": {
         "@types/node": "^18.15.0",
-        "@types/vscode": "^1.76.0",
-        "@types/webpack-env": "^1.18.0",
-        "@typescript-eslint/eslint-plugin": "^5.54.1",
-        "@typescript-eslint/parser": "^5.54.1",
+        "@types/vscode": "^1.81.0",
+        "@types/webpack-env": "^1.18.1",
+        "@typescript-eslint/eslint-plugin": "^6.3.0",
+        "@typescript-eslint/parser": "^6.3.0",
         "copy-webpack-plugin": "^11.0.0",
-        "eslint": "^8.36.0",
-        "eslint-config-prettier": "^8.7.0",
-        "prettier": "2.8.4",
+        "eslint": "^8.46.0",
+        "eslint-config-prettier": "^9.0.0",
+        "prettier": "3.0.1",
         "process": "^0.11.10",
         "strip-json-comments-loader": "^0.0.2",
-        "ts-loader": "^9.4.2",
-        "typescript": "^4.9.5",
-        "webpack": "^5.76.1",
-        "webpack-cli": "^5.0.1"
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.1.6",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
     },
     "extensionDependencies": [],
     "isAMD": false,
@@ -446,13 +446,6 @@
                 "command": "deleteWordPartLeft",
                 "when": "editorTextFocus && !editorReadonly && config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Delete to hump start"
-            },
-            {
-                "key": "ctrl+backspace",
-                "mac": "alt+backspace",
-                "command": "deleteWordLeft",
-                "when": "editorTextFocus && !editorReadonly",
-                "intellij": "Delete to word start"
             },
             {
                 "key": "ctrl+=",
