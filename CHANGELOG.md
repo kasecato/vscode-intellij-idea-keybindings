@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.5.11 (Oct 8, 2023)
+
+* bug fix - Fix Quote causing failed Mac imports. See [#308](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/308)
+* bug fix - BUG "Show Next Change" is mapped instead of "Go to Next Change". See [#310](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/310)
+* enhancement - Commenting to move to next line as in Idea. See [#233](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/233)
+
 ## 1.5.10 (Aug 11, 2023)
 
 * bug fix - Fix a bug which will cause failed. See [#293](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/293)

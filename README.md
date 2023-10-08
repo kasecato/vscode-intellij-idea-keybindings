@@ -380,7 +380,7 @@ After the initial compile, the source files will be watched and recompiled when 
 * [@rxliuli](https://github.com/rxliuli)
 * [@bananer](https://github.com/bananer)
 * [@ShellWen](https://github.com/ShellWen)
-
+* [@Strajk](https://github.com/Strajk)
 
 ## License
 
