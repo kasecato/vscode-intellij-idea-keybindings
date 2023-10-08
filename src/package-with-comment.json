@@ -3,7 +3,7 @@
     "version": "1.5.10",
     "publisher": "k--kato",
     "engines": {
-        "vscode": "^1.81.0"
+        "vscode": "^1.83.0"
     },
     "displayName": "IntelliJ IDEA Keybindings",
     "description": "Port of IntelliJ IDEA Keybindings, including for WebStorm, PyCharm, PHP Storm, etc.",
@@ -20,23 +20,23 @@
         "keymap"
     ],
     "dependencies": {
-        "fast-xml-parser": "^4.2.7",
+        "fast-xml-parser": "^4.3.2",
         "path-browserify": "^1.0.1"
     },
     "devDependencies": {
-        "@types/node": "^18.15.0",
-        "@types/vscode": "^1.81.0",
-        "@types/webpack-env": "^1.18.1",
-        "@typescript-eslint/eslint-plugin": "^6.3.0",
-        "@typescript-eslint/parser": "^6.3.0",
+        "@types/node": "^18.18.0",
+        "@types/vscode": "^1.83.0",
+        "@types/webpack-env": "^1.18.2",
+        "@typescript-eslint/eslint-plugin": "^6.7.4",
+        "@typescript-eslint/parser": "^6.7.4",
         "copy-webpack-plugin": "^11.0.0",
-        "eslint": "^8.46.0",
+        "eslint": "^8.51.0",
         "eslint-config-prettier": "^9.0.0",
-        "prettier": "3.0.1",
+        "prettier": "3.0.3",
         "process": "^0.11.10",
         "strip-json-comments-loader": "^0.0.2",
-        "ts-loader": "^9.4.4",
-        "typescript": "^5.1.6",
+        "ts-loader": "^9.5.0",
+        "typescript": "^5.2.2",
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4"
     },
