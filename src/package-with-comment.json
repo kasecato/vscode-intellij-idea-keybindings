@@ -1398,15 +1398,15 @@
             {
                 "key": "ctrl+alt+shift+[ArrowDown]",
                 "mac": "ctrl+alt+shift+[ArrowDown]",
-                "command": "editor.action.dirtydiff.next",
-                "when": "editorTextFocus",
+                "command": "workbench.action.editor.nextChange",
+                "when": "editorTextFocus && !textCompareEditorActive",
                 "intellij": "Next Change"
             },
             {
                 "key": "ctrl+alt+shift+[ArrowUp]",
                 "mac": "ctrl+alt+shift+[ArrowUp]",
-                "command": "editor.action.dirtydiff.previous",
-                "when": "editorTextFocus",
+                "command": "workbench.action.editor.previousChange",
+                "when": "editorTextFocus && !textCompareEditorActive",
                 "intellij": "Previous Change"
             },
             {
