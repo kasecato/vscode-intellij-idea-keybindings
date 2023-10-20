@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.5.12 (Oct 20, 2023)
+
+* revert - Commenting to move to next line as in Idea. See [#233](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/233)
+
 ## 1.5.11 (Oct 8, 2023)
 
 * bug fix - Fix Quote causing failed Mac imports. See [#308](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/308)
