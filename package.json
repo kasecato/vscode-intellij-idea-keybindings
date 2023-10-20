@@ -176,26 +176,14 @@
             {
                 "key": "ctrl+[Slash]",
                 "mac": "cmd+[Slash]",
-                "command": "runCommands",
-                "args": {
-                    "commands": [
-                        "editor.action.commentLine",
-                        "cursorDown"
-                    ]
-                },
+                "command": "editor.action.commentLine",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Comment/uncomment with line comment"
             },
             {
                 "key": "ctrl+[NumpadDivide]",
                 "mac": "cmd+[NumpadDivide]",
-                "command": "runCommands",
-                "args": {
-                    "commands": [
-                        "editor.action.commentLine",
-                        "cursorDown"
-                    ]
-                },
+                "command": "editor.action.commentLine",
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Comment/uncomment with line comment"
             },
