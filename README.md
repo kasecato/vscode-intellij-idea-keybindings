@@ -55,6 +55,7 @@ ctrl+shift+] | cmd+shift+] | Select till code block end | N/A
 ctrl+shift+[ | cmd+shift+[ | Select till code block start | N/A
 ctrl+delete | alt+delete | Delete to word end | ✅
 ctrl+backspace | alt+backspace | Delete to word start | ✅
+ctrl+. | cmd+. | Fold selection | ✅
 ctrl+= | cmd+= | Expand code block | ✅
 ctrl+numpad_add | cmd+numpad_add | Expand code block | ✅
 ctrl+- | cmd+- | Collapse code block | ✅

@@ -580,6 +580,13 @@
                 "intellij": "Delete to hump start"
             },
             {
+                "key": "ctrl+[Period]",
+                "mac": "cmd+[Period]",
+                "command": "editor.toggleFold",
+                "when": "editorFocus && foldingEnabled",
+                "intellij": "Fold selection"
+            },
+            {
                 "key": "ctrl+[Equal]",
                 "mac": "cmd+[Equal]",
                 "command": "editor.unfold",
