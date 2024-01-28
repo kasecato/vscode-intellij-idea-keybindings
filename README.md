@@ -146,6 +146,7 @@ shift+escape | shift+escape | Hide active or last active window (Problems) | ✅
 shift+escape | shift+escape | Hide active or last active window (Debug Console) | ✅
 shift+escape | shift+escape | Hide active or last active window (Terminal) | ✅
 shift+escape | shift+escape | Hide active or last active window (Panel) | N/A
+ctrl+shift+' | ctrl+cmd+' | Maximize Tool Window (Problems, Output, Debug Console, Terminal | ✅
 ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
 ctrl+g | cmd+l | Go to line | ✅
 ctrl+e | cmd+e | Recent files popup | ✅
