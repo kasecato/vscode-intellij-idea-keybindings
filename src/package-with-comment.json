@@ -1672,28 +1672,28 @@
                 "key": "alt+[Digit1]",
                 "mac": "cmd+[Digit1]",
                 "command": "workbench.view.explorer",
-                "when": "editorFocus",
+                "when": "!explorerViewletFocus",
                 "intellij": "Open corresponding tool window (Explorer)"
             },
             {
                 "key": "alt+[Numpad1]",
                 "mac": "cmd+[Numpad1]",
                 "command": "workbench.view.explorer",
-                "when": "editorFocus",
+                "when": "!explorerViewletFocus",
                 "intellij": "Open corresponding tool window (Explorer)"
             },
             {
                 "key": "alt+[Digit1]",
                 "mac": "cmd+[Digit1]",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus",
+                "when": "explorerViewletFocus",
                 "intellij": "Close corresponding tool window (Explorer)"
             },
             {
                 "key": "alt+[Numpad1]",
                 "mac": "cmd+[Numpad1]",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus",
+                "when": "explorerViewletFocus",
                 "intellij": "Close corresponding tool window (Explorer)"
             },
             {
@@ -1728,56 +1728,56 @@
                 "key": "alt+[Digit5]",
                 "mac": "cmd+[Digit5]",
                 "command": "workbench.view.debug",
-                "when": "editorFocus",
+                "when": "activeViewlet != 'workbench.view.debug'",
                 "intellij": "Open corresponding tool window (Debug)"
             },
             {
                 "key": "alt+[Numpad5]",
                 "mac": "cmd+[Numpad5]",
                 "command": "workbench.view.debug",
-                "when": "editorFocus",
+                "when": "activeViewlet != 'workbench.view.debug'",
                 "intellij": "Open corresponding tool window (Debug)"
             },
             {
                 "key": "alt+[Digit5]",
                 "mac": "cmd+[Digit5]",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus",
+                "when": "activeViewlet == 'workbench.view.debug'",
                 "intellij": "Close corresponding tool window (Debug)"
             },
             {
                 "key": "alt+[Numpad5]",
                 "mac": "cmd+[Numpad5]",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus",
+                "when": "activeViewlet == 'workbench.view.debug'",
                 "intellij": "Close corresponding tool window (Debug)"
             },
             {
                 "key": "alt+[Digit9]",
                 "mac": "cmd+[Digit9]",
                 "command": "workbench.view.scm",
-                "when": "editorFocus",
+                "when": "activeViewlet != 'workbench.view.scm'",
                 "intellij": "Open corresponding tool window (Git)"
             },
             {
                 "key": "alt+[Numpad9]",
                 "mac": "cmd+[Numpad9]",
                 "command": "workbench.view.scm",
-                "when": "editorFocus",
+                "when": "activeViewlet != 'workbench.view.scm'",
                 "intellij": "Open corresponding tool window (Git)"
             },
             {
                 "key": "alt+[Digit9]",
                 "mac": "cmd+[Digit9]",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus",
+                "when": "activeViewlet == 'workbench.view.scm'",
                 "intellij": "Close corresponding tool window (Git)"
             },
             {
                 "key": "alt+[Numpad9]",
                 "mac": "cmd+[Numpad9]",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus",
+                "when": "activeViewlet == 'workbench.view.scm'",
                 "intellij": "Close corresponding tool window (Git)"
             },
             {
