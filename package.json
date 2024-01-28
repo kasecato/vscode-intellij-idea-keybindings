@@ -1539,7 +1539,7 @@
                 "mac": "shift+cmd+c",
                 "command": "copyFilePath",
                 "intellij": "Copy paths",
-                "when": "!editorFocus"
+                "when": "!editorFocus && !terminalFocus"
             },
             
             {
