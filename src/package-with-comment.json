@@ -1104,6 +1104,13 @@
             },
 */
             {
+                "key": "ctrl+shift+[Quote]",
+                "mac": "cmd+shift+[Quote]",
+                "command": "workbench.action.toggleMaximizedPanel",
+                "when": "problemFocus || focusedView == 'workbench.panel.output' || inDebugRepl || terminalFocus",
+                "intellij": "Maximize Tool Window (Problems, Output, Debug Console, Terminal)"
+            },
+            {
                 "key": "ctrl+g",
                 "mac": "cmd+l",
                 "command": "workbench.action.gotoLine",
