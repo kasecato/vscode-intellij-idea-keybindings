@@ -394,6 +394,7 @@ After the initial compile, the source files will be watched and recompiled when 
 * [@bananer](https://github.com/bananer)
 * [@ShellWen](https://github.com/ShellWen)
 * [@Strajk](https://github.com/Strajk)
+* [@LunNova](https://github.com/LunNova)
 
 ## License
 

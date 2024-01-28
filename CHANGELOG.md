@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.5.13 (Jan 28, 2024)
+
+* bug fix - copyFilePath: add !terminalFocus to condition . See [#317](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/317)
+* enhancement - Fold & Collapse. See [#55](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/55)
+* enhancement - MacOS: Shift + Cmd + `(Maxmize Tool Window) can be mapped to Toggle Maximized Panel. See [#105](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/105)
+
 ## 1.5.12 (Oct 20, 2023)
 
 * revert - Commenting to move to next line as in Idea. See [#233](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/233)
