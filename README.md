@@ -53,8 +53,18 @@ shift+enter | shift+enter | Start new line | ✅
 ctrl+shift+u | cmd+shift+u | Toggle case for word at caret or selected block | N/A
 ctrl+shift+] | cmd+shift+] | Select till code block end | N/A
 ctrl+shift+[ | cmd+shift+[ | Select till code block start | N/A
+ctrl+right | alt+right | Cursor to word end | ✅
+ctrl+right | alt+right | Cursor to hump end | ✅
+ctrl+left | alt+left | Cursor to word start | ✅
+ctrl+left | alt+left | Cursor to hump start | ✅
+ctrl+shift+right | alt+shift+right | Select to word end | ✅
+ctrl+shift+right | alt+shift+right | Select to hump end | ✅
+ctrl+shift+left | alt+shift+left | Select to word start | ✅
+ctrl+shift+left | alt+shift+left | Select to hump start | ✅
 ctrl+delete | alt+delete | Delete to word end | ✅
+ctrl+delete | alt+delete | Delete to hump end | ✅
 ctrl+backspace | alt+backspace | Delete to word start | ✅
+ctrl+backspace | alt+backspace | Delete to hump start | ✅
 ctrl+. | cmd+. | Fold selection | ✅
 ctrl+= | cmd+= | Expand code block | ✅
 ctrl+numpad_add | cmd+numpad_add | Expand code block | ✅
@@ -147,8 +157,8 @@ shift+escape | shift+escape | Hide active or last active window (Problems) | ✅
 shift+escape | shift+escape | Hide active or last active window (Debug Console) | ✅
 shift+escape | shift+escape | Hide active or last active window (Terminal) | ✅
 shift+escape | shift+escape | Hide active or last active window (Panel) | N/A
-ctrl+shift+' | ctrl+cmd+' | Maximize Tool Window (Problems, Output, Debug Console, Terminal | ✅
 ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
+ctrl+shift+' | cmd+shift+' | Maximize Tool Window (Problems, Output, Debug Console, Terminal) | ✅
 ctrl+g | cmd+l | Go to line | ✅
 ctrl+e | cmd+e | Recent files popup | ✅
 ctrl+alt+left | cmd+alt+left | Navigate back | ✅
@@ -280,6 +290,7 @@ alt+tab | alt+tab | Goto next splitter | ✅
 shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
 enter | enter | Open Highlighted File (Explorer) | ✅
 alt+home | alt+home | Jump to Navigation Bar | ✅
+shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 
 ### CamelHumps
 
