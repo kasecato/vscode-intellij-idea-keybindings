@@ -63,6 +63,11 @@ rd.on('line', function(line) {
         
         var format = available(escape(key)) + ' | ' + available(escape(mac)) + ' | ' + intellij + ' | ';
         commandsForHeader.set(format, hasCommand(command) || commandsForHeader.get(format));
+
+        key = '';
+        mac = '';
+        command = '';
+        intellij = '';
     }
 });
 

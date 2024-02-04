@@ -129,6 +129,12 @@
                 "when": "editorTextFocus",
                 "intellij": "Quick documentation lookup"
             },
+            {
+                "mac": "[F1]",
+                "command": "editor.action.showHover",
+                "when": "editorTextFocus",
+                "intellij": "Quick documentation lookup"
+            },
             
             
             {
