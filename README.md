@@ -17,6 +17,7 @@ tab | tab | Choose Lookup Item Replace | ✅
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
+N/A | f1 | Quick documentation lookup | ✅
 ctrl+f1 | shift+f1 | External Doc | N/A
 ctrl+mouseover | cmd+mouseover | Brief Info | N/A
 ctrl+f1 | cmd+f1 | Show descriptions of error or warning at caret | ✅
