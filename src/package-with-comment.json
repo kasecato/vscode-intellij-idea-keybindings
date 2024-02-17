@@ -723,6 +723,20 @@
                 "command": "editor.action.toggleColumnSelection",
                 "intellij": "Column Selection Mode"
             },
+            {
+                "key": "shift+alt+[Period]",
+                "mac": "shift+ctrl+[Period]",
+                "command": "editor.action.fontZoomIn",
+                "when": "editorTextFocus",
+                "intellij": "Increase Font Size in All Editors"
+            },
+            {
+                "key": "shift+alt+[Comma]",
+                "mac": "shift+ctrl+[Comma]",
+                "command": "editor.action.fontZoomOut",
+                "when": "editorTextFocus",
+                "intellij": "Decrease Font Size in All Editors"
+            },
             /*---------------------------------------------------------------*\
              * Search/Replace
             \*---------------------------------------------------------------*/
