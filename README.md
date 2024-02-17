@@ -85,6 +85,8 @@ alt+shift+j | ctrl+shift+g | Unselect Occurrence | ✅
 shift+alt+down | shift+alt+down | Move Line Down | ✅
 shift+alt+up | shift+alt+up | Move Line Up | ✅
 shift+alt+insert | shift+cmd+8 | Column Selection Mode | ✅
+shift+alt+. | shift+ctrl+. | Increase Font Size in All Editors | ✅
+shift+alt+, | shift+ctrl+, | Decrease Font Size in All Editors | ✅
 
 ### Search/Replace
 
