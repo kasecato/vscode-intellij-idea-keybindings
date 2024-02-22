@@ -1158,7 +1158,17 @@
                 "when": "explorerViewletVisible && filesExplorerFocus",
                 "intellij": "Rename (File)"
             },
-            
+            {
+                "key": "ctrl+[F6]",
+                "mac": "cmd+[F6]",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "args": {
+                    "kind": "refactor.change.signature",
+                    "apply": "ifSingle"
+                },
+                "intellij": "Change Signature"
+            },
             
             {
                 "key": "ctrl+alt+m",
@@ -1204,7 +1214,17 @@
                     "apply": "ifSingle"
                 }
             },
-            
+            {
+                "key": "ctrl+alt+p",
+                "mac": "cmd+alt+p",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "args": {
+                    "kind": "refactor.introduce.parameter",
+                    "apply": "ifSingle"
+                },
+                "intellij": "Introduce Parameter"
+            },
             
             {
                 "key": "ctrl+alt+k",
@@ -1370,7 +1390,6 @@
             },
             
             {
-                "key": "ctrl+alt+f", 
                 "mac": "ctrl+cmd+f",
                 "command": "workbench.action.toggleFullScreen",
                 "intellij": "Toggle full screen mode"

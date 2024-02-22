@@ -214,13 +214,13 @@ alt+delete | cmd+delete | Safe Delete | N/A
 shift+f6 | shift+f6 | Rename | ✅
 shift+f6 | shift+f6 | Select All Occurrences | ✅
 shift+f6 | shift+f6 | Rename (File) | ✅
-ctrl+f6 | cmd+f6 | Change Signature | N/A
+ctrl+f6 | cmd+f6 | Change Signature | ✅
 ctrl+alt+n | cmd+alt+n | Inline | N/A
 ctrl+alt+m | cmd+alt+m | Extract Method | ✅
 ctrl+alt+v | cmd+alt+v | Extract Variable | ✅
 ctrl+alt+f | cmd+alt+f | Extract Field | ✅
 ctrl+alt+c | cmd+alt+c | Extract Constant | ✅
-ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
+ctrl+alt+p | cmd+alt+p | Introduce Parameter | ✅
 
 ### VCS/Local History
 
@@ -263,7 +263,7 @@ alt+9 | cmd+9 | Close corresponding tool window (Git) | ✅
 alt+numpad9 | cmd+numpad9 | Close corresponding tool window (Git) | ✅
 ctrl+s | cmd+s | Save all | ✅
 ctrl+alt+y | cmd+alt+y | Synchronize | N/A
-ctrl+alt+f | ctrl+cmd+f | Toggle full screen mode | ✅
+N/A | ctrl+cmd+f | Toggle full screen mode | ✅
 ctrl+shift+f12 | cmd+shift+f12 | Toggle maximizing editor | ✅
 alt+shift+f | alt+shift+f | Add to Favorites | N/A
 alt+shift+i | alt+shift+i | Inspect current file with current profile | N/A

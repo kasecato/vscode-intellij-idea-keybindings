@@ -1539,16 +1539,17 @@
                 "when": "explorerViewletVisible && filesExplorerFocus",
                 "intellij": "Rename (File)"
             },
-            /*
             {
                 "key": "ctrl+[F6]",
                 "mac": "cmd+[F6]",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Change Signature",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.change.signature",
+                    "apply": "ifSingle"
+                },
+                "intellij": "Change Signature"
             },
-*/
             /*
             {
                 "key": "ctrl+alt+n",
@@ -1603,16 +1604,17 @@
                     "apply": "ifSingle"
                 }
             },
-            /*
             {
                 "key": "ctrl+alt+p",
                 "mac": "cmd+alt+p",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Extract Parameter",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.introduce.parameter",
+                    "apply": "ifSingle"
+                },
+                "intellij": "Introduce Parameter"
             },
-*/
             /*---------------------------------------------------------------*\
              * VCS/Local History
             \*---------------------------------------------------------------*/
@@ -1816,7 +1818,6 @@
             },
 */
             {
-                "key": "ctrl+alt+f", // N/A
                 "mac": "ctrl+cmd+f",
                 "command": "workbench.action.toggleFullScreen",
                 "intellij": "Toggle full screen mode"
