@@ -1604,16 +1604,17 @@
                     "apply": "ifSingle"
                 }
             },
-            /*
             {
                 "key": "ctrl+alt+p",
                 "mac": "cmd+alt+p",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Extract Parameter",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.introduce.parameter",
+                    "apply": "ifSingle"
+                },
+                "intellij": "Introduce Parameter"
             },
-*/
             /*---------------------------------------------------------------*\
              * VCS/Local History
             \*---------------------------------------------------------------*/

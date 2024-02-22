@@ -220,7 +220,7 @@ ctrl+alt+m | cmd+alt+m | Extract Method | ✅
 ctrl+alt+v | cmd+alt+v | Extract Variable | ✅
 ctrl+alt+f | cmd+alt+f | Extract Field | ✅
 ctrl+alt+c | cmd+alt+c | Extract Constant | ✅
-ctrl+alt+p | cmd+alt+p | Extract Parameter | N/A
+ctrl+alt+p | cmd+alt+p | Introduce Parameter | ✅
 
 ### VCS/Local History
 

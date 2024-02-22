@@ -1214,7 +1214,17 @@
                     "apply": "ifSingle"
                 }
             },
-            
+            {
+                "key": "ctrl+alt+p",
+                "mac": "cmd+alt+p",
+                "command": "editor.action.codeAction",
+                "when": "editorTextFocus",
+                "args": {
+                    "kind": "refactor.introduce.parameter",
+                    "apply": "ifSingle"
+                },
+                "intellij": "Introduce Parameter"
+            },
             
             {
                 "key": "ctrl+alt+k",
