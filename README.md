@@ -263,7 +263,7 @@ alt+9 | cmd+9 | Close corresponding tool window (Git) | ✅
 alt+numpad9 | cmd+numpad9 | Close corresponding tool window (Git) | ✅
 ctrl+s | cmd+s | Save all | ✅
 ctrl+alt+y | cmd+alt+y | Synchronize | N/A
-ctrl+alt+f | ctrl+cmd+f | Toggle full screen mode | ✅
+N/A | ctrl+cmd+f | Toggle full screen mode | ✅
 ctrl+shift+f12 | cmd+shift+f12 | Toggle maximizing editor | ✅
 alt+shift+f | alt+shift+f | Add to Favorites | N/A
 alt+shift+i | alt+shift+i | Inspect current file with current profile | N/A

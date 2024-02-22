@@ -1816,7 +1816,6 @@
             },
 */
             {
-                "key": "ctrl+alt+f", // N/A
                 "mac": "ctrl+cmd+f",
                 "command": "workbench.action.toggleFullScreen",
                 "intellij": "Toggle full screen mode"
