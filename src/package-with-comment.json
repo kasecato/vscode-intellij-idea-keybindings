@@ -1539,16 +1539,17 @@
                 "when": "explorerViewletVisible && filesExplorerFocus",
                 "intellij": "Rename (File)"
             },
-            /*
             {
                 "key": "ctrl+[F6]",
                 "mac": "cmd+[F6]",
-                "command": "",
+                "command": "editor.action.codeAction",
                 "when": "editorTextFocus",
-                "intellij": "Change Signature",
-                "todo": "N/A"
+                "args": {
+                    "kind": "refactor.change.signature",
+                    "apply": "ifSingle"
+                },
+                "intellij": "Change Signature"
             },
-*/
             /*
             {
                 "key": "ctrl+alt+n",

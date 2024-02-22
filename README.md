@@ -214,7 +214,7 @@ alt+delete | cmd+delete | Safe Delete | N/A
 shift+f6 | shift+f6 | Rename | ✅
 shift+f6 | shift+f6 | Select All Occurrences | ✅
 shift+f6 | shift+f6 | Rename (File) | ✅
-ctrl+f6 | cmd+f6 | Change Signature | N/A
+ctrl+f6 | cmd+f6 | Change Signature | ✅
 ctrl+alt+n | cmd+alt+n | Inline | N/A
 ctrl+alt+m | cmd+alt+m | Extract Method | ✅
 ctrl+alt+v | cmd+alt+v | Extract Variable | ✅
