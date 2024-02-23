@@ -292,6 +292,7 @@ alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 alt+tab | alt+tab | Goto next splitter | ✅
 shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
 enter | enter | Open Highlighted File (Explorer) | ✅
+f4 | f4 | Open Highlighted File (Explorer) | ✅
 alt+home | cmd+up | Jump to Navigation Bar | ✅
 shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 

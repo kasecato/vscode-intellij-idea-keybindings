@@ -2027,7 +2027,14 @@
                 "mac": "enter",
                 "command": "list.select",
                 "intellij": "Open Highlighted File (Explorer)",
-                "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder"
+                "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+            },
+            {
+                "key": "[F4]",
+                "mac": "[F4]",
+                "command": "explorer.openAndPassFocus",
+                "intellij": "Open Highlighted File (Explorer)",
+                "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
             },
             {
                 "key": "enter",
