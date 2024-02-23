@@ -1,10 +1,23 @@
 # Change Log
 
+## 1.6.0 (Feb 23, 2024)
+
+* bug fix - Navigate to explorer, changes. See [#119](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/119)
+* bug fix - Refactoring shortcuts not work on MacOS. See [#192](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/192)
+* bug fix - ctrl+e or cmd+e : Recent files popup \[bug\]. See [#213](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/213)
+* bug fix - CursorBottom does not work in mac. See [#229](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/229)
+* enhancement - Map F1 to quick documentation. See [#138](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/138)
+* enhancement - how can text size zoom?. See [#168](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/168)
+* enhancement - Go to bracket wrong shortcut. See [#224](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/224)
+* enhancement - ctrl+d in explorer should diff 2 selected files. See [#231](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/231)
+* enhancement - FR: F4 in explorer to open file. See [#232](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/232)
+
+
 ## 1.5.13 (Jan 28, 2024)
 
 * bug fix - copyFilePath: add !terminalFocus to condition . See [#317](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/317)
 * enhancement - Fold & Collapse. See [#55](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/55)
-* enhancement - MacOS: Shift + Cmd + `(Maxmize Tool Window) can be mapped to Toggle Maximized Panel. See [#105](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/105)
+* enhancement - MacOS: Shift + Cmd + (Maxmize Tool Window) can be mapped to Toggle Maximized Panel. See [#105](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/105)
 
 ## 1.5.12 (Oct 20, 2023)
 
