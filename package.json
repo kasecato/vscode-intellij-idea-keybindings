@@ -1100,6 +1100,13 @@
                 "intellij": "Move Caret to Text End"
             },
             {
+                "key": "ctrl+shift+m",
+                "mac": "ctrl+m",
+                "command": "editor.action.jumpToBracket",
+                "when": "editorTextFocus",
+                "intellij": "Move Caret to Matching Brace"
+            },
+            {
                 "key": "ctrl+[End]",
                 "mac": "cmd+[ArrowDown]",
                 "command": "notebook.focusBottom",
