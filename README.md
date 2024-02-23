@@ -4,8 +4,6 @@
 
 Port of IntelliJ IDEA key bindings for VS Code. Includes keymaps for popular JetBrains products like IntelliJ Ultimate, WebStorm, PyCharm, PHP Storm, etc.
 
-## Usage
-
 ### Editing
 
 Linux, Windows | macOS | Feature | Supported
@@ -201,6 +199,7 @@ ctrl+alt+shift+down | ctrl+alt+shift+down | Next Change | ✅
 ctrl+alt+shift+up | ctrl+alt+shift+up | Previous Change | ✅
 ctrl+home | cmd+home | Move Caret to Text Start | ✅
 ctrl+end | cmd+end | Move Caret to Text End | ✅
+ctrl+shift+m | ctrl+m | Move Caret to Matching Brace | ✅
 ctrl+shift+t | cmd+shift+t | Go to Test | ✅
 
 ### Refactoring
