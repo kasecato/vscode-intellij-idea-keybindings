@@ -279,6 +279,7 @@ shift+f12 | shift+f12 | Restore Default layout | ✅
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
 ctrl+d | cmd+d | Compare Files | ✅
+ctrl+d | cmd+d | Compare Selected Files | ✅
 f7 | f7 | Next difference | ✅
 shift+f7 | shift+f7 | Previous difference | ✅
 alt+ctrl+enter | alt+cmd+enter | Start new line before current | ✅
@@ -291,7 +292,7 @@ alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
 alt+tab | alt+tab | Goto next splitter | ✅
 shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
 enter | enter | Open Highlighted File (Explorer) | ✅
-alt+home | alt+home | Jump to Navigation Bar | ✅
+alt+home | cmd+up | Jump to Navigation Bar | ✅
 shift+ctrl+c | shift+cmd+c | Copy paths | ✅
 
 ### CamelHumps
