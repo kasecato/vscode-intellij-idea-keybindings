@@ -1585,10 +1585,10 @@
             },
             {
                 "key": "alt+[Home]",
-                "mac": "alt+[Home]",
-                "command": "breadcrumbs.focus",
+                "mac": "cmd+[ArrowUp]",
+                "command": "breadcrumbs.focusAndSelect",
                 "intellij": "Jump to Navigation Bar",
-                "when": "breadcrumbsPossible"
+                "when": "breadcrumbsPossible && breadcrumbsVisible"
             },
             {
                 "key": "shift+ctrl+c",
