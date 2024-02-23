@@ -1454,7 +1454,7 @@
                 "key": "ctrl+d",
                 "mac": "cmd+d",
                 "command": "workbench.files.action.compareFileWith",
-                "when": "filesExplorerFocus && !explorerResourceIsFolder && !inputFocus && !listDoubleSelection",
+                "when": "filesExplorerFocus && !explorerResourceIsFolder && !inputFocus && !listMultiSelection",
                 "intellij": "Compare Files"
             },
             {
