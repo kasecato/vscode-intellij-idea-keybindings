@@ -873,25 +873,21 @@
             {
                 "key": "ctrl+e",
                 "mac": "cmd+e",
-                "command": "-actions.find"
+                "command": "workbench.action.quickOpen",
+                "when": "!inQuickOpen",
+                "intellij": "Recent files popup"
             },
             {
                 "key": "ctrl+e",
                 "mac": "cmd+e",
-                "command": "-workbench.action.openRecent"
-            },
-            {
-                "key": "ctrl+e",
-                "mac": "cmd+e",
-                "command": "workbench.action.openPreviousEditorFromHistory",
+                "command": "workbench.action.quickOpenNavigateNextInRecentFilesPicker",
                 "when": "inQuickOpen"
             },
             {
-                "key": "ctrl+e",
-                "mac": "cmd+e",
-                "when": "!inQuickOpen",
-                "command": "workbench.action.openRecent",
-                "intellij": "Recent files popup"
+                "key": "ctrl+shift+e",
+                "mac": "cmd+shift+e",
+                "command": "workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+                "when": "inQuickOpen"
             },
             {
                 "key": "ctrl+alt+[ArrowLeft]",
