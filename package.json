@@ -892,7 +892,13 @@
             {
                 "key": "ctrl+alt+[ArrowLeft]",
                 "mac": "cmd+alt+[ArrowLeft]",
+                "command": "-workbench.action.moveEditorToPreviousGroup"
+            },
+            {
+                "key": "ctrl+alt+[ArrowLeft]",
+                "mac": "cmd+alt+[ArrowLeft]",
                 "command": "workbench.action.navigateBack",
+                "when": "canNavigateBack",
                 "intellij": "Navigate back"
             },
             {
@@ -904,18 +910,26 @@
                 "key": "",
                 "mac": "cmd+[",
                 "command": "workbench.action.navigateBack",
+                "when": "canNavigateBack",
                 "intellij": "Navigate back"
             },
             {
                 "key": "ctrl+alt+[ArrowRight]",
                 "mac": "cmd+alt+[ArrowRight]",
+                "command": "-workbench.action.moveEditorToNextGroup"
+            },
+            {
+                "key": "ctrl+alt+[ArrowRight]",
+                "mac": "cmd+alt+[ArrowRight]",
                 "command": "workbench.action.navigateForward",
+                "when": "canNavigateForward",
                 "intellij": "Navigate forward"
             },
             {
                 "key": "",
                 "mac": "cmd+]",
                 "command": "workbench.action.navigateForward",
+                "when": "canNavigateForward",
                 "intellij": "Navigate forward"
             },
             {
