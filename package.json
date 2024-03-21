@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.86.0"
@@ -61,7 +61,8 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "activationEvents": [
-        "onCommand:intellij.importKeyMapsSchema"
+        "onCommand:intellij.importKeyMapsSchema",
+        "onCommand:intellij.openInOppositeGroup"
     ],
     "extensionKind": [
         "ui"
@@ -186,6 +187,13 @@
                 "intellij": "Implement methods"
             },
             
+            {
+                "command": "intellij.openInOppositeGroup",
+                "key": "ctrl+[Backslash]",
+                "mac": "cmd+[Backslash]",
+                "when": "editorTextFocus",
+                "intellij": "Open in Opposite Group"
+            },
             {
                 "key": "ctrl+[Slash]",
                 "mac": "cmd+[Slash]",

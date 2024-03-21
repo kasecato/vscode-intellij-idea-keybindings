@@ -233,6 +233,13 @@
             },
 */
             {
+                "command": "extension.openInOppositeGroup",
+                "key": "ctrl+[Backslash]",
+                "mac": "cmd+[Backslash]",
+                "when": "editorTextFocus",
+                "intellij": "Open in Opposite Group"
+            },
+            {
                 "key": "ctrl+[Slash]",
                 "mac": "cmd+[Slash]",
                 "command": "editor.action.commentLine",

@@ -15,10 +15,12 @@ import { FileReaderDefault } from './importer/reader/FileReaderDefault';
 import { Picker, UNSELECT } from './importer/reader/Picker';
 import { IntelliJSyntaxAnalyzer } from './importer/syntax-analyzer/IntelliJSyntaxAnalyzer';
 import { FileOpen } from './importer/writer/FileOpen';
+import { IntellijExtension } from './importer/extension/IntellijExtension';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
-        vscode.commands.registerCommand('intellij.importKeyMapsSchema', async () => await importKeyMapsSchema(context))
+        vscode.commands.registerCommand('intellij.importKeyMapsSchema', async () => await importKeyMapsSchema(context)),
+        vscode.commands.registerCommand('intellij.openInOppositeGroup', async () => await IntellijExtension.openInOppositeGroup())
     );
 }
 
