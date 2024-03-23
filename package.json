@@ -363,7 +363,7 @@
                 "key": "shift+[Enter]",
                 "mac": "shift+[Enter]",
                 "command": "editor.action.insertLineAfter",
-                "when": "editorTextFocus && !editorReadonly",
+                "when": "editorTextFocus && !editorReadonly && !notebookEditorFocused",
                 "intellij": "Start new line"
             },
             {
