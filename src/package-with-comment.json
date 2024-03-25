@@ -61,7 +61,8 @@
         "url": "https://github.com/kasecato/vscode-intellij-idea-keybindings/issues"
     },
     "activationEvents": [
-        "onCommand:intellij.importKeyMapsSchema"
+        "onCommand:intellij.importKeyMapsSchema",
+        "onCommand:intellij.openInOppositeGroup"
     ],
     "extensionKind": [
         "ui"
@@ -233,9 +234,7 @@
             },
 */
             {
-                "command": "extension.openInOppositeGroup",
-                "key": "ctrl+[Backslash]",
-                "mac": "cmd+[Backslash]",
+                "command": "intellij.openInOppositeGroup",
                 "when": "editorTextFocus",
                 "intellij": "Open in Opposite Group"
             },
