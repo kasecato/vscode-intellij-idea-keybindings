@@ -278,6 +278,7 @@ shift+f12 | shift+f12 | Restore Default layout | ✅
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
+N/A | N/A | Open in Opposite Group | ✅
 ctrl+d | cmd+d | Compare Files | ✅
 ctrl+d | cmd+d | Compare Selected Files | ✅
 f7 | f7 | Next difference | ✅
