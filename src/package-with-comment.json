@@ -518,14 +518,14 @@
                 "key": "ctrl+[ArrowRight]",
                 "mac": "alt+[ArrowRight]",
                 "command": "cursorWordRight",
-                "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && !inlineSuggestionVisible && !config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Cursor to word end"
             },
             {
                 "key": "ctrl+[ArrowRight]",
                 "mac": "alt+[ArrowRight]",
                 "command": "cursorWordPartRight",
-                "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords",
+                "when": "editorTextFocus && !inlineSuggestionVisible && config.intellij-idea-keybindings.useCamelHumpsWords",
                 "intellij": "Cursor to hump end"
             },
             {
