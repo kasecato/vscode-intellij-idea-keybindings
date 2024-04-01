@@ -322,7 +322,7 @@ Note: CamelHumps mode with double-click is not supported.
 
 ## Installation
 
-1. Install Visual Studio Code 1.86.0 or higher
+1. Install Visual Studio Code 1.87.0 or higher
 1. Launch Code
 1. From the extension view `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (macOS)
 1. Search and Choose the extension `Intellij IDEA Keybindings`
