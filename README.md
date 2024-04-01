@@ -12,6 +12,7 @@ ctrl+space | ctrl+space | Basic code completion (the name of any class, method o
 ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 enter | enter | Choose Lookup Item | ✅
 tab | tab | Choose Lookup Item Replace | ✅
+enter | enter | Next Template Variable or Finish In-Place Refactoring | ✅
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
@@ -24,6 +25,7 @@ alt+insert | cmd+n | New... | ✅
 ctrl+o | ctrl+o | Override methods | ✅
 ctrl+i | ctrl+i | Implement methods | ✅
 ctrl+alt+t | cmd+alt+t | Surround with... (if..else, try..catch, for, synchronized, etc.) | N/A
+N/A | N/A | Open in Opposite Group | ✅
 ctrl+/ | cmd+/ | Comment/uncomment with line comment | ✅
 ctrl+numpad_divide | cmd+numpad_divide | Comment/uncomment with line comment | ✅
 ctrl+shift+/ | cmd+alt+/ | Comment/uncomment with block comment | ✅
@@ -278,7 +280,6 @@ shift+f12 | shift+f12 | Restore Default layout | ✅
 
 Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
-N/A | N/A | Open in Opposite Group | ✅
 ctrl+d | cmd+d | Compare Files | ✅
 ctrl+d | cmd+d | Compare Selected Files | ✅
 f7 | f7 | Next difference | ✅
