@@ -1,5 +1,14 @@
 # Change Log
 
+## 1.6.1 (Apr 1, 2024)
+
+* bug fix - Viewed file should be remembered. See [#237](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/237)
+* bug fix - keybindings of jupyter notebook. See [#281](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/281)
+* bug fix - Shortcut keys conflict with copilot. See [@335](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/335)
+* enhancement - Please Support in Using Enter to Apply Code Suggestion. See [#239](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/239)
+* enhancement - Add support for camel humps. See [#300](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/300)
+* enhancement - Add "Open in Opposite Group" Feature to Improve Editor Navigation. See [#336](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/336)
+
 ## 1.6.0 (Feb 23, 2024)
 
 * bug fix - Navigate to explorer, changes. See [#119](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/119)
@@ -11,7 +20,6 @@
 * enhancement - Go to bracket wrong shortcut. See [#224](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/224)
 * enhancement - ctrl+d in explorer should diff 2 selected files. See [#231](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/231)
 * enhancement - FR: F4 in explorer to open file. See [#232](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/232)
-
 
 ## 1.5.13 (Jan 28, 2024)
 

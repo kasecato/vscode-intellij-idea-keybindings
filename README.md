@@ -409,6 +409,7 @@ After the initial compile, the source files will be watched and recompiled when 
 * [@ShellWen](https://github.com/ShellWen)
 * [@Strajk](https://github.com/Strajk)
 * [@LunNova](https://github.com/LunNova)
+* [@sfyr111](https://github.com/sfyr111)
 
 ## License
 
