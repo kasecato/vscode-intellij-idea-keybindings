@@ -213,7 +213,7 @@
     },
     {
         "intellij": "multiply",
-        "vscode": "NumpadMultiply"
+        "vscode": "numpad_multiply"
     },
     {
         "intellij": "add",
