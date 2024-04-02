@@ -5,15 +5,15 @@
     },
     {
         "intellij": "back_quote",
-        "vscode": "[Backquote]"
+        "vscode": "`"
     },
     {
         "intellij": "minus",
-        "vscode": "[Minus]"
+        "vscode": "-"
     },
     {
         "intellij": "equals",
-        "vscode": "[Equal]"
+        "vscode": "="
     },
     {
         "intellij": "open_bracket",
@@ -21,15 +21,15 @@
     },
     {
         "intellij": "close_bracket",
-        "vscode": "[BracketRight]"
+        "vscode": "]"
     },
     {
         "intellij": "back_slash",
-        "vscode": "[Backslash]"
+        "vscode": "\\"
     },
     {
         "intellij": "semicolon",
-        "vscode": "[Semicolon]"
+        "vscode": ";"
     },
     {
         "intellij": "quotedbl",
@@ -37,19 +37,19 @@
     },
     {
         "intellij": "quote",
-        "vscode": "[Quote]"
+        "vscode": "'"
     },
     {
         "intellij": "comma",
-        "vscode": "[Comma]"
+        "vscode": ","
     },
     {
         "intellij": "period",
-        "vscode": "[Period]"
+        "vscode": "."
     },
     {
         "intellij": "slash",
-        "vscode": "[Slash]"
+        "vscode": "/"
     },
     {
         "intellij": "left_parenthesis",
@@ -61,71 +61,71 @@
     },
     {
         "intellij": "page_up",
-        "vscode": "[PageUp]"
+        "vscode": "pageup"
     },
     {
         "intellij": "page_down",
-        "vscode": "[PageDown]"
+        "vscode": "pagedown"
     },
     {
         "intellij": "left",
-        "vscode": "[ArrowLeft]"
+        "vscode": "left"
     },
     {
         "intellij": "up",
-        "vscode": "[ArrowUp]"
+        "vscode": "up"
     },
     {
         "intellij": "right",
-        "vscode": "[ArrowRight]"
+        "vscode": "right"
     },
     {
         "intellij": "down",
-        "vscode": "[ArrowDown]"
+        "vscode": "down"
     },
     {
         "intellij": "end",
-        "vscode": "[End]"
+        "vscode": "end"
     },
     {
         "intellij": "home",
-        "vscode": "[Home]"
+        "vscode": "home"
     },
     {
         "intellij": "tab",
-        "vscode": "[Tab]"
+        "vscode": "tab"
     },
     {
         "intellij": "enter",
-        "vscode": "[Enter]"
+        "vscode": "enter"
     },
     {
         "intellij": "escape",
-        "vscode": "[Escape]"
+        "vscode": "escape"
     },
     {
         "intellij": "back_space",
-        "vscode": "[Backspace]"
+        "vscode": "backspace"
     },
     {
         "intellij": "space",
-        "vscode": "[Space]"
+        "vscode": "space"
     },
     {
         "intellij": "delete",
-        "vscode": "[Delete]"
+        "vscode": "delete"
     },
     {
         "intellij": "pause",
-        "vscode": "[Pause]"
+        "vscode": "pause"
     },
     {
         "intellij": "caps_lock",
-        "vscode": "[CapsLock]"
+        "vscode": "capslock"
     },
     {
         "intellij": "insert",
-        "vscode": "[Insert]"
+        "vscode": "insert"
     },
     {
         "intellij": "exclamation_mark",
@@ -173,43 +173,43 @@
     },
     {
         "intellij": "numpad0",
-        "vscode": "[Numpad0]"
+        "vscode": "numpad0"
     },
     {
         "intellij": "numpad1",
-        "vscode": "[Numpad1]"
+        "vscode": "numpad1"
     },
     {
         "intellij": "numpad2",
-        "vscode": "[Numpad2]"
+        "vscode": "numpad2"
     },
     {
         "intellij": "numpad3",
-        "vscode": "[Numpad3]"
+        "vscode": "numpad3"
     },
     {
         "intellij": "numpad4",
-        "vscode": "[Numpad4]"
+        "vscode": "numpad4"
     },
     {
         "intellij": "numpad5",
-        "vscode": "[Numpad5]"
+        "vscode": "numpad5"
     },
     {
         "intellij": "numpad6",
-        "vscode": "[Numpad6]"
+        "vscode": "numpad6"
     },
     {
         "intellij": "numpad7",
-        "vscode": "[Numpad7]"
+        "vscode": "numpad7"
     },
     {
         "intellij": "numpad8",
-        "vscode": "[Numpad8]"
+        "vscode": "numpad8"
     },
     {
         "intellij": "numpad9",
-        "vscode": "[Numpad9]"
+        "vscode": "numpad9"
     },
     {
         "intellij": "multiply",
@@ -217,18 +217,18 @@
     },
     {
         "intellij": "add",
-        "vscode": "[NumpadAdd]"
+        "vscode": "numpad_add"
     },
     {
         "intellij": "subtract",
-        "vscode": "[NumpadSubtract]"
+        "vscode": "numpad_subtract"
     },
     {
         "intellij": "decimal",
-        "vscode": "[NumpadDecimal]"
+        "vscode": "numpad_decimal"
     },
     {
         "intellij": "divide",
-        "vscode": "[NumpadDivide]"
+        "vscode": "numpad_divide"
     }
 ]
