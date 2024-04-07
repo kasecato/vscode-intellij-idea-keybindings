@@ -88,44 +88,7 @@ const getMacOS          = (line) => /"mac": "(.*)"/.exec(line)[1];
 const getIntelliJ       = (line) => /"intellij": "(.*)"/.exec(line)[1];
 const getCommand        = (line) => /"command": "(.*)"/.exec(line)[1];
 
-const escape            = (line) => line.replace(/([`])/, "\\$1")
-                                        .replace(/\[Digit(\d)\]/, '$1')
-                                        .replace(/\[F(\d{1,2})\]/, 'f$1')
-                                        .replace('[Backquote]', '`')
-                                        .replace('[Minus]', '-')
-                                        .replace('[Equal]', '=')
-                                        .replace('[BracketLeft]', '[')
-                                        .replace('[BracketRight]', ']')
-                                        .replace('[Backslash]', '\\')
-                                        .replace('[Semicolon]', ';')
-                                        .replace('[Quote]', '\'')
-                                        .replace('[Comma]', ',')
-                                        .replace('[Period]', '.')
-                                        .replace('[Slash]', '/')
-                                        .replace('[ArrowLeft]', 'left')
-                                        .replace('[ArrowUp]', 'up')
-                                        .replace('[ArrowRight]', 'right')
-                                        .replace('[ArrowDown]', 'down')
-                                        .replace('[PageUp]', 'pageup')
-                                        .replace('[PageDown]', 'pagedown')
-                                        .replace('[End]', 'end')
-                                        .replace('[Home]', 'home')
-                                        .replace('[Tab]', 'tab')
-                                        .replace('[Enter]', 'enter')
-                                        .replace('[Escape]', 'escape')
-                                        .replace('[Space]', 'space')
-                                        .replace('[Backspace]', 'backspace')
-                                        .replace('[Delete]', 'delete')
-                                        .replace('[Pause]', 'pause')
-                                        .replace('[CapsLock]', 'capslock')
-                                        .replace('[Insert]', 'insert')
-                                        .replace(/\[Numpad(\d)\]/, 'numpad$1')
-                                        .replace('[NumpadMultiply', 'numpad_multiply')
-                                        .replace('[NumpadAdd]', 'numpad_add')
-                                        .replace('[NumpadComma]', 'numpad_separator')
-                                        .replace('[NumpadSubtract]', 'numpad_subtract')
-                                        .replace('[NumpadDecimal]', 'numpad_decimal')
-                                        .replace('[NumpadDivide]', 'numpad_divide');
+const escape            = (line) => line.replace(/([`])/, "\\$1");
 const available         = (line) => line ? line : 'N/A';
 
 
