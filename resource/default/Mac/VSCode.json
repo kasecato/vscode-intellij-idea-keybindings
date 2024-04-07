@@ -2,12 +2,12 @@
     {
         "key": "shift+tab",
         "command": "acceptAlternativeSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
+        "when": "suggestWidgetVisible && textInputFocus"
     },
     {
         "key": "shift+enter",
         "command": "acceptAlternativeSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
+        "when": "suggestWidgetVisible && textInputFocus"
     },
     {
         "key": "tab",
@@ -36,7 +36,8 @@
     },
     {
         "key": "cmd+n",
-        "command": "workbench.action.files.newUntitledFile"
+        "command": "workbench.action.files.newUntitledFile",
+        "when": "(!editorHasCodeActionsProvider && editorTextFocus) || !editorTextFocus"
     },
     {
         "key": "cmd+/",
@@ -86,7 +87,7 @@
     {
         "key": "shift+alt+down",
         "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
     },
     {
         "key": "",
@@ -111,17 +112,67 @@
     {
         "key": "cmd+enter",
         "command": "editor.action.insertLineAfter",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && !notebookEditorFocused"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorWordRight",
+        "when": "editorTextFocus && !inlineSuggestionVisible && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorWordPartRight",
+        "when": "editorTextFocus && !inlineSuggestionVisible && config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordLeft",
+        "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordPartStartLeft",
+        "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+shift+right",
+        "command": "cursorWordRightSelect",
+        "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+shift+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+shift+left",
+        "command": "cursorWordLeftSelect",
+        "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+shift+left",
+        "command": "cursorWordPartStartLeftSelect",
+        "when": "editorTextFocus && config.intellij-idea-keybindings.useCamelHumpsWords"
     },
     {
         "key": "alt+delete",
         "command": "deleteWordRight",
-        "when": "textInputFocus && !editorReadonly"
+        "when": "textInputFocus && !editorReadonly && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+delete",
+        "command": "deleteWordPartRight",
+        "when": "editorTextFocus && !editorReadonly && config.intellij-idea-keybindings.useCamelHumpsWords"
     },
     {
         "key": "alt+backspace",
         "command": "deleteWordLeft",
-        "when": "textInputFocus && !editorReadonly"
+        "when": "textInputFocus && !editorReadonly && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "deleteWordPartLeft",
+        "when": "editorTextFocus && !editorReadonly && config.intellij-idea-keybindings.useCamelHumpsWords"
     },
     {
         "key": "alt+cmd+]",
@@ -240,7 +291,8 @@
     },
     {
         "key": "",
-        "command": "workbench.action.tasks.reRunTask"
+        "command": "workbench.action.tasks.reRunTask",
+        "when": "taskCommandsRegistered && !terminalFocus"
     },
     {
         "key": "shift+cmd+d",
@@ -249,7 +301,7 @@
     {
         "key": "ctrl+f5",
         "command": "workbench.action.debug.run",
-        "when": "debuggersAvailable"
+        "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
     },
     {
         "key": "f10",
@@ -279,7 +331,7 @@
     {
         "key": "",
         "command": "editor.debug.action.selectionToRepl",
-        "when": "debuggersAvailable && editorHasSelection"
+        "when": "debuggersAvailable && editorTextFocus && editorHasSelection"
     },
     {
         "key": "f5",
@@ -292,8 +344,8 @@
         "when": "debuggersAvailable && editorTextFocus"
     },
     {
-        "key": "shift+cmd+d",
-        "command": "workbench.view.debug"
+        "key": "cmd+shift+f8",
+        "command": "workbench.debug.action.focusBreakpointsView"
     },
     {
         "key": "cmd+t",
@@ -326,7 +378,8 @@
     },
     {
         "key": "cmd+b",
-        "command": "workbench.action.toggleSidebarVisibility"
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!editorFocus && !terminalFocus && !problemFocus && !inDebugRepl"
     },
     {
         "key": "shift+cmd+m",
@@ -352,11 +405,13 @@
     },
     {
         "key": "ctrl+-",
-        "command": "workbench.action.navigateBack"
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
     },
     {
         "key": "ctrl+shift+-",
-        "command": "workbench.action.navigateForward"
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
     },
     {
         "key": "cmd+k cmd+q",
@@ -433,7 +488,7 @@
     {
         "key": "enter",
         "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+        "when": "explorerViewletVisible && filesExplorerFocus"
     },
     {
         "key": "",
@@ -460,11 +515,13 @@
     },
     {
         "key": "shift+cmd+e",
-        "command": "workbench.view.explorer"
+        "command": "workbench.view.explorer",
+        "when": "!explorerViewletFocus"
     },
     {
         "key": "cmd+b",
-        "command": "workbench.action.toggleSidebarVisibility"
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletFocus"
     },
     {
         "key": "cmd+b",
@@ -472,7 +529,8 @@
     },
     {
         "key": "ctrl+shift+g",
-        "command": "workbench.view.scm"
+        "command": "workbench.view.scm",
+        "when": "activeViewlet != 'workbench.view.scm'"
     },
     {
         "key": "alt+cmd+s",
@@ -508,7 +566,8 @@
     },
     {
         "key": "",
-        "command": "workbench.action.quickOpenNavigateNext"
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
     },
     {
         "key": "alt+f5",
@@ -528,15 +587,17 @@
     {
         "key": "cmd+enter",
         "command": "editor.action.insertLineAfter",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
     },
     {
         "key": "",
-        "command": "workbench.action.terminal.focus"
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+`",
-        "command": "workbench.action.terminal.toggleTerminal"
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
     },
     {
         "key": "shift+cmd+l",
@@ -566,22 +627,22 @@
     {
         "key": "cmd+down",
         "command": "list.select",
-        "when": "listFocus && !inputFocus"
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
         "key": "enter",
         "command": "list.select",
-        "when": "listFocus && !inputFocus"
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
         "key": "shift+cmd+;",
-        "command": "breadcrumbs.focus",
-        "when": "breadcrumbsPossible"
+        "command": "breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
     },
     {
         "key": "alt+cmd+c",
         "command": "copyFilePath",
-        "when": "!editorFocus"
+        "when": "!editorFocus && !terminalFocus"
     },
     {
         "key": "cmd+i",
@@ -600,7 +661,8 @@
     },
     {
         "key": "shift+cmd+f",
-        "command": "workbench.action.findInFiles"
+        "command": "workbench.action.findInFiles",
+        "when": "!explorerResourceIsFolder || !filesExplorerFocus"
     },
     {
         "key": "cmd+c",
@@ -682,16 +744,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "",
-        "command": "cursorWordRight",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "",
-        "command": "cursorWordRightSelect",
-        "when": "textInputFocus"
-    },
-    {
         "key": "pagedown",
         "command": "cursorPageDown",
         "when": "textInputFocus"
@@ -712,20 +764,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+left",
-        "command": "cursorWordLeft",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+alt+left",
-        "command": "cursorWordLeftSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "cmd+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
         "key": "shift+alt+h",
         "command": "references-view.showCallHierarchy",
         "when": "editorHasCallHierarchyProvider"
@@ -738,6 +776,6 @@
     {
         "key": "",
         "command": "java.action.showTypeHierarchy",
-        "when": "editorLangId == java && editorTextFocus"
+        "when": "editorLangId == java && javaLSReady && editorTextFocus"
     }
 ]
