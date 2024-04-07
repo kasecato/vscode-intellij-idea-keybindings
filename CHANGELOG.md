@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.7.0 (Apr 7, 2024)
+
+* bug fix - v1.5.10 broke ctrl+z with Dvorak keyboard layout. See [#307](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/307)
+* enhancement - Updates VSCode base files for the importe. See [#342](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/342)
+
 ## 1.6.1 (Apr 1, 2024)
 
 * bug fix - Viewed file should be remembered. See [#237](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/237)
