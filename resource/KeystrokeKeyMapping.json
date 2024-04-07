@@ -17,7 +17,7 @@
     },
     {
         "intellij": "open_bracket",
-        "vscode": "BracketLeft"
+        "vscode": "["
     },
     {
         "intellij": "close_bracket",
