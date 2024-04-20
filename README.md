@@ -12,7 +12,6 @@ ctrl+space | ctrl+space | Basic code completion (the name of any class, method o
 ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 enter | enter | Choose Lookup Item | ✅
 tab | tab | Choose Lookup Item Replace | ✅
-enter | enter | Next Template Variable or Finish In-Place Refactoring | ✅
 ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
@@ -265,7 +264,7 @@ alt+numpad9 | cmd+numpad9 | Close corresponding tool window (Git) | ✅
 ctrl+s | cmd+s | Save all | ✅
 ctrl+alt+y | cmd+alt+y | Synchronize | N/A
 N/A | ctrl+cmd+f | Toggle full screen mode | ✅
-ctrl+shift+f12 | cmd+shift+f12 | Toggle maximizing editor | ✅
+ctrl+shift+f12 | cmd+shift+f12 | Toggle maximizing editor | N/A
 alt+shift+f | alt+shift+f | Add to Favorites | N/A
 alt+shift+i | alt+shift+i | Inspect current file with current profile | N/A
 ctrl+\` | ctrl+\` | Quick switch current scheme | ✅
