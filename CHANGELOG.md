@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.7.1 (Apr 20, 2024)
+
+* bug fix - jumpToNextSnippetPlaceholder on Enter unexpected behaviour. See [#347](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/343)
+* bug fix - Ctrl-Shift-F12 results in command 'workbench.action.maximizeEditor' not found. See [#341](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/341)
+
 ## 1.7.0 (Apr 7, 2024)
 
 * bug fix - v1.5.10 broke ctrl+z with Dvorak keyboard layout. See [#307](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/307)
