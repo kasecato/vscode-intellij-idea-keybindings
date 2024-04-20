@@ -129,13 +129,6 @@
                 "intellij": "Choose Lookup Item Replace"
             },
             {
-                "key": "enter",
-                "mac": "enter",
-                "command": "jumpToNextSnippetPlaceholder",
-                "when": "editorTextFocus && hasNextTabstop && inSnippetMode",
-                "intellij": "Next Template Variable or Finish In-Place Refactoring"
-            },
-            {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
