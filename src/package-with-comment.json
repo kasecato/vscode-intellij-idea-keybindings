@@ -1845,13 +1845,15 @@
                 "command": "workbench.action.toggleFullScreen",
                 "intellij": "Toggle full screen mode"
             },
+            /*
             {
                 "key": "ctrl+shift+f12",
                 "mac": "cmd+shift+f12",
-                "command": "workbench.action.maximizeEditor",
+                "command": "",
                 "intellij": "Toggle maximizing editor",
-                "todo": "toggle not working"
+                "todo": "N/A"
             },
+*/
             /*
             {
                 "key": "alt+shift+f",
