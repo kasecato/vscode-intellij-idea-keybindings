@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.7.2 (Apr 28, 2024)
+
+* bug fix - Update shift+escape to Hide Active Tool Window. See [#349](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/349)
+* enhancement - How to disable 'double shift' press for 'Search files by name' dialog. See [#348](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/348)
+
 ## 1.7.1 (Apr 20, 2024)
 
 * bug fix - jumpToNextSnippetPlaceholder on Enter unexpected behaviour. See [#347](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/343)
