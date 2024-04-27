@@ -305,6 +305,14 @@ For similar functionality in VS Code, enalbe the config `intellij-idea-keybindin
 
 Note: CamelHumps mode with double-click is not supported.
 
+### How to disable specific key bindings for this extension
+
+If you want to disable a specific keybinding, follow these steps
+
+1. Open `File` > `Preferences` > `Keyboard Shortcuts`
+1. Search `IntelliJ IDEA Keybindings`
+1. Right click and `Remove Keybinding`
+
 ### IntelliJ Importer
 
 ![IntelliJ Importer](images/usage_intellij_importer.gif)
