@@ -1936,7 +1936,7 @@
                 "key": "ctrl+shift+tab",
                 "mac": "ctrl+shift+tab",
                 "command": "workbench.action.compareEditor.focusOtherSide",
-                "when": "textCompareEditorVisible",
+                "when": "activeCompareEditorCanSwap",
                 "intellij": "Select Opposite Diff Pane"
             },
             {
