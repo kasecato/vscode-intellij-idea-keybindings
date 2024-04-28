@@ -12,7 +12,7 @@ ctrl+space | ctrl+space | Basic code completion (the name of any class, method o
 ctrl+shift+space | ctrl+shift+space | Smart code completion (filters the list of methods and variables by expected type) | N/A
 enter | enter | Choose Lookup Item | ✅
 tab | tab | Choose Lookup Item Replace | ✅
-ctrl+shift+enter | cmd+shift+enter | Complete statement | ✅
+ctrl+shift+enter | cmd+shift+enter | Complete Current Statement | ✅
 ctrl+p | cmd+p | Parameter info (within method call arguments) | ✅
 ctrl+q | ctrl+j | Quick documentation lookup | ✅
 N/A | f1 | Quick documentation lookup | ✅
