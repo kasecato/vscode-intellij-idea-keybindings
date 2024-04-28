@@ -1479,6 +1479,13 @@
                 "intellij": "Compare Selected Files"
             },
             {
+                "key": "ctrl+shift+tab",
+                "mac": "ctrl+shift+tab",
+                "command": "workbench.action.compareEditor.focusOtherSide",
+                "when": "textCompareEditorVisible",
+                "intellij": "Select Opposite Diff Pane"
+            },
+            {
                 "key": "f7",
                 "mac": "f7",
                 "command": "workbench.action.compareEditor.nextChange",
