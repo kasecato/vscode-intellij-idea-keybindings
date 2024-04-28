@@ -838,30 +838,23 @@
                 "key": "shift+escape",
                 "mac": "shift+escape",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus && !terminalFocus && !problemFocus && !inDebugRepl",
-                "intellij": "Hide active or last active window (Sidebar)"
-            },
-            
-            {
-                "key": "shift+escape",
-                "mac": "shift+escape",
-                "command": "workbench.actions.view.problems",
-                "intellij": "Hide active or last active window (Problems)"
+                "when": "sideBarFocus",
+                "intellij": "Hide Active Tool Window"
             },
             {
                 "key": "shift+escape",
                 "mac": "shift+escape",
-                "command": "workbench.debug.action.toggleRepl",
-                "when": "debuggersAvailable",
-                "intellij": "Hide active or last active window (Debug Console)"
+                "command": "workbench.action.toggleAuxiliaryBar",
+                "when": "auxiliaryBarFocus",
+                "intellij": "Hide Active Tool Window"
             },
             {
                 "key": "shift+escape",
                 "mac": "shift+escape",
-                "command": "workbench.action.terminal.toggleTerminal",
-                "intellij": "Hide active or last active window (Terminal)"
+                "command": "workbench.action.togglePanel",
+                "when": "panelFocus",
+                "intellij": "Hide Active Tool Window"
             },
-            
             
             {
                 "key": "ctrl+shift+'",

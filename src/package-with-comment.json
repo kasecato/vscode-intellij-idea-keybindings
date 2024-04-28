@@ -1079,47 +1079,23 @@
                 "key": "shift+escape",
                 "mac": "shift+escape",
                 "command": "workbench.action.toggleSidebarVisibility",
-                "when": "!editorFocus && !terminalFocus && !problemFocus && !inDebugRepl",
-                "intellij": "Hide active or last active window (Sidebar)"
-            },
-            /*
-            {
-                "key": "shift+escape",
-                "mac": "shift+escape",
-                "command": "workbench.action.output.toggleOutput",
-                "when": "outputFocus",
-                "intellij": "Hide active or last active window (Output)"
-            },
-*/
-            {
-                "key": "shift+escape",
-                "mac": "shift+escape",
-                "command": "workbench.actions.view.problems",
-                "intellij": "Hide active or last active window (Problems)"
+                "when": "sideBarFocus",
+                "intellij": "Hide Active Tool Window"
             },
             {
                 "key": "shift+escape",
                 "mac": "shift+escape",
-                "command": "workbench.debug.action.toggleRepl",
-                "when": "debuggersAvailable",
-                "intellij": "Hide active or last active window (Debug Console)"
+                "command": "workbench.action.toggleAuxiliaryBar",
+                "when": "auxiliaryBarFocus",
+                "intellij": "Hide Active Tool Window"
             },
             {
                 "key": "shift+escape",
                 "mac": "shift+escape",
-                "command": "workbench.action.terminal.toggleTerminal",
-                "intellij": "Hide active or last active window (Terminal)"
+                "command": "workbench.action.togglePanel",
+                "when": "panelFocus",
+                "intellij": "Hide Active Tool Window"
             },
-            /*
-            {
-                "key": "shift+escape",
-                "mac": "shift+escape",
-                "command": "",
-                "when": "panelVisible",
-                "intellij": "Hide active or last active window (Panel)",
-                "todo": "not support panelVisible VS Code #14779"
-            },
-*/
             /*
             {
                 "key": "ctrl+shift+f4",

@@ -153,12 +153,7 @@ alt+right | ctrl+right | Go to next editor tab | ✅
 N/A | shift+cmd+] | Go to next editor tab | ✅
 f12 | f12 | Go back to previous tool window | N/A
 escape | escape | Go to editor (from tool window) | N/A
-shift+escape | shift+escape | Hide active or last active window (Sidebar) | ✅
-shift+escape | shift+escape | Hide active or last active window (Output) | ✅
-shift+escape | shift+escape | Hide active or last active window (Problems) | ✅
-shift+escape | shift+escape | Hide active or last active window (Debug Console) | ✅
-shift+escape | shift+escape | Hide active or last active window (Terminal) | ✅
-shift+escape | shift+escape | Hide active or last active window (Panel) | N/A
+shift+escape | shift+escape | Hide Active Tool Window | ✅
 ctrl+shift+f4 | cmd+shift+f4 | Close active run/messages/find/... tab | N/A
 ctrl+shift+' | cmd+shift+' | Maximize Tool Window (Problems, Output, Debug Console, Terminal) | ✅
 ctrl+g | cmd+l | Go to line | ✅
