@@ -149,7 +149,7 @@
                         }
                     ]
                 },
-                "when": "suggestWidgetVisible && textInputFocus && (resourceLangId == 'javascript' || resourceLangId == 'typescript') && config.javascript.format.semicolons == 'insert'",
+                "when": "suggestWidgetVisible && textInputFocus && (editorLangId == 'javascript' || editorLangId == 'typescript') && config.javascript.format.semicolons == 'insert'",
                 "intellij": "Complete Current Statement"
             },
             {
