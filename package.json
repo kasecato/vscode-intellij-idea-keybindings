@@ -112,9 +112,33 @@
             {
                 "key": "ctrl+shift+enter",
                 "mac": "cmd+shift+enter",
+                "command": "runCommands",
+                "args": {
+                    "commands": [
+                        "acceptSelectedSuggestion",
+                        {
+                            "command": "cursorMove",
+                            "args": {
+                                "to": "wrappedLineEnd"
+                            }
+                        },
+                        {
+                            "command": "editor.action.insertSnippet",
+                            "args": {
+                                "snippet": ";"
+                            }
+                        }
+                    ]
+                },
+                "when": "suggestWidgetVisible && textInputFocus && (editorLangId == 'javascript' || editorLangId == 'typescript') && config.javascript.format.semicolons == 'insert'",
+                "intellij": "Complete Current Statement"
+            },
+            {
+                "key": "ctrl+shift+enter",
+                "mac": "cmd+shift+enter",
                 "command": "acceptSelectedSuggestion",
                 "when": "suggestWidgetVisible && textInputFocus",
-                "intellij": "Complete statement"
+                "intellij": "Complete Current Statement"
             },
             {
                 "key": "ctrl+p",
