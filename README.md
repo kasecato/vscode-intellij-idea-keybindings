@@ -119,6 +119,7 @@ ctrl+f9 | cmd+f9 | Make project (compile modifed and dependent) | ✅
 ctrl+shift+f9 | cmd+shift+f9 | Compile selected file, package or module | N/A
 alt+shift+f10 | ctrl+alt+r | Select configuration and run | ✅
 alt+shift+f9 | ctrl+alt+d | Select configuration and debug | ✅
+ctrl ctrl | ctrl ctrl | Run Anything | ✅
 shift+f10 | ctrl+r | Run | ✅
 shift+f9 | ctrl+d | Debug | ✅
 ctrl+shift+f10 | ctrl+shift+r | Run context configuration from editor | N/A

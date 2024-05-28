@@ -922,6 +922,13 @@
                 "intellij": "Select configuration and debug"
             },
             {
+                "key": "ctrl ctrl",
+                "mac": "ctrl ctrl",
+                "command": "workbench.action.tasks.runTask",
+                "when": "taskCommandsRegistered && !terminalFocus",
+                "intellij": "Run Anything"
+            },
+            {
                 "key": "shift+f10",
                 "mac": "ctrl+r",
                 "command": "workbench.action.tasks.reRunTask",
