@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.7.3 (Oct 26, 2024)
+
+* enhancement - Support Run Anything shortcut on double ctrl. See [#356](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/356)
+
 ## 1.7.2 (Apr 28, 2024)
 
 * bug fix - Update shift+escape to Hide Active Tool Window. See [#349](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/349)
