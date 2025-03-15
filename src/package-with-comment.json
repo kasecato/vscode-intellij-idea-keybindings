@@ -19,6 +19,11 @@
         "Keybinding",
         "keymap"
     ],
+    "capabilities": {
+        "untrustedWorkspaces": {
+            "supported": true
+        }
+    },
     "dependencies": {
         "fast-xml-parser": "^4.5.0",
         "path-browserify": "^1.0.1"
