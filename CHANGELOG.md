@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.7.4 (Mar 15, 2025)
+
+* enhancement - Add Go to Next/Prev Symbol Highlight support. See [#375](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/375)
+* enhancement - Enable extension even in Non Trusted mode. See [#368](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/368)
+
 ## 1.7.3 (Oct 26, 2024)
 
 * enhancement - Support Run Anything shortcut on double ctrl. See [#356](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/356)
