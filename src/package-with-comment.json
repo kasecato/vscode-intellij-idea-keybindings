@@ -860,6 +860,20 @@
                 "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor",
                 "intellij": "Show usages"
             },
+            {
+                "key": "",
+                "mac": "ctrl+alt+down",
+                "command": "editor.action.wordHighlight.next",
+                "when": "editorTextFocus && hasWordHighlights",
+                "intellij": "Next Highlighted Usage"
+            },
+            {
+                "key": "",
+                "mac": "ctrl+alt+up",
+                "command": "editor.action.wordHighlight.prev",
+                "when": "editorTextFocus && hasWordHighlights",
+                "intellij": "Previous Highlighted Usage"
+            },
             /*
             {
                 "key": "ctrl+f7",

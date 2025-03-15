@@ -107,6 +107,8 @@ Linux, Windows | macOS | Feature | Supported
 ---------------|------|---------|----------
 alt+f7 | alt+f7 | Find usages | ✅
 alt+ctrl+f7 | alt+cmd+f7 | Show usages | ✅
+N/A | ctrl+alt+down | Next Highlighted Usage | ✅
+N/A | ctrl+alt+up | Previous Highlighted Usage | ✅
 ctrl+f7 | cmd+f7 | Find usages in file | N/A
 ctrl+shift+f7 | cmd+shift+f7 | Highlight usages in file | N/A
 ctrl+alt+f7 | cmd+alt+f7 | Show usages | N/A
