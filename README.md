@@ -228,8 +228,8 @@ ctrl+alt+k | cmd+k | Commit project to VCS | ✅
 ctrl+shift+k | cmd+alt+k | Push commits to VCS | ✅
 ctrl+t | cmd+t | Update project from VCS | ✅
 ctrl+alt+z | cmd+alt+z | Rollback Lines | ✅
-alt+shift+c | alt+shift+c | View recent changes | N/A
 f4 | f4 | Jump to Source | ✅
+alt+shift+c | alt+shift+c | View recent changes | N/A
 
 ### Live Templates
 

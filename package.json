@@ -1319,6 +1319,13 @@
                 "when": "editorTextFocus && !editorReadonly",
                 "intellij": "Rollback Lines"
             },
+            {
+                "key": "f4",
+                "mac": "f4",
+                "command": "git.openFile",
+                "when": "config.git.enabled && isInDiffEditor",
+                "intellij": "Jump to Source"
+            },
             
             
             
