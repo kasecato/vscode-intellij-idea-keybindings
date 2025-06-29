@@ -104,14 +104,14 @@
                 "key": "enter",
                 "mac": "enter",
                 "command": "acceptSelectedSuggestion",
-                "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus",
+                "when": "!inlineEditIsVisible && !inInlineEditsPreviewEditor && acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus",
                 "intellij": "Choose Lookup Item"
             },
             {
                 "key": "tab",
                 "mac": "tab",
                 "command": "acceptAlternativeSelectedSuggestion",
-                "when": "suggestWidgetVisible && textInputFocus",
+                "when": "!inlineEditIsVisible && !inInlineEditsPreviewEditor && acceptSuggestionOnEnter && suggestWidgetVisible && textInputFocus",
                 "intellij": "Choose Lookup Item Replace"
             },
             {
