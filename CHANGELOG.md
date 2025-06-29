@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.7.5 (Jun 29, 2025)
+
+* enhancement - Don't overwrite VS Code binding to accept inline completion. See [#378](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/378)
+* enhancement - Add shortcut for f4 to jump to source. See [#381](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/381)
+
 ## 1.7.4 (Mar 15, 2025)
 
 * enhancement - Add Go to Next/Prev Symbol Highlight support. See [#375](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/375)

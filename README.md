@@ -419,6 +419,7 @@ After the initial compile, the source files will be watched and recompiled when 
 * [@sfyr111](https://github.com/sfyr111)
 * [@grgar](https://github.com/grgar)
 * [@yasuaki640](https://github.com/yasuaki640)
+* [@dhartung](https://github.com/dhartung)
 
 ## License
 
