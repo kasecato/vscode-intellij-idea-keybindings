@@ -25,24 +25,24 @@
         }
     },
     "dependencies": {
-        "fast-xml-parser": "^5.0.9",
+        "fast-xml-parser": "^5.2.5",
         "path-browserify": "^1.0.1"
     },
     "devDependencies": {
-        "@types/node": "^22.13.10",
+        "@types/node": "^22.15.10",
         "@types/vscode": "^1.94.0",
         "@types/webpack-env": "^1.18.8",
-        "@typescript-eslint/eslint-plugin": "^8.11.0",
-        "@typescript-eslint/parser": "^8.11.0",
+        "@typescript-eslint/eslint-plugin": "^8.35.0",
+        "@typescript-eslint/parser": "^8.35.0",
         "copy-webpack-plugin": "^13.0.0",
-        "eslint": "^9.13.0",
-        "eslint-config-prettier": "^9.1.0",
-        "prettier": "3.5.3",
+        "eslint": "^9.30.0",
+        "eslint-config-prettier": "^10.1.5",
+        "prettier": "3.6.2",
         "process": "^0.11.10",
         "strip-json-comments-loader": "^0.0.2",
         "ts-loader": "^9.5.2",
-        "typescript": "^5.8.2",
-        "webpack": "^5.98.0",
+        "typescript": "^5.8.3",
+        "webpack": "^5.99.9",
         "webpack-cli": "^6.0.1"
     },
     "extensionDependencies": [],
