@@ -862,24 +862,28 @@
                 "key": "alt+left",
                 "mac": "ctrl+left",
                 "command": "workbench.action.previousEditor",
+                "when": "!terminalFocus",
                 "intellij": "Go to previous editor tab"
             },
             {
                 "key": "",
                 "mac": "shift+cmd+[",
                 "command": "workbench.action.previousEditor",
+                "when": "!terminalFocus",
                 "intellij": "Go to previous editor tab"
             },
             {
                 "key": "alt+right",
                 "mac": "ctrl+right",
                 "command": "workbench.action.nextEditor",
+                "when": "!terminalFocus",
                 "intellij": "Go to next editor tab"
             },
             {
                 "key": "",
                 "mac": "shift+cmd+]",
                 "command": "workbench.action.nextEditor",
+                "when": "!terminalFocus",
                 "intellij": "Go to next editor tab"
             },
             
@@ -1621,16 +1625,26 @@
             },
             {
                 "key": "alt+left",
-                "mac": "shift+cmd+[",
                 "command": "workbench.action.terminal.focusPrevious",
-                "when": "terminalFocus",
+                "when": "terminalTabsFocus",
                 "intellij": "Select previous tab (Terminal)"
             },
             {
                 "key": "alt+right",
+                "command": "workbench.action.terminal.focusNext",
+                "when": "terminalTabsFocus",
+                "intellij": "Select next tab (Terminal)"
+            },
+            {
+                "key": "",
+                "mac": "shift+cmd+[",
+                "command": "workbench.action.terminal.focusPrevious",
+                "intellij": "Select previous tab (Terminal)"
+            },
+            {
+                "key": "",
                 "mac": "shift+cmd+]",
                 "command": "workbench.action.terminal.focusNext",
-                "when": "terminalFocus",
                 "intellij": "Select next tab (Terminal)"
             },
             {

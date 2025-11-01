@@ -288,8 +288,10 @@ shift+ctrl+enter | shift+cmd+enter | Start new line | ✅
 alt+f12 | alt+f12 | Opens and focuses corresponding tool window (Terminal) | ✅
 alt+f12 | alt+f12 | Close corresponding tool window (Terminal) | ✅
 ctrl+shift+alt+j | ctrl+cmd+g | Sublime Text style multiple selections | ✅
-alt+left | shift+cmd+[ | Select previous tab (Terminal) | ✅
-alt+right | shift+cmd+] | Select next tab (Terminal) | ✅
+alt+left | N/A | Select previous tab (Terminal) | ✅
+alt+right | N/A | Select next tab (Terminal) | ✅
+N/A | shift+cmd+[ | Select previous tab (Terminal) | ✅
+N/A | shift+cmd+] | Select next tab (Terminal) | ✅
 alt+tab | alt+tab | Goto next splitter | ✅
 shift+alt+tab | shift+alt+tab | Goto previous splitter | ✅
 enter | enter | Open Highlighted File (Explorer) | ✅
