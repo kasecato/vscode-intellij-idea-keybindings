@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.7.6 (Nov 1, 2025)
+
+* enhancement - [alt+left] in terminal is bound to change tab. See [#383](https://github.com/kasecato/vscode-intellij-idea-keybindings/issues/383)
+
 ## 1.7.5 (Jun 29, 2025)
 
 * enhancement - Don't overwrite VS Code binding to accept inline completion. See [#378](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/378)
