@@ -1639,12 +1639,14 @@
                 "key": "",
                 "mac": "shift+cmd+[",
                 "command": "workbench.action.terminal.focusPrevious",
+                "when": "terminalFocus",
                 "intellij": "Select previous tab (Terminal)"
             },
             {
                 "key": "",
                 "mac": "shift+cmd+]",
                 "command": "workbench.action.terminal.focusNext",
+                "when": "terminalFocus",
                 "intellij": "Select next tab (Terminal)"
             },
             {
