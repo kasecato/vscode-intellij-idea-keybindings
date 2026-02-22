@@ -29,19 +29,19 @@
         "path-browserify": "^1.0.1"
     },
     "devDependencies": {
+        "@eslint/js": "^10.0.1",
         "@types/node": "^24.9.2",
         "@types/vscode": "^1.94.0",
         "@types/webpack-env": "^1.18.8",
-        "@typescript-eslint/eslint-plugin": "^8.46.2",
-        "@typescript-eslint/parser": "^8.46.2",
         "copy-webpack-plugin": "^13.0.1",
-        "eslint": "^9.39.0",
+        "eslint": "^10.0.1",
         "eslint-config-prettier": "^10.1.8",
         "prettier": "3.6.2",
         "process": "^0.11.10",
         "strip-json-comments-loader": "^0.0.2",
         "ts-loader": "^9.5.4",
         "typescript": "^5.9.3",
+        "typescript-eslint": "^8.56.0",
         "webpack": "^5.102.1",
         "webpack-cli": "^6.0.1"
     },
