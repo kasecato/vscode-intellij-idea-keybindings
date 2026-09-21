@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { XMLParser, X2jOptions } from 'fast-xml-parser';
+import { XMLParser, X2jOptions, JPathOrMatcher } from 'fast-xml-parser';
 import { IntelliJKeymapXML } from '../model/intellij/implement/IntelliJKeymapXML';
 import { USE_DEFAULT_FILE } from '../reader/FileOpenDialog';
 
@@ -17,8 +17,8 @@ export class IntelliJXMLParser {
             ignoreDeclaration: true,
             ignoreAttributes: false,
             parseAttributeValue: true,
-            isArray: (tagName: string, jpath: string, isLeafNode: boolean, isAttribute: boolean) => {
-                return IntelliJXMLParser.ALWAYS_ARRAY.includes(jpath);
+            isArray: (tagName: string, jpath: JPathOrMatcher, isLeafNode: boolean, isAttribute: boolean) => {
+                return IntelliJXMLParser.ALWAYS_ARRAY.includes(jpath.toString());
             },
         };
         const parser = new XMLParser(parserXmlOptions);
