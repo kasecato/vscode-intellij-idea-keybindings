@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.7.8 (Sep 21, 2026)
+
+* Upgrade libraries
+
 ## 1.7.7 (Feb 22, 2026)
 
 * bug fix - In mac, the "shift+cmd+[" && shift+cmd+]" will always switch the terminal. See [#388](https://github.com/kasecato/vscode-intellij-idea-keybindings/pull/388)
