@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.7.9 (Oct 6, 2026)
+
+* enhancement - Add Next/Previous Project Window keybindings (ctrl+alt+]/[)
+
 ## 1.7.8 (Sep 21, 2026)
 
 * Upgrade libraries
