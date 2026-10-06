@@ -154,6 +154,8 @@ alt+left | ctrl+left | Go to previous editor tab | ✅
 N/A | shift+cmd+[ | Go to previous editor tab | ✅
 alt+right | ctrl+right | Go to next editor tab | ✅
 N/A | shift+cmd+] | Go to next editor tab | ✅
+ctrl+alt+] | cmd+alt+] | Next Project Window | ✅
+ctrl+alt+[ | cmd+alt+[ | Previous Project Window | ✅
 f12 | f12 | Go back to previous tool window | N/A
 escape | escape | Go to editor (from tool window) | N/A
 shift+escape | shift+escape | Hide Active Tool Window | ✅

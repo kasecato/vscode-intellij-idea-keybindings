@@ -1,6 +1,6 @@
 {
     "name": "intellij-idea-keybindings",
-    "version": "1.7.8",
+    "version": "1.7.9",
     "publisher": "k--kato",
     "engines": {
         "vscode": "^1.138.0"
@@ -885,6 +885,18 @@
                 "command": "workbench.action.nextEditor",
                 "when": "!terminalFocus",
                 "intellij": "Go to next editor tab"
+            },
+            {
+                "key": "ctrl+alt+]",
+                "mac": "cmd+alt+]",
+                "command": "workbench.action.quickSwitchWindow",
+                "intellij": "Next Project Window"
+            },
+            {
+                "key": "ctrl+alt+[",
+                "mac": "cmd+alt+[",
+                "command": "workbench.action.switchWindow",
+                "intellij": "Previous Project Window"
             },
             
             
